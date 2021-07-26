@@ -1,0 +1,60 @@
+/*=====================
+    Home Page CSS start
+==========================*/
+
+.service-section {
+    .service-box {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        .service-icon {
+            width: 20%;
+        }
+        svg {
+            margin-right: 40px;
+            width: 60%;
+        }
+        .service-content {
+            width: 80%;
+            h3 {
+                display: flex;
+                align-items: center;
+                svg, img {
+                    width: 40px;
+                    margin-right: 20px;
+                }
+            }
+            p {
+                margin-top: 15px;
+            }
+            .service-list {
+                margin-bottom: -5px;
+                li {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    a {
+                        color: $dark-color;
+                    }
+                    + li {
+                        margin-left: 8px;
+                        padding-left: 8px;
+                        border-left: 1px solid #dddddd;
+                    }
+                }
+            }
+        }
+    }
+    .section-row {
+        > div {
+            &:nth-child(2),
+            &:nth-child(5) {
+                margin-top: -10px;
+            }
+            &:nth-child(3),
+            &:nth-child(6) {
+                margin-top: -30px;
+            }
+        }
+    }
+}

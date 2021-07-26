@@ -1,0 +1,56 @@
+/*=====================
+    Animation CSS start
+==========================*/
+// rotating text
+.rotating-text {
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+    position: relative;
+    h1 {
+        display: inline-flex;
+        margin: 0;
+        vertical-align: top;
+        .word {
+            position: absolute;
+            display: flex;
+            opacity: 0;
+
+            span {
+                text-transform: capitalize;
+            }
+            .letter {
+                transform-origin: center center 25px;
+
+                &.out {
+                    transform: rotateX(90deg);
+                    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+                }
+                &.in {
+                    transition: 0.38s ease;
+                }
+                &.behind {
+                    transform: rotateX(-90deg);
+                }
+            }
+        }
+    }
+    &::after {
+        content: "<h1>";
+        font-family: "Allura", cursive;
+        position: absolute;
+        font-size: 22px;
+        left: 0;
+        top: -30px;
+        opacity: 0.4;
+    }
+    &::before {
+        content: "</h1>";
+        font-family: "Allura", cursive;
+        position: absolute;
+        font-size: 22px;
+        right: 60px;
+        bottom: -40px;
+        opacity: 0.4;
+    }
+}

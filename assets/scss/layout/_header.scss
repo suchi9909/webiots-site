@@ -1,0 +1,39 @@
+/*=====================
+    Header CSS start
+==========================*/
+header {
+    position: absolute;
+    padding: 22px 20px;
+    width: 100%;
+    .web-logo {
+        width: 210px;
+    }
+    .header-section {
+        display: flex;
+        align-items: center;
+        .nav {
+            margin-left: auto;
+            .nav-link {
+                font-size: 20px;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .menu-bar {
+        margin-left: 14px;
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba($white, 0.55);
+            border-radius: 100%;
+            color: $white;
+            svg {
+                width: 21px;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/*=====================
+    Title CSS start
+==========================*/
+.title {
+    h6 {
+        color: $theme-color;
+    }
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: $content-color;
+    }
+}
