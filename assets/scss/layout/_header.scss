@@ -2,11 +2,15 @@
     Header CSS start
 ==========================*/
 header {
-    position: absolute;
+    // position: absolute;
     padding: 22px 20px;
     width: 100%;
     .web-logo {
         width: 210px;
+        color: $theme-color;
+        h3 {
+            font-size: 30px;
+        }
     }
     .header-section {
         display: flex;
@@ -15,7 +19,7 @@ header {
             margin-left: auto;
             .nav-link {
                 font-size: 20px;
-                color: $white;
+                color: $dark-bg;
                 text-transform: uppercase;
             }
         }
@@ -28,9 +32,9 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid rgba($white, 0.55);
+            border: 1px solid rgba($black, 0.55);
             border-radius: 100%;
-            color: $white;
+            color: $dark-bg;
             svg {
                 width: 21px;
             }
