@@ -360,6 +360,8 @@ button:focus {
     Header CSS start
 ==========================*/
 header {
+  position: absolute;
+  z-index: 1;
   padding: 22px 20px;
   width: 100%; }
   header .web-logo {
@@ -495,8 +497,8 @@ header {
 .home-vector {
   position: relative;
   background-color: rgba(255, 255, 255, 0.83);
-  border-radius: 25px;
-  padding: 100px;
+  border-radius: 0;
+  padding: 120px;
   background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
   background-repeat: no-repeat;
   background-size: cover;
