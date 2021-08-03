@@ -2,6 +2,7 @@
     Home Page CSS start
 ==========================*/
 
+// service section
 .service-section {
     position: relative;
     z-index: 1;
@@ -30,13 +31,18 @@
             h3 {
                 display: flex;
                 align-items: center;
-                svg, img {
+                svg,
+                img {
                     width: 40px;
                     margin-right: 20px;
                 }
             }
             p {
                 margin-top: 15px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
             }
             .service-list {
                 margin-bottom: -5px;
@@ -44,7 +50,7 @@
                     font-size: 16px;
                     margin-bottom: 5px;
                     a {
-                        color: $dark-color;
+                        color: $title-color;
                     }
                     + li {
                         margin-left: 8px;
@@ -64,14 +70,275 @@
     }
 }
 
+// logo section
 .logo-section {
     text-align: center;
+    margin-top: -30px;
+    h2 {
+        margin-top: -10px;
+    }
     .slick-slider {
         padding-top: 50px;
         .logo-box {
             img {
                 margin: 0 auto;
             }
+        }
+    }
+}
+
+// technology section
+.technology-section {
+    background: #fbf3ec;
+    position: relative;
+    z-index: 1;
+    // margin-top: 40px;
+    // margin-bottom: 44px;
+    .tech-effect {
+        position: absolute;
+        top: -120px;
+        z-index: 1;
+        left: -10%;
+        filter: invert(1);
+        width: 20%;
+    }
+    &::after {
+        // content: "";
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 100%;
+        background-image: url(../images/shapes/shape-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55px;
+    }
+    &::before {
+        // content: "";
+        position: absolute;
+        bottom: -43px;
+        left: 0;
+        width: 100%;
+        background-image: url(../images/shapes/shape-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55px;
+    }
+    .nav-tabs {
+        justify-content: center;
+        .nav-link {
+            color: $content-color;
+            font-size: 18px;
+            padding: 0 25px 8px;
+            border: none;
+            text-transform: capitalize;
+            &.active {
+                background-color: transparent;
+                color: $theme-color;
+                border-bottom: 1px solid $theme-color;
+            }
+        }
+    }
+    .tab-content {
+        display: block;
+        width: 80%;
+        margin: 50px auto 0;
+        .tab-pane {
+            &.active, &.show {
+                .tech-box {
+                    animation: zoomIn 300ms ease-in-out;
+                }
+            }
+        }
+    }
+    .tech-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        h5 {
+            margin-top: 22px;
+            text-transform: uppercase;
+        }
+        .tech-icon {
+            box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
+            background-color: $white;
+            border-radius: 10px;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 28px;
+            transform: scale(1);
+            transition: all 0.5s ease;
+        }
+        &.xl-box {
+            .tech-icon {
+                width: 130px;
+                height: 130px;
+            }
+        }
+        &.lg-box {
+            .tech-icon {
+                width: 110px;
+                height: 110px;
+            }
+        }
+        &:hover {
+            .tech-icon {
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+
+// hiring process
+.hiring-section {
+    .hiring-box {
+        text-align: center;
+        img {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .hiring-content {
+            margin-top: 15px;
+            h3 {
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .row {
+        > div {
+            + div {
+                .hiring-box {
+                    .hiring-icon {
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background-image: url(../images/shapes/shape-3.svg);
+                            background-repeat: no-repeat;
+                            left: -80px;
+                            width: 130px;
+                            height: 27px;
+                            top: 50%;
+                            transform: translateY(-50%) scale(0.8);
+                            transform-origin: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// why outsource
+.why-outsource {
+    background-color: #eefaff;
+    position: relative;
+    // margin-top: 40px;
+    // margin-bottom: 44px;
+    &::after {
+        // content: "";
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 100%;
+        background-image: url(../images/shapes/shape-4.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55px;
+    }
+    &::before {
+        // content: "";
+        position: absolute;
+        bottom: -43px;
+        left: 0;
+        width: 100%;
+        background-image: url(../images/shapes/shape-5.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55px;
+    }
+}
+
+// development process
+.development-section {
+    .arrow-effect {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 25px;
+            right: 0;
+            height: 100%;
+            display: block;
+            background-image: url(https://themes.pixelstrap.com/multikart/assets/images/vendor/step-arrow.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 50%;
+            z-index: -1;
+            width: calc(100% - 50px);
+        }
+        > div {
+            &:nth-child(1) {
+                .development-icon {
+                    background-color:#ffedf6;
+                }
+            }
+            &:nth-child(2) {
+                .development-icon {
+                    background-color: #e5f7ff;
+                }
+            }
+            &:nth-child(3) {
+                .development-icon {
+                    background-color: #f8efe6;
+                }
+            }
+            &:nth-child(4) {
+                .development-icon {
+                    background-color: #efeaf5;
+                }
+            }
+            &:nth-child(even) {
+                .development-box {
+                    margin-top: 30px;   
+                }
+            }
+        }
+    }
+    .development-box {
+        background-color: $white;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 30px;
+        transition: all 0.5s ease;
+        .development-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            padding: 15px;
+            background-color: #f8d7e8;
+            img {
+                width: auto;
+            }
+        }
+        .development-content {
+            margin-top: 20px;
+            h3 {
+                text-transform: capitalize;
+                margin-bottom: 14px;
+            }
+        }
+        &:hover {
+            transform: translateY(-10px);
+            transition: all 0.5s ease;
         }
     }
 }

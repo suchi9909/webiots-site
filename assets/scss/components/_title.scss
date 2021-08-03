@@ -2,21 +2,17 @@
     Title CSS start
 ==========================*/
 .title {
-    h6 {
-        color: $theme-color;
-    }
-    p {
-        font-size: 20px;
-        line-height: 1.5;
-        color: $content-color;
-    }
-}
-
-
-.title-sec {
     text-transform: capitalize;
     text-align: center;
+    p {
+        font-size: 20px;
+        width: 60%;
+        margin: 10px auto 0;
+        color: $content-color;
+    }
     h5 {
         color: $content-color;
+        margin-top: -3px;
+        font-weight: 400;
     }
 }

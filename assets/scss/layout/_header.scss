@@ -3,42 +3,53 @@
 ==========================*/
 header {
     position: absolute;
-    z-index: 1;
-    padding: 22px 20px;
+    z-index: 2;
+    padding: 0;
     width: 100%;
-    .web-logo {
-        width: 210px;
-        color: $theme-color;
-        h3 {
-            font-size: 30px;
-        }
-    }
-    .header-section {
+    top: 10px;
+    .top-bar {
         display: flex;
         align-items: center;
-        .nav {
+        .top-details {
             margin-left: auto;
-            .nav-link {
-                font-size: 20px;
-                color: $dark-bg;
-                text-transform: uppercase;
+            li {
+                a {
+                    color: $title-color;
+                    font-size: 18px;
+                }
+                + li {
+                    margin-left: 14px;
+                }
+            }
+        }
+        .web-logo {
+            width: 210px;
+            color: $theme-color;
+            h3 {
+                font-size: 42px;
             }
         }
     }
-    .menu-bar {
-        margin-left: 14px;
-        a {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba($black, 0.55);
-            border-radius: 100%;
-            color: $dark-bg;
-            svg {
-                width: 21px;
-            }
+}
+
+.nav-section {
+    margin-top: 15px;
+    .header-section {
+        background-color: $white;
+        padding: 12px;
+        border-radius: 5px;
+        box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
+    }
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    .nav {
+        .nav-link {
+            font-size: 20px;
+            color: $title-color;
+            text-transform: capitalize;
         }
     }
 }
