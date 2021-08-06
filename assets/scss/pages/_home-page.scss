@@ -202,6 +202,7 @@
         height: 100%;
         min-height: 250px;
         box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
+        position: relative;
         .wrap-title {
             display: flex;
             align-items: center;
@@ -229,6 +230,13 @@
                     column-count: 2;
                 }
             }
+        }
+        .animated-icon {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 30%;
+            opacity: 0.08;
         }
     }
 }
@@ -437,6 +445,38 @@
 .testimonial-section {
     background: #fbf3ec;
     position: relative;
+    .title {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        p {
+            width: 100%;
+        }
+    }
+    .testimonial-row {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: -30px;
+            height: 100%;
+            top: 4px;
+            width: 100px;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%,rgba(255,255,255,0) 4%,rgba(251, 243, 237, 1) 97%,rgba(251, 243, 237, 1) 100%);
+            z-index: 1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            right: -30px;
+            height: 100%;
+            top: 4px;
+            width: 100px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(255,255,255,0) 4%,rgba(251, 243, 237, 1) 97%,rgba(251, 243, 237, 1) 100%);
+            z-index: 1;
+        }
+    }
     .slick-list {
         margin: 0 -15px;
         .slick-slide {
@@ -457,13 +497,12 @@
         }
     }
     .testimonial-box {
-        padding: 25px;
+        padding: 6px;
         border-radius: 10px;
         background-color: $white;
-        box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
+        box-shadow: rgba(22, 31, 39, 0.05) 0px 0 123px -25px, rgba(19, 26, 32, 0.06) 0 0 75px -35px;
         .testimonial-img {
             border-radius: 5px;
-            margin-bottom: 20px;
             position: relative;
         }
         .testimonial-content {
@@ -499,7 +538,7 @@
             z-index: 3;
             width: 0;
             height: 0;
-            border-left: 32px solid #fff;
+            border-left: 32px solid $theme-color;
             border-top: 22px solid transparent;
             border-bottom: 22px solid transparent;
         }
@@ -513,7 +552,7 @@
             display: block;
             width: 80px;
             height: 80px;
-            background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+            background-color: $white;
             border-radius: 50%;
             animation: pulse-border 1500ms ease-out infinite;
         }
@@ -527,7 +566,7 @@
             display: block;
             width: 80px;
             height: 80px;
-            background: #fa183d;
+            background: $white;
             border-radius: 50%;
             transition: all 200ms;
         }
@@ -537,7 +576,6 @@
             }
         }
     }
-
     @keyframes pulse-border {
         0% {
             transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);

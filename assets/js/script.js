@@ -59,12 +59,15 @@ $('.slide-5').slick({
 
 $('.slide-3').slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 3500,
+  arrows: false,
+  centerMode: true,
+  centerPadding: '80px',
   responsive: [
     {
       breakpoint: 600,

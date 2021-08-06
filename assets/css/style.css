@@ -759,7 +759,8 @@ header {
     height: 100%;
     min-height: 250px;
     -webkit-box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
-            box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px; }
+            box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
+    position: relative; }
     .technology-section .tech-wrap .wrap-title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -787,6 +788,12 @@ header {
         -webkit-column-count: 2;
            -moz-column-count: 2;
                 column-count: 2; }
+    .technology-section .tech-wrap .animated-icon {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 30%;
+      opacity: 0.08; }
 
 .hiring-section .hiring-box {
   text-align: center; }
@@ -944,6 +951,39 @@ header {
 .testimonial-section {
   background: #fbf3ec;
   position: relative; }
+  .testimonial-section .title {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+    .testimonial-section .title p {
+      width: 100%; }
+  .testimonial-section .testimonial-row {
+    position: relative; }
+    .testimonial-section .testimonial-row::after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      height: 100%;
+      top: 4px;
+      width: 100px;
+      background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(4%, rgba(255, 255, 255, 0)), color-stop(97%, #fbf3ed), to(#fbf3ed));
+      background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 4%, #fbf3ed 97%, #fbf3ed 100%);
+      z-index: 1; }
+    .testimonial-section .testimonial-row::before {
+      content: "";
+      position: absolute;
+      right: -30px;
+      height: 100%;
+      top: 4px;
+      width: 100px;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(4%, rgba(255, 255, 255, 0)), color-stop(97%, #fbf3ed), to(#fbf3ed));
+      background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 4%, #fbf3ed 97%, #fbf3ed 100%);
+      z-index: 1; }
   .testimonial-section .slick-list {
     margin: 0 -15px; }
     .testimonial-section .slick-list .slick-slide > div {
@@ -954,14 +994,13 @@ header {
       font-size: 12px;
       color: #c6171c; }
   .testimonial-section .testimonial-box {
-    padding: 25px;
+    padding: 6px;
     border-radius: 10px;
     background-color: #ffffff;
-    -webkit-box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
-            box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px; }
+    -webkit-box-shadow: rgba(22, 31, 39, 0.05) 0px 0 123px -25px, rgba(19, 26, 32, 0.06) 0 0 75px -35px;
+            box-shadow: rgba(22, 31, 39, 0.05) 0px 0 123px -25px, rgba(19, 26, 32, 0.06) 0 0 75px -35px; }
     .testimonial-section .testimonial-box .testimonial-img {
       border-radius: 5px;
-      margin-bottom: 20px;
       position: relative; }
     .testimonial-section .testimonial-box .testimonial-content h3 {
       color: #222222;
@@ -993,7 +1032,7 @@ header {
       z-index: 3;
       width: 0;
       height: 0;
-      border-left: 32px solid #fff;
+      border-left: 32px solid #c6171c;
       border-top: 22px solid transparent;
       border-bottom: 22px solid transparent; }
     .testimonial-section .video-play-button:before {
@@ -1007,8 +1046,7 @@ header {
       display: block;
       width: 80px;
       height: 80px;
-      background-image: -webkit-gradient(linear, left top, right top, from(#eb3941), color-stop(#f15e64), color-stop(#e14e53), to(#e2373f));
-      background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+      background-color: #ffffff;
       border-radius: 50%;
       -webkit-animation: pulse-border 1500ms ease-out infinite;
               animation: pulse-border 1500ms ease-out infinite; }
@@ -1023,7 +1061,7 @@ header {
       display: block;
       width: 80px;
       height: 80px;
-      background: #fa183d;
+      background: #ffffff;
       border-radius: 50%;
       -webkit-transition: all 200ms;
       transition: all 200ms; }
