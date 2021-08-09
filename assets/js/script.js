@@ -58,16 +58,16 @@ $('.slide-5').slick({
 });
 
 $('.slide-3').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 3500,
   arrows: false,
   centerMode: true,
-  centerPadding: '80px',
+  centerPadding: '30px',
   responsive: [
     {
       breakpoint: 600,
@@ -112,3 +112,14 @@ jQuery('.bg-img').each(function () {
   el.hide();
 });
 
+
+/*=====================
+ Sticky Scroll js
+ ==========================*/
+$(window).scroll(function(){
+  var sticky = $('header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 100) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});

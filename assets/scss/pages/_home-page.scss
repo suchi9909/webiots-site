@@ -441,18 +441,18 @@
     }
 }
 
-// testimonial sectio
+// testimonial section
 .testimonial-section {
     background: #fbf3ec;
     position: relative;
     .title {
-        text-align: left;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        p {
-            width: 100%;
-        }
+        // text-align: left;
+        // display: flex;
+        // align-items: center;
+        // height: 100%;
+        // p {
+        //     width: 100%;
+        // }
     }
     .testimonial-row {
         position: relative;
@@ -584,6 +584,51 @@
         100% {
             transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
             opacity: 0;
+        }
+    }
+}
+
+// contact us section
+.contact-us-section {
+    .contact-details {
+        img {
+            width: 60%;
+        }
+        .contact-list {
+            li {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 18px;
+                line-height: 1.8;
+                svg {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .contact-content {
+        padding: 35px;
+        background-color: rgb(242, 246, 250);
+        border-radius: 10px;
+        img {
+            width: 50%;
+            margin: 0 auto;
+        }
+        h2 {
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 14px;
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: $content-color;
+        }
+        h5 {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: $title-color;
+            font-weight: 400;
         }
     }
 }
