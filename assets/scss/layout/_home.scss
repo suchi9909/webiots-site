@@ -32,6 +32,7 @@
     h1 {
       color: $title-color;
       margin-bottom: 20px;
+      font-weight: 600;
       span.effect {
         position: relative;
         z-index: 1;
@@ -53,9 +54,10 @@
     h3 {
       line-height: 33px;
       margin-bottom: 30px;
-      font-size: 27px;
+      font-size: 23px;
       text-transform: capitalize;
       font-weight: 400;
+      letter-spacing: 0.05em;
     }
     .line-span {
       display: block;
@@ -120,6 +122,29 @@
     box-shadow: 0px 2px 8px 0px #ddd;
     svg {
       stroke: $title-color;
+    }
+  }
+  &.inner-home {
+    height: 48vh;
+    background-image: none;
+    background-color: #fbf3ec;
+  }
+}
+
+
+.breadcrumb-section {
+  text-align: center;
+  h2 {
+    margin-top: -9px;
+  }
+  .breadcrumb {
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 6px;
+    .breadcrumb-item {
+      a {
+        color: $title-color;
+      }
     }
   }
 }

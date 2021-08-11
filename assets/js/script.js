@@ -61,13 +61,14 @@ $('.slide-3').slick({
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 3500,
   arrows: false,
   centerMode: true,
-  centerPadding: '30px',
+  centerPadding: '100px',
+  asNavFor: '.slider-nav',
   responsive: [
     {
       breakpoint: 600,
@@ -84,6 +85,15 @@ $('.slide-3').slick({
       }
     }
   ]
+});
+
+$('.slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.slide-3',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
 });
 
 /*=====================

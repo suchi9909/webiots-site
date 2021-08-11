@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 57" width="57" height="57">
+	<title>healthcare-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #1d1d1b;stroke-linecap:round;stroke-linejoin:round;stroke-width: 2 } 
+	</style>
+	<path id="Layer" class="shp0" d="M52 23L52 35L35 35L35 52L23 52L23 35L6 35L6 23L23 23L23 6L35 6L35 23L52 23L52 23Z" />
+</svg>

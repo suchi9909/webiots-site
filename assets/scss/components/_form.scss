@@ -2,5 +2,11 @@
     form CSS start
 ==========================*/
 .form-control {
-    border: none;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+}
+
+.floating-height {
+    height: 46px;
+    line-height: 32px;
 }
