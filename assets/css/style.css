@@ -623,7 +623,6 @@ header {
       -ms-flex-align: center;
           align-items: center; }
   .home-vector:after {
-    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -728,7 +727,8 @@ header {
   .home-vector.inner-home {
     height: 48vh;
     background-image: none;
-    background-color: #fbf3ec; }
+    background-color: #fbf3ec;
+    padding-top: 130px; }
 
 .breadcrumb-section {
   text-align: center; }
@@ -1422,7 +1422,7 @@ header {
       .contact-us-section .contact-details .social-list ul li.instagram {
         background-color: #c18af7; }
 
-.contact-us-section .contact-content {
+.contact-content {
   padding: 50px;
   -webkit-box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.05);
@@ -1430,27 +1430,105 @@ header {
   border-radius: 10px;
   position: relative;
   overflow: hidden; }
-  .contact-us-section .contact-content .plane-img {
+  .contact-content .plane-img {
     position: absolute;
     bottom: -20px;
     right: -20px;
     -webkit-transform: rotate(3deg);
             transform: rotate(3deg);
     opacity: 0.05; }
-    .contact-us-section .contact-content .plane-img img {
+    .contact-content .plane-img img {
       width: 240px; }
-  .contact-us-section .contact-content img {
+  .contact-content img {
     width: 50%;
     margin: 0 auto; }
-  .contact-us-section .contact-content h2 {
+  .contact-content h2 {
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 14px; }
-  .contact-us-section .contact-content p {
+  .contact-content p {
     font-size: 20px;
     color: #777777; }
-  .contact-us-section .contact-content h5 {
+  .contact-content h5 {
     margin-top: 20px;
     margin-bottom: 8px;
     color: #222222;
     font-weight: 400; }
+
+/*=====================
+    Hire Page CSS start
+==========================*/
+.hire-home.contact-us-section .contact-content {
+  background-color: transparent;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.hire-detail-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-image: url(../images/shapes/shape-6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.4); }
+  .hire-detail-section h2 {
+    color: #222222;
+    margin-bottom: 20px;
+    font-weight: 600; }
+    .hire-detail-section h2 span.effect {
+      position: relative;
+      z-index: 1; }
+      .hire-detail-section h2 span.effect:after {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+        z-index: -1;
+        height: 17px;
+        width: 100%;
+        background-color: #fad8b0; }
+  .hire-detail-section p {
+    line-height: 30px; }
+  .hire-detail-section h3 {
+    line-height: 33px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 0.05em; }
+  .hire-detail-section .line-span {
+    display: block;
+    width: 90px;
+    height: 5px;
+    background-color: #c6171c;
+    margin-bottom: 30px; }
+  .hire-detail-section .contact-form h3 {
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .hire-detail-section .contact-form h4 {
+    color: #777777; }
+
+.why-outsource.hire-page .why-us-box {
+  display: block; }
+  .why-outsource.hire-page .why-us-box .whyus-icon {
+    background-color: #ec3f46;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 15px; }
+  .why-outsource.hire-page .why-us-box .whyus-content {
+    width: 100%; }

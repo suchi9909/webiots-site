@@ -1,0 +1,91 @@
+/*=====================
+    Hire Page CSS start
+==========================*/
+
+.hire-home {
+    &.contact-us-section {
+        .contact-content {
+            background-color: transparent;
+            padding: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+.hire-detail-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-image: url(../images/shapes/shape-6.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.4);
+    h2 {
+      color: $title-color;
+      margin-bottom: 20px;
+      font-weight: 600;
+      span.effect {
+        position: relative;
+        z-index: 1;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 7px;
+          left: 0;
+          z-index: -1;
+          height: 17px;
+          width: 100%;
+          background-color: #fad8b0;
+        }
+      }
+    }
+    p {
+      line-height: 30px;
+    }
+    h3 {
+      line-height: 33px;
+      margin-bottom: 30px;
+      font-size: 23px;
+      text-transform: capitalize;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+    .line-span {
+      display: block;
+      width: 90px;
+      height: 5px;
+      background-color: $theme-color;
+      margin-bottom: 30px;
+    }
+    
+    .contact-form {
+      h3 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      h4 {
+        color: $content-color;
+      }
+    }
+}
+
+.why-outsource {
+  &.hire-page {
+    .why-us-box {
+      display: block;
+      .whyus-icon {
+        background-color: #ec3f46;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: 14px;
+        border-radius: 15px;
+      }
+      .whyus-content {
+        width: 100%;
+      }
+    }
+  }
+}
