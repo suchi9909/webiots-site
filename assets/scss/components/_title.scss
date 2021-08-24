@@ -4,15 +4,22 @@
 .title {
     text-transform: capitalize;
     text-align: center;
+    h2 {
+        span {
+            font-size: 40px;
+            color: #eb3b43;
+        }
+    }
     p {
-        font-size: 18px;
-        width: 60%;
-        margin: 15px auto 0;
+        font-size: 16px;
+        width: 40%;
+        margin: 12px auto 0;
         color: $content-color;
     }
     h5 {
         color: $content-color;
         margin-top: -3px;
         font-weight: 400;
+        margin-bottom: 8px;
     }
 }

@@ -6,7 +6,7 @@ header {
     z-index: 2;
     padding: 0;
     width: 100%;
-    top: 10px;
+    top: 15px;
     .top-bar {
         display: flex;
         align-items: center;
@@ -15,7 +15,13 @@ header {
             li {
                 a {
                     color: $title-color;
-                    font-size: 18px;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    i {
+                        color: #eb3b43;
+                        margin-right: 10px;
+                    }
                 }
                 + li {
                     margin-left: 14px;
@@ -26,7 +32,7 @@ header {
             width: 210px;
             color: $theme-color;
             h3 {
-                font-size: 34px;
+                font-size: 30px;
             }
         }
     }
@@ -61,9 +67,11 @@ header {
     align-items: center;
     .nav {
         .nav-link {
-            font-size: 17px;
+            font-size: 16px;
             color: $title-color;
             text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 0.02em;
         }
     }
 }

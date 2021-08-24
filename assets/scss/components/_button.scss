@@ -8,8 +8,8 @@ button:focus {
 
 
 .btn-theme {
-  min-width: 200px;
-  padding: 13px;
+  min-width: 180px;
+  padding: 14px 30px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -17,19 +17,38 @@ button:focus {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-  border-radius: 50px;
   background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
   box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
   transition: all .4s ease-in-out;
   text-transform: uppercase;
-  border-radius: 3px;
+  border-radius: 10px;
   &:hover {
     background-position: 100% 0;
     transition: all .4s ease-in-out;
+    color: $white;
   }
   &.btn-sm {
     text-transform: capitalize;
-    padding: 7px 30px;
+    padding: 10px 24px;
     width: auto;
+  }
+}
+
+
+.btn-outline {
+  color: #eb3c44;
+  border: 1px solid #eb3c44;
+  min-width: 180px;
+  padding: 13px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 6px;
+  &:hover {
+    background-color: #eb3941;
+    color: $white;
   }
 }

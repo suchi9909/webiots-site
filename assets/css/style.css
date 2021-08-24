@@ -400,8 +400,8 @@ button:focus {
   outline: none; }
 
 .btn-theme {
-  min-width: 200px;
-  padding: 13px;
+  min-width: 180px;
+  padding: 14px 30px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -409,7 +409,6 @@ button:focus {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-  border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, right top, from(#eb3941), color-stop(#f15e64), color-stop(#e14e53), to(#e2373f));
   background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
   -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
@@ -417,15 +416,33 @@ button:focus {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   text-transform: uppercase;
-  border-radius: 3px; }
+  border-radius: 10px; }
   .btn-theme:hover {
     background-position: 100% 0;
     -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out; }
+    transition: all .4s ease-in-out;
+    color: #ffffff; }
   .btn-theme.btn-sm {
     text-transform: capitalize;
-    padding: 7px 30px;
+    padding: 10px 24px;
     width: auto; }
+
+.btn-outline {
+  color: #eb3c44;
+  border: 1px solid #eb3c44;
+  min-width: 180px;
+  padding: 13px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 6px; }
+  .btn-outline:hover {
+    background-color: #eb3941;
+    color: #ffffff; }
 
 /*=====================
     Title CSS start
@@ -433,15 +450,19 @@ button:focus {
 .title {
   text-transform: capitalize;
   text-align: center; }
+  .title h2 span {
+    font-size: 40px;
+    color: #eb3b43; }
   .title p {
-    font-size: 18px;
-    width: 60%;
-    margin: 15px auto 0;
+    font-size: 16px;
+    width: 40%;
+    margin: 12px auto 0;
     color: #777777; }
   .title h5 {
     color: #777777;
     margin-top: -3px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 8px; }
 
 /*=====================
     form CSS start
@@ -548,7 +569,7 @@ header {
   z-index: 2;
   padding: 0;
   width: 100%;
-  top: 10px; }
+  top: 15px; }
   header .top-bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -560,14 +581,23 @@ header {
       margin-left: auto; }
       header .top-bar .top-details li a {
         color: #222222;
-        font-size: 18px; }
+        font-size: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        header .top-bar .top-details li a i {
+          color: #eb3b43;
+          margin-right: 10px; }
       header .top-bar .top-details li + li {
         margin-left: 14px; }
     header .top-bar .web-logo {
       width: 210px;
       color: #c6171c; }
       header .top-bar .web-logo h3 {
-        font-size: 34px; }
+        font-size: 30px; }
   header.fixed .nav-section {
     position: fixed;
     top: 0;
@@ -598,9 +628,11 @@ header {
       -ms-flex-align: center;
           align-items: center; }
   .header-section .nav .nav-link {
-    font-size: 17px;
+    font-size: 16px;
     color: #222222;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.02em; }
 
 /*=====================
     Home CSS start
@@ -641,7 +673,9 @@ header {
     .home-vector .home-content h1 {
       color: #222222;
       margin-bottom: 20px;
-      font-weight: 600; }
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.3; }
       .home-vector .home-content h1 span.effect {
         position: relative;
         z-index: 1; }
@@ -657,12 +691,13 @@ header {
     .home-vector .home-content p {
       line-height: 30px; }
     .home-vector .home-content h3 {
-      line-height: 33px;
+      line-height: 28px;
       margin-bottom: 30px;
-      font-size: 23px;
+      font-size: 18px;
       text-transform: capitalize;
       font-weight: 400;
-      letter-spacing: 0.05em; }
+      letter-spacing: 0.02em;
+      max-width: 80%; }
     .home-vector .home-content .line-span {
       display: block;
       width: 90px;
@@ -700,9 +735,6 @@ header {
         font-weight: 500;
         font-size: 29px;
         padding-top: 4px; }
-  .home-vector .vector-section img {
-    -webkit-animation: mover 1s infinite alternate;
-            animation: mover 1s infinite alternate; }
   .home-vector .bottom-arrow {
     position: absolute;
     left: 50%;
@@ -790,7 +822,8 @@ header {
       width: 56px;
       margin: 0 auto; }
     .service-section .service-box .service-content h3 {
-      font-weight: 500; }
+      font-weight: 600;
+      font-size: 18px; }
     .service-section .service-box .service-content p {
       margin-top: 15px;
       display: -webkit-box;
@@ -828,13 +861,12 @@ header {
       margin: 0 auto; }
 
 .technology-section {
+  background: #fbf3ec;
   position: relative;
   z-index: 1;
-  background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(255, 255, 255, 0.83);
   background-blend-mode: overlay; }
   .technology-section .tech-effect {
     position: absolute;
@@ -949,6 +981,9 @@ header {
               align-items: center;
       text-transform: capitalize;
       margin-bottom: 20px; }
+      .technology-section .tech-wrap .wrap-title h3 {
+        font-weight: 600;
+        font-size: 18px; }
       .technology-section .tech-wrap .wrap-title img {
         width: 34px;
         margin-right: 15px; }
@@ -991,7 +1026,9 @@ header {
   .hiring-section .hiring-box .hiring-content {
     margin-top: 15px; }
     .hiring-section .hiring-box .hiring-content h3 {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 600; }
     .hiring-section .hiring-box .hiring-content p {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -1049,7 +1086,9 @@ header {
     .why-outsource .why-us-box .whyus-content {
       width: 80%; }
       .why-outsource .why-us-box .whyus-content h3 {
-        margin-bottom: 12px; }
+        margin-bottom: 12px;
+        font-size: 18px;
+        font-weight: 600; }
     .why-outsource .why-us-box .whyus-icon {
       position: relative;
       background-color: white;
@@ -1142,12 +1181,13 @@ header {
     .service-industry-section .industry-box h3 {
       margin-top: 20px;
       text-transform: capitalize;
-      font-weight: 500; }
+      font-weight: 600;
+      font-size: 18px; }
     .service-industry-section .industry-box .icon {
       display: inline-block;
       width: 100px;
       height: 100px;
-      border-radius: 100%;
+      border-radius: 30px;
       border: 5px solid #ace9dd;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1167,7 +1207,7 @@ header {
         position: absolute;
         width: 100%;
         height: 100%;
-        border-radius: 50%;
+        border-radius: 30px;
         content: "";
         top: 0;
         left: 0;
@@ -1189,7 +1229,7 @@ header {
         display: block; }
       .service-industry-section .industry-box .icon svg,
       .service-industry-section .industry-box .icon img {
-        width: 52px; }
+        width: 42px; }
     .service-industry-section .industry-box:hover .icon {
       -webkit-transform: scale(0.97);
               transform: scale(0.97);
@@ -1200,7 +1240,8 @@ header {
         -webkit-animation: sonarEffect infinite 1.3s ease-out 75ms;
                 animation: sonarEffect infinite 1.3s ease-out 75ms; }
   .service-industry-section .color-row > div:nth-child(4n + 1) .industry-box .icon {
-    border-color: #ace9dd; }
+    border-color: #ace9dd;
+    background-color: rgba(172, 233, 221, 0.2); }
     .service-industry-section .color-row > div:nth-child(4n + 1) .industry-box .icon::after {
       -webkit-box-shadow: 0 0 0 2px #ace9dd;
               box-shadow: 0 0 0 2px #ace9dd; }
@@ -1208,7 +1249,8 @@ header {
     -webkit-animation: sonarEffect1 infinite 1.3s ease-out 75ms;
             animation: sonarEffect1 infinite 1.3s ease-out 75ms; }
   .service-industry-section .color-row > div:nth-child(4n + 2) .industry-box .icon {
-    border-color: #ddc6e7; }
+    border-color: #ddc6e7;
+    background-color: rgba(221, 198, 231, 0.2); }
     .service-industry-section .color-row > div:nth-child(4n + 2) .industry-box .icon::after {
       -webkit-box-shadow: 0 0 0 2px #ddc6e7;
               box-shadow: 0 0 0 2px #ddc6e7; }
@@ -1216,7 +1258,8 @@ header {
     -webkit-animation: sonarEffect2 infinite 1.3s ease-out 75ms;
             animation: sonarEffect2 infinite 1.3s ease-out 75ms; }
   .service-industry-section .color-row > div:nth-child(4n + 3) .industry-box .icon {
-    border-color: #f6d3af; }
+    border-color: #f6d3af;
+    background-color: rgba(246, 211, 175, 0.2); }
     .service-industry-section .color-row > div:nth-child(4n + 3) .industry-box .icon::after {
       -webkit-box-shadow: 0 0 0 2px #f6d3af;
               box-shadow: 0 0 0 2px #f6d3af; }
@@ -1224,7 +1267,8 @@ header {
     -webkit-animation: sonarEffect3 infinite 1.3s ease-out 75ms;
             animation: sonarEffect3 infinite 1.3s ease-out 75ms; }
   .service-industry-section .color-row > div:nth-child(4n + 4) .industry-box .icon {
-    border-color: #ebbab4; }
+    border-color: #ebbab4;
+    background-color: rgba(235, 186, 180, 0.2); }
     .service-industry-section .color-row > div:nth-child(4n + 4) .industry-box .icon::after {
       -webkit-box-shadow: 0 0 0 2px #ebbab4;
               box-shadow: 0 0 0 2px #ebbab4; }
@@ -1246,8 +1290,21 @@ header {
     height: 100%; }
     .testimonial-section .title p {
       width: 100%; }
+  .testimonial-section .swiper-slide {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .testimonial-section .swiper-slide.swiper-slide-active {
+      -webkit-filter: grayscale(0);
+              filter: grayscale(0);
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
   .testimonial-section .testimonial-row {
-    position: relative; }
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
     .testimonial-section .testimonial-row::after {
       content: "";
       position: absolute;
@@ -1278,13 +1335,13 @@ header {
       font-size: 12px;
       color: #c6171c; }
   .testimonial-section .testimonial-box {
-    padding: 6px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
     background-color: #ffffff;
     -webkit-box-shadow: rgba(22, 31, 39, 0.05) 0px 0 123px -25px, rgba(19, 26, 32, 0.06) 0 0 75px -35px;
             box-shadow: rgba(22, 31, 39, 0.05) 0px 0 123px -25px, rgba(19, 26, 32, 0.06) 0 0 75px -35px; }
     .testimonial-section .testimonial-box .testimonial-img {
-      border-radius: 5px;
+      border-radius: 16px;
       position: relative; }
     .testimonial-section .testimonial-box .testimonial-content h3 {
       color: #222222;
@@ -1369,6 +1426,21 @@ header {
     -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
             transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0; } }
+
+.contact-us-section .top-effect .dot-effect {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  z-index: -1; }
+
+.contact-us-section .top-effect .bg-effect {
+  position: absolute;
+  left: -30%;
+  top: -15%;
+  z-index: -1;
+  width: 70%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 .contact-us-section .contact-details img {
   width: 80%; }
@@ -1455,6 +1527,55 @@ header {
     color: #222222;
     font-weight: 400; }
 
+.recruiting-section .btn {
+  margin-top: 35px; }
+
+footer {
+  background-color: #eefaff;
+  padding-top: 70px; }
+  footer .footer-logo h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 34px;
+    color: #ec3c44; }
+  footer .footer-title {
+    margin-bottom: 28px; }
+    footer .footer-title h4 {
+      color: #222222;
+      text-transform: capitalize;
+      font-weight: 600; }
+  footer .sub-footer p {
+    font-size: 14px; }
+  footer .subfooter-content {
+    text-align: right; }
+    footer .subfooter-content li a {
+      color: #777777;
+      text-transform: capitalize;
+      font-size: 13px; }
+    footer .subfooter-content li + li {
+      margin-left: 15px;
+      padding-left: 15px;
+      border-left: 1px solid #ddd; }
+  footer .footer-contant p {
+    font-size: 14px;
+    width: 85%;
+    line-height: 1.7; }
+  footer .footer-contant li {
+    display: block;
+    letter-spacing: 0.02em;
+    color: #777777;
+    font-size: 14px; }
+    footer .footer-contant li i {
+      margin-right: 12px; }
+    footer .footer-contant li a {
+      color: #777777; }
+    footer .footer-contant li + li {
+      margin-top: 15px; }
+  footer .sub-footer .container {
+    border-top: 1px solid #dddddd;
+    padding: 26px 0;
+    margin-top: 50px; }
+
 /*=====================
     Hire Page CSS start
 ==========================*/
@@ -1495,12 +1616,12 @@ header {
   .hire-detail-section p {
     line-height: 30px; }
   .hire-detail-section h3 {
-    line-height: 33px;
+    line-height: 30px;
     margin-bottom: 30px;
-    font-size: 23px;
+    font-size: 18px;
     text-transform: capitalize;
     font-weight: 400;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.03em; }
   .hire-detail-section .line-span {
     display: block;
     width: 90px;
@@ -1555,16 +1676,18 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 20px;
-    padding: 14px;
+    margin-right: 26px;
+    padding: 18px;
     border-radius: 15px;
     margin-left: -50px; }
-  .why-outsource.hire-page .why-us-box .whyus-content p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; }
+  .why-outsource.hire-page .why-us-box .whyus-content {
+    width: 82%; }
+    .why-outsource.hire-page .why-us-box .whyus-content p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
 
 .model-box {
   padding: 30px 25px;
@@ -1607,7 +1730,7 @@ header {
     .model-box .duration-box h4 {
       margin-bottom: 5px;
       font-weight: 600; }
-    .model-box .duration-box h6, .model-box .duration-box h4 {
+    .model-box .duration-box h4 {
       color: #222222; }
     .model-box .duration-box.pink-shade {
       background-color: #fff3ee; }
@@ -1638,7 +1761,7 @@ header {
     text-transform: capitalize;
     border-radius: 6px; }
 
-.comparision-section {
+.comparison-section {
   position: relative;
   z-index: 1;
   background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
@@ -1647,3 +1770,93 @@ header {
   background-blend-mode: overlay;
   background-color: rgba(255, 255, 255, 0.83);
   background-blend-mode: overlay; }
+  .comparison-section .comparison-table {
+    background-color: #ffffff;
+    margin-top: 15px;
+    font-size: 16px; }
+    .comparison-section .comparison-table table th {
+      padding: 20px 20px !important;
+      letter-spacing: 0.02em;
+      color: #222222; }
+      .comparison-section .comparison-table table th:nth-child(2) {
+        color: white;
+        font-size: 18px;
+        padding: 14px !important;
+        font-weight: 600;
+        background-color: #eb3b43 !important; }
+        .comparison-section .comparison-table table th:nth-child(2) img {
+          width: 140px; }
+    .comparison-section .comparison-table table tr:last-child td {
+      border-bottom: none; }
+    .comparison-section .comparison-table table td, .comparison-section .comparison-table table th {
+      text-align: center;
+      min-width: 220px;
+      border-color: #f3f3f3 !important;
+      padding: 13px 20px; }
+      .comparison-section .comparison-table table td:first-child, .comparison-section .comparison-table table th:first-child {
+        text-align: left; }
+      .comparison-section .comparison-table table td:nth-child(2), .comparison-section .comparison-table table th:nth-child(2) {
+        -webkit-box-shadow: 0px 10px 15px #e8e8e8;
+                box-shadow: 0px 10px 15px #e8e8e8;
+        border-color: transparent !important;
+        background-color: #eefaff; }
+
+.faq-section {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.58); }
+  .faq-section .accordion .accordion-item {
+    position: relative;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+    -webkit-box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.07);
+            box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.07); }
+    .faq-section .accordion .accordion-item .accordion-body {
+      padding: 0 1.25rem 1rem 1.25rem; }
+    .faq-section .accordion .accordion-item .accordion-button {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      font-size: 16px;
+      color: #222222;
+      background-color: transparent;
+      padding-right: 45px;
+      line-height: 26px; }
+      .faq-section .accordion .accordion-item .accordion-button:after {
+        position: absolute;
+        right: 20px; }
+    .faq-section .accordion .accordion-item + .accordion-item {
+      margin-top: 25px; }
+
+.trust-section {
+  background-color: #fff4ec;
+  position: relative; }
+  .trust-section .recruiting-img {
+    position: absolute;
+    width: 355px;
+    bottom: -50px;
+    right: 10%; }
+
+/*=====================
+    Contact Us CSS start
+==========================*/
+.contact-top-details {
+  margin-top: -50px;
+  position: relative;
+  z-index: 1; }
+  .contact-top-details .contact-box {
+    background-color: #ffffff;
+    border-radius: 22px;
+    text-align: center;
+    padding: 36px 20px;
+    -webkit-box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
+            box-shadow: rgba(22, 31, 39, 0.05) 0px 60px 123px -25px, rgba(19, 26, 32, 0.06) 0px 35px 75px -35px;
+    height: 100%; }
+    .contact-top-details .contact-box i {
+      font-size: 50px;
+      color: #ec3d44;
+      margin-bottom: 25px; }
+    .contact-top-details .contact-box h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px; }
