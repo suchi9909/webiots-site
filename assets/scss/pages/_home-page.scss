@@ -897,27 +897,45 @@
 }
 
 footer {
-    background-color: #eefaff;
-    padding-top: 70px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.83);
+    background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding-top: 90px;
     .footer-logo {
         h3 {
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 22px;
             font-size: 34px;
             color: #ec3c44;
         }
     }
     .footer-title {
-        margin-bottom: 28px;
+        margin-bottom: 38px;
+        position: relative;
         h4 {
             color: $title-color;
             text-transform: capitalize;
             font-weight: 600;
         }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 38px;
+            height: 2px;
+            background-color: #eb3c44;
+            bottom: -16px;
+        }
     }
     .sub-footer {
         p {
             font-size: 14px;
+            font-weight: 600;
+            span {
+                color: #ec3c44;
+            }
         }
     }
     .subfooter-content {
@@ -927,6 +945,7 @@ footer {
                 color: $content-color;
                 text-transform: capitalize;
                 font-size: 13px;
+                font-weight: 600;
             }
             + li {
                 margin-left: 15px;
@@ -946,11 +965,14 @@ footer {
             letter-spacing: 0.02em;
             color: $content-color;
             font-size: 14px;
+            font-weight: 600;
             i {
                 margin-right: 12px;
+                color: #ec3c44;
             }
             a {
                 color: $content-color;
+                font-weight: 600;
             }
             + li {
                 margin-top: 15px;
@@ -961,7 +983,7 @@ footer {
         .container {
             border-top: 1px solid #dddddd;
             padding: 26px 0;
-            margin-top: 50px;
+            margin-top: 70px;
         }
     }
 }

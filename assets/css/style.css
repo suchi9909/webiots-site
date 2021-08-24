@@ -1531,27 +1531,44 @@ header {
   margin-top: 35px; }
 
 footer {
-  background-color: #eefaff;
-  padding-top: 70px; }
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.83);
+  background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding-top: 90px; }
   footer .footer-logo h3 {
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     font-size: 34px;
     color: #ec3c44; }
   footer .footer-title {
-    margin-bottom: 28px; }
+    margin-bottom: 38px;
+    position: relative; }
     footer .footer-title h4 {
       color: #222222;
       text-transform: capitalize;
       font-weight: 600; }
+    footer .footer-title:after {
+      content: "";
+      position: absolute;
+      width: 38px;
+      height: 2px;
+      background-color: #eb3c44;
+      bottom: -16px; }
   footer .sub-footer p {
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 600; }
+    footer .sub-footer p span {
+      color: #ec3c44; }
   footer .subfooter-content {
     text-align: right; }
     footer .subfooter-content li a {
       color: #777777;
       text-transform: capitalize;
-      font-size: 13px; }
+      font-size: 13px;
+      font-weight: 600; }
     footer .subfooter-content li + li {
       margin-left: 15px;
       padding-left: 15px;
@@ -1564,17 +1581,20 @@ footer {
     display: block;
     letter-spacing: 0.02em;
     color: #777777;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 600; }
     footer .footer-contant li i {
-      margin-right: 12px; }
+      margin-right: 12px;
+      color: #ec3c44; }
     footer .footer-contant li a {
-      color: #777777; }
+      color: #777777;
+      font-weight: 600; }
     footer .footer-contant li + li {
       margin-top: 15px; }
   footer .sub-footer .container {
     border-top: 1px solid #dddddd;
     padding: 26px 0;
-    margin-top: 50px; }
+    margin-top: 70px; }
 
 /*=====================
     Hire Page CSS start
