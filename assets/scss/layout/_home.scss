@@ -107,8 +107,14 @@
     }
   }
   .vector-section {
-    img {
-      // animation: mover 1s infinite alternate;
+    position: relative;
+
+    .upwork-box {
+      animation: up-down linear 4s;
+      animation-iteration-count: infinite;
+      position: absolute;
+      right: 0;
+      top: 40px;
     }
   }
   .bottom-arrow {
@@ -128,7 +134,17 @@
     }
   }
   &.inner-home {
-    height: 38vh;
+    background-image: none;
+    background-color: #fbf3ec;
+    padding-top: 90px;
+    background-color: rgba(255, 255, 255, 0.83);
+    background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 42vh;
+  }
+  &.hire-detail-section {
     background-image: none;
     background-color: #fbf3ec;
     padding-top: 130px;
@@ -145,7 +161,7 @@
   h2 {
     margin-top: -9px;
   }
-  .breadcrumb {
+  .breadcrumb { 
     justify-content: center;
     margin-bottom: 0;
     margin-top: 6px;

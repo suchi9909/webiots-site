@@ -86,6 +86,33 @@ $('.slide-3').slick({
   ]
 });
 
+$('.slider-3').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 3500,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 $('.slider-nav').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -133,43 +160,3 @@ $(window).scroll(function(){
   else sticky.removeClass('fixed');
 });
 
-
-/*=====================
- Swiper js
- ==========================*/
-//  var swiper = new Swiper('.swiper-screenshots-container-1', {
-//   effect: 'coverflow',
-//   grabCursor: true,
-//   initialSlide: 2,
-//   centeredSlides: true,
-//   loop: true,
-//   spaceBetween: 0,
-//   slidesPerView: 2,
-//   pagination: false,
-//   coverflowEffect: {
-//       rotate: 0,
-//       stretch: 0,
-//       depth: 100,
-//       modifier: 1.43,
-//       slideShadows: false,
-//   },
-//   autoplay: {
-//       delay: 5000,
-//   },
-//   breakpoints: {
-//       360: {
-//           slidesPerView: 1,
-//           coverflowEffect: {
-//               depth: 50,
-//               modifier: 0,
-//           },
-//       },
-//       640: {
-//           slidesPerView: 3,
-//           coverflowEffect: {
-//               depth: 80,
-//               modifier: 0,
-//           },
-//       }
-//   }
-// });
