@@ -9,8 +9,8 @@ button:focus {
 
 .btn-theme {
   min-width: 180px;
-  padding: 14px 30px;
-  font-size: 16px;
+  padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))) calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 600;
   color: #fff;
   cursor: pointer;

@@ -15,6 +15,13 @@
   padding-top: 70px;
   display: flex;
   align-items: center;
+  @media (max-width: 1199px) {
+    height: 75vh;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+    padding: 140px 0 60px;
+  }
   &:after {
     // content: "";
     position: absolute;
@@ -31,9 +38,9 @@
     height: 100%;
     h1 {
       color: $title-color;
-      margin-bottom: 20px;
+      margin-bottom:calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 700;
-      font-size: 48px;
+      font-size: calc(18px + (48 - 18) * ((100vw - 320px) / (1920 - 320)));
       line-height: 1.3;
       span.effect {
         position: relative;
@@ -51,23 +58,26 @@
       }
     }
     p {
-      line-height: 30px;
+      line-height: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320)));
     }
     h3 {
       line-height: 28px;
-      margin-bottom: 30px;
-      font-size: 18px;
+      margin-bottom: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
+      font-size:calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
       text-transform: capitalize;
       font-weight: 400;
       letter-spacing: 0.02em;
       max-width: 80%;
+      @media (max-width: 1199px) {
+        max-width: 100%;
+      }
     }
     .line-span {
       display: block;
       width: 90px;
       height: 5px;
       background-color: $theme-color;
-      margin-bottom: 30px;
+      margin-bottom:  calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
     .bottom-sec {
       display: flex;

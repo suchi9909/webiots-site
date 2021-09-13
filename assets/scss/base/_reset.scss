@@ -4,26 +4,26 @@
 
 section,
 .section-t-space {
-  padding-top: 110px;
+  padding-top: calc(40px + (110 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 .section-b-space {
-  padding-bottom: 110px;
+  padding-bottom: calc(40px + (110 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .medium-t-space {
-  padding-top: 70px;
+  padding-top: calc(25px + (70 - 25) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .medium-b-space {
-  padding-bottom: 70px;
+  padding-bottom: calc(25px + (70 - 25) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .small-t-space {
-  padding-top: 50px;
+  padding-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .small-b-space {
-  padding-bottom: 50px;
+  padding-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .custom-padding  {

@@ -28,12 +28,11 @@ header {
                 }
             }
         }
-        .web-logo {
-            width: 210px;
-            color: $theme-color;
-            h3 {
-                font-size: 30px;
-            }
+    }
+    .web-logo {
+        h3 {
+            font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 600;
         }
     }
     &.fixed {

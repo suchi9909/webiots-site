@@ -70,17 +70,35 @@ $('.slide-3').slick({
   centerPadding: '100px',
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 1199,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '60px',
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 991,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerPadding: '80px',
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '50px',
+      }
+    },
+    {
+      breakpoint: 360,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '20px',
       }
     }
   ]

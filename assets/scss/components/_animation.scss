@@ -122,8 +122,9 @@
         position: absolute;
         &.tech-bg {
             position: absolute;
-            left: 34%;
+            left: 50%;
             z-index: -1;
+            transform: translateX(-50%);
             filter: invert(0.1);
         }
         &.dots1 {

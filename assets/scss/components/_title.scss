@@ -5,21 +5,32 @@
     text-transform: capitalize;
     text-align: center;
     h2 {
+        font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
         span {
-            font-size: 40px;
+            font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
             color: #eb3b43;
         }
     }
     p {
-        font-size: 16px;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         width: 40%;
-        margin: 12px auto 0;
+        margin: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320))) auto 0;
         color: $content-color;
+        @media (max-width: 1199px) {
+            width: 50%;
+        }
+        @media (max-width: 991px) {
+            width: 70%;
+        }   
+        @media (max-width: 768px) {
+            width: 100%;
+        }   
     }
     h5 {
         color: $content-color;
         margin-top: -3px;
         font-weight: 400;
-        margin-bottom: 8px;
+        margin-bottom: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
 }
