@@ -1967,12 +1967,19 @@ footer {
     border-top: 1px solid #dddddd;
     padding: 26px 0;
     margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320))); }
-  @media (max-width: 991px) {
-    footer .row .col {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto;
-      width: 50%; } }
+  footer .row .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 991px) {
+      footer .row .col {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        width: 50%; } }
 
 /*=====================
     Hire Page CSS start

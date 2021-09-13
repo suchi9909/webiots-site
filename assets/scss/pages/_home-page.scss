@@ -1377,6 +1377,8 @@ footer {
     }
     .row {
         .col {
+            display: flex;
+            justify-content: center;
             @media (max-width: 991px) {
                 flex: 0 0 auto;
                 width: 50%;
