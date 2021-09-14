@@ -14,8 +14,9 @@
 
 
 // layout scss files
+@import "layout/nav";
 @import "layout/header";
-@import "layout/home.scss";
+@import "layout/home";
 
 // pages
 @import "pages/home-page";

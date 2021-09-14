@@ -170,18 +170,6 @@ jQuery('.bg-img').each(function () {
 /*=====================
  Sticky Scroll js
  ==========================*/
-$(window).scroll(function(){
-  var sticky = $('header'),
-      scroll = $(window).scrollTop();
-
-  if (scroll >= 100) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
-});
-
-
-/*=====================
- Sticky Scroll js
- ==========================*/
 var contentwidth = jQuery(window).width();
 if ((contentwidth) < '767') {
     jQuery('.footer-title h4').append('<span class="according-menu"></span>');
@@ -197,3 +185,49 @@ if ((contentwidth) < '767') {
 } else {
     jQuery('.footer-contant').show();
 }
+
+
+/*=====================
+ Dark/light js
+ ==========================*/
+$(".dark-light-btn i").click(function(){
+  $(".dark-light-btn").toggleClass("light");
+});
+
+
+
+/*=====================
+ Hide header on scroll down
+ ==========================*/
+ $(function() {
+
+  var $window       = $(window);
+  var lastScrollTop = 0;
+  var $header       = $('header');
+  var headerHeight  = $header.outerHeight();
+
+  $window.scroll(function() {
+
+      var windowTop  = $window.scrollTop();
+
+      if ( windowTop >= headerHeight ) {
+        $header.addClass( 'nav-down' );
+      } else {
+        $header.removeClass( 'nav-down' );
+        $header.removeClass( 'nav-up' );
+      }
+    
+      if ( $header.hasClass( 'nav-down' ) ) {
+        if ( windowTop < lastScrollTop ) {
+          $header.addClass( 'nav-up' );
+        } else {
+          $header.removeClass( 'nav-up' );
+        }
+      }
+      $('#lastscrolltop').text('LastscrollTop: ' + lastScrollTop);
+    
+      lastScrollTop = windowTop;
+    
+      $('#windowtop').text('scrollTop: ' + windowTop);
+  } );
+});

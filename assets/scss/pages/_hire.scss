@@ -25,6 +25,7 @@
     color: $title-color;
     margin-bottom: 20px;
     font-weight: 600;
+    font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320)));
 
     span.effect {
       position: relative;
@@ -44,13 +45,13 @@
   }
 
   p {
-    line-height: 30px;
+    line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
   }
 
   h3 {
-    line-height: 30px;
-    margin-bottom: 30px;
-    font-size: 18px;
+    line-height: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(14px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     text-transform: capitalize;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -61,7 +62,7 @@
     width: 90px;
     height: 5px;
     background-color: $theme-color;
-    margin-bottom: 30px;
+    margin-bottom: calc(14px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
   }
 
   .contact-form {
@@ -72,6 +73,7 @@
 
     h4 {
       color: $content-color;
+      font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
   }
 
@@ -109,11 +111,53 @@
     .content-section {
       margin-bottom: 0;
     }
+    .image-section {
+      position: relative;
+      .top-effect {
+        position: absolute;
+      }
+      .img1 {
+        position: absolute;
+        left: 13%;
+        width: 46%;
+        border-radius: 15px;
+        box-shadow: 0 25px 18px rgba(0, 0, 0, 0.07);
+      }
+      .img2 {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        width: 46%;
+        border-radius: 15px;
+        box-shadow: 0 25px 18px rgba(0, 0, 0, 0.07);
+      }
+      .img3 {
+        position: absolute;
+        bottom: 30px;
+        width: 41%;
+        left: 22%;
+        z-index: -1;
+        width: 46%;
+        border-radius: 15px;
+        box-shadow: 0 25px 18px rgba(0, 0, 0, 0.07);
+      }
+    }
 
     .why-us-box {
       margin-left: 30px;
       align-items: center;
       box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.20);
+      @media (max-width: 1400px) {
+        padding: 22px;
+      }
+
+      @media (max-width: 1199px) {
+        padding: 30px;
+      }
+
+      @media (max-width: 991px) {
+        padding: 20px;
+      }
 
       .whyus-icon {
         background-color: #ffeada;
@@ -124,10 +168,27 @@
         padding: 18px;
         border-radius: 15px;
         margin-left: -50px;
+        width: 70px;
+        height: 70px;
+        @media (max-width: 1400px) {
+          margin-right: 16px;
+        }
+        @media (max-width: 1199px) {
+          width: 60px;
+          height: 60px;
+          padding: 14px;
+        }
       }
 
       .whyus-content {
         width: 82%;
+
+        h3 {
+          @media (max-width: 1199px) {
+            font-size:  calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+            margin-bottom: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+          }
+        }
 
         p {
           overflow: hidden;
@@ -179,6 +240,14 @@
       bottom: 20px;
     }
 
+    img {
+      width: 50px;
+      position: absolute;
+      right: 20px;
+      opacity: 0.1;
+      bottom: 20px;
+    }
+
     span {
       font-size: 30px;
       color: $black;
@@ -206,7 +275,7 @@
 
   .feature-section {
     padding-left: 15px;
-    margin: 40px 0;
+    margin: 40px 0 0;
 
     ul {
       padding-inline-start: 40px;
