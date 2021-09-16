@@ -146,13 +146,18 @@
   &.inner-home {
     background-image: none;
     background-color: #fbf3ec;
-    padding-top: 90px;
+    padding-top: 200px;
+    padding-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.83);
     background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    height: 42vh;
+    height: auto;
+    @media (max-width: 1199px) {
+      padding-top: 142px;
+      padding-bottom: 100px;
+    }
   }
   &.hire-detail-section {
     background-image: none;
