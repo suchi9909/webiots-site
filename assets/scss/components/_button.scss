@@ -17,8 +17,8 @@ button:focus {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
-  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+  background-image: linear-gradient(to right, #0c4393, #2a87db, #2a87db, #0c4393);
+  box-shadow: 0 5px 15px rgba(#2780d4, .4);
   transition: all .4s ease-in-out;
   text-transform: uppercase;
   border-radius: 10px;
@@ -36,8 +36,8 @@ button:focus {
 
 
 .btn-outline {
-  color: #eb3c44;
-  border: 1px solid #eb3c44;
+  color: $theme-color;
+  border: 1px solid $theme-color;
   min-width: 180px;
   padding: 13px 30px;
   font-size: 14px;

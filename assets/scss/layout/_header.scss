@@ -19,7 +19,7 @@ header {
                     display: flex;
                     align-items: center;
                     i {
-                        color: #eb3b43;
+                        color: $theme-color;
                         margin-right: 10px;
                     }
                 }
@@ -30,15 +30,23 @@ header {
         }
     }
     .web-logo {
+        width: 150px;
         h3 {
             font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 600;
+        }
+        img {
+            width: 150px;
         }
     }
     &.nav-up {
         .nav-section {
             top: 0 !important;
         }
+    }
+    .nav-logo {
+        display: none;
+        margin-right: 20px;
     }
     &.nav-down {
         .nav-section {
@@ -53,6 +61,9 @@ header {
             .header-section {
                 box-shadow: none;
             }
+        }
+        .nav-logo {
+            display: block;
         }
     }
 }

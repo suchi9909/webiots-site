@@ -8,7 +8,7 @@
         font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
         span {
             font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
-            color: #eb3b43;
+            color: $theme-color;
         }
     }
     p {
