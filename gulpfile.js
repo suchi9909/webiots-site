@@ -1,33 +1,34 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync').create();
+'use strict';
 
-//scss to css
-function style() {
-  return gulp.src('assets/scss/**/*.scss')
-    // .pipe(sourcemaps.init())
-    .pipe(sass({
-      //outputStyle: 'compressed'
-    }).on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest('assets/css'));
-}
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    bs = require('browser-sync').create();
 
-// Watch function
-function watch() {
-  browserSync.init({
-    proxy: 'localhost/webiots/index.html'
-  });
-  gulp.watch('assets/scss/**/*.scss', style);
-  gulp.watch('*.html').on('change', browserSync.reload);
-  gulp.watch('assets/css/*.css').on('change', browserSync.reload);
-}
+sass.compiler = require('node-sass');
 
-exports.style = style;
-exports.watch = watch;
+// Scss to css
+gulp.task('sass', function () {
+    return gulp.src('assets/scss/**.scss')
+        .pipe(sass({
+            // outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(gulp.dest('assets/css'))
+        .pipe(bs.reload({
+            stream: true
+        }));
+});
 
-const build = gulp.series(watch);
-gulp.task('default', build, 'browser-sync');
+gulp.task('watch', function () {
+    gulp.watch('assets/scss/**/*.scss', ['sass']);
+    gulp.watch("*.html").on('change', bs.reload);
+});
+
+gulp.task('browser-sync', ['watch'], function () {
+    bs.init({
+        proxy: "localhost/webiots-site/index.html"
+    });
+});
+
+gulp.task('default', ['sass', 'watch', 'browser-sync']);

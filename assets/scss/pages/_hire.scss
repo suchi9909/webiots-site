@@ -61,7 +61,7 @@
     display: block;
     width: 90px;
     height: 5px;
-    background-color: $theme-color;
+    background-color: $theme-color1;
     margin-bottom: calc(14px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
   }
 
@@ -541,7 +541,7 @@
           font-size: 18px;
           padding: 14px !important;
           font-weight: 600;
-          background-color: $theme-color !important;
+          background-color: $theme-color1 !important;
 
           img {
             width: 140px;
