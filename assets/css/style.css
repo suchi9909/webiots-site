@@ -1352,7 +1352,8 @@ header {
       margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 700;
       font-size: calc(18px + (48 - 18) * ((100vw - 320px) / (1920 - 320)));
-      line-height: 1.3; }
+      line-height: 1.3;
+      text-transform: unset; }
       .home-vector .home-content h1 span.effect {
         position: relative;
         z-index: 1; }
