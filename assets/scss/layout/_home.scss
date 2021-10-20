@@ -68,7 +68,7 @@
       font-size:calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 400;
       letter-spacing: 0.02em;
-      max-width: 80%;
+      max-width: 100%;
       @media (max-width: 1199px) {
         max-width: 100%;
       }

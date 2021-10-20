@@ -65,8 +65,8 @@ let Strut = {
         shading: [255, 120, 50] },
   
       green: {
-        color: [205, 255, 204],
-        shading: [0, 211, 136] } };
+        color: [203, 225, 246],
+        shading: [111, 173, 231] } };
   
   
   

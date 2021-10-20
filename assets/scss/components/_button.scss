@@ -32,6 +32,12 @@ button:focus {
     padding: 10px 24px;
     width: auto;
   }
+  &.btn-white {
+    background-image: none;
+    color: $theme-color1;
+    background-color: white;
+    box-shadow: rgba(39, 128, 212,  0.10) 2px 1px 10px;
+  }
 }
 
 
