@@ -1625,13 +1625,13 @@ header {
       margin: 0 auto; }
 
 .technology-section {
-  background: #e5f0fa;
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url(../images/background/1.png); }
   .technology-section .tech-effect {
     position: absolute;
     top: -120px;
@@ -2124,7 +2124,6 @@ header {
     border-radius: 35px;
     overflow: hidden;
     background: rgba(42, 135, 219, 0.1);
-    height: 35px;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -2143,13 +2142,13 @@ header {
     .development-section .tab-slider--nav .tab-slider--tabs.slide:after {
       left: 50%; }
     .development-section .tab-slider--nav .tab-slider--tabs .tab-slider--trigger {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1;
       font-weight: bold;
       color: #2780d4;
       text-transform: uppercase;
       text-align: center;
-      padding: 11px 20px;
+      padding: 12px 20px;
       position: relative;
       z-index: 2;
       cursor: pointer;
@@ -2161,7 +2160,7 @@ header {
           -ms-user-select: none;
               user-select: none; }
       .development-section .tab-slider--nav .tab-slider--tabs .tab-slider--trigger.active {
-        color: #fff; }
+        color: #ffffff; }
 
 .development-section .arrow-effect {
   position: relative;
@@ -2178,51 +2177,34 @@ header {
     background-size: contain;
     top: 50%;
     z-index: -1;
-    width: calc(100% - 50px); }
-  .development-section .arrow-effect > div:nth-child(1) .development-icon {
-    background-color: #ffedf6; }
-  .development-section .arrow-effect > div:nth-child(2) .development-icon {
-    background-color: #e5f7ff; }
-  .development-section .arrow-effect > div:nth-child(3) .development-icon {
-    background-color: #f8efe6; }
-  .development-section .arrow-effect > div:nth-child(4) .development-icon {
-    background-color: #efeaf5; }
-  .development-section .arrow-effect > div:nth-child(even) .development-box {
-    margin-top: 0; }
+    width: calc(100% - 50px);
+    display: none; }
 
 .development-section .development-box {
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
           box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  padding: 30px;
+  padding: 35px;
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  .development-section .development-box .development-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    padding: 15px;
-    background: linear-gradient(27deg, #2a87db 0%, #105bcb 100%);
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .development-section .development-box .development-icon h1 {
-      color: #ffffff;
-      font-size: 42px;
-      font-weight: 500; }
-    .development-section .development-box .development-icon img {
-      width: auto; }
+  transition: all 0.5s ease;
+  position: relative; }
+  .development-section .development-box .number-effect {
+    content: "";
+    position: absolute;
+    font-size: 70px;
+    right: 10px;
+    bottom: -30px;
+    font-weight: 900;
+    color: #e9f3fb; }
+  .development-section .development-box .development-icon h1 {
+    color: #2780d4;
+    font-size: 30px;
+    font-weight: 600; }
+  .development-section .development-box .development-icon img {
+    width: auto; }
   .development-section .development-box .development-content {
-    margin-top: 20px;
-    text-align: center; }
+    margin-top: 14px; }
     .development-section .development-box .development-content h3 {
       text-transform: capitalize;
       margin-bottom: 14px;
@@ -2233,7 +2215,8 @@ header {
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      margin-bottom: -3px; }
+      margin-bottom: -3px;
+      width: 86%; }
   .development-section .development-box:hover {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
