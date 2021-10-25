@@ -1294,6 +1294,9 @@ header {
   header .nav-logo {
     display: none;
     margin-right: 20px; }
+    @media (max-width: 1199px) {
+      header .nav-logo {
+        display: block; } }
   header.nav-down .nav-section {
     position: fixed;
     top: -100px;
@@ -2907,6 +2910,35 @@ footer {
     @media (max-width: 767px) {
       footer .row .col {
         width: 100%; } }
+
+.shape-round {
+  position: absolute;
+  left: 5%;
+  width: 7%;
+  -webkit-animation: hom-round 3s linear infinite;
+          animation: hom-round 3s linear infinite; }
+
+@-webkit-keyframes hom-round {
+  0% {
+    -webkit-transform: translateY(0px) translatex(20px);
+            transform: translateY(0px) translatex(20px); }
+  50% {
+    -webkit-transform: translateY(15px) translatex(-10px);
+            transform: translateY(15px) translatex(-10px); }
+  100% {
+    -webkit-transform: translateY(0px) translatex(20px);
+            transform: translateY(0px) translatex(20px); } }
+
+@keyframes hom-round {
+  0% {
+    -webkit-transform: translateY(0px) translatex(20px);
+            transform: translateY(0px) translatex(20px); }
+  50% {
+    -webkit-transform: translateY(15px) translatex(-10px);
+            transform: translateY(15px) translatex(-10px); }
+  100% {
+    -webkit-transform: translateY(0px) translatex(20px);
+            transform: translateY(0px) translatex(20px); } }
 
 .effect-right {
   position: absolute;

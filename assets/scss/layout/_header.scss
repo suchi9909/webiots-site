@@ -47,6 +47,9 @@ header {
     .nav-logo {
         display: none;
         margin-right: 20px;
+        @media (max-width: 1199px) {
+            display: block;
+        }
     }
     &.nav-down {
         .nav-section {
