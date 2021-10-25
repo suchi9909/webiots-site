@@ -133,7 +133,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    overflow: hidden;
     background-image: url(../images/background/1.png);
     // margin-top: 40px;
     // margin-bottom: 44px;
@@ -565,7 +564,6 @@
 // why outsource
 .why-outsource {
     position: relative;
-    background-color: #e5f0fa;
     &::after {
         // content: "";
         position: absolute;
@@ -656,9 +654,6 @@
                 margin: 0 15px;
             }
         }
-    }
-    .content-section {
-        margin-bottom:  calc(-20px + (-40 - -20) * ((100vw - 320px) / (1920 - 320)));
     }
     .feature-lisitng {
         column-count: 2;
@@ -751,7 +746,7 @@
         background-color: $white;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
         border-radius: 12px;
-        padding: 35px;
+        padding: 40px 30px;
         transition: all 0.5s ease;
         position: relative;
         .number-effect {
@@ -799,12 +794,6 @@
 
 // service industry
 .service-industry-section {
-    background-image: url("../images/shapes/shape-6.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: rgba($white, 0.4);
-    padding-top: calc(70px + (150 - 70) * ((100vw - 320px) / (1920 - 320)));
     .industry-box {
         border-radius: 100%;
         text-align: center;
@@ -872,8 +861,8 @@
             &:nth-child(4n + 1) {
                 .industry-box {
                     .icon {
-                        border-color: #90d69b;
-                        background-color: rgba(#90d69b, 0.05);
+                        border-color: #d46627;
+                        background-color: rgba(#d46627, 0.05);
                         &::after {
                             box-shadow: 0 0 0 2px #90d69b;
                         }
@@ -890,8 +879,8 @@
             &:nth-child(4n + 2) {
                 .industry-box {
                     .icon {
-                        border-color: #9ed2ff;
-                        background-color: rgba(#9ed2ff, 0.05);
+                        border-color: #ac2adb;
+                        background-color: rgba(#ac2adb, 0.05);
                         &::after {
                             box-shadow: 0 0 0 2px #9ed2ff;
                         }
@@ -926,8 +915,8 @@
             &:nth-child(4n + 4) {
                 .industry-box {
                     .icon {
-                        border-color: #ffbe00;
-                        background-color: rgba(#ffbe00, 0.05);
+                        border-color: #dbc32a;
+                        background-color: rgba(#dbc32a, 0.05);
                         &::after {
                             box-shadow: 0 0 0 2px #ffbe00;
                         }
@@ -1027,7 +1016,6 @@
 
 // testimonial section
 .testimonial-section {
-    background: #f2f8fd;
     position: relative;
     .title {
         text-align: left;
@@ -1036,6 +1024,11 @@
         height: 100%;
         p {
             width: 100%;
+        }
+        &.text-start {
+            .title-effect {
+                top: -8px;
+            }
         }
     }
     .rating-effect {
@@ -1377,12 +1370,7 @@
 
 footer {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.83);
-    background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    padding-top: calc(30px + (90 - 30) * ((100vw - 320px) / (1920 - 320)));
+    background-image: linear-gradient(to right, #0c4393, #2780d4);
     .footer-logo {
         h3 {
             font-weight: 600;
@@ -1412,7 +1400,7 @@ footer {
             }
         }
         h4 {
-            color: $title-color;
+            color: $light-title;
             text-transform: capitalize;
             font-weight: 600;
             @media (max-width: 767px) {
@@ -1424,7 +1412,7 @@ footer {
             position: absolute;
             width: 38px;
             height: 2px;
-            background-color: $theme-color1;
+            background-color: #4c9be1;
             bottom: -16px;
             @media (max-width: 767px) {
                 display: none;
@@ -1464,9 +1452,11 @@ footer {
         }
         p {
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 500;
+            color: $light-title;
             span {
-                color: $theme-color1;
+                color: $light-title;
+                font-weight: 600;
             }
         }
     }
@@ -1483,15 +1473,15 @@ footer {
             padding-left: 8px;
             padding-right: 8px;
             a {
-                color: $content-color;
+                color: $light-title;
                 text-transform: capitalize;
                 font-size: 13px;
-                font-weight: 600;
+                font-weight: 500;
             }
             + li {
                 margin-left: 15px;
                 padding-left: 15px;
-                border-left: 1px solid #ddd;
+                border-left: 1px solid #3e8cdf;
                 @media (max-width: 767px) {
                     margin-left: 0;
                     padding-left: 8px;
@@ -1508,6 +1498,7 @@ footer {
             font-size: 14px;
             width: 85%;
             line-height: 1.7;
+            color: $light-title;
             @media (max-width: 767px) {
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -1520,16 +1511,16 @@ footer {
         li {
             display: block;
             letter-spacing: 0.02em;
-            color: $content-color;
+            color: $light-title;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 500;
             i {
                 margin-right: 12px;
-                color: $theme-color1;
+                color: $light-title;
             }
             a {
-                color: $content-color;
-                font-weight: 600;
+                color: $light-title;
+                font-weight: 500;
             }
             + li {
                 margin-top: 15px;
@@ -1538,7 +1529,7 @@ footer {
     }
     .sub-footer {
         .container {
-            border-top: 1px solid #dddddd;
+            border-top: 1px solid #3e8cdf;
             padding: 26px 0;
             margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
         }
@@ -1556,5 +1547,24 @@ footer {
                 width: 100%;
             }
         }   
+    }
+}
+
+.effect-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+.effect-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    img {
+        transform: rotate(
+            180deg);
     }
 }

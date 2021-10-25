@@ -4,18 +4,17 @@
 // home vector
 .home-vector {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.80);
   border-radius: 0;
   height: 100vh;
-  // background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background/gradient-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   z-index: 1;
-  padding-top: 70px;
+  padding-top: 0;
   display: flex;
   align-items: center;
+  background-position: bottom;
   @media (max-width: 1199px) {
     height: 75vh;
   }
@@ -38,12 +37,13 @@
     align-items: center;
     height: 100%;
     h1 {
-      color: $title-color;
+      color: $light-title;
       margin-bottom:calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 700;
       font-size: calc(18px + (48 - 18) * ((100vw - 320px) / (1920 - 320)));
       line-height: 1.3;
       text-transform: unset;
+      margin-top: -11px;
       span.effect {
         position: relative;
         z-index: 1;
@@ -69,6 +69,7 @@
       font-weight: 400;
       letter-spacing: 0.02em;
       max-width: 100%;
+      color: $light-content;
       @media (max-width: 1199px) {
         max-width: 100%;
       }
