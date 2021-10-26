@@ -1287,7 +1287,7 @@ header {
       header .top-bar .top-details li + li {
         margin-left: 14px; }
   header .web-logo {
-    width: 150px; }
+    width: calc(110px + (150 - 110) * ((100vw - 320px) / (1920 - 320))); }
     header .web-logo h3 {
       font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 600; }
@@ -1383,7 +1383,9 @@ header {
   @media (max-width: 767px) {
     .home-vector {
       height: auto;
-      padding: 140px 0 60px; } }
+      padding: 140px 0 60px;
+      background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), to(#2780d4));
+      background-image: linear-gradient(to right, #0c4393, #2780d4); } }
   .home-vector:after {
     position: absolute;
     left: 0;
@@ -1586,6 +1588,9 @@ header {
   position: relative;
   z-index: 1;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .service-section {
+      margin-top: 30px; } }
   .service-section .service-box {
     text-align: center;
     -webkit-box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.15);

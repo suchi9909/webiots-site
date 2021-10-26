@@ -30,7 +30,7 @@ header {
         }
     }
     .web-logo {
-        width: 150px;
+        width: calc(110px + (150 - 110) * ((100vw - 320px) / (1920 - 320)));
         h3 {
             font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 600;
