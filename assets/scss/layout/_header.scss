@@ -58,10 +58,8 @@ header {
             left: 0;
             width: 100%;
             margin-top: 0;
-            background-color: rgba($white, 0.70);
+            background-color: $white;
             box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
-            transition: all 0.5s ease;
-            backdrop-filter: blur(15px);
             .header-section {
                 box-shadow: none;
                 background-color: transparent;

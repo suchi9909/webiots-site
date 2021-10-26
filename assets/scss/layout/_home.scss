@@ -61,6 +61,7 @@
     }
     p {
       line-height: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320)));
+      color: $light-content;
     }
     h3 {
       line-height: 28px;
@@ -120,6 +121,8 @@
   }
   .vector-section {
     position: relative;
+    width: 88%;
+    margin: 0 auto;
 
     .upwork-box {
       animation: up-down linear 4s;

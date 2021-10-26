@@ -361,6 +361,7 @@
             opacity: 0.06;
             transform: rotate(15deg);
             transition: all 0.5s ease;
+            display: none;
         }
 
         &:hover {
@@ -1205,8 +1206,8 @@
         padding: 12px 16px;
         border-radius: 12px;
         position: absolute;
-        bottom: 10px;
-        left: 20%;
+        bottom: 70px;
+        left: 38%;
         box-shadow: 0px 4px 3px #eaeaea;
         animation: up-down linear 4s;
         animation-iteration-count: infinite;
@@ -1248,11 +1249,10 @@
 
     .testimonial-row {
         position: relative;
-        width: 100%;
-        height: 100%;
         overflow: hidden;
 
         &::after {
+            opacity: 0;
             content: "";
             position: absolute;
             left: -30px;
@@ -1268,6 +1268,7 @@
         }
 
         &::before {
+            opacity: 0;
             content: "";
             position: absolute;
             right: -30px;
@@ -1529,51 +1530,92 @@
             }
         }
     }
-}
 
-
-.contact-content {
-    padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
-    background-color: $white;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-
-    .plane-img {
-        position: absolute;
-        bottom: -20px;
-        right: -20px;
-        transform: rotate(3deg);
-        opacity: 0.05;
-
-        img {
-            width: 240px;
+    .contact-box {
+        width: 100%;
+        margin: 0 auto -280px;
+        padding: 40px;
+        box-shadow: 0 0 50px rgba(23, 32, 90, 0.06);
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+        .contact-details {
+            ul {
+                margin: 0 0 -30px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin: 30px 0;
+                    .contact-icon {
+                        width: 58px;
+                        height: 58px;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        background: linear-gradient(27deg, #2a87db 0%, #105bcb 100%);
+                        svg {
+                            stroke: white;
+                        }
+                    }
+                    .contact-content {
+                        h5 {
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
         }
     }
-
-    img {
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    h2 {
-        font-weight: 400;
-        text-transform: capitalize;
-        margin-bottom: 14px;
-    }
-
-    p {
-        font-size: 20px;
-        color: $content-color;
-    }
-
-    h5 {
-        margin-top: 20px;
-        margin-bottom: 8px;
-        color: $title-color;
-        font-weight: 400;
-    }
 }
+
+
+// .contact-content {
+//     padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+//     background-color: $white;
+//     position: relative;
+//     overflow: hidden;
+//     z-index: 1;
+
+//     .plane-img {
+//         position: absolute;
+//         bottom: -20px;
+//         right: -20px;
+//         transform: rotate(3deg);
+//         opacity: 0.05;
+
+//         img {
+//             width: 240px;
+//         }
+//     }
+
+//     img {
+//         width: 50%;
+//         margin: 0 auto;
+//     }
+
+//     h2 {
+//         font-weight: 400;
+//         text-transform: capitalize;
+//         margin-bottom: 14px;
+//     }
+
+//     p {
+//         font-size: 20px;
+//         color: $content-color;
+//     }
+
+//     h5 {
+//         margin-top: 20px;
+//         margin-bottom: 8px;
+//         color: $title-color;
+//         font-weight: 400;
+//     }
+// }
 
 .recruiting-section {
     .btn {
@@ -1583,7 +1625,10 @@
 
 footer {
     position: relative;
-    background-image: linear-gradient(to right, #0c4393, #2780d4);
+    padding-top: 250px !important;
+    background-image: url(../images/background/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .footer-logo {
         h3 {
@@ -1823,6 +1868,10 @@ footer {
     right: 0;
     top: 0;
     z-index: -1;
+    &.effect-sm {
+        transform: scale(0.6);
+        transform-origin: right top;    
+    }
 }
 
 .effect-left {

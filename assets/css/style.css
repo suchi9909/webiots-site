@@ -3,10 +3,10 @@
 ==========================*/
 section,
 .section-t-space {
-  padding-top: calc(40px + (110 - 40) * ((100vw - 320px) / (1920 - 320))); }
+  padding-top: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320))); }
 
 .section-b-space {
-  padding-bottom: calc(40px + (110 - 40) * ((100vw - 320px) / (1920 - 320))); }
+  padding-bottom: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320))); }
 
 .medium-t-space {
   padding-top: calc(25px + (70 - 25) * ((100vw - 320px) / (1920 - 320))); }
@@ -99,7 +99,7 @@ h4 {
   color: #222222; }
 
 h5 {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.3;
   margin: 0;
   color: #777777; }
@@ -1303,13 +1303,9 @@ header {
     left: 0;
     width: 100%;
     margin-top: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #ffffff;
     -webkit-box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
-            box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px); }
+            box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06); }
     header.nav-down .nav-section .header-section {
       -webkit-box-shadow: none;
               box-shadow: none;
@@ -1423,7 +1419,8 @@ header {
           width: 100%;
           background-color: #fad8b0; }
     .home-vector .home-content p {
-      line-height: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320))); }
+      line-height: calc(26px + (30 - 26) * ((100vw - 320px) / (1920 - 320)));
+      color: #ededed; }
     .home-vector .home-content h3 {
       line-height: 28px;
       margin-bottom: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
@@ -1473,7 +1470,9 @@ header {
         font-size: 29px;
         padding-top: 4px; }
   .home-vector .vector-section {
-    position: relative; }
+    position: relative;
+    width: 88%;
+    margin: 0 auto; }
     .home-vector .vector-section .upwork-box {
       -webkit-animation: up-down linear 4s;
               animation: up-down linear 4s;
@@ -1854,7 +1853,8 @@ header {
       -webkit-transform: rotate(15deg);
               transform: rotate(15deg);
       -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      display: none; }
     .technology-section .tech-wrap:hover .animated-icon {
       -webkit-transform: rotate(0);
               transform: rotate(0);
@@ -2444,8 +2444,8 @@ header {
     padding: 12px 16px;
     border-radius: 12px;
     position: absolute;
-    bottom: 10px;
-    left: 20%;
+    bottom: 70px;
+    left: 38%;
     -webkit-box-shadow: 0px 4px 3px #eaeaea;
             box-shadow: 0px 4px 3px #eaeaea;
     -webkit-animation: up-down linear 4s;
@@ -2480,10 +2480,9 @@ header {
       transition: all 0.5s ease; }
   .testimonial-section .testimonial-row {
     position: relative;
-    width: 100%;
-    height: 100%;
     overflow: hidden; }
     .testimonial-section .testimonial-row::after {
+      opacity: 0;
       content: "";
       position: absolute;
       left: -30px;
@@ -2494,6 +2493,7 @@ header {
       background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 4%, #fbf3ed 97%, #fbf3ed 100%);
       z-index: 1; }
     .testimonial-section .testimonial-row::before {
+      opacity: 0;
       content: "";
       position: absolute;
       right: -30px;
@@ -2717,44 +2717,57 @@ header {
       .contact-us-section .nav-tabs .nav-link.active i {
         color: #ffffff; }
 
-.contact-content {
-  padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
-  background-color: #ffffff;
+.contact-us-section .contact-box {
+  width: 100%;
+  margin: 0 auto -280px;
+  padding: 40px;
+  -webkit-box-shadow: 0 0 50px rgba(23, 32, 90, 0.06);
+          box-shadow: 0 0 50px rgba(23, 32, 90, 0.06);
+  background-color: white;
   position: relative;
-  overflow: hidden;
-  z-index: 1; }
-  .contact-content .plane-img {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-    opacity: 0.05; }
-    .contact-content .plane-img img {
-      width: 240px; }
-  .contact-content img {
-    width: 50%;
-    margin: 0 auto; }
-  .contact-content h2 {
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-bottom: 14px; }
-  .contact-content p {
-    font-size: 20px;
-    color: #777777; }
-  .contact-content h5 {
-    margin-top: 20px;
-    margin-bottom: 8px;
-    color: #222222;
-    font-weight: 400; }
+  z-index: 1;
+  border-radius: 20px; }
+  .contact-us-section .contact-box .contact-details ul {
+    margin: 0 0 -30px; }
+    .contact-us-section .contact-box .contact-details ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 30px 0; }
+      .contact-us-section .contact-box .contact-details ul li .contact-icon {
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-right: 20px;
+        background: linear-gradient(27deg, #2a87db 0%, #105bcb 100%); }
+        .contact-us-section .contact-box .contact-details ul li .contact-icon svg {
+          stroke: white; }
+      .contact-us-section .contact-box .contact-details ul li .contact-content h5 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #222222; }
 
 .recruiting-section .btn {
   margin-top: 35px; }
 
 footer {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), to(#2780d4));
-  background-image: linear-gradient(to right, #0c4393, #2780d4); }
+  padding-top: 250px !important;
+  background-image: url(../images/background/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
   footer .footer-logo h3 {
     font-weight: 600;
     margin-bottom: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 320)));
@@ -2945,6 +2958,11 @@ footer {
   right: 0;
   top: 0;
   z-index: -1; }
+  .effect-right.effect-sm {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transform-origin: right top;
+            transform-origin: right top; }
 
 .effect-left {
   position: absolute;
@@ -3091,7 +3109,7 @@ footer {
       .why-outsource.hire-page .why-us-box {
         margin: 0 5px; } }
     .why-outsource.hire-page .why-us-box .whyus-icon {
-      background-color: #ffeada;
+      background-color: #e5f0fb;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -3137,15 +3155,15 @@ footer {
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical; }
 
-.teck-wrapper h3 {
+.tech-wrapper h3 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600; }
 
-.teck-wrapper p {
+.tech-wrapper p {
   font-size: 14px; }
 
-.teck-wrapper .teck-box {
+.tech-wrapper .teck-box {
   background-color: #eaf3fd;
   padding: 20px;
   font-size: 16px;
@@ -3156,7 +3174,7 @@ footer {
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-  .teck-wrapper .teck-box img {
+  .tech-wrapper .teck-box img {
     width: 65px;
     margin-right: 0;
     position: absolute;
@@ -3167,12 +3185,12 @@ footer {
             filter: grayscale(1);
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  .teck-wrapper .teck-box:hover {
+  .tech-wrapper .teck-box:hover {
     background-color: #a2c9f6;
     color: white;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-    .teck-wrapper .teck-box:hover img {
+    .tech-wrapper .teck-box:hover img {
       opacity: 1;
       -webkit-filter: grayscale(0);
               filter: grayscale(0);
@@ -3208,7 +3226,7 @@ footer {
   .model-box .duration-box {
     padding: 20px 25px;
     border-radius: 10px;
-    background-color: #eefaff;
+    background-color: #eef5fc;
     margin-top: 10px;
     margin-bottom: 20px;
     display: -webkit-box;
@@ -3260,9 +3278,9 @@ footer {
       .model-box .duration-box h6 {
         font-size: 14px; } }
     .model-box .duration-box.pink-shade {
-      background-color: #fff3ee; }
+      background-color: #fbf0e9; }
     .model-box .duration-box.purple-shade {
-      background-color: #f1f3ff; }
+      background-color: #f8eefc; }
   .model-box .feature-section {
     padding-left: 15px;
     margin: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))) 0 0; }
@@ -3354,12 +3372,6 @@ footer {
 .comparison-section {
   position: relative;
   z-index: 1;
-  background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
-  background-color: rgba(255, 255, 255, 0.83);
-  background-blend-mode: overlay;
   /* width */
   /* Track */
   /* Handle */
@@ -3376,7 +3388,9 @@ footer {
     background-color: #ffffff;
     margin-top: 15px;
     font-size: 16px;
-    position: relative; }
+    position: relative;
+    -webkit-box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.2);
+            box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.2); }
     .comparison-section .comparison-table .top-effect {
       position: absolute;
       left: -130px;
@@ -3423,12 +3437,10 @@ footer {
         -webkit-box-shadow: 0px 10px 15px #e8e8e8;
                 box-shadow: 0px 10px 15px #e8e8e8;
         border-color: transparent !important;
-        background-color: #eefaff; }
+        background-color: #f0f8ff; }
 
 .faq-section {
-  position: relative;
-  background: #fbf3ec;
-  overflow: hidden; }
+  position: relative; }
   .faq-section .faq-container {
     position: relative;
     z-index: 1; }
@@ -3446,8 +3458,8 @@ footer {
     background-color: #ffffff;
     -webkit-backdrop-filter: blur(6px);
             backdrop-filter: blur(6px);
-    -webkit-box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.07);
-            box-shadow: 0px 2px 20px rgba(123, 149, 162, 0.07); }
+    -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
     .faq-section .accordion .accordion-item .accordion-body {
       padding: 0 1.25rem 1rem 1.25rem; }
       .faq-section .accordion .accordion-item .accordion-body p {

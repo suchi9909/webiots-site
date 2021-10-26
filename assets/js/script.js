@@ -61,13 +61,11 @@ $('.slide-3').slick({
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 3500,
   arrows: false,
-  centerMode: true,
-  centerPadding: '100px',
   responsive: [
     {
       breakpoint: 1199,
