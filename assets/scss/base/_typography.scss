@@ -9,6 +9,7 @@ body {
   margin: 0;
   background-color: $white;
   color: $title-color;
+  overflow-x: hidden;
 }
 
 html {
@@ -91,7 +92,7 @@ h5 {
 
 h6 {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 500;
   margin: 0;
   color: $content-color;

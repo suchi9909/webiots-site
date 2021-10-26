@@ -5,6 +5,7 @@
     text-transform: capitalize;
     text-align: center;
     position: relative;
+    z-index: 1;
     h2 {
         font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
         position: relative;
@@ -63,15 +64,18 @@
         font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
     .title-effect {
-        -webkit-text-stroke: 1px #cee7ff;
-        -webkit-background-clip: text;
+        background: linear-gradient(
+            180deg, #ddefff 0%, rgba(12, 67, 147, 0) 100%);
+        background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 75px;
+        display: inline-block;
+        -webkit-background-clip: text;
+        font-size: calc(42px + (75 - 42) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 700;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -50px;
+        top:  calc(-35px + (-50 - -35) * ((100vw - 320px) / (1920 - 320)));
     }
     &.text-start {
         .title-effect {

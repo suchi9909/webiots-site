@@ -70,13 +70,12 @@ $('.slide-3').slick({
     {
       breakpoint: 1199,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
-        centerPadding: '60px',
       }
     },
     {
-      breakpoint: 991,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -197,35 +196,44 @@ $(".dark-light-btn i").click(function(){
 /*=====================
  Hide header on scroll down
  ==========================*/
- $(function() {
+//  $(function() {
 
-  var $window       = $(window);
-  var lastScrollTop = 0;
-  var $header       = $('header');
-  var headerHeight  = $header.outerHeight();
+//   var $window       = $(window);
+//   var lastScrollTop = 0;
+//   var $header       = $('header');
+//   var headerHeight  = $header.outerHeight();
 
-  $window.scroll(function() {
+//   $window.scroll(function() {
 
-      var windowTop  = $window.scrollTop();
+//       var windowTop  = $window.scrollTop();
 
-      if ( windowTop >= headerHeight ) {
-        $header.addClass( 'nav-down' );
-      } else {
-        $header.removeClass( 'nav-down' );
-        $header.removeClass( 'nav-up' );
-      }
+//       if ( windowTop >= headerHeight ) {
+//         $header.addClass( 'nav-down' );
+//       } else {
+//         $header.removeClass( 'nav-down' );
+//         $header.removeClass( 'nav-up' );
+//       }
     
-      if ( $header.hasClass( 'nav-down' ) ) {
-        if ( windowTop < lastScrollTop ) {
-          $header.addClass( 'nav-up' );
-        } else {
-          $header.removeClass( 'nav-up' );
-        }
-      }
-      $('#lastscrolltop').text('LastscrollTop: ' + lastScrollTop);
+//       if ( $header.hasClass( 'nav-down' ) ) {
+//         if ( windowTop < lastScrollTop ) {
+//           $header.addClass( 'nav-up' );
+//         } else {
+//           $header.removeClass( 'nav-up' );
+//         }
+//       }
+//       $('#lastscrolltop').text('LastscrollTop: ' + lastScrollTop);
     
-      lastScrollTop = windowTop;
+//       lastScrollTop = windowTop;
     
-      $('#windowtop').text('scrollTop: ' + windowTop);
-  } );
+//       $('#windowtop').text('scrollTop: ' + windowTop);
+//   } );
+// });
+
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 300) {
+      $('header').addClass("sticky");
+  } else {
+      $('header').removeClass("sticky");
+  }
 });

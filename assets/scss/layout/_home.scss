@@ -86,6 +86,11 @@
       display: flex;
       align-items: center;
       margin-top: 16px;
+      a {
+        + a {
+          margin-left: 15px;
+        }
+      }
       .rating-part {
         margin-left: 20px;
         display: -webkit-box;
@@ -116,6 +121,16 @@
         font-weight: 500;
         font-size: 29px;
         padding-top: 4px;
+      }
+      @media (max-width: 420px) {
+        display: block;
+        a {
+          width: 100%;
+          + a {
+            margin-top: 10px;
+            margin-left: 0;
+          }
+        }
       }
     }
   }

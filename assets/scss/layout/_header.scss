@@ -39,11 +39,6 @@ header {
             width: 150px;
         }
     }
-    &.nav-up {
-        .nav-section {
-            top: 0 !important;
-        }
-    }
     .nav-logo {
         display: none;
         margin-right: 20px;
@@ -51,10 +46,10 @@ header {
             display: block;
         }
     }
-    &.nav-down {
+    &.sticky {
         .nav-section {
             position: fixed;
-            top: -100px;
+            top: 0;
             left: 0;
             width: 100%;
             margin-top: 0;
