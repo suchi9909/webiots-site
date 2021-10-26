@@ -17,8 +17,8 @@
     }
     p {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-        width: 56%;
-        margin: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320))) auto 0;
+        // width: 56%;
+        margin-top: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
         color: $content-color;
         @media (max-width: 1199px) {
             width: 50%;

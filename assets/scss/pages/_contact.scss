@@ -3,7 +3,7 @@
 ==========================*/
 
 .contact-top-details {
-    margin-top: -50px;
+    margin-top: -98px;
     position: relative;
     z-index: 1;
     .contact-box {
@@ -24,7 +24,7 @@
         }
         i {
             font-size: 50px;
-            color: #ec3d44;
+            color: $theme-color1;
             margin-bottom: 25px;
             @media (max-width: 991px) {
                 font-size: 40px;
@@ -34,7 +34,7 @@
         h3 {
             font-size: 18px;
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
     }
 }

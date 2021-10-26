@@ -471,8 +471,7 @@ button:focus {
       color: #2780d4; }
   .title p {
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-    width: 56%;
-    margin: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320))) auto 0;
+    margin-top: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
     color: #777777; }
     @media (max-width: 1199px) {
       .title p {
@@ -1504,14 +1503,10 @@ header {
       stroke: #222222; }
   .home-vector.inner-home {
     background-image: none;
-    background-color: #fbf3ec;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-color: rgba(255, 255, 255, 0.83);
-    background-image: url(https://image.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
+    padding-top: 220px;
+    padding-bottom: 120px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), to(#2780d4));
+    background-image: linear-gradient(to right, #0c4393, #2780d4);
     height: auto; }
     @media (max-width: 1199px) {
       .home-vector.inner-home {
@@ -1540,7 +1535,12 @@ header {
 .breadcrumb-section {
   text-align: center; }
   .breadcrumb-section h2 {
-    margin-top: -9px; }
+    margin-top: -9px;
+    color: #f9f9f9; }
+  .breadcrumb-section .breadcrumb-item.active {
+    color: #ededed; }
+  .breadcrumb-section .breadcrumb-item + .breadcrumb-item::before {
+    color: #ededed; }
   .breadcrumb-section .breadcrumb {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1548,7 +1548,7 @@ header {
     margin-bottom: 0;
     margin-top: 6px; }
     .breadcrumb-section .breadcrumb .breadcrumb-item a {
-      color: #222222; }
+      color: #f9f9f9; }
 
 @-webkit-keyframes mover {
   0% {
@@ -2708,12 +2708,12 @@ header {
         font-size: 14px;
         padding: 10px 22px; } }
     .contact-us-section .nav-tabs .nav-link.active {
-      background-color: #eb3c44;
+      background-color: #2780d4;
       color: #ffffff;
       border: none;
       background-size: 300% 100%;
-      background-image: -webkit-gradient(linear, left top, right top, from(#eb3941), color-stop(#f15e64), color-stop(#e14e53), to(#e2373f));
-      background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f); }
+      background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), color-stop(#2780d4), color-stop(#2780d4), to(#0c4393));
+      background-image: linear-gradient(to right, #0c4393, #2780d4, #2780d4, #0c4393); }
       .contact-us-section .nav-tabs .nav-link.active i {
         color: #ffffff; }
 
@@ -2758,6 +2758,12 @@ header {
         font-weight: 600;
         margin-bottom: 10px;
         color: #222222; }
+
+.contact-us-section.contact-page .title {
+  margin-top: 50px; }
+  .contact-us-section.contact-page .title p {
+    width: 80%;
+    margin-bottom: 40px; }
 
 .recruiting-section .btn {
   margin-top: 35px; }
@@ -2923,6 +2929,10 @@ footer {
     @media (max-width: 767px) {
       footer .row .col {
         width: 100%; } }
+  footer.no-bg {
+    padding-top: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320))) !important;
+    background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), to(#2780d4));
+    background-image: linear-gradient(to right, #0c4393, #2780d4); }
 
 .shape-round {
   position: absolute;
@@ -3443,7 +3453,22 @@ footer {
   position: relative; }
   .faq-section .faq-container {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .faq-section .faq-container ::-webkit-scrollbar {
+      width: 5px; }
+    .faq-section .faq-container ::-webkit-scrollbar-track {
+      background: #f1f1f1; }
+    .faq-section .faq-container ::-webkit-scrollbar-thumb {
+      background: #2780d4; }
+    .faq-section .faq-container ::-webkit-scrollbar-thumb:hover {
+      background: #555; }
+    .faq-section .faq-container .accordion {
+      overflow: auto;
+      height: 490px; }
   .faq-section .top-effect {
     right: -100px;
     position: absolute;
@@ -3500,7 +3525,7 @@ footer {
     Contact Us CSS start
 ==========================*/
 .contact-top-details {
-  margin-top: -50px;
+  margin-top: -98px;
   position: relative;
   z-index: 1; }
   .contact-top-details .contact-box {
@@ -3527,7 +3552,7 @@ footer {
         padding: 26px 10px; } }
     .contact-top-details .contact-box i {
       font-size: 50px;
-      color: #ec3d44;
+      color: #2780d4;
       margin-bottom: 25px; }
       @media (max-width: 991px) {
         .contact-top-details .contact-box i {
@@ -3536,7 +3561,7 @@ footer {
     .contact-top-details .contact-box h3 {
       font-size: 18px;
       font-weight: 600;
-      margin-bottom: 5px; }
+      margin-bottom: 8px; }
 
 /*=====================
     Responsive CSS start

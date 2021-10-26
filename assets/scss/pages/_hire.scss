@@ -593,6 +593,29 @@
   .faq-container {
     position: relative;
     z-index: 1;
+    /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $theme-color1; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+    .accordion {
+      overflow: auto;
+      height: 490px;
+    }
   }
   .top-effect {
     right: -100px;

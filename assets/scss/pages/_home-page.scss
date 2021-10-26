@@ -1518,11 +1518,11 @@
             }
 
             &.active {
-                background-color: rgb(235, 60, 68);
+                background-color: #2780d4;
                 color: $white;
                 border: none;
                 background-size: 300% 100%;
-                background-image: linear-gradient(to right, rgb(235, 57, 65), rgb(241, 94, 100), rgb(225, 78, 83), rgb(226, 55, 63));
+                background-image: linear-gradient(to right, #0c4393, #2780d4, #2780d4, #0c4393);
 
                 i {
                     color: $white;
@@ -1568,6 +1568,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &.contact-page {
+        .title {
+            margin-top: 50px;
+            p {
+                width: 80%;
+                margin-bottom: 40px;
             }
         }
     }
@@ -1839,6 +1849,11 @@ footer {
                 width: 100%;
             }
         }
+    }
+
+    &.no-bg {
+        padding-top: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320))) !important;
+        background-image: linear-gradient(to right, #0c4393, #2780d4);
     }
 }
 
