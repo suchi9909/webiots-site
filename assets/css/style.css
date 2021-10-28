@@ -1407,10 +1407,6 @@ header {
   position: relative;
   border-radius: 0;
   height: 100vh;
-  background-image: url(../images/background/gradient-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
   z-index: 1;
   padding-top: 0;
   display: -webkit-box;
@@ -1420,6 +1416,15 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-position: bottom; }
+  .home-vector .container {
+    height: 100vh;
+    padding-top: 148px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   @media (max-width: 1199px) {
     .home-vector {
       height: 75vh; } }
@@ -1430,13 +1435,20 @@ header {
       background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), to(#2780d4));
       background-image: linear-gradient(to right, #0c4393, #2780d4); } }
   .home-vector:after {
+    content: "";
+    background-image: url(../images/background/gradient-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
     width: 100%;
-    background-image: url(https://themes.pixelstrap.com/multikart/assets/images/game/back.png);
-    height: 99px;
-    z-index: -1; }
+    z-index: -1;
+    background-position: bottom;
+    -webkit-transform: scale(1.2) rotate(3deg);
+            transform: scale(1.2) rotate(3deg); }
   .home-vector .home-content {
     display: -webkit-box;
     display: -ms-flexbox;
