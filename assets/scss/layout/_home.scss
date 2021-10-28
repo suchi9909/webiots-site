@@ -145,6 +145,9 @@
         left: 27%;
         bottom: -2px;
         animation: float 6s ease-in-out infinite;
+        @media (max-width: 1400px) {
+          width: 45%;
+        }
     }
 
     .tab-effect {
@@ -227,6 +230,7 @@
   h2 {
     margin-top: -9px;
     color: $light-title;
+    font-size: calc(26px + (40 - 26) * ((100vw - 320px) / (1920 - 320)));
   }
   .breadcrumb-item {
     &.active {

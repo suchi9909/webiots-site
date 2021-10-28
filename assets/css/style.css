@@ -452,6 +452,198 @@ p {
     -webkit-transform: translatey(0px);
             transform: translatey(0px); } }
 
+@-webkit-keyframes ring {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  1% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  3% {
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg); }
+  5% {
+    -webkit-transform: rotate(34deg);
+            transform: rotate(34deg); }
+  7% {
+    -webkit-transform: rotate(-32deg);
+            transform: rotate(-32deg); }
+  9% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  11% {
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg); }
+  13% {
+    -webkit-transform: rotate(26deg);
+            transform: rotate(26deg); }
+  15% {
+    -webkit-transform: rotate(-24deg);
+            transform: rotate(-24deg); }
+  17% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg); }
+  19% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  21% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg); }
+  23% {
+    -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg); }
+  25% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg); }
+  27% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg); }
+  29% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  31% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+  33% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg); }
+  35% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg); }
+  37% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); }
+  39% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg); }
+  41% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); }
+  43% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes ring {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  1% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  3% {
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg); }
+  5% {
+    -webkit-transform: rotate(34deg);
+            transform: rotate(34deg); }
+  7% {
+    -webkit-transform: rotate(-32deg);
+            transform: rotate(-32deg); }
+  9% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  11% {
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg); }
+  13% {
+    -webkit-transform: rotate(26deg);
+            transform: rotate(26deg); }
+  15% {
+    -webkit-transform: rotate(-24deg);
+            transform: rotate(-24deg); }
+  17% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg); }
+  19% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  21% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg); }
+  23% {
+    -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg); }
+  25% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg); }
+  27% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg); }
+  29% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  31% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+  33% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg); }
+  35% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg); }
+  37% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); }
+  39% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg); }
+  41% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); }
+  43% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@-webkit-keyframes tab {
+  0% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); }
+  50% {
+    -webkit-transform: scale(0.9) translateX(-6px);
+            transform: scale(0.9) translateX(-6px); }
+  100% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); } }
+
+@keyframes tab {
+  0% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); }
+  50% {
+    -webkit-transform: scale(0.9) translateX(-6px);
+            transform: scale(0.9) translateX(-6px); }
+  100% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); } }
+
+@-webkit-keyframes msg {
+  0% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); }
+  50% {
+    -webkit-transform: scale(1.1) translateX(-10px);
+            transform: scale(1.1) translateX(-10px); }
+  100% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); } }
+
+@keyframes msg {
+  0% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); }
+  50% {
+    -webkit-transform: scale(1.1) translateX(-10px);
+            transform: scale(1.1) translateX(-10px); }
+  100% {
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px); } }
+
 /*=====================
     Button CSS start
 ==========================*/
@@ -569,8 +761,8 @@ button:focus {
     margin-bottom: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)));
     font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320))); }
   .title .title-effect {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ddefff), to(rgba(12, 67, 147, 0)));
-    background: linear-gradient(180deg, #ddefff 0%, rgba(12, 67, 147, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ddefff), to(white));
+    background: linear-gradient(180deg, #ddefff 0%, white 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -1536,6 +1728,9 @@ header {
       bottom: -2px;
       -webkit-animation: float 6s ease-in-out infinite;
               animation: float 6s ease-in-out infinite; }
+      @media (max-width: 1400px) {
+        .home-vector .vector-section .girl-svg {
+          width: 45%; } }
     .home-vector .vector-section .tab-effect {
       width: 19%;
       position: absolute;
@@ -1618,7 +1813,8 @@ header {
   text-align: center; }
   .breadcrumb-section h2 {
     margin-top: -9px;
-    color: #f9f9f9; }
+    color: #f9f9f9;
+    font-size: calc(26px + (40 - 26) * ((100vw - 320px) / (1920 - 320))); }
   .breadcrumb-section .breadcrumb-item.active {
     color: #ededed; }
   .breadcrumb-section .breadcrumb-item + .breadcrumb-item::before {
@@ -2867,16 +3063,16 @@ header {
           font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))); }
 
 .contact-us-section.contact-page .title {
-  margin-top: 50px; }
+  margin-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320))); }
   .contact-us-section.contact-page .title .title-effect {
-    font-size: 75px; }
+    font-size: calc(42px + (75 - 42) * ((100vw - 320px) / (1920 - 320))); }
   .contact-us-section.contact-page .title h2 {
     font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320))); }
   .contact-us-section.contact-page .title span {
     font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320))); }
   .contact-us-section.contact-page .title p {
     width: 80%;
-    margin-bottom: 40px; }
+    margin-bottom: calc(0px + (40 - 0) * ((100vw - 320px) / (1920 - 320))); }
 
 .recruiting-section .btn {
   margin-top: 35px; }
@@ -3688,6 +3884,37 @@ footer {
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 8px; }
+
+.contact-vector {
+  position: relative; }
+  .contact-vector .notification-svg {
+    position: absolute;
+    right: 24%;
+    top: -4%;
+    -webkit-animation: ring 4s .7s ease-in-out infinite;
+            animation: ring 4s .7s ease-in-out infinite; }
+    @media (max-width: 1400px) {
+      .contact-vector .notification-svg {
+        right: 13%; } }
+  .contact-vector .message-svg {
+    position: absolute;
+    right: 42%;
+    top: 9%;
+    -webkit-animation: msg 4s ease-in-out infinite;
+            animation: msg 4s ease-in-out infinite; }
+    @media (max-width: 1400px) {
+      .contact-vector .message-svg {
+        right: 36%; } }
+  .contact-vector .tab-svg {
+    position: absolute;
+    left: 7%;
+    -webkit-animation: tab 4s ease-in-out infinite;
+            animation: tab 4s ease-in-out infinite; }
+    @media (max-width: 1199px) {
+      .contact-vector .tab-svg {
+        left: 6%;
+        width: 22%;
+        top: 6%; } }
 
 /*=====================
     Responsive CSS start

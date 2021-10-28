@@ -1599,9 +1599,9 @@
 
     &.contact-page {
         .title {
-            margin-top: 50px;
+            margin-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
             .title-effect {
-                font-size: 75px;
+                font-size: calc(42px + (75 - 42) * ((100vw - 320px) / (1920 - 320)));
             }
             h2 {
                 font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320))); 
@@ -1611,7 +1611,7 @@
             }
             p {
                 width: 80%;
-                margin-bottom: 40px;
+                margin-bottom: calc(0px + (40 - 0) * ((100vw - 320px) / (1920 - 320)));
             }
         }
     }
@@ -1933,3 +1933,5 @@ footer {
         transform: rotate(180deg);
     }
 }
+
+

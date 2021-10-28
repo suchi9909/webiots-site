@@ -38,3 +38,36 @@
         }
     }
 }
+
+.contact-vector {
+    position: relative;
+    .notification-svg {
+        position: absolute;
+        right: 24%;
+        top: -4%;
+        animation: ring 4s .7s ease-in-out infinite;
+        @media (max-width: 1400px) {
+            right: 13%;
+        }
+    }
+    .message-svg {
+        position: absolute;
+        right: 42%;
+        top: 9%;
+        animation: msg 4s ease-in-out infinite;
+        @media (max-width: 1400px) {
+            right: 36%;
+        }
+    }
+    .tab-svg {
+        position: absolute;
+        left: 7%;
+        animation: tab 4s ease-in-out infinite;
+        @media (max-width: 1199px) {
+            left: 6%;
+            width: 22%;
+            top: 6%;
+        }
+    }
+}
+
