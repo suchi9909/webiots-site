@@ -137,8 +137,33 @@
   }
   .vector-section {
     position: relative;
-    width: 88%;
     margin: 0 auto;
+    width: 88%;
+
+    .girl-svg {
+        position: absolute;
+        left: 27%;
+        bottom: -2px;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .tab-effect {
+      width: 19%;
+      position: absolute;
+      right: 6%;
+      top: 19%;
+      animation: shimmy1 3s infinite;
+      animation-direction: alternate;
+    }
+
+    .tab2-effect {
+      position: absolute;
+      left: 53%;
+      width: 24%;
+      top: 4%;
+      animation: shimmy 3s infinite;
+      animation-direction: alternate;
+    }
 
     .upwork-box {
       animation: up-down linear 4s;

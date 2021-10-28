@@ -398,6 +398,60 @@ p {
             transform: scale(1.5);
     opacity: 0; } }
 
+@-webkit-keyframes shimmy {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(8px, -10px);
+            transform: translate(8px, -10px); } }
+
+@keyframes shimmy {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(8px, -10px);
+            transform: translate(8px, -10px); } }
+
+@-webkit-keyframes shimmy1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px); } }
+
+@keyframes shimmy1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px); } }
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px); }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px); }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px); } }
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px); }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px); }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px); } }
+
 /*=====================
     Button CSS start
 ==========================*/
@@ -437,23 +491,12 @@ button:focus {
     background-color: white;
     -webkit-box-shadow: rgba(39, 128, 212, 0.1) 2px 1px 10px;
             box-shadow: rgba(39, 128, 212, 0.1) 2px 1px 10px; }
-
-.btn-outline {
-  color: #2780d4;
-  border: 1px solid #2780d4;
-  min-width: 180px;
-  padding: 13px 30px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 6px; }
-  .btn-outline:hover {
-    background-color: #eb3941;
-    color: #ffffff; }
+  .btn-theme.btn-light {
+    background-color: #4c9be1;
+    background-image: none;
+    color: #ffffff;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
 
 /*=====================
     Title CSS start
@@ -1485,8 +1528,32 @@ header {
               margin-left: 0; } }
   .home-vector .vector-section {
     position: relative;
-    width: 88%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 88%; }
+    .home-vector .vector-section .girl-svg {
+      position: absolute;
+      left: 27%;
+      bottom: -2px;
+      -webkit-animation: float 6s ease-in-out infinite;
+              animation: float 6s ease-in-out infinite; }
+    .home-vector .vector-section .tab-effect {
+      width: 19%;
+      position: absolute;
+      right: 6%;
+      top: 19%;
+      -webkit-animation: shimmy1 3s infinite;
+              animation: shimmy1 3s infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate; }
+    .home-vector .vector-section .tab2-effect {
+      position: absolute;
+      left: 53%;
+      width: 24%;
+      top: 4%;
+      -webkit-animation: shimmy 3s infinite;
+              animation: shimmy 3s infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate; }
     .home-vector .vector-section .upwork-box {
       -webkit-animation: up-down linear 4s;
               animation: up-down linear 4s;
@@ -1801,7 +1868,7 @@ header {
     position: relative; }
     @media (max-width: 767px) {
       .technology-section .tech-wrap {
-        padding: 20px; } }
+        padding: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320))); } }
     @media (max-width: 480px) {
       .technology-section .tech-wrap {
         min-height: unset; } }
@@ -1826,10 +1893,10 @@ header {
       margin-bottom: -15px; }
       @media (max-width: 480px) {
         .technology-section .tech-wrap .content ul {
-          margin-bottom: 0;
-          -webkit-column-count: 1;
-             -moz-column-count: 1;
-                  column-count: 1; } }
+          -webkit-column-count: 2;
+             -moz-column-count: 2;
+                  column-count: 2;
+          margin-bottom: 0; } }
       .technology-section .tech-wrap .content ul li {
         display: block;
         color: #777777;
@@ -1837,10 +1904,10 @@ header {
         margin-bottom: 15px; }
         .technology-section .tech-wrap .content ul li img {
           width: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
-          margin-right: 10px; }
+          margin-right: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320))); }
         .technology-section .tech-wrap .content ul li a {
           color: #777777;
-          font-size: 15px;
+          font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
           text-transform: capitalize;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1853,11 +1920,6 @@ header {
         -webkit-column-count: 2;
            -moz-column-count: 2;
                 column-count: 2; }
-        @media (max-width: 480px) {
-          .technology-section .tech-wrap .content ul.column-2 {
-            -webkit-column-count: 1;
-               -moz-column-count: 1;
-                    column-count: 1; } }
     .technology-section .tech-wrap .animated-icon {
       position: absolute;
       right: 10px;
@@ -3119,6 +3181,9 @@ footer {
 .why-outsource.hire-page {
   background-color: transparent;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .why-outsource.hire-page {
+      margin-top: 30px; } }
   .why-outsource.hire-page .content-section {
     margin-bottom: 0; }
   .why-outsource.hire-page .image-section {
@@ -3264,7 +3329,9 @@ footer {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 8px #f7f7f7;
           box-shadow: 0 0 8px #f7f7f7;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 1;
+  position: relative; }
   @media (max-width: 1199px) {
     .model-box {
       padding: 20px 15px;
@@ -3442,7 +3509,7 @@ footer {
   .comparison-section ::-webkit-scrollbar-track {
     background: #f1f1f1; }
   .comparison-section ::-webkit-scrollbar-thumb {
-    background: #eb3d45; }
+    background: #2780d4; }
   .comparison-section ::-webkit-scrollbar-thumb:hover {
     background: #555; }
   .comparison-section .comparison-table {
@@ -3509,6 +3576,9 @@ footer {
     /* Track */
     /* Handle */
     /* Handle on hover */ }
+    @media (max-width: 767px) {
+      .faq-section .faq-container .row.g-4 > div:nth-child(2) {
+        margin-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))); } }
     .faq-section .faq-container ::-webkit-scrollbar {
       width: 5px; }
     .faq-section .faq-container ::-webkit-scrollbar-track {
@@ -3519,7 +3589,10 @@ footer {
       background: #555; }
     .faq-section .faq-container .accordion {
       overflow: auto;
-      height: 490px; }
+      height: 445px; }
+      @media (max-width: 767px) {
+        .faq-section .faq-container .accordion {
+          height: auto; } }
   .faq-section .top-effect {
     right: -100px;
     position: absolute;
@@ -3528,40 +3601,42 @@ footer {
     margin-left: auto;
     -webkit-transform: scale(0.8);
             transform: scale(0.8); }
-  .faq-section .accordion .accordion-item {
-    position: relative;
-    border: none;
-    background-color: #ffffff;
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
-    -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
-    .faq-section .accordion .accordion-item .accordion-body {
-      padding: 0 1.25rem 1rem 1.25rem; }
-      .faq-section .accordion .accordion-item .accordion-body p {
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.02em; }
-    .faq-section .accordion .accordion-item .accordion-button {
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-      color: #222222;
+  .faq-section .accordion {
+    padding: 2px; }
+    .faq-section .accordion .accordion-item {
+      position: relative;
+      border: none;
       background-color: #ffffff;
-      padding-right: calc(52px + (45 - 52) * ((100vw - 320px) / (1920 - 320)));
-      line-height: calc(22px + (26 - 22) * ((100vw - 320px) / (1920 - 320)));
-      font-weight: 600; }
-      @media (max-width: 576px) {
-        .faq-section .accordion .accordion-item .accordion-button {
-          padding-right: 39px; } }
-      .faq-section .accordion .accordion-item .accordion-button:after {
-        position: absolute;
-        right: 20px; }
+      -webkit-backdrop-filter: blur(6px);
+              backdrop-filter: blur(6px);
+      -webkit-box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.12);
+              box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.12); }
+      .faq-section .accordion .accordion-item .accordion-body {
+        padding: 0 1.25rem 1rem 1.25rem; }
+        .faq-section .accordion .accordion-item .accordion-body p {
+          font-size: 14px;
+          line-height: 1.7;
+          letter-spacing: 0.02em; }
+      .faq-section .accordion .accordion-item .accordion-button {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        color: #222222;
+        background-color: #ffffff;
+        padding-right: calc(52px + (45 - 52) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(22px + (26 - 22) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 600; }
         @media (max-width: 576px) {
-          .faq-section .accordion .accordion-item .accordion-button:after {
-            right: 15px; } }
-    .faq-section .accordion .accordion-item + .accordion-item {
-      margin-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))); }
+          .faq-section .accordion .accordion-item .accordion-button {
+            padding-right: 39px; } }
+        .faq-section .accordion .accordion-item .accordion-button:after {
+          position: absolute;
+          right: 20px; }
+          @media (max-width: 576px) {
+            .faq-section .accordion .accordion-item .accordion-button:after {
+              right: 15px; } }
+      .faq-section .accordion .accordion-item + .accordion-item {
+        margin-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))); }
 
 .trust-section {
   background-color: #fff4ec;

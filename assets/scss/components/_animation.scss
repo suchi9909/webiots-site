@@ -219,3 +219,35 @@
 		opacity: 0;
 	}
 }
+
+@keyframes shimmy {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(8px, -10px);
+    }
+  }
+
+  @keyframes shimmy1 {
+    0% {
+        transform: translateX(0);    
+    }
+    100% {
+        transform: translateX(15px);
+    }
+  }
+
+
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+        
+		transform: translatey(0px);
+	}
+}

@@ -22,39 +22,30 @@ button:focus {
   transition: all .4s ease-in-out;
   text-transform: uppercase;
   border-radius: 10px;
+
   &:hover {
     background-position: 100% 0;
     transition: all .4s ease-in-out;
     color: $white;
   }
+
   &.btn-sm {
     text-transform: capitalize;
     padding: 10px 24px;
     width: auto;
   }
+
   &.btn-white {
     background-image: none;
     color: $theme-color1;
     background-color: white;
-    box-shadow: rgba(39, 128, 212,  0.10) 2px 1px 10px;
+    box-shadow: rgba(39, 128, 212, 0.10) 2px 1px 10px;
   }
-}
 
-
-.btn-outline {
-  color: $theme-color1;
-  border: 1px solid $theme-color1;
-  min-width: 180px;
-  padding: 13px 30px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: all .4s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 6px;
-  &:hover {
-    background-color: #eb3941;
-    color: $white;
+  &.btn-light {
+    background-color: #4c9be1;
+    background-image: none;
+    color: #ffffff;
+    transition: all .4s ease-in-out;
   }
 }
