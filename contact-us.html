@@ -253,7 +253,8 @@
                                                                 class="d-block text-muted">Kick-start
                                                                 customization</small></div>
                                                     </div>
-                                                </a></li>
+                                                </a>
+                                            </li>
                                             <li class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="components/typography.html">
                                                     <div class="d-flex align-items-center">
@@ -263,7 +264,8 @@
                                                                 class="d-block text-muted">Flexible components</small>
                                                         </div>
                                                     </div>
-                                                </a></li>
+                                                </a>
+                                            </li>
                                             <li class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="docs/changelog.html">
                                                     <div class="d-flex align-items-center">
@@ -272,7 +274,8 @@
                                                                     class="badge bg-success ms-2">v2.3.0</span></span><small
                                                                 class="d-block text-muted">Regular updates</small></div>
                                                     </div>
-                                                </a></li>
+                                                </a>
+                                            </li>
                                             <li class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="mailto:support@createx.studio">
                                                     <div class="d-flex align-items-center">
@@ -281,7 +284,8 @@
                                                                 class="d-block text-muted">support@createx.studio</small>
                                                         </div>
                                                     </div>
-                                                </a></li>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -295,9 +299,6 @@
                         </div>
                         <a href="#" class="btn btn-theme btn-sm d-sm-block d-none">get free quote</a>
                     </div>
-                    <!-- <div class="menu-bar">
-                    <a href="#"><i data-feather="menu"></i></a>
-                </div> -->
                 </div>
             </div>
         </div>
@@ -471,7 +472,7 @@
                                             <div class='file-input'>
                                                 <input type='file'>
                                                 <span class='button'>Select a File</span>
-                                                <span class='label' data-js-label>Drag & Drop to upload</label>
+                                                <span class='label' data-js-label>Drag & Drop to upload</span>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -515,7 +516,7 @@
                                             <div class='file-input'>
                                                 <input type='file'>
                                                 <span class='button'>Select a File</span>
-                                                <span class='label' data-js-label>Drag & Drop to upload</label>
+                                                <span class='label' data-js-label>Drag & Drop to upload</span>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -638,6 +639,9 @@
     <!-- feather icon -->
     <script src="assets/js/feather.min.js"></script>
 
+    <!-- select file -->
+    <script src="assets/js/browser-file.js"></script>
+
     <!-- Slick js-->
     <script src="assets/js/slick.js"></script>
 
@@ -646,25 +650,6 @@
 
     <script>
         feather.replace();
-        var inputs = document.querySelectorAll('.file-input')
-
-        for (var i = 0, len = inputs.length; i < len; i++) {
-            customInput(inputs[i])
-        }
-
-        function customInput(el) {
-            const fileInput = el.querySelector('[type="file"]')
-            const label = el.querySelector('[data-js-label]')
-
-            fileInput.onchange =
-                fileInput.onmouseout = function () {
-                    if (!fileInput.value) return
-
-                    var value = fileInput.value.replace(/^.*[\\\/]/, '')
-                    el.className += ' -chosen'
-                    label.innerText = value
-                }
-        }
     </script>
 
 </body>

@@ -6,6 +6,7 @@ section,
 .section-t-space {
   padding-top: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
+
 .section-b-space {
   padding-bottom: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -26,10 +27,12 @@ section,
   padding-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 
-.custom-padding  {
+.custom-padding {
   padding: 0 100px;
 }
 
 @media (min-width: 1430px) {
   .container {
-    max-width: 1400px; } }
+    max-width: 1400px;
+  }
+}

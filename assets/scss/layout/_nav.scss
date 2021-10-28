@@ -239,7 +239,7 @@
 	left: 0;
 	width: 100%;
 	animation: navbar-show .25s;
-	background-color: #fff;
+	background-color: $white;
 	box-shadow: 0 0.125rem 0.625rem -0.1875rem rgba(0, 0, 0, 0.1);
 }
 .offcanvas {
@@ -250,7 +250,7 @@
 	flex-direction: column;
 	max-width: 100%;
 	visibility: hidden;
-	background-color: #fff;
+	background-color: $white;
 	background-clip: padding-box;
 	outline: 0;
 	box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04);
@@ -425,8 +425,8 @@
 			margin-top: 0;
 			box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04);
 			border-color: #e9e9f2;
-			background-color: #fff;
-			border-color: #fff;
+			background-color: $white;
+			border-color: $white;
 			padding: 0;
 			li {
 				display: block;
@@ -484,7 +484,7 @@
 				padding-right: 0;
 				padding-left: 0;
 				border-radius: 5px;
-				background-color: #ffffff;
+				background-color: $white;
 			}
 		}
 		.dropdown-menu.show {

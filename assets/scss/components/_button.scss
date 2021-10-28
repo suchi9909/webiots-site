@@ -6,13 +6,12 @@ button:focus {
   outline: none;
 }
 
-
 .btn-theme {
   min-width: 180px;
   padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))) calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 600;
-  color: #fff;
+  color: $white;
   cursor: pointer;
   text-align: center;
   border: none;
@@ -38,14 +37,14 @@ button:focus {
   &.btn-white {
     background-image: none;
     color: $theme-color1;
-    background-color: white;
+    background-color: $white;
     box-shadow: rgba(39, 128, 212, 0.10) 2px 1px 10px;
   }
 
   &.btn-light {
     background-color: #4c9be1;
     background-image: none;
-    color: #ffffff;
+    color: $white;
     transition: all .4s ease-in-out;
   }
 }

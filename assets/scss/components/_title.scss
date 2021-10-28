@@ -6,31 +6,38 @@
     text-align: center;
     position: relative;
     z-index: 1;
+
     h2 {
         font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
         position: relative;
         display: inline-block;
         text-transform: initial;
+
         span {
             font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
             color: $theme-color1;
         }
     }
+
     p {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         // width: 56%;
         margin-top: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
         color: $content-color;
+
         @media (max-width: 1199px) {
             width: 50%;
         }
+
         @media (max-width: 991px) {
             width: 70%;
-        }   
+        }
+
         @media (max-width: 768px) {
             width: 100%;
-        }   
+        }
     }
+
     img {
         position: absolute;
         width: 120px;
@@ -45,17 +52,21 @@
         animation-direction: alternate;
         animation-timing-function: linear;
     }
+
     @keyframes run {
         0% {
-          left: 49.2%;
+            left: 49.2%;
         }
+
         50% {
-          left: 50%;
+            left: 50%;
         }
+
         100% {
-          left: 49.2%;    
+            left: 49.2%;
         }
-      }
+    }
+
     h5 {
         color: $content-color;
         margin-top: -3px;
@@ -63,9 +74,9 @@
         margin-bottom: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)));
         font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
+
     .title-effect {
-        background: linear-gradient(
-            180deg, rgba(221,239,255,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(180deg, rgba(221, 239, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-block;
@@ -75,8 +86,9 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top:  calc(-35px + (-50 - -35) * ((100vw - 320px) / (1920 - 320)));
+        top: calc(-35px + (-50 - -35) * ((100vw - 320px) / (1920 - 320)));
     }
+
     &.text-start {
         .title-effect {
             left: 0;

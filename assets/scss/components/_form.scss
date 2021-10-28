@@ -14,7 +14,7 @@
 .file-input {
     display: inline-block;
     text-align: left;
-    background: #fff;
+    background: $white;
     padding: 0;
     position: relative;
     border-radius: 3px;
@@ -22,7 +22,7 @@
     padding: 10px;
     border: 1px dashed #ddd;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: $white;
     @media (max-width: 380px) {
       padding: 10px;
     }

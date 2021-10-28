@@ -1,7 +1,6 @@
 /*=====================
     Home CSS start
 ==========================*/
-// home vector
 .home-vector {
   position: relative;
   border-radius: 0;
@@ -182,7 +181,7 @@
     bottom: 10px;
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
