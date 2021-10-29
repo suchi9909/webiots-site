@@ -372,6 +372,7 @@
                 left: 0;
                 transition: all 250ms ease-in-out;
                 border-radius: 35px;
+
                 @media (max-width: 420px) {
                     width: 100%;
                     height: 50%;
@@ -381,6 +382,7 @@
 
             &.slide:after {
                 left: 50%;
+
                 @media (max-width: 420px) {
                     left: 0;
                     top: 50%;
@@ -401,9 +403,11 @@
                 display: inline-block;
                 transition: color 250ms ease-in-out;
                 user-select: none;
+
                 @media (max-width: 420px) {
                     width: 100%;
                 }
+
                 &.active {
                     color: $white;
                 }
@@ -447,7 +451,7 @@
 
             h3 {
                 text-transform: capitalize;
-                margin-bottom:  calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
                 font-weight: 600;
                 font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
             }
@@ -472,23 +476,6 @@
 // testimonial section
 .testimonial-section {
     position: relative;
-
-    .title {
-        text-align: left;
-        display: flex;
-        align-items: center;
-        height: 100%;
-
-        p {
-            width: 100%;
-        }
-
-        &.text-start {
-            .title-effect {
-                top: -8px;
-            }
-        }
-    }
 
     .testimonial-row {
         position: relative;
@@ -666,11 +653,12 @@
         h2 {
             font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
         }
+
         span {
             font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
         }
     }
-    
+
     .top-effect {
         .dot-effect {
             position: absolute;
@@ -693,6 +681,7 @@
         @media (max-width: 991px) {
             margin-bottom: 50px;
         }
+
         img {
             width: 80%;
         }
@@ -785,19 +774,22 @@
     .contact-box {
         width: 100%;
         margin: 0 auto calc(-200px + (-280 - -200) * ((100vw - 320px) / (1920 - 320)));
-        padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320))); 
+        padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)));
         box-shadow: 0 0 50px rgba(23, 32, 90, 0.06);
         background-color: $white;
         position: relative;
         z-index: 1;
         border-radius: 20px;
+
         .contact-details {
             ul {
-                margin: 0 0  calc(-20px + (-30 - -20) * ((100vw - 320px) / (1920 - 320)));
+                margin: 0 0 calc(-20px + (-30 - -20) * ((100vw - 320px) / (1920 - 320)));
+
                 li {
                     display: flex;
                     align-items: center;
                     margin: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) 0;
+
                     .contact-icon {
                         width: calc(48px + (58 - 48) * ((100vw - 320px) / (1920 - 320)));
                         height: calc(48px + (58 - 48) * ((100vw - 320px) / (1920 - 320)));
@@ -807,20 +799,24 @@
                         justify-content: center;
                         margin-right: 20px;
                         background: linear-gradient(27deg, #2a87db 0%, #105bcb 100%);
+
                         svg {
                             stroke: white;
                         }
                     }
+
                     .contact-content {
                         width: 70%;
+
                         h5 {
                             font-weight: 600;
                             margin-bottom: calc(5px + (10 - 5) * ((100vw - 320px) / (1920 - 320)));
                             color: $title-color;
-                            font-size:  calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+                            font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
                         }
+
                         h6 {
-                            font-size:  calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
                         }
                     }
                 }
@@ -831,15 +827,19 @@
     &.contact-page {
         .title {
             margin-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+
             .title-effect {
                 font-size: calc(42px + (75 - 42) * ((100vw - 320px) / (1920 - 320)));
             }
+
             h2 {
-                font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320))); 
+                font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
             }
+
             span {
                 font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
             }
+
             p {
                 width: 80%;
                 margin-bottom: calc(0px + (40 - 0) * ((100vw - 320px) / (1920 - 320)));
@@ -864,7 +864,7 @@ footer {
         }
 
         img {
-            width:  calc(120px + (160 - 120) * ((100vw - 320px) / (1920 - 320)));
+            width: calc(120px + (160 - 120) * ((100vw - 320px) / (1920 - 320)));
             margin-bottom: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 320)));
         }
     }
@@ -1077,9 +1077,10 @@ footer {
     right: 0;
     top: 0;
     z-index: -1;
+
     &.effect-sm {
         transform: scale(0.6);
-        transform-origin: right top;    
+        transform-origin: right top;
     }
 }
 
@@ -1095,3 +1096,31 @@ footer {
 }
 
 
+// effect
+.shape1 {
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    z-index: 1;
+}
+
+.shape2 {
+    position: absolute;
+    left: 4%;
+    top: 1%;
+}
+
+.shape3 {
+    position: absolute;
+    right: 5%;
+    top: 60px;
+    z-index: 1;
+    transform: rotate(75deg);
+}
+
+.shape4 {
+    position: absolute;
+    right: 4%;
+    top: 40px;
+    transform: rotate(75deg);
+}

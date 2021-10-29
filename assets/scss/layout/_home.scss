@@ -5,7 +5,7 @@
   position: relative;
   border-radius: 0;
   height: 100vh;
-  background-image: url(../images/background/gradient-banner.png);
+  // background-image: url(../images/background/gradient-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
@@ -23,14 +23,16 @@
     background-image: linear-gradient(to right, #0c4393, #2780d4);
   }
   &:after {
-    // content: "";
     position: absolute;
-    left: 0;
-    bottom: 0;
+    content: '';
+    background-image: url(../images/background/gradient-banner.png);
     width: 100%;
-    background-image: url(https://themes.pixelstrap.com/multikart/assets/images/game/back.png);
-    height: 99px;
+    height: 100%;
+    background-position: bottom;
+    left: -71px;
+    top: 10px;
     z-index: -1;
+    transform: rotate(2deg) scale(1.15);
   }
   .home-content {
     display: flex;
@@ -40,7 +42,7 @@
       color: $light-title;
       margin-bottom:calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 700;
-      font-size: calc(18px + (48 - 18) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(18px + (46 - 18) * ((100vw - 320px) / (1920 - 320)));
       line-height: 1.3;
       text-transform: unset;
       margin-top: -11px;
@@ -197,6 +199,9 @@
     padding-bottom: 120px;
     background-image: linear-gradient(to right, #0c4393, #2780d4);
     height: auto;
+    &::after {
+      display: none;
+    }
     @media (max-width: 1199px) {
       padding-top: 142px;
       padding-bottom: 100px;
