@@ -27,9 +27,10 @@
             background-color: $theme-color1;
             display: flex;
             align-items: center;
-            padding: 4px;
+            padding: 7px;
             border-radius: 100%;
             background: linear-gradient(27deg, rgba(42, 135, 219, 1) 0%, rgba(16, 91, 203, 1) 100%);
+            border-radius: 28% 70% 70% 30%/30% 30% 70% 70%;
 
             @media (max-width: 1199px) {
                 width: 68px;
@@ -82,6 +83,7 @@
                 li {
                     font-size: 16px;
                     margin-bottom: 5px;
+                    line-height: 14px;
 
                     a {
                         color: $title-color;
@@ -358,8 +360,12 @@
             background: rgba(42, 135, 219, 0.10);
             user-select: none;
 
-            @media (max-width: 420px) {
+            @media (max-width: 460px) {
                 border-radius: 0;
+                background: none;
+                display: flex;
+                margin: 0 -5px;
+                overflow: auto;
             }
 
             &:after {
@@ -373,20 +379,13 @@
                 transition: all 250ms ease-in-out;
                 border-radius: 35px;
 
-                @media (max-width: 420px) {
-                    width: 100%;
-                    height: 50%;
-                    border-radius: 0;
+                @media (max-width: 460px) {
+                    display: none;
                 }
             }
 
             &.slide:after {
                 left: 50%;
-
-                @media (max-width: 420px) {
-                    left: 0;
-                    top: 50%;
-                }
             }
 
             .tab-slider--trigger {
@@ -404,12 +403,18 @@
                 transition: color 250ms ease-in-out;
                 user-select: none;
 
-                @media (max-width: 420px) {
-                    width: 100%;
+                @media (max-width: 460px) {
+                    border-radius: 35px;
+                    background: rgba(42, 135, 219, 0.10);
+                    white-space: nowrap;
+                    margin: 0 5px;
                 }
 
                 &.active {
                     color: $white;
+                    @media (max-width: 460px) {
+                        background-color: $theme-color1;
+                    }
                 }
             }
         }
@@ -790,6 +795,10 @@
                     align-items: center;
                     margin: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) 0;
 
+                    @media (max-width: 576px) {
+                        align-items: flex-start;
+                    }
+
                     .contact-icon {
                         width: calc(48px + (58 - 48) * ((100vw - 320px) / (1920 - 320)));
                         height: calc(48px + (58 - 48) * ((100vw - 320px) / (1920 - 320)));
@@ -799,6 +808,7 @@
                         justify-content: center;
                         margin-right: 20px;
                         background: linear-gradient(27deg, #2a87db 0%, #105bcb 100%);
+                        border-radius: 28% 70% 70% 30%/30% 30% 70% 70%;
 
                         svg {
                             stroke: white;
