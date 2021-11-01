@@ -7,6 +7,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin-top: -120px;
 
     @media (max-width:767px) {
         margin-top: 30px;
@@ -412,6 +413,7 @@
 
                 &.active {
                     color: $white;
+
                     @media (max-width: 460px) {
                         background-color: $theme-color1;
                     }
