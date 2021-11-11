@@ -517,9 +517,11 @@
     font-size: 20px;
     font-weight: 600;
   }
+
   .hire-detail-row {
     margin-top: 25px;
   }
+
   .hire-detail {
     margin-bottom: -14px;
 
@@ -586,21 +588,27 @@
       @media (max-width: 576px) {
         margin: 0 15px;
       }
-      > div {
+
+      >div {
         border-right: 1px solid $light-content;
         border-bottom: 1px solid $light-content;
+
         @media (max-width: 420px) {
           width: 50%;
         }
+
         &:nth-last-child(-n + 4) {
           border-bottom: none;
         }
+
         &:nth-last-child(4) {
           border-left: 1px solid $light-content;
         }
-        &:nth-child(6), &:nth-child(12) {
+
+        &:nth-child(6),
+        &:nth-child(12) {
           border-right: none;
-        } 
+        }
       }
     }
 
@@ -630,9 +638,11 @@
 
       img {
         margin-bottom: 12px;
+
         @media (max-width: 767px) {
           margin-bottom: 8px;
         }
+
         @media (max-width: 576px) {
           width: 30px;
           height: auto;
@@ -642,6 +652,7 @@
       h4 {
         color: $content-color;
         font-size: 16px;
+
         @media (max-width: 767px) {
           font-size: 14px;
         }
@@ -665,5 +676,21 @@
 
   .row {
     margin-top: 20px;
+  }
+}
+
+// effect
+.dot-effect {
+  position: absolute;
+  z-index: -1;
+
+  &.bottom-right {
+    right: -40px;
+    bottom: -40px;
+  }
+  
+  &.bottom-left {
+    left: -40px;
+    bottom: -40px;
   }
 }

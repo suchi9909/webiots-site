@@ -1171,7 +1171,7 @@ button:focus {
     -webkit-transition: none;
     transition: none; } }
 
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .navbar-expand-xl.navbar .offcanvas-body {
     overflow: visible; }
   .navbar-expand-xl.navbar-sticky.navbar-stuck .navbar-floating-logo {
@@ -1315,7 +1315,7 @@ button:focus {
     padding-right: 23.5rem;
     padding-left: 0; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .offcanvas-collapse .offcanvas-body .navbar-nav {
     padding-top: 0; }
     .offcanvas-collapse .offcanvas-body .navbar-nav .nav-item {
@@ -1663,16 +1663,31 @@ header {
   .home-vector.inner-home {
     background-image: none;
     padding-top: 220px;
-    padding-bottom: 120px;
+    padding-bottom: 75px;
     background-image: -webkit-gradient(linear, left top, right top, from(#0c4393), to(#2780d4));
     background-image: linear-gradient(to right, #0c4393, #2780d4);
     height: auto; }
-    .home-vector.inner-home::after {
-      display: none; }
+    .home-vector.inner-home.contact-page {
+      padding-top: 220px;
+      padding-bottom: 120px; }
+      @media (max-width: 1199px) {
+        .home-vector.inner-home.contact-page {
+          padding-top: 142px;
+          padding-bottom: 100px; } }
     @media (max-width: 1199px) {
       .home-vector.inner-home {
-        padding-top: 142px;
-        padding-bottom: 100px; } }
+        padding-top: 170px;
+        padding-bottom: 75px; } }
+    @media (max-width: 991px) {
+      .home-vector.inner-home {
+        padding-top: 150px;
+        padding-bottom: 55px; } }
+    @media (max-width: 767px) {
+      .home-vector.inner-home {
+        padding-top: 128px;
+        padding-bottom: 38px; } }
+    .home-vector.inner-home::after {
+      display: none; }
   .home-vector.hire-detail-section {
     background-image: none;
     background-color: #fbf3ec;
@@ -2075,7 +2090,8 @@ header {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .development-section .development-box .number-effect {
     content: "";
     position: absolute;
@@ -2519,7 +2535,8 @@ footer {
     footer .subfooter-content li {
       margin-left: 0;
       padding-left: 8px;
-      padding-right: 8px; }
+      padding-right: 8px;
+      line-height: 12px; }
       footer .subfooter-content li a {
         color: #f9f9f9;
         text-transform: capitalize;
@@ -3146,6 +3163,16 @@ footer {
   .hire-note .row {
     margin-top: 20px; }
 
+.dot-effect {
+  position: absolute;
+  z-index: -1; }
+  .dot-effect.bottom-right {
+    right: -40px;
+    bottom: -40px; }
+  .dot-effect.bottom-left {
+    left: -40px;
+    bottom: -40px; }
+
 /*=====================
     Contact Us CSS start
 ==========================*/
@@ -3218,6 +3245,74 @@ footer {
         left: 6%;
         width: 22%;
         top: 6%; } }
+
+/*=====================
+    Career CSS start
+==========================*/
+.current-opening-section {
+  position: relative; }
+  .current-opening-section li {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    -webkit-box-shadow: 0 0 8px #dddddd;
+            box-shadow: 0 0 8px #dddddd;
+    border-radius: 12px;
+    position: relative; }
+    .current-opening-section li:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #f1f9ff;
+      z-index: -1;
+      bottom: -10px;
+      right: -10px;
+      border-radius: 12px; }
+    .current-opening-section li + li {
+      margin-top: 30px; }
+  .current-opening-section .opening-box {
+    position: relative; }
+    .current-opening-section .opening-box h3 {
+      font-size: 18px;
+      font-weight: 600; }
+    .current-opening-section .opening-box .opening-details {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 10px; }
+      .current-opening-section .opening-box .opening-details h6 {
+        position: relative;
+        text-transform: capitalize; }
+        .current-opening-section .opening-box .opening-details h6:after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          background-color: #c9c9c9;
+          left: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          display: none; }
+        .current-opening-section .opening-box .opening-details h6 + h6 {
+          margin-left: 15px;
+          padding-left: 15px; }
+          .current-opening-section .opening-box .opening-details h6 + h6::after {
+            display: block; }
+    .current-opening-section .opening-box .btn {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      min-width: -webkit-max-content;
+      min-width: -moz-max-content;
+      min-width: max-content;
+      padding: 8px 32px; }
 
 /*=====================
     Responsive CSS start
