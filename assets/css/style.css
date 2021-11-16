@@ -2461,7 +2461,7 @@ footer {
   footer .footer-title {
     margin-bottom: 38px;
     position: relative;
-    padding-bottom: 14px; }
+    padding-bottom: 4px; }
     @media (max-width: 767px) {
       footer .footer-title {
         margin-bottom: 0;
