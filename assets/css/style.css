@@ -2982,7 +2982,7 @@ footer {
       background: #555; }
     .faq-section .faq-container .accordion {
       overflow: auto;
-      height: 445px; }
+      height: 450px; }
       @media (max-width: 767px) {
         .faq-section .faq-container .accordion {
           height: auto; } }
@@ -3032,7 +3032,7 @@ footer {
         margin-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))); }
 
 .hire-detail-sec h3.hire-title {
-  margin-bottom: 20px;
+  margin-bottom: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-size: 20px;
   font-weight: 600; }
 
@@ -3042,7 +3042,7 @@ footer {
 .hire-detail-sec .hire-detail {
   margin-bottom: -14px; }
   .hire-detail-sec .hire-detail .hire-title {
-    font-size: 24px; }
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320))); }
   .hire-detail-sec .hire-detail p {
     margin-bottom: 14px; }
 
@@ -3055,8 +3055,8 @@ footer {
   position: relative;
   overflow: hidden; }
   .hire-detail-sec .hire-box h3 {
-    margin-bottom: 12px;
-    font-size: 18px;
+    margin-bottom: calc(5px + (12 - 5) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 600; }
   .hire-detail-sec .hire-box p {
     overflow: hidden;
@@ -3214,6 +3214,11 @@ footer {
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 8px; }
+  .contact-top-details.career-page .contact-box {
+    padding: 46px 40px; }
+    .contact-top-details.career-page .contact-box h3 {
+      font-size: 20px;
+      margin-bottom: 12px; }
 
 .contact-vector {
   position: relative; }
