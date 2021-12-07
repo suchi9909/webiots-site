@@ -3319,6 +3319,15 @@ footer {
       min-width: max-content;
       padding: 8px 32px; }
 
+.perks-section.why-outsource .why-us-box {
+  display: block; }
+  .perks-section.why-outsource .why-us-box .whyus-content {
+    width: 100%; }
+    .perks-section.why-outsource .why-us-box .whyus-content p {
+      -webkit-line-clamp: unset;
+      -webkit-box-orient: unset;
+      overflow: unset; }
+
 /*=====================
     Responsive CSS start
 ==========================*/

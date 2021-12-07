@@ -29,7 +29,6 @@
             margin-top: 30px;
         }
     }
-
     .opening-box {
         position: relative;
 
@@ -77,6 +76,22 @@
             transform: translateY(-50%);
             min-width: max-content;
             padding: 8px 32px;
+        }
+    }
+}
+
+.perks-section {
+    &.why-outsource {
+        .why-us-box {
+            display: block;
+            .whyus-content {
+                width: 100%;
+                p {
+                    -webkit-line-clamp: unset;
+                    -webkit-box-orient: unset;
+                    overflow: unset;
+                }
+            }
         }
     }
 }
