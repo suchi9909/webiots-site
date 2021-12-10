@@ -167,20 +167,20 @@ jQuery('.bg-img').each(function () {
 /*=====================
  Sticky Scroll js
  ==========================*/
-var contentwidth = jQuery(window).width();
+var contentwidth = $(window).width();
 if ((contentwidth) < '767') {
-    jQuery('.footer-title h4').append('<span class="according-menu"></span>');
-    jQuery('.footer-title').on('click', function () {
-        jQuery('.footer-title').removeClass('active');
-        jQuery('.footer-contant').slideUp('normal');
-        if (jQuery(this).next().is(':hidden') == true) {
-            jQuery(this).addClass('active');
-            jQuery(this).next().slideDown('normal');
+    $('.footer-title h4').append('<span class="according-menu"></span>');
+    $('.footer-title').on('click', function () {
+        $('.footer-title').removeClass('active');
+        $('.footer-contant').slideUp('normal');
+        if ($(this).next().is(':hidden') == true) {
+            $(this).addClass('active');
+            $(this).next().slideDown('normal');
         }
     });
-    jQuery('.footer-contant').hide();
+    $('.footer-contant').hide();
 } else {
-    jQuery('.footer-contant').show();
+    $('.footer-contant').show();
 }
 
 

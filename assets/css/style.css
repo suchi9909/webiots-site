@@ -3215,10 +3215,10 @@ footer {
       font-weight: 600;
       margin-bottom: 8px; }
   .contact-top-details.career-page .contact-box {
-    padding: 46px 40px; }
+    padding: calc(22px + (46 - 22) * ((100vw - 320px) / (1920 - 320))) calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))); }
     .contact-top-details.career-page .contact-box h3 {
-      font-size: 20px;
-      margin-bottom: 12px; }
+      font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+      margin-bottom: calc(4px + (12 - 4) * ((100vw - 320px) / (1920 - 320))); }
 
 .contact-vector {
   position: relative; }
@@ -3258,12 +3258,15 @@ footer {
   position: relative; }
   .current-opening-section li {
     width: 100%;
-    background-color: white;
+    background-color: #ffffff;
     padding: 30px;
     -webkit-box-shadow: 0 0 8px #dddddd;
             box-shadow: 0 0 8px #dddddd;
     border-radius: 12px;
     position: relative; }
+    @media (max-width: 767px) {
+      .current-opening-section li {
+        padding: 20px; } }
     .current-opening-section li:after {
       content: "";
       position: absolute;
@@ -3279,8 +3282,10 @@ footer {
   .current-opening-section .opening-box {
     position: relative; }
     .current-opening-section .opening-box h3 {
-      font-size: 18px;
-      font-weight: 600; }
+      font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 20px; }
     .current-opening-section .opening-box .opening-details {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3288,26 +3293,30 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: 10px; }
+      margin: calc(0px + (-2 - 0) * ((100vw - 320px) / (1920 - 320))) -15px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      overflow: hidden; }
+      @media (max-width: 767px) {
+        .current-opening-section .opening-box .opening-details {
+          margin-top: 6px; } }
       .current-opening-section .opening-box .opening-details h6 {
         position: relative;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        margin: calc(0px + (2 - 0) * ((100vw - 320px) / (1920 - 320))) 15px; }
+        @media (max-width: 767px) {
+          .current-opening-section .opening-box .opening-details h6 {
+            font-size: 14px; } }
         .current-opening-section .opening-box .opening-details h6:after {
           content: "";
           position: absolute;
           width: 1px;
           height: 10px;
           background-color: #c9c9c9;
-          left: 0;
+          left: -16px;
           top: 50%;
           -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%);
-          display: none; }
-        .current-opening-section .opening-box .opening-details h6 + h6 {
-          margin-left: 15px;
-          padding-left: 15px; }
-          .current-opening-section .opening-box .opening-details h6 + h6::after {
-            display: block; }
+                  transform: translateY(-50%); }
     .current-opening-section .opening-box .btn {
       position: absolute;
       right: 0;
@@ -3318,9 +3327,29 @@ footer {
       min-width: -moz-max-content;
       min-width: max-content;
       padding: 8px 32px; }
+      @media (max-width: 991px) {
+        .current-opening-section .opening-box .btn {
+          position: relative;
+          top: 0;
+          -webkit-transform: unset;
+                  transform: unset;
+          margin-top: 20px; } }
 
 .perks-section.why-outsource .why-us-box {
   display: block; }
+  @media (max-width: 576px) {
+    .perks-section.why-outsource .why-us-box {
+      text-align: center; } }
+  .perks-section.why-outsource .why-us-box .whyus-icon {
+    background-color: transparent; }
+    @media (max-width: 767px) {
+      .perks-section.why-outsource .why-us-box .whyus-icon {
+        width: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320))); } }
+    @media (max-width: 576px) {
+      .perks-section.why-outsource .why-us-box .whyus-icon {
+        padding-right: 0;
+        margin-bottom: 15px; } }
   .perks-section.why-outsource .why-us-box .whyus-content {
     width: 100%; }
     .perks-section.why-outsource .why-us-box .whyus-content p {
