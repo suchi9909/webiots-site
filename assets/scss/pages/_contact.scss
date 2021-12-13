@@ -39,10 +39,10 @@
     }
     &.career-page {
         .contact-box {
-            padding: 46px 40px;
+            padding: calc(22px + (46 - 22) * ((100vw - 320px) / (1920 - 320))) calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
             h3 {
-                font-size: 20px;
-                margin-bottom: 12px;
+                font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: calc(4px + (12 - 4) * ((100vw - 320px) / (1920 - 320)));
             }
         }
     }

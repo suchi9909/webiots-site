@@ -304,6 +304,51 @@
     font-size: calc(26px + (40 - 26) * ((100vw - 320px) / (1920 - 320)));
   }
 
+  h3 {
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 28px;
+    color: $light-title;
+  }
+
+  .opening-details {
+    display: flex;
+    align-items: center;
+    margin: calc(0px + (-2 - 0) * ((100vw - 320px) / (1920 - 320))) -15px;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        margin-top: 6px;
+    }
+
+    h6 {
+        position: relative;
+        text-transform: capitalize;
+        color: rgba($light-content, 0.8);
+        margin: calc(0px + (2 - 0) * ((100vw - 320px) / (1920 - 320))) 15px;
+
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 10px;
+            background-color: #c9c9c9;
+            left: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    }
+}
+
+
+
   .breadcrumb-item {
     &.active {
       color: $light-content;
