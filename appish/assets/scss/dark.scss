@@ -1,0 +1,77 @@
+/// Dark Mode ///
+
+/// Utils Scss Files ///
+@import "utils/variables";
+
+/// Font color ///
+$title-color: #f0f0f0;
+$content-color: #a9a9a9;
+$active-color: #bd937e;
+
+/// Main Color ///
+$black: #f0f0f0;
+$white: #22282c;
+$white-light: #f0f0f0;
+$gray-light: #2e343b;
+
+/// Gradient color ///
+$dark-from: #2e343b;
+$dark-to: #2e343b;
+
+/// Gradient color ///
+$dark-gradient: linear-gradient(269.96deg, $dark-from 0.03%, $dark-to 99.96%);
+
+/// Border color ///
+$border-color: #4e4e4e;
+
+/// border ///
+$card-border: 1px solid $border-color;
+
+/// Btn shadow ///
+$btn-shadow: 0px 4px 4px rgba($black, 0.25);
+
+/// main box shadow ///
+$box-shadow: 1px 1px 0 $border-color;
+
+@import "utils/classes";
+@import "utils/mixin";
+
+/// Base Scss Files ///
+@import "base/reset";
+@import "base/typography";
+
+/// Components Scss Files ///
+@import "components/accordian";
+@import "components/animation";
+@import "components/buttons";
+@import "components/breadcumb";
+@import "components/countdown";
+@import "components/form";
+@import "components/general";
+@import "components/modal";
+@import "components/nav-tabs";
+@import "components/pagination";
+@import "components/product-card";
+@import "components/progress";
+@import "components/ratio";
+@import "components/switch";
+@import "components/table";
+
+/// Layout Scss Files ///
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sidebar";
+
+/// Pages ///
+@import "pages/authentic";
+@import "pages/blog-page";
+@import "pages/ecommerce";
+@import "pages/element-pages";
+@import "pages/general-pages";
+@import "pages/grocery-page";
+@import "pages/page-catagories";
+@import "pages/page-list";
+@import "pages/startup";
+
+/// Themes Scss Files ///
+@import "themes/dark";

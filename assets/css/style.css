@@ -2704,6 +2704,16 @@ footer {
           transform: rotate(75deg); }
 
 /*=====================
+    about us CSS start
+==========================*/
+.about-detail p {
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 15px; }
+  .about-detail p:last-child {
+    margin-bottom: 0; }
+
+/*=====================
     Hire Page CSS start
 ==========================*/
 .hire-home.contact-us-section .contact-content {
@@ -3267,6 +3277,9 @@ footer {
     .contact-top-details.career-page .contact-box h3 {
       font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
       margin-bottom: calc(4px + (12 - 4) * ((100vw - 320px) / (1920 - 320))); }
+  .contact-top-details.about-page img {
+    border-radius: 10px;
+    overflow: hidden; }
 
 .contact-vector {
   position: relative; }

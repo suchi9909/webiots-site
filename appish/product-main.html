@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <a href="ecommerce-list.html">
+          <span class="nav-bar">
+            <i data-feather="chevron-left"></i>
+          </span>
+        </a>
+        <h1 class="title-color font-lg">Products</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large product-main">
+      <!-- Banner Section Start -->
+      <div class="product-banner-slider ratio_asos">
+        <!-- Banner Start -->
+        <div class="banner-box">
+          <div>
+            <img src="assets/images/e-commerce/banner/banner1.png" class="img-fluid bg-img" alt="banner" />
+          </div>
+          <img src="assets/images/e-commerce/product/product1.png" alt="ear phone" />
+        </div>
+        <!-- Banner End -->
+
+        <!-- Banner Start -->
+        <div class="banner-box">
+          <div>
+            <img src="assets/images/e-commerce/banner/banner1.png" class="img-fluid bg-img" alt="banner" />
+          </div>
+          <img src="assets/images/e-commerce/product/product1.png" alt="ear phone" />
+        </div>
+        <!-- Banner End -->
+
+        <!-- Banner Start -->
+        <div class="banner-box">
+          <div>
+            <img src="assets/images/e-commerce/banner/banner1.png" class="img-fluid bg-img" alt="banner" />
+          </div>
+          <img src="assets/images/e-commerce/product/product1.png" alt="ear phone" />
+        </div>
+        <!-- Banner End -->
+
+        <!-- Banner Start -->
+        <div class="banner-box">
+          <div>
+            <img src="assets/images/e-commerce/banner/banner1.png" class="img-fluid bg-img" alt="banner" />
+          </div>
+          <img src="assets/images/e-commerce/product/product1.png" alt="ear phone" />
+        </div>
+        <!-- Banner End -->
+      </div>
+      <!-- Banner Section End -->
+
+      <!-- Product Specification Section Start -->
+      <section class="p-tb-sm product-spec">
+        <h2 class="font-lg">Glass Perfume Bottles</h2>
+        <!-- Rating Start -->
+        <div class="rating-box">
+          <div class="star-box">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <span class="font-sm content-color">(4.5 ratings)</span>
+        </div>
+        <!-- Rating End -->
+
+        <p class="pera content-color">Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal</p>
+
+        <h3 class="font-lg">$25 / $35</h3>
+
+        <!-- Select Input Group Start  -->
+        <div class="select-group">
+          <!-- Size Select Start -->
+          <div class="size-Select" data-bs-toggle="offcanvas" data-bs-target="#size" aria-controls="size">
+            <div class="size-box">
+              <span> S </span>
+              <span class="font-sm">Select Size</span>
+            </div>
+            <i data-feather="chevron-right"></i>
+          </div>
+          <!-- Size Select End -->
+
+          <!-- Size Select Start -->
+          <div class="size-Select" data-bs-toggle="offcanvas" data-bs-target="#color" aria-controls="color">
+            <div class="size-box">
+              <span> S </span>
+              <span class="font-sm">Select Color</span>
+            </div>
+            <i data-feather="chevron-right"></i>
+          </div>
+          <!-- Size Select End -->
+        </div>
+        <!-- Select Input Group Start  -->
+      </section>
+      <!-- Product Detail Section End -->
+
+      <!-- Detail Tabs Section Start -->
+      <section class="p-tb-sm detail-tabs">
+        <!-- Tabes Filter Start -->
+        <ul class="nav nav-tabs nav-tabs-e" id="detail" role="tablist">
+          <!-- Description Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
+              Description
+            </button>
+          </li>
+          <!-- Description Option End -->
+
+          <!-- Specifications Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">
+              Specifications
+            </button>
+          </li>
+          <!-- Specifications Option Start -->
+
+          <!-- Review Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+          </li>
+          <!-- Review Option End -->
+
+          <!-- Videos Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
+          </li>
+          <!-- Videos Option End -->
+        </ul>
+        <!-- Tabes Filter End -->
+
+        <!-- Tab-Content Start -->
+        <div class="tab-content" id="detailContent">
+          <!-- Description Content Start -->
+          <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+            <p class="font-sm content-color">
+              EXPLORE YOUR Glass Perfume WITH ALL NEW SIGNATURE PERFUME VILLAIN. THIS NEW FRAGRANCE WITH WOODY & SPICY NOTES, KEEPS BODY ODOUR AT BAY AND LASTS LONG. WEAR IT DAILY AND UNRAVEL YOUR
+              LETHAL CHARISMA LIKE A TRUE-BLUE.
+            </p>
+            <p class="font-sm content-color">
+              Glass IS A HEADY CONCOCTION OF MADNESS MIXED WITH A HINT OF WICKED ALONG WITH SEVERAL BURSTS OF OUTRAGEOUSNESS AND A TINGLING SPICINESS OF TWISTED HUMOUR BOTTLED UP IN INTRIGUING
+              GRANDEUR
+            </p>
+            <p class="font-sm content-color">THIS RICH FRAGRANCE IS THE QUINTESSENTIAL EMBODIMENT OF EVIL THAT’LL LURE EVERY EYE THAT MEETS IT.</p>
+          </div>
+          <!-- Description Content End -->
+
+          <!-- Specifications Content Start -->
+          <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+            <!-- Specification Table Start -->
+            <table class="table">
+              <tr>
+                <td>Brand:</td>
+                <td>Villain</td>
+              </tr>
+
+              <tr>
+                <td>Scent:</td>
+                <td>Woody, Spicy</td>
+              </tr>
+
+              <tr>
+                <td>Item Form:</td>
+                <td>Spray</td>
+              </tr>
+
+              <tr>
+                <td>Item Weight:</td>
+                <td>120 Grams</td>
+              </tr>
+
+              <tr>
+                <td>Item Volume:</td>
+                <td>100 Millilitres</td>
+              </tr>
+            </table>
+            <!-- Specification Table End -->
+          </div>
+          <!-- Specifications Content End -->
+
+          <!-- Review Content Start -->
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+            <!-- Review Start -->
+            <div class="review-box">
+              <div class="media">
+                <img src="assets/images/chat/avtar2.png" alt="avatar" />
+                <div class="media-body">
+                  <h3 class="font-sm">Mark Jacob | 20 Aug, 2021</h3>
+                  <div class="star-box">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="font-sm content-color">
+                It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly less bright than what is shown in the product description.
+              </p>
+              <div class="like-box">
+                <span>Size bought: <span class="content-color"> S</span> </span>
+                <span>
+                  <span><i data-feather="thumbs-up"></i> 25</span>
+                  <span><i data-feather="thumbs-down"></i> 2</span>
+                </span>
+              </div>
+            </div>
+            <!-- Review End -->
+
+            <!-- Review Start -->
+            <div class="review-box">
+              <div class="media">
+                <img src="assets/images/chat/avtar2.png" alt="avatar" />
+                <div class="media-body">
+                  <h3 class="font-sm">Mark Jacob | 20 Aug, 2021</h3>
+                  <div class="star-box">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="font-sm content-color">
+                It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly less bright than what is shown in the product description.
+              </p>
+              <div class="like-box">
+                <span>Size bought: <span class="content-color"> S</span> </span>
+                <span>
+                  <span><i data-feather="thumbs-up"></i> 25</span>
+                  <span><i data-feather="thumbs-down"></i> 2</span>
+                </span>
+              </div>
+            </div>
+            <!-- Review End -->
+          </div>
+          <!-- Review Content End -->
+
+          <!-- Videos Content Start -->
+          <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+            <div class="videobox">
+              <img class="video-thumb" src="assets/images/e-commerce/video/video_bg.jpg" alt="" />
+              <span class="play"><i data-feather="play"></i></span>
+            </div>
+          </div>
+          <!-- Videos Content Start -->
+        </div>
+        <!-- Tab-Content Start -->
+      </section>
+      <!-- Detail Tabs Section End -->
+
+      <!-- Recently Viewed Section Start -->
+      <section class="p-tb-sm recently-viewed">
+        <h3 class="title-2 m-b-title1">Recently Viewed</h3>
+        <div class="recently-v-slider ratio2_3">
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="product-main.html"> <img src="assets/images/e-commerce/product/product4.jpg" class="bg-img img-fluid" alt="product" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="product-main.html"> <h3 class="font-sm">Perfume Bottle Clear</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="product-main.html"> <img src="assets/images/e-commerce/product/product4.jpg" class="bg-img img-fluid" alt="product" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="product-main.html"> <h3 class="font-sm">Perfume Bottle Clear</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="product-main.html"> <img src="assets/images/e-commerce/product/product4.jpg" class="bg-img img-fluid" alt="product" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="product-main.html"> <h3 class="font-sm">Perfume Bottle Clear</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="product-main.html"> <img src="assets/images/e-commerce/product/product4.jpg" class="bg-img img-fluid" alt="product" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="product-main.html"> <h3 class="font-sm">Perfume Bottle Clear</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+        </div>
+      </section>
+      <!-- Recently Viewed Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap addcart">
+      <div class="footer">
+        <ul>
+          <li>
+            <i id="sub" class="sub" data-feather="minus"></i>
+            <input type="number" id="1" class="item-no" value="1" min="0" max="10" />
+            <i id="add" class="add" data-feather="plus"></i>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="add-to-cart btn btn-round btn-light-white"><i data-feather="shopping-cart"></i>Add to cart </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Offcanvass Select Size Filter Start -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="size" aria-labelledby="sizeLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sizeLabel">Select Size</h5>
+        <span data-bs-dismiss="offcanvas"> <i data-feather="x"></i></span>
+      </div>
+      <div class="offcanvas-body small">
+        <ul class="row filter-row g-4">
+          <li class="col-6">
+            <div class="filter-col">Small</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">Medium</div>
+          </li>
+          <li class="col-6 active">
+            <div class="filter-col">large</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">Xl</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">2Xl</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">3Xl</div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <a href="javascript:void(0)" class="btn btn-square btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">Reset</a>
+        <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas" aria-label="Close">Apply </a>
+      </div>
+    </div>
+    <!-- Offcanvass Select Size Filter End -->
+
+    <!-- Offcanvass Select Color Filter Start -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="color" aria-labelledby="colorLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="colorLabel">Select Color</h5>
+        <span data-bs-dismiss="offcanvas"> <i data-feather="x"></i></span>
+      </div>
+      <div class="offcanvas-body small">
+        <ul class="row filter-row g-4">
+          <li class="col-6">
+            <div class="filter-col"><span class="bg-purple"></span>Purple</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col"><span class="bg-green"></span> Green</div>
+          </li>
+          <li class="col-6 active">
+            <div class="filter-col"><span class="bg-yellow"></span>Yellow</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col"><span class="bg-blue"></span>Blue</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col"><span class="bg-orange"></span> Orange</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col"><span class="bg-black"></span>Black</div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <a href="javascript:void(0)" class="btn btn-square btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">Reset</a>
+        <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas" aria-label="Close">Apply </a>
+      </div>
+    </div>
+    <!-- Offcanvass Select Color Filter End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!-- Notify Js -->
+    <script src="assets/js/notify.js"></script>
+    <script src="assets/js/notify-custom.js"></script>
+
+    <!-- Slick Slider js -->
+    <script src="assets/js/vendors/slick.js"></script>
+    <script src="assets/js/vendors/slick.min.js"></script>
+    <script src="assets/js/vendors/slick-custom.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

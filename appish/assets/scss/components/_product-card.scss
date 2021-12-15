@@ -1,0 +1,79 @@
+/*=====================
+  4.2 Product Card CSS
+==========================*/
+
+.product-card {
+    border: $card-border;
+    box-shadow: $box-shadow;
+    border-radius: 15px;
+    padding: 8px;
+
+    .img-box {
+        position: relative;
+        padding-bottom: 8px;
+        text-align: center;
+        object-fit: cover;
+        > div {
+            overflow: hidden;
+            border-radius: 9px;
+        }
+        img {
+            width: 100%;
+        }
+        svg {
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+    }
+    .product-detail {
+        padding: 8px calc(7px + (15 - 7) * ((100vw - 320px) / (1920 - 320)));
+        .star-box {
+            @include start-box();
+        }
+        > span {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: 600;
+                margin-top: 4px;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3px;
+                background-image: $dark-gradient;
+                border-radius: 100%;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    stroke: $white;
+                }
+            }
+        }
+    }
+    [dir="rtl"] & {
+        direction: rtl;
+        .img-box {
+            svg {
+                right: 14px;
+                left: unset;
+            }
+        }
+        .product-detail {
+            > span {
+                a {
+                    svg {
+                        transform-origin: center;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

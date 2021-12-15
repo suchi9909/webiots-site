@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Emoji css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/emoji.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End -->
+
+  <!-- Body Start -->
+  <body>
+    <!-- Header Start -->
+    <header class="header header-cht">
+      <div>
+        <a href="message.html">
+          <span class="nav-bar">
+            <i data-feather="chevron-left"></i>
+          </span>
+        </a>
+        <div>
+          <h1 class="font-sm">Teri Dactyl</h1>
+          <span class="font-xs content-color">online</span>
+        </div>
+      </div>
+      <span data-bs-toggle="modal" data-bs-target="#voice">
+        <i data-feather="phone"></i>
+      </span>
+      <span data-bs-toggle="modal" data-bs-target="#video" id="start">
+        <i data-feather="video"></i>
+      </span>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large Chat-page">
+      <div class="conservation">
+        <!-- Received Message box Start -->
+        <div class="received-message">
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <p>Hi Vincent, how are you? How is the project coming along?</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+        </div>
+        <!-- Received Message Box End -->
+
+        <!-- Send Message Box Start -->
+        <div class="sender-message">
+          <div class="media">
+            <div class="media-body">
+              <p>Are we meeting today?</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-body">
+              <p>Project has been already finished and I have results to show you.</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+        </div>
+        <!-- Send Message Box End -->
+
+        <!-- Received Message Box Start -->
+        <div class="received-message">
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <p>Well I am not sure. The rest of the team is not here yet.</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <p>Have you faced any problems at the last phase of the project?</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <div id="waveform" class="waveform">
+                <!-- Here be the waveform -->
+              </div>
+              <div class="controls">
+                <a href="javascript:void(0)" class="play" data-action="play"><i class="play-m" data-feather="play-circle"></i> <i class="pause-m" data-feather="pause-circle"></i> </a>
+              </div>
+
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+        </div>
+        <!-- Received Message Box End -->
+
+        <!-- Send Message Box Start -->
+        <div class="sender-message">
+          <div class="media">
+            <div class="media-body">
+              <p>Are we meeting today?</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-body">
+              <p>Project has been already finished and I have results to show you.</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+        </div>
+        <!-- Send Message Box End -->
+
+        <!-- Received Message Box Start -->
+        <div class="received-message">
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <p>Well I am not sure. The rest of the team is not here yet.</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <p>Have you faced any problems at the last phase of the project?</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+        </div>
+        <!-- Received Message Box End -->
+
+        <!-- Typing box -->
+        <div class="received-message typing">
+          <div class="media">
+            <img src="assets/images/chat/avtar2.png" alt="friend" />
+            <div class="media-body">
+              <p>Teri Dactyl is typing...</p>
+              <span class="content-color">12.00pm</span>
+            </div>
+          </div>
+        </div>
+        <!-- Typing box -->
+      </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Type Message Box End -->
+    <footer class="footer-wrap type-message">
+      <div class="footer">
+        <textarea id="emoji" placeholder="Type a message..." rows="1" class="form-control" data-emojiable="true" data-emoji-input="unicode"></textarea>
+        <ul>
+          <li>
+            <a href="javascript:void(0)">
+              <i data-feather="mic"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i data-feather="smile"></i>
+            </a>
+          </li>
+          <li class="dropup">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i data-feather="paperclip"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="javascript:void(0)">
+                  <i data-feather="image"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i data-feather="video"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i data-feather="file-text"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Type Message Box Start -->
+
+    <!-- Voice call Modal Start -->
+    <div class="modal chat-modal" id="voice" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="content-box">
+              <div>
+                <img src="assets/video/video-call.png" class="img-fluid" alt="user" />
+              </div>
+              <i data-feather="mic"></i>
+              <h3>Call Teri Dactyl</h3>
+              <div class="call-option">
+                <button type="button" class="call-btn"><i data-feather="mic"></i></button>
+                <button type="button" class="call-btn"><i data-feather="volume-2"></i></button>
+                <button type="button" class="call-btn" data-bs-dismiss="modal"><i data-feather="phone-off"></i></button>
+                <button type="button" class="call-btn"><i data-feather="user-plus"></i></button>
+                <button type="button" class="call-btn"><i data-feather="pause"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Voice call Modal End -->
+
+    <!-- Video call Modal Start -->
+    <div class="modal chat-modal" id="video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body video-call">
+            <div id="timer" class="timer">
+              <span id="hours">00:</span>
+              <span id="mins">00:</span>
+              <span id="seconds">00</span>
+            </div>
+            <img src="assets/video/video-call.png" class="img-fluid" alt="user" />
+            <div class="content-box">
+              <div class="call-option">
+                <div class="video-screen">
+                  <img src="assets/video/video-send.png" class="img-fluid" alt="user" />
+                </div>
+                <button type="button" id="stop" class="call-btn bg-green"><i data-feather="pause"></i></button>
+                <button type="button" id="reset" class="call-btn bg-orange" data-bs-dismiss="modal"><i data-feather="phone-off"></i></button>
+                <button type="button" class="call-btn bg-green"><i data-feather="mic"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video call Modal End -->
+
+    <!-- Jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!-- Feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Timer js -->
+    <script src="assets/js/vendors/timer.js"></script>
+
+    <!-- Emoji js -->
+    <script src="assets/js/vendors/emoji.js"></script>
+
+    <!-- Music Player js -->
+    <script src="assets/js/vendors/wavesurfer.js"></script>
+    <script src="assets/js/vendors/wavesurfer.regions.min.js"></script>
+    <script src="assets/js/vendors/wavesurfer.custom.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

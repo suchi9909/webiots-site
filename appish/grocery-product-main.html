@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <a href="grocery-list.html">
+          <span class="nav-bar">
+            <i data-feather="chevron-left"></i>
+          </span>
+        </a>
+        <h1 class="title-color font-lg">Products</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large product-main g-product-main">
+      <!-- Banner Start -->
+      <div class="banner-box">
+        <img src="assets/images/grocery/banner/cabbage.png" class="img-fluid" alt="cabbage" />
+        <span class="badges-lg-square bg-success"> Fresh </span>
+      </div>
+      <!-- Banner End -->
+
+      <!-- Product Specification Section Start -->
+      <section class="p-tb-sm product-spec">
+        <h2 class="font-lg">Fresho Cabbage, 1 pc</h2>
+        <!-- Rating Start -->
+        <div class="rating-box">
+          <div class="star-box">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <span class="font-sm content-color">(4.5 ratings)</span>
+        </div>
+        <!-- Rating End -->
+
+        <p class="pera content-color">Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal</p>
+
+        <h3 class="font-lg">$25 <span class="content-color">(200g)</span></h3>
+
+        <!-- Select Input Group Start  -->
+        <div class="select-group">
+          <!-- Size Select Start -->
+          <div class="size-Select" data-bs-toggle="offcanvas" data-bs-target="#quantity">
+            <div class="size-box">
+              <span><i data-feather="shopping-bag"></i> </span>
+              <span class="font-sm">200g ($25)</span>
+            </div>
+            <i data-feather="chevron-right"></i>
+          </div>
+          <!-- Size Select End -->
+
+          <!-- Size Select Start -->
+          <div class="size-Select" data-bs-toggle="offcanvas" data-bs-target="#time" aria-controls="time">
+            <div class="size-box">
+              <span> <i data-feather="truck"></i> </span>
+              <span class="font-sm">Delivery Time</span>
+            </div>
+            <i data-feather="chevron-right"></i>
+          </div>
+          <!-- Size Select End -->
+        </div>
+        <!-- Select Input Group Start  -->
+      </section>
+      <!-- Product Detail Section End -->
+
+      <!-- Detail Tabs Section Start -->
+      <section class="p-tb-sm detail-tabs">
+        <!-- Tabes Filter Start -->
+        <ul class="nav nav-tabs nav-tabs-e" id="detail" role="tablist">
+          <!--  About the Product Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
+              About the Product
+            </button>
+          </li>
+          <!-- About the Product Option End -->
+
+          <!--  Storage and Uses Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">
+              Storage and Uses
+            </button>
+          </li>
+          <!--  Storage and Uses Option Start -->
+
+          <!-- Review Option Start -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+          </li>
+          <!-- Review Option End -->
+        </ul>
+        <!-- Tabes Filter End -->
+
+        <!-- Tab-Content Start -->
+        <div class="tab-content" id="detailContent">
+          <!--  About the Product Content Start -->
+          <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+            <p class="font-sm content-color">
+              With a texture of crispness and juiciness the moment you take the first bite, cabbages are sweet and grassy flavoured with dense and smooth leafy layers.
+            </p>
+            <p class="font-sm content-color">Cabbage improves brain health and vision. Best for people who want to lose weight in a healthy way.</p>
+            <p class="font-sm content-color">It detoxifies the body and contains glutamine that reduces effects of inflammation, allergies, joint pain, irritation, fever.</p>
+          </div>
+          <!-- About the Product Content End -->
+
+          <!--  Storage and Uses Content Start -->
+          <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+            <p class="font-sm content-color">Do not cut cabbages unless you are immediately consuming as it begins to lose vitamin C when cut</p>
+            <p class="font-sm content-color">if you absolutely cannot immediately finish the remaining cabbage,wrap it tightly in plastic wrap and store it in the refrigerator for up to two days.</p>
+            <p class="font-sm content-color">Shredded cabbage can be directly added to any salad and sandwiches as they are most nutrition when eaten raw.Also use in pickles and flat breads.</p>
+            <p class="font-sm content-color">
+              Stew friend cabbage,onion,garlic,bell pepper and green chilies mixed with steamed rice, and soya/chili/tomato sauce is a popular favorite in China and other South East Asian regions.
+            </p>
+          </div>
+          <!--  Storage and Uses Content End -->
+
+          <!-- Review Content Start -->
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+            <!-- Review Start -->
+            <div class="review-box">
+              <div class="media">
+                <img src="assets/images/chat/avtar2.png" alt="avatar" />
+                <div class="media-body">
+                  <h3 class="font-sm">Mark Jacob | 20 Aug, 2021</h3>
+                  <div class="star-box">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="font-sm content-color">
+                It's a really Fresh Cabbage I didn't expect to very Fresh cabbage i got. The packagin is slightly less bright than what is shown in the product description.
+              </p>
+              <div class="like-box">
+                <span>Size bought: <span class="content-color"> 1 Kg</span> </span>
+                <span>
+                  <span><i data-feather="thumbs-up"></i> 25</span>
+                  <span><i data-feather="thumbs-down"></i> 2</span>
+                </span>
+              </div>
+            </div>
+            <!-- Review End -->
+
+            <!-- Review Start -->
+            <div class="review-box">
+              <div class="media">
+                <img src="assets/images/chat/avtar2.png" alt="avatar" />
+                <div class="media-body">
+                  <h3 class="font-sm">Mark Jacob | 20 Aug, 2021</h3>
+                  <div class="star-box">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="font-sm content-color">
+                It's a really Fresh Cabbage I didn't expect to very Fresh cabbage i got. The packagin is slightly less bright than what is shown in the product description.
+              </p>
+              <div class="like-box">
+                <span>Size bought: <span class="content-color"> 3 Kg</span> </span>
+                <span>
+                  <span><i data-feather="thumbs-up"></i> 25</span>
+                  <span><i data-feather="thumbs-down"></i> 2</span>
+                </span>
+              </div>
+            </div>
+            <!-- Review End -->
+          </div>
+          <!-- Review Content End -->
+        </div>
+        <!-- Tab-Content Start -->
+      </section>
+      <!-- Detail Tabs Section End -->
+
+      <!-- Recently Viewed Section Start -->
+      <section class="p-tb-sm recently-viewed">
+        <h3 class="title-2 m-b-title1">Frequently Bought Together</h3>
+        <div class="g-v-slider ratio2_3">
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="grocery-product-main.html"> <img src="assets/images/grocery/product/jpg/carrot.jpg" class="bg-img img-fluid" alt="carrot" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="grocery-product-main.html"> <h3 class="font-sm">Fresh Carrot - Orange</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="grocery-product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="grocery-product-main.html"> <img src="assets/images/grocery/product/jpg/tomato.jpg" class="bg-img img-fluid" alt="tomato" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="grocery-product-main.html"> <h3 class="font-sm">Fresh tomato</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="grocery-product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="grocery-product-main.html"> <img src="assets/images/grocery/product/jpg/potato.jpg" class="bg-img img-fluid" alt="potato" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="grocery-product-main.html"> <h3 class="font-sm">Potato</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="grocery-product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+
+          <!-- Product card Start -->
+          <div>
+            <div class="product-card">
+              <div class="img-box">
+                <div>
+                  <a href="grocery-product-main.html"> <img src="assets/images/grocery/product/jpg/beetroot.jpg" class="bg-img img-fluid" alt="beetroot" /></a>
+                </div>
+                <i data-feather="heart"></i>
+              </div>
+              <div class="product-detail">
+                <a href="grocery-product-main.html"> <h3 class="font-sm">Fresh Beetroot</h3></a>
+                <div class="star-box">
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <span>
+                  <span class="font-sm"> $20 / <del class="content-color">$35</del> </span>
+                  <a href="grocery-product-main.html">
+                    <i data-feather="chevron-right"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Product card End -->
+        </div>
+      </section>
+      <!-- Recently Viewed Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap addcart">
+      <div class="footer">
+        <ul>
+          <li>
+            <i id="sub" class="sub" data-feather="minus"></i>
+            <input type="number" id="1" class="item-no" value="1" min="0" max="10" />
+            <i id="add" class="add" data-feather="plus"></i>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="add-to-cart btn btn-round btn-light-white"><i data-feather="shopping-cart"></i>Add to cart </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Offcanvass Select Quantity Filter Start -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="quantity" aria-labelledby="quantityLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="quantityLabel">Select Quantity</h5>
+        <span data-bs-dismiss="offcanvas"> <i data-feather="x"></i></span>
+      </div>
+      <div class="offcanvas-body small">
+        <ul class="row filter-row g-4">
+          <li class="col-6">
+            <div class="filter-col">200g ($25)</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">500g ($45)</div>
+          </li>
+          <li class="col-6 active">
+            <div class="filter-col">1 Kg ($80)</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">2 Kg ($150)</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">5 Kg ($350)</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">10 Kg ($1000)</div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <a href="javascript:void(0)" class="btn btn-square btn-outline" data-bs-dismiss="offcanvas" aria-label="reset">Reset</a>
+        <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas" aria-label="Close">Apply </a>
+      </div>
+    </div>
+    <!-- Offcanvass Select Quantity Filter End -->
+
+    <!-- Offcanvass Select Time Filter Start -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="time" aria-labelledby="timeLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="timeLabel">Delivery Time</h5>
+        <span data-bs-dismiss="offcanvas"> <i data-feather="x"></i></span>
+      </div>
+      <div class="offcanvas-body small">
+        <ul class="row filter-row g-4">
+          <li class="col-6">
+            <div class="filter-col">7 Am</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">10 Am</div>
+          </li>
+          <li class="col-6 active">
+            <div class="filter-col">1 Pm</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">5 Pm</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">8 Pm</div>
+          </li>
+          <li class="col-6">
+            <div class="filter-col">10 Pm</div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <a href="javascript:void(0)" class="btn btn-square btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">Reset</a>
+        <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas" aria-label="Close">Apply </a>
+      </div>
+    </div>
+    <!-- Offcanvass Select Time Filter End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!-- Notify Js -->
+    <script src="assets/js/notify.js"></script>
+    <script src="assets/js/notify-custom.js"></script>
+
+    <!-- Slick Slider js -->
+    <script src="assets/js/vendors/slick.js"></script>
+    <script src="assets/js/vendors/slick.min.js"></script>
+    <script src="assets/js/vendors/slick-custom.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

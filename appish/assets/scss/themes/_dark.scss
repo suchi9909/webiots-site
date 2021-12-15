@@ -1,0 +1,1242 @@
+/*=====================
+   Dark Css
+==========================*/
+/// Header Dark ///
+.header {
+    & > div {
+        span {
+            &:first-child {
+                border: $card-border;
+            }
+        }
+    }
+    &.header-cht {
+        > span {
+            svg {
+                stroke: #22282c;
+            }
+        }
+    }
+}
+.header1,
+.header3,
+.header4 {
+    .nav {
+        ul {
+            li {
+                .begets {
+                    color: #222222;
+                }
+            }
+        }
+    }
+}
+.header2 {
+    .nav-bar {
+        border: $card-border;
+        color: #f0f0f0;
+    }
+}
+/// Sidebar Dark ///
+.overlay-sidebar {
+    background-color: rgba(#22282c, 0.5);
+}
+aside {
+    .header-sidebar {
+        background: #2e343b;
+        .user-panel {
+            background-color: #2e343b;
+        }
+        .sidebar-content {
+            .link-section {
+                li {
+                    border-bottom-color: $border-color;
+                    a,
+                    > div {
+                        .content {
+                            h4 {
+                                span {
+                                    svg {
+                                        stroke: #222222;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .toggle-sec {
+                .toggle-btn {
+                    .knobs,
+                    .layer {
+                        background-color: #22282c;
+                        span {
+                            background-color: #f0f0f0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Footer Dark ///
+.footer-wrap {
+    &.type-message {
+        .footer {
+            border: $card-border;
+            ul {
+                li {
+                    a {
+                        svg {
+                            stroke: #f0f0f0;
+                        }
+                    }
+                }
+            }
+        }
+        .emojionearea {
+            .emojionearea-editor {
+                color: #f0f0f0;
+            }
+        }
+    }
+    &.addcart {
+        .footer {
+            ul {
+                li {
+                    input {
+                        color: #f0f0f0;
+                    }
+                    &:first-of-type {
+                        svg {
+                            stroke: #f0f0f0;
+                        }
+                    }
+                    a {
+                        box-shadow: none;
+                        svg {
+                            stroke: #222222;
+                        }
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-style2 {
+    .footer {
+        ul {
+            li {
+                .footer-link {
+                    &.active {
+                        border: $card-border;
+                        svg {
+                            stroke: #f0f0f0;
+                        }
+                        .tag {
+                            color: #f0f0f0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Form ///
+.custom-form {
+    input,
+    textarea {
+        background-color: #22282c;
+    }
+    .form-control,
+    input,
+    textarea {
+        &:focus {
+            color: #f0f0f0;
+            background-color: #22282c;
+            border-color: $border-color;
+        }
+    }
+    .input-box {
+        img {
+            filter: invert(1);
+        }
+        span {
+            color: #222222;
+            svg {
+                stroke: #222222;
+            }
+        }
+    }
+}
+.form-control {
+    background-color: #22282c;
+    border-color: $border-color;
+    &:focus {
+        background-color: #22282c;
+        color: #f0f0f0;
+    }
+}
+
+/// Catagories Page Dark ///
+.page-catagories {
+    .catagories {
+        .catagories-item {
+            .content {
+                a {
+                    h2 {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+    .shape2 {
+        .line {
+            background-color: #f0f0f0;
+        }
+        .circle {
+            background-color: #222222;
+        }
+    }
+}
+
+/// Page List Dark ///
+.banner-top {
+    .media {
+        .media-body {
+            h2 {
+                color: #222222;
+            }
+            h3 {
+                color: #777777;
+            }
+        }
+    }
+}
+
+/// Accordian ///
+.accordion-item {
+    background-color: #22282c;
+    .accordion-body {
+        background-color: #22282c;
+    }
+}
+.accordian-style2 {
+    .accordion-item {
+        .accordion-button {
+            color: #f0f0f0;
+            &,
+            &:focus,
+            &:not(.collapsed) {
+                color: #f0f0f0;
+            }
+            &::after {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+}
+.accordian-style3 {
+    .accordion-item {
+        .accordion-button {
+            &::after {
+                filter: invert(1);
+            }
+        }
+    }
+}
+/// Slick Dotes ///
+.slick-dots {
+    li {
+        border-color: #f0f0f0 !important;
+    }
+}
+
+/// Shape 2 ///
+.shape2 {
+    .line {
+        background-color: #f0f0f0;
+    }
+    .circle {
+        background-color: #222222;
+    }
+}
+
+/*=====================
+Modal Dark CSS
+==========================*/
+.modal {
+    background-color: #2e343b;
+    .modal-content {
+        background-color: #22282c;
+    }
+    .modal-header {
+        border-bottom: 1px solid $border-color;
+        > span {
+            border: $card-border;
+            svg {
+                stroke: #f0f0f0;
+            }
+        }
+    }
+    .filter-row {
+        li {
+            &.active {
+                .filter-col {
+                    background-color: #2e343b;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        border-top: 1px solid $border-color;
+        .btn {
+            color: #f0f0f0;
+        }
+    }
+}
+
+/// Off Canvas Dark ///
+.offcanvas {
+    .offcanvas-header {
+        border-bottom: 1px solid $border-color;
+        > span {
+            border: $card-border;
+            svg {
+                stroke: #f0f0f0;
+            }
+        }
+    }
+    .offcanvas-body {
+        ul {
+            li {
+                .filter-col {
+                    border: $card-border;
+                    &::after {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+    .offcanvas-footer {
+        border-top: 1px solid $border-color;
+    }
+}
+
+/*=====================
+Component Dark CSS
+==========================*/
+/// Product Card Dark ///
+.product-card {
+    .img-box {
+        svg {
+            stroke: #222222;
+            &.fill {
+                fill: #222222;
+            }
+        }
+    }
+    .product-detail {
+        > span {
+            a {
+                border: $card-border;
+                svg {
+                    stroke: #f0f0f0;
+                }
+            }
+        }
+    }
+}
+
+/// Calender Dark ///
+.datepicker {
+    background-color: #22282c;
+    border: $card-border;
+    .datepicker--nav {
+        border-bottom: 1px solid $border-color;
+        .datepicker--nav-title {
+            color: #f0f0f0;
+        }
+    }
+    .datepicker--cell {
+        color: #a9a9a9;
+        &.-selected-,
+        &.-focus-,
+        &.-current- {
+            background-color: #2e343b;
+            border: $card-border;
+            color: #f0f0f0;
+        }
+    }
+    .datepicker--cell-day {
+        &.-other-month- {
+            color: rgba(#a9a9a9, 0.5) !important;
+        }
+    }
+    .datepicker--pointer {
+        background-color: #22282c;
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+    }
+}
+
+/// Breadcumb Dark CSS ///
+.breadcum-style1 {
+    li {
+        &.active {
+            a {
+                color: #222222;
+            }
+        }
+    }
+}
+.breadcum-style2 {
+    li {
+        &.active {
+            a {
+                color: #222222;
+            }
+        }
+    }
+}
+.breadcum-style5 {
+    li {
+        svg {
+            stroke: #f0f0f0;
+        }
+        &:not(:last-of-type) {
+            &::after {
+                background-image: linear-gradient(to right, #f0f0f0 70%, rgba(#22282c, 0) 0%);
+            }
+        }
+    }
+}
+.breadcum-style6 {
+    li {
+        &.active {
+            color: #f0f0f0;
+        }
+    }
+}
+/// Pagination ///
+.modal-1,
+.modal-2 {
+    a {
+        &.active,
+        &:active {
+            color: #f0f0f0;
+        }
+    }
+}
+.modal-3 {
+    li {
+        a {
+            &.active {
+                color: #f0f0f0;
+            }
+        }
+    }
+}
+.modal-4,
+.modal-5 {
+    li {
+        a {
+            &.active {
+                color: #222222;
+            }
+        }
+    }
+}
+.modal-6 {
+    li {
+        a {
+            color: #222222;
+        }
+        &.active {
+            a {
+                color: #222222;
+            }
+        }
+    }
+}
+.modal-7 {
+    li {
+        .item {
+            border: $card-border;
+        }
+    }
+}
+.modal-2 {
+    li {
+        &:last-child {
+            a {
+                border-radius: 100px 0 0 100px;
+            }
+        }
+        &:first-child {
+            a {
+                border-radius: 0 100px 100px 0;
+            }
+        }
+    }
+}
+.modal-8,
+.modal-9 {
+    li {
+        a {
+            &.active {
+                color: #f0f0f0;
+            }
+        }
+    }
+}
+.apexcharts-legend-text {
+    color: #f0f0f0 !important;
+}
+.apexcharts-xaxis-label {
+    color: #f0f0f0 !important;
+}
+
+/// Table ///
+.table-bordered {
+    border: $card-border !important;
+}
+/*=====================
+ General Pages Dark CSS
+==========================*/
+
+/// About Us Page Dark ///
+.about-us {
+    .card-box {
+        ul {
+            li {
+                span {
+                    color: #222222;
+                }
+            }
+        }
+    }
+    .people-say {
+        .people-box {
+            p {
+                color: #777777;
+            }
+            .media {
+                .media-body {
+                    h3 {
+                        color: #222222;
+                    }
+                    span {
+                        color: #777777;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Chat Page dark ///
+.Chat-page {
+    .conservation {
+        .media {
+            .media-body {
+                p {
+                    color: #222222;
+                }
+                .controls {
+                    a {
+                        svg {
+                            stroke: #222222;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Coming-soon & Maintenance Dark  ///
+.coming-soon,
+.maintenance {
+    .round-top,
+    .round-bottom,
+    .dote {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+    .countdown {
+        ul {
+            li {
+                color: #222222;
+            }
+        }
+    }
+}
+
+/// Contact Us page ///
+.contact-us {
+    .location {
+        > div {
+            .media {
+                > span {
+                    svg {
+                        stroke: #222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// FAQS Page ///
+.faqs {
+    .filter {
+        > div,
+        li {
+            .nav-link {
+                color: #222222;
+                &:hover {
+                    color: #222222;
+                }
+            }
+        }
+    }
+}
+
+/// Help Page ///
+.help-page {
+    .banner-box {
+        .top-header {
+            h2 {
+                color: #222222;
+            }
+            .search-box {
+                .form-control {
+                    color: #222222;
+                }
+                svg {
+                    stroke: #222222;
+                }
+            }
+        }
+    }
+    .categories {
+        .arrow-box {
+            button {
+                border: $card-border;
+                svg {
+                    stroke: #f0f0f0;
+                }
+            }
+        }
+    }
+}
+
+/// Onboarding page ///
+.onboarding-footer {
+    .round-bottom {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+/// Messenger page ///
+.message-page {
+    .status-box {
+        .Status-Slider {
+            .user {
+                > div {
+                    span {
+                        svg {
+                            stroke: #222222;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recent-chat {
+        .friend-box {
+            .media {
+                .media-body {
+                    h3 {
+                        span {
+                            background-color: #2e343b;
+                        }
+                    }
+                }
+                > span {
+                    color: #222222;
+                }
+                .dashed-border {
+                    background-image: radial-gradient(#22282c 65%, transparent 68% 50%, #22282c 70%), repeating-conic-gradient(#f0f0f0 0% 3%, transparent 3% 4%);
+                }
+            }
+        }
+    }
+}
+
+/// Profile Setting Page ///
+.profile-settings {
+    .banner-box {
+        .media {
+            .media-body {
+                h2 {
+                    color: #222222;
+                }
+                span {
+                    color: #777777;
+                }
+            }
+        }
+    }
+}
+
+/// Search Page ///
+.Search {
+    .categories {
+        .arrow-box {
+            button {
+                border: $card-border;
+                svg {
+                    stroke: #f0f0f0;
+                }
+            }
+        }
+    }
+    .recent-search {
+        ul {
+            li {
+                a {
+                    color: #222222;
+                    svg {
+                        stroke: #222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Setting Page ///
+.setting {
+    ul {
+        li {
+            a {
+                > svg {
+                    &:first-child {
+                        stroke: #222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================
+ Authentic Pages Dark CSS
+==========================*/
+/// Log In Page Dark ///
+.login-page {
+    .socila-section {
+        ul {
+            li {
+                a {
+                    svg {
+                        fill: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+    .round-bottom {
+        filter: brightness(0) invert(1);
+    }
+    .dote-bottom {
+        filter: brightness(0) invert(1);
+    }
+}
+
+/*=====================
+ E-Commerce Pages Dark CSS
+==========================*/
+/// E-Home Page Dark ///
+.e-home {
+    .recently-section {
+        .wrapper {
+            .recently-box {
+                .media {
+                    > a {
+                        border: $card-border;
+                        svg {
+                            stroke: #f0f0f0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/// Product Main Page Dark ///
+.product-main {
+    .product-spec {
+        .select-group {
+            .size-Select {
+                .size-box {
+                    span {
+                        &:first-of-type {
+                            color: #f0f0f0;
+                            border: $card-border;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table {
+        tr {
+            border-bottom: 1px solid $border-color;
+            &:last-of-type {
+                border: none;
+                td {
+                    border-bottom-width: 0;
+                }
+            }
+        }
+    }
+    .detail-tabs {
+        .tab-content {
+            .review-box {
+                .like-box {
+                    > span {
+                        &:first-of-type {
+                            color: #222222;
+                            span {
+                                color: #777777;
+                            }
+                        }
+                    }
+                }
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid $border-color;
+                }
+            }
+            .videobox {
+                .play {
+                    svg {
+                        stroke: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Cart Page Dark ///
+.cart-page {
+    .cart-product {
+        .cart-item {
+            > span {
+                border: $card-border;
+                svg {
+                    stroke: #f0f0f0;
+                    &.fill {
+                        fill: #f0f0f0;
+                    }
+                }
+            }
+            .media {
+                .cart-img {
+                    span {
+                        svg {
+                            stroke: #f0f0f0;
+                        }
+                        .fill {
+                            fill: #f0f0f0;
+                        }
+                    }
+                }
+                .media-body {
+                    .quantity {
+                        .btn {
+                            input {
+                                color: #f0f0f0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .order-detail {
+        ul {
+            li {
+                &:last-child {
+                    border-top: 1px solid $border-color;
+                }
+            }
+        }
+    }
+}
+
+/// Checkout Page Dark ///
+.checkout-page {
+    .address-section,
+    .payment-card-section {
+        .address-box {
+            .media {
+                > span {
+                    span {
+                        background-image: linear-gradient(269.96deg, #f0f0f0 0.03%, #f0f0f0 99.96%);
+                    }
+                }
+                .media-body {
+                    > span {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+    .order-detail {
+        ul {
+            li {
+                &:last-child {
+                    border-top: 1px solid $border-color;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .card-box {
+            .media {
+                .media-body {
+                    > span {
+                        &:last-of-type {
+                            span {
+                                background-image: linear-gradient(269.96deg, #f0f0f0 0.03%, #f0f0f0 99.96%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Coupon Page Dark ///
+.coupons-page {
+    .coupon-section {
+        .coupon-box {
+            & > div {
+                span {
+                    &:first-of-type {
+                        color: #777777;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Order Tracking Page Dark ///
+.order-tracking-page {
+    .track {
+        ul {
+            li {
+                .media {
+                    > span {
+                        svg {
+                            stroke: #f0f0f0;
+                        }
+                    }
+                }
+                .track-border {
+                    .m-dashed {
+                        &::before,
+                        &::after {
+                            background-color: rgba($border-color, 0.35);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .order-detail {
+        ul {
+            li {
+                &:last-child {
+                    border-top: 1px solid $border-color;
+                }
+            }
+        }
+    }
+}
+
+/*=====================
+ Grocery Pages Dark CSS
+==========================*/
+/// Grocery Home Page Dark ///
+.grocery-home {
+    .grocery-slide {
+        .banner-box {
+            background-color: #d1efde;
+            h2 {
+                color: #222222;
+            }
+            p {
+                color: #777777;
+            }
+        }
+    }
+    .categories {
+        ul {
+            li {
+                img,
+                svg {
+                    filter: invert(1);
+                    stroke: #f0f0f0;
+                }
+            }
+        }
+    }
+    .top-offer {
+        .banner-box {
+            .media {
+                .media-body {
+                    h3 {
+                        color: #222222;
+                    }
+                    span {
+                        color: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Grocery Catagories Page Dark ///
+.catagories-menu {
+    color: #f0f0f0;
+    border: $card-border;
+    svg {
+        stroke: #f0f0f0;
+    }
+}
+.overlay {
+    background-color: rgba(#222222, 0.5);
+}
+.catagories-section {
+    @media only screen and (max-width: 415px) {
+        > .row {
+            > div {
+                &:first-of-type {
+                    border: $card-border;
+                }
+            }
+        }
+    }
+}
+
+/// Grocery Shop Page Dark ///
+.g-shop-page {
+    .product-section {
+        .product-box {
+            .product {
+                .media {
+                    .media-body {
+                        .select-box {
+                            select {
+                                color: #f0f0f0;
+                            }
+                        }
+                        .btn {
+                            input {
+                                color: #f0f0f0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Grocery Main Product Dark ///
+.product-main {
+    &.g-product-main {
+        .banner-box {
+            > span {
+                color: #f0f0f0;
+            }
+        }
+        .product-spec {
+            .select-group {
+                .size-Select {
+                    .size-box {
+                        span {
+                            &:first-of-type {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================
+ Blog Dark CSS
+==========================*/
+
+/// Blog Home Dark ///
+.blog-home {
+    .categories {
+        ul {
+            li {
+                a {
+                    color: #222222;
+                }
+            }
+        }
+        .videobox {
+            .play {
+                svg {
+                    stroke: #f0f0f0;
+                }
+            }
+        }
+    }
+}
+
+/// Blog Style 1 Dark ///
+.blog-style1 {
+    .tab-content {
+        .topic-box {
+            .topic {
+                .media {
+                    .media-body {
+                        > span {
+                            border: $card-border;
+                            svg {
+                                stroke: #f0f0f0;
+                                &.fill {
+                                    fill: #f0f0f0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Blog Style 2 Dark ///
+.blog-style2 {
+    .blog-grid {
+        .product-card {
+            .img-box {
+                & > span {
+                    border: $card-border;
+                    svg {
+                        stroke: #f0f0f0;
+                        &.fill {
+                            fill: #f0f0f0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Blog Style 3 Dark ///
+.blog-style3 {
+    .blog-list {
+        .topic-box {
+            .topic {
+                .media {
+                    .media-body {
+                        > span {
+                            border: $card-border;
+                            svg {
+                                stroke: #f0f0f0;
+                                &.fill {
+                                    fill: #f0f0f0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Blog Style 5 Dark ///
+.blog-style5 {
+    .banner-box {
+        .banner {
+            > span {
+                color: #f0f0f0;
+            }
+        }
+    }
+}
+
+/// Blog Style 5,6 dark ///
+.blog-style5,
+.blog-style6 {
+    .comment-section {
+        .comment-box {
+            .replay {
+                > a {
+                    color: #222222;
+                }
+            }
+        }
+    }
+    .related-articles {
+        .topic-box {
+            .topic {
+                .media {
+                    .media-body {
+                        > span {
+                            border: $card-border;
+                            svg {
+                                stroke: #f0f0f0;
+                                &.fill {
+                                    fill: #f0f0f0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Blog Style 6 Dark ///
+.blog-style6 {
+    .video-section {
+        .videobox {
+            .play {
+                svg {
+                    stroke: #f0f0f0;
+                }
+            }
+        }
+    }
+}

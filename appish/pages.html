@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <span class="nav-bar">
+          <i data-feather="menu"></i>
+        </span>
+        <h1 class="title-color font-lg">Pages</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <aside>
+      <a href="javascript:void(0)" class="overlay-sidebar"></a>
+      <div class="header-sidebar">
+        <a href="javascript:void(0)" class="user-panel">
+          <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="" />
+          <span>Hello, Paige Turner</span>
+          <i data-feather="chevron-right" class="icli"></i>
+        </a>
+        <div class="sidebar-content">
+          <ul class="link-section">
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <i data-feather="moon" class="me-4"></i
+                      ></span>
+                      Dark Mode
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="darkButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/language.svg" class="me-4" alt="rtl"
+                      /></span>
+                      RTL
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="rtlButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/setting.svg" class="me-4" alt="rtl" /></span
+                      >Notification
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="notificationButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="profile-setting.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/bell.svg" class="me-4" alt="rtl" /></span
+                      >Profile Setting
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="change-cassword.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/eye2.svg" class="me-4" alt="rtl" /></span
+                      >Change Password
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="Language.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/glob2.svg" class="me-4" alt="rtl" /></span
+                      >Language
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="privacy-policy.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/lock.svg" class="me-4" alt="rtl" /></span
+                      >Privacy Policy
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="Logout.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/logout.svg" class="me-4" alt="rtl" /></span
+                      >Logout
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large">
+      <section class="page-catagories">
+        <div class="catagories ratio-83">
+          <div class="row g-3">
+            <!-- Catagories Start -->
+            <div class="col-6">
+              <div class="catagories-item">
+                <div class="bg-wrap">
+                  <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="bg-image" />
+                </div>
+                <div class="content">
+                  <a href="general-list.html">
+                    <img src="assets/images/icon/page.png" class="img-fluid" alt="list" />
+                    <div>
+                      <h2 class="title-color font-md mt-3">General Pages</h2>
+                      <h3 class="content-color font-xs">Multi purpose pages</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="shape2 shape2-left">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+                <div class="shape2 shape2-right">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+            <!-- Catagories End -->
+
+            <!-- Catagories Start -->
+            <div class="col-6">
+              <div class="catagories-item">
+                <div class="bg-wrap">
+                  <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="bg-image" />
+                </div>
+                <div class="content">
+                  <a href="authentic-list.html">
+                    <img src="assets/images/icon/eye.png" alt="eye" />
+                    <div>
+                      <h2 class="title-color font-md mt-3">Authentic Pages</h2>
+                      <h3 class="content-color font-xs">Login, Register</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="shape2 shape2-left">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+                <div class="shape2 shape2-right">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+            <!-- Catagories End -->
+
+            <!-- Catagories Start -->
+            <div class="col-6">
+              <div class="catagories-item">
+                <div class="bg-wrap">
+                  <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="bg-image" />
+                </div>
+                <div class="content">
+                  <a href="ecommerce-list.html">
+                    <img src="assets/images/icon/shop.png" alt="shop" />
+                    <div>
+                      <h2 class="title-color font-md mt-3">Ecommerce Pages</h2>
+                      <h3 class="content-color font-xs">Shop Pages</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="shape2 shape2-left">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+                <div class="shape2 shape2-right">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+            <!-- Catagories End -->
+
+            <!-- Catagories Start -->
+            <div class="col-6">
+              <div class="catagories-item">
+                <div class="bg-wrap">
+                  <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="bg-image" />
+                </div>
+                <div class="content">
+                  <a href="grocery-list.html">
+                    <img src="assets/images/icon/vegi.png" class="img-fluid" alt="vegi" />
+                    <div>
+                      <h2 class="title-color font-md mt-3">Grocery Pages</h2>
+                      <h3 class="content-color font-xs">Vegetables Shop</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="shape2 shape2-left">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+                <div class="shape2 shape2-right">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+            <!-- Catagories End -->
+
+            <!-- Catagories Start -->
+            <div class="col-6">
+              <div class="catagories-item">
+                <div class="bg-wrap">
+                  <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="bg-image" />
+                </div>
+                <div class="content">
+                  <a href="blog-list.html">
+                    <img src="assets/images/icon/blog.png" class="img-fluid" alt="Blog" />
+                    <div>
+                      <h2 class="title-color font-md mt-3">Blog Pages</h2>
+                      <h3 class="content-color font-xs">News, Articles & Content</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="shape2 shape2-left">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+                <div class="shape2 shape2-right">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+            <!-- Catagories End -->
+
+            <!-- Catagories Start -->
+            <div class="col-6">
+              <div class="catagories-item">
+                <div class="bg-wrap">
+                  <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="bg-image" />
+                </div>
+                <div class="content">
+                  <a href="elements-list.html">
+                    <img src="assets/images/icon/element.png" class="img-fluid" alt="element" />
+                    <div>
+                      <h2 class="title-color font-md mt-3">Elements Pages</h2>
+                      <h3 class="content-color font-xs">All Components Pages</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="shape2 shape2-left">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+                <div class="shape2 shape2-right">
+                  <span class="circle">&nbsp;</span>
+                  <span class="line"></span>
+                  <span class="circle">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+            <!-- Catagories End -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+          </li>
+          <li>
+            <a href="element.html" class="footer-link"><i data-feather="layers"></i> </a>
+          </li>
+          <li>
+            <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+          </li>
+          <li>
+            <a href="pages.html" class="footer-link active"><i data-feather="file-text"></i> </a>
+          </li>
+          <li>
+            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

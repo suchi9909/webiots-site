@@ -1,0 +1,176 @@
+/*=====================
+  3.3 Header  CSS
+==========================*/
+
+/// header sidebar ///
+.overlay-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($black, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 4;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s ease;
+    }
+}
+.header-sidebar {
+    position: fixed;
+    left: -320px;
+    top: 0;
+    background-color: $white;
+    width: 310px;
+    height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 5;
+    overflow: auto;
+    [dir="rtl"] & {
+        left: unset;
+        right: -320px;
+    }
+    &.show {
+        left: 0;
+        transition: all 0.5s ease;
+        [dir="rtl"] & {
+            left: unset;
+            right: 0;
+        }
+    }
+    .user-panel {
+        padding: 16px 22px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        .user-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            object-fit: cover;
+            margin-right: 16px;
+            [dir="rtl"] & {
+                margin-right: 0;
+                margin-left: 16px;
+            }
+        }
+        .icli {
+            margin-left: 2px;
+            width: 20px;
+            height: 20px;
+            color: $title-color;
+            margin-bottom: -1px;
+            [dir="rtl"] & {
+                transform-origin: center;
+                transform: rotate(180deg);
+            }
+        }
+        span {
+            display: inline-block;
+            color: $title-color;
+            font-size: 14px;
+            margin-right: auto;
+            font-weight: 700;
+            [dir="rtl"] & {
+                margin-left: auto;
+                margin-right: unset;
+            }
+        }
+    }
+    @media (max-width: 340px) {
+        width: 290px;
+    }
+}
+
+.sidebar-content {
+    padding: 25px 0;
+    .link-section {
+        padding: 0 22px;
+        li {
+            width: 100%;
+            padding: 16px 6px;
+            border-bottom: 1px solid rgba($border-color, 0.1);
+            @include bg-shape-fill();
+            @include rotate-bg-shape();
+            a,
+            > div {
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                    color: $title-color;
+                    margin-right: 16px;
+                    [dir="rtl"] & {
+                        margin-right: 0;
+                        margin-left: 16px;
+                    }
+                }
+                img {
+                    margin-right: 16px;
+                    [dir="rtl"] & {
+                        margin-right: 0;
+                        margin-left: 16px;
+                    }
+                    width: 20px;
+                }
+                .content {
+                    h4 {
+                        color: $title-color;
+                        margin-bottom: 2px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        display: flex;
+                        align-items: center;
+                        span {
+                            position: relative;
+                            .bg-shape {
+                                position: absolute;
+                                left: -14px;
+                                top: -8px;
+                                bottom: 0;
+                                width: 50px;
+                                height: 40px;
+                                [dir="rtl"] & {
+                                    left: unset;
+                                    right: -14px;
+                                }
+                            }
+                            svg,
+                            img {
+                                position: relative;
+                                z-index: 1;
+                                margin-bottom: 2px;
+                                stroke-width: 1px;
+                            }
+                        }
+                        .arrow-right {
+                            margin-left: auto;
+                            [dir="rtl"] & {
+                                margin-left: unset;
+                                margin-right: auto;
+                                transform-origin: center;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    h6 {
+                        color: $content-color;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+    }
+}

@@ -20,6 +20,15 @@ gulp.task('sass', function () {
         }));
 });
 
+
+gulp.task('serve', [], function() {
+    // .init starts the server
+    bs.init({
+      server: "./app",
+      port: 4000
+    });
+  });
+
 gulp.task('watch', function () {
     gulp.watch('assets/scss/**/*.scss', ['sass']);
     gulp.watch("*.html").on('change', bs.reload);

@@ -1,0 +1,434 @@
+/*=====================
+  4.2 Grocery Pages CSS
+==========================*/
+
+/// Grocery Home Page Css Start ///
+.grocery-home {
+    .top-section {
+        > span {
+            margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+            display: flex;
+            align-items: center;
+            color: $theme-success;
+            svg {
+                width: 24px;
+                height: 24px;
+                stroke: $theme-success;
+                margin-right: 10px;
+            }
+        }
+        h2 {
+            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+            margin-bottom: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+        }
+        .search-box {
+            @include search-box();
+        }
+    }
+    .ratio_45 {
+        .bg-size {
+            &:before {
+                padding-top: 6%;
+            }
+        }
+    }
+    .grocery-slide {
+        @include partial-slider();
+        .banner-box {
+            background-color: rgba($theme-success, 0.19);
+        }
+    }
+    .categories {
+        @include scroll-r-nav();
+        ul {
+            li {
+                background-color: $gray-light;
+            }
+        }
+    }
+    .staples-section {
+        .categories {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .row {
+            > div {
+                .staples-box {
+                    text-align: center;
+                    div {
+                        background-color: $gray-light;
+                        border-radius: 6px;
+                        padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    h3 {
+                        margin-top: 10px;
+                        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1920 - 320)));
+                    }
+                }
+                @media only screen and (max-width: 400px) {
+                    flex: 0 0 auto;
+                    width: 33.33333%;
+                }
+            }
+        }
+    }
+    .top-offer {
+        .ratio_asos {
+            .bg-size {
+                &:before {
+                    padding-top: 0;
+                }
+            }
+        }
+        .banner-box {
+            @include banner();
+            @include bg-color();
+            border: none;
+            box-shadow: none;
+            transform: scaleX(-1);
+            padding: 20px 15px;
+            &:nth-of-type(5n + 1) {
+                background-color: $theme-green;
+            }
+            &:nth-of-type(5n + 3) {
+                background-color: $theme-blue;
+            }
+            &:not(:last-child) {
+                margin-bottom: calc(20px + (28 - 20) * ((100vw - 320px) / (1920 - 320)));
+            }
+            .media {
+                transform: scaleX(-1);
+                > div {
+                    flex: 0 0 30%;
+                    width: 100%;
+                }
+                .media-body {
+                    flex: 1 1 auto;
+                    h3 {
+                        font-weight: 600;
+                        font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+                        line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            @media only screen and (max-width: 380px) {
+                .media {
+                    .media-body {
+                        h3 {
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                            line-height: 21px;
+                        }
+                        span {
+                            font-size: 14px;
+                            padding: 6px 8px;
+                        }
+                    }
+                }
+            }
+            [dir="rtl"] & {
+                transform: scaleX(1);
+                .media {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}
+/// Grocery Home Page Css End ///
+
+/// Catagories Page Css Star ///
+.catagories-section {
+    .list-group {
+        position: sticky;
+        top: 15px;
+        padding: 30px 20px;
+        border-radius: 15px;
+        background-color: rgba($theme-success, 0.06);
+        h2 {
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+    }
+    .list-group-item {
+        border: none;
+        background-color: transparent;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        padding: 8px 0;
+        color: $content-color;
+        &.active {
+            color: $theme-success;
+        }
+    }
+    .content {
+        &:not(:first-of-type) {
+            padding-top: 35px;
+        }
+        > h3 {
+            margin-bottom: 20px;
+        }
+        .staples-box {
+            text-align: center;
+            > div {
+                background-color: $gray-light;
+                border-radius: 6px;
+                padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+                img {
+                    width: 100%;
+                }
+            }
+            h4 {
+                margin-top: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+                font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1920 - 320)));
+                color: $content-color;
+            }
+        }
+    }
+    > .row {
+        > div {
+            @media only screen and (max-width: 415px) {
+                width: 100%;
+                &:first-of-type {
+                    position: fixed;
+                    background-color: $white;
+                    border-radius: 15px;
+                    transition: all 0.3s;
+                    min-width: 188px;
+                    max-width: 188px;
+                    height: 163px;
+                    left: 17px;
+                    bottom: 85px;
+                    overflow-y: scroll;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 2;
+                    padding: 8px 22px;
+                    .list-group {
+                        position: relative;
+                        background-color: transparent;
+                        padding: 0;
+                        top: 0;
+                        h2 {
+                            display: none;
+                        }
+                    }
+                    &.show {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    [dir="rtl"] & {
+                        left: unset;
+                        right: 17px;
+                    }
+                }
+                &:last-of-type {
+                    .content {
+                        padding-top: 35px;
+                        .row {
+                            > div {
+                                flex: 0 0 auto;
+                                width: 33.33333%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/// Catagories Page Css End ///
+
+/// Shop List Page Css Start ///
+.g-shop-page {
+    .search-side-icon {
+        @include search-side-icon();
+    }
+    .product-section {
+        .product-box {
+            .product {
+                padding: 15px;
+                border: $card-border;
+                box-shadow: $box-shadow;
+                border-radius: 15px;
+                position: relative;
+                &:not(:first-of-type) {
+                    margin-top: calc(20px + (28 - 20) * ((100vw - 320px) / (1920 - 320)));
+                }
+                .media {
+                    > div {
+                        &:first-of-type {
+                            width: 90px;
+                            height: 90px;
+                            border-radius: 9px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .media-body {
+                        h2 {
+                            margin-bottom: 8px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 330px;
+                        }
+                        .select-box {
+                            position: relative;
+                            display: inline-block;
+                            select {
+                                background-color: $white;
+                                padding: 5px 28px 5px 10px;
+                                font-size: 14px;
+                                appearance: none;
+                            }
+                            svg {
+                                top: 50%;
+                                right: 6px;
+                                transform: translateY(-50%);
+                                width: 20px;
+                                height: 20px;
+                                position: absolute;
+                            }
+                        }
+                        span {
+                            margin-top: 8px;
+                            display: block;
+                            font-weight: 600;
+                            color: $theme-success;
+                        }
+                        .btn {
+                            position: absolute;
+                            top: 15px;
+                            right: 15px;
+                            padding: 2px 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: none;
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                            }
+                            input {
+                                background-color: transparent;
+                                text-align: center;
+                                box-shadow: none;
+                                border: none;
+                                font-size: 14px;
+                                color: $white;
+                                padding: unset;
+                            }
+                            [dir="rtl"] & {
+                                right: unset;
+                                left: 15px;
+                            }
+                        }
+                    }
+
+                    @media only screen and (max-width: 767px) {
+                        .media-body {
+                            h2 {
+                                width: calc(80px + (1437 - 80) * ((100vw - 320px) / (1920 - 320)));
+                            }
+                        }
+                    }
+                    @media only screen and (max-width: 370px) {
+                        align-items: flex-start;
+                        > div {
+                            &:first-of-type {
+                                width: 45px;
+                                height: 45px;
+                            }
+                        }
+                        .media-body {
+                            h2 {
+                                width: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/// Shop List Page Css End ///
+
+/// Grocery Product Main Page Css Start ///
+.product-main {
+    &.g-product-main {
+        .banner-box {
+            position: relative;
+            text-align: center;
+            border: none;
+            box-shadow: none;
+            img {
+                position: relative;
+                width: 80%;
+                top: unset;
+                left: unset;
+                transform: translate(0, 0);
+            }
+            > span {
+                padding: 3px 15px;
+                position: absolute;
+                left: calc(0px + (20 - 0) * ((100vw - 320px) / (1920 - 320)));
+                top: calc(0px + (20 - 0) * ((100vw - 320px) / (1920 - 320)));
+                [dir="rtl"] & {
+                    right: calc(0px + (20 - 0) * ((100vw - 320px) / (1920 - 320)));
+                    left: unset;
+                }
+            }
+        }
+        .product-spec {
+            .select-group {
+                .size-Select {
+                    .size-box {
+                        span {
+                            &:first-of-type {
+                                background: unset;
+                                svg {
+                                    stroke: $title-color;
+                                    [dir="rtl"] & {
+                                        transform-origin: center;
+                                        transform: rotate(0deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .detail-tabs {
+            .nav-tabs {
+                background-color: rgba($theme-success, 0.06);
+                .nav-item {
+                    .nav-link {
+                        color: $content-color;
+                        &.active {
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+        .recently-viewed {
+            .product-card {
+                .img-box {
+                    > div {
+                        border-radius: 15px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+/// Grocery Product Main Page Css End ///

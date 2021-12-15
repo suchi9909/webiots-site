@@ -1,0 +1,64 @@
+/*=====================
+  4.2 page list  CSS
+==========================*/
+.banner-top {
+    position: relative;
+    overflow: hidden;
+    border: $card-border;
+    box-shadow: $box-shadow;
+    border-radius: 15px;
+    padding: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+    .media {
+        img {
+            &:first-child {
+                width: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+                height: auto;
+            }
+        }
+        .media-body {
+            h2 {
+                font-weight: 600;
+                font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)));
+            }
+            h3 {
+                font-weight: 400;
+                font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+            }
+        }
+    }
+    .after-icon {
+        position: absolute;
+        width: 70px;
+        right: -38px;
+        height: auto;
+        top: 45%;
+        opacity: 0.1;
+        transform: rotate(-11deg) translate(-50%, -50%);
+
+        [dir="rtl"] & {
+            right: unset;
+            left: 54px;
+        }
+    }
+}
+.page-list {
+    li {
+        &:not(:last-of-type) {
+            margin-bottom: 14px;
+        }
+        a {
+            text-transform: capitalize;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            svg {
+                [dir="rtl"] & {
+                    transform-origin: center;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

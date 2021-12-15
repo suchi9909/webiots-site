@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Date Picker css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/date-picker.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <a href="general-list.html">
+          <span class="nav-bar">
+            <i data-feather="chevron-left"></i>
+          </span>
+        </a>
+        <h1 class="title-color font-lg">Profile</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large profile-settings">
+      <!-- Banner Start -->
+      <div class="banner-box ratio_asos">
+        <div>
+          <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Contact us" />
+        </div>
+        <div class="media">
+          <img src="assets/images/avtars/avtar.png" alt="avatar" />
+          <div class="media-body">
+            <h2>Mark Jeckno</h2>
+            <span class="font-md content-color">markjeckno25@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <!-- Banner End -->
+      <section class="setting-section p-t-md">
+        <!-- Personal Settings Start  -->
+        <form action="javascript:void(0)" class="custom-form">
+          <h3 class="title-2">Personal settings</h3>
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" class="form-control" />
+            <i data-feather="user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Email Address" class="form-control" />
+            <i data-feather="at-sign"></i>
+          </div>
+          <div class="input-box">
+            <input class="datepicker-here form-control digits" type="text" data-language="en" data-multiple-dates-separator=", " placeholder="Date of Birth" />
+            <i data-feather="calendar"></i>
+          </div>
+          <div class="input-box mb-0">
+            <select class="form-control">
+              <option selected disabled>Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <img src="assets/images/icon/gender.svg" alt="gender" />
+            <span><i data-feather="chevron-right"></i></span>
+          </div>
+        </form>
+        <!-- Personal Settings End  -->
+
+        <!-- Security Settings Start  -->
+        <form action="javascript:void(0)" class="custom-form p-t-md">
+          <h3 class="title-2">Security</h3>
+          <div class="input-box">
+            <input type="number" disabled placeholder="*****425" class="form-control" />
+            <i data-feather="phone"></i>
+            <span class="badges-square">Change</span>
+          </div>
+          <div class="input-box">
+            <input type="password" disabled placeholder="*****Dg52" class="form-control" />
+            <i data-feather="lock"></i>
+            <span class="badges-square">Change</span>
+          </div>
+        </form>
+        <!-- Security Settings End  -->
+      </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+          </li>
+          <li>
+            <a href="element.html" class="footer-link"><i data-feather="layers"></i> </a>
+          </li>
+          <li>
+            <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+          </li>
+          <li>
+            <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+          </li>
+          <li>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Date Picker  js -->
+    <script src="assets/js/date-picker/datepicker.js"></script>
+    <script src="assets/js/date-picker/datepicker.en.js"></script>
+    <script src="assets/js/date-picker/datepicker.custom.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

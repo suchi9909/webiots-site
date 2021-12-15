@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Banner Start  -->
+    <div class="coming-soon">
+      <div>
+        <div class="dote top">
+          <img src="assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+        </div>
+        <div class="round-top">
+          <img src="assets/svg/round.svg" class="img-fluid" alt="round" />
+        </div>
+      </div>
+      <div class="banner-box">
+        <img src="assets/svg/coming-soon.svg" class="img-fluid" alt="comming soon" />
+        <svg class="bg-shape">
+          <use xlink:href="assets/svg/sprite.svg#bg-shape2"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- Banner End  -->
+
+    <!-- Main Start  -->
+    <main class="coming-soon p-b-lg m-t-md main-wrap">
+      <!-- Content Section Start  -->
+      <section class="content-box mb-large">
+        <h1 class="font-xxl">Coming Soon</h1>
+        <p class="content-color font-md">We will be celebrating the launch of our new site very soon!</p>
+        <div class="round-bottom">
+          <img src="assets/svg/round.svg" class="img-fluid" alt="round" />
+        </div>
+        <!-- Count Down Start  -->
+        <div class="countdown">
+          <ul>
+            <li>
+              <span id="days"></span>Days
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape2"></use>
+              </svg>
+            </li>
+            <li>
+              <span id="hours"></span>Hours
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape2"></use>
+              </svg>
+            </li>
+            <li>
+              <span id="minutes"></span>Minutes
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape2"></use>
+              </svg>
+            </li>
+            <li>
+              <span id="seconds"></span>Seconds
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape2"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <!-- Count Down Start  -->
+
+        <!-- Notify Form Start -->
+        <form action="javascript:void(0)" class="custom-form">
+          <div class="input-box">
+            <input type="email" class="form-control email" placeholder="Email Address" required />
+            <i data-feather="at-sign"></i>
+          </div>
+          <button type="submit" class="btn btn-round btn-e">Notify me!!</button>
+        </form>
+        <!-- Notify Form End -->
+      </section>
+      <!-- Content Section Start  -->
+      <div class="dote bottom">
+        <img src="assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+      </div>
+    </main>
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Notify js -->
+    <script src="assets/js/notify.js"></script>
+    <script src="assets/js/notify-custom.js"></script>
+
+    <!-- Countdown js -->
+    <script src="assets/js/countdown.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

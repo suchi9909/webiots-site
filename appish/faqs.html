@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <a href="general-list.html">
+          <span class="nav-bar">
+            <i data-feather="chevron-left"></i>
+          </span>
+        </a>
+        <h1 class="title-color font-lg">FAQs</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large faqs">
+      <!-- Banner Start -->
+      <div class="banner-box">
+        <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+        <div>
+          <img src="assets/svg/faqs.svg" class="img-fluid" alt="Faqs image" />
+        </div>
+      </div>
+      <!-- Banner End -->
+
+      <!-- Tabs Filter Start -->
+      <ul class="nav nav-tabs filter" id="myTab" role="tablist">
+        <!-- Payment Filter Start -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="Payment-tab" data-bs-toggle="tab" data-bs-target="#Payment" type="button" role="tab" aria-controls="Payment" aria-selected="true">Payment</button>
+        </li>
+        <!-- Payment Filter End -->
+
+        <!-- Coupons Filter Start -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Coupons-tab" data-bs-toggle="tab" data-bs-target="#Coupons" type="button" role="tab" aria-controls="Coupons" aria-selected="false">Coupons</button>
+        </li>
+        <!-- Coupons Filter End -->
+
+        <!-- Reservation Filter Start -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="reservation-tab" data-bs-toggle="tab" data-bs-target="#reservation" type="button" role="tab" aria-controls="reservation" aria-selected="false">
+            Reservation
+          </button>
+        </li>
+        <!-- Reservation Filter End -->
+
+        <!-- Payment2 Filter Start -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Payment-tab2" data-bs-toggle="tab" data-bs-target="#Payment2" type="button" role="tab" aria-controls="Payment2" aria-selected="true">Payment2</button>
+        </li>
+        <!-- Payment2 Filter End -->
+
+        <!-- Coupons2 Filter Start -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Coupons-tab2" data-bs-toggle="tab" data-bs-target="#Coupons2" type="button" role="tab" aria-controls="Coupons2" aria-selected="false">Coupons2</button>
+        </li>
+        <!-- Coupons2 Filter End -->
+      </ul>
+      <!-- Tabs Filter End -->
+
+      <!-- Tabs Data Start -->
+      <div class="tab-content" id="myTabContent">
+        <!-- Payment Data Start -->
+        <div class="tab-pane fade show active" id="Payment" role="tabpanel" aria-labelledby="Payment-tab">
+          <!-- accordion Start -->
+          <div class="accordion accordian-style1" id="Payment-data">
+            <!-- accordion-item 1 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payment-collapseOne" aria-expanded="true" aria-controls="Payment-collapseOne">
+                  <span> Do you also have a physical store? </span>
+                </button>
+              </h2>
+              <div id="Payment-collapseOne" class="accordion-collapse collapse show" aria-labelledby="Payment-headingOne">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 1 End -->
+
+            <!-- accordion-item 2 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Payment-collapseTwo" aria-expanded="false" aria-controls="Payment-collapseTwo">
+                  <span> where can i subscribe to newsletter? </span>
+                </button>
+              </h2>
+              <div id="Payment-collapseTwo" class="accordion-collapse collapse" aria-labelledby="Payment-headingTwo">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 2 End -->
+
+            <!-- accordion-item 3 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Payment-collapseThree" aria-expanded="false" aria-controls="Payment-collapseThree">
+                  <span> Can I reserve a magazine? </span>
+                </button>
+              </h2>
+              <div id="Payment-collapseThree" class="accordion-collapse collapse" aria-labelledby="Payment-headingThree">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 3 End -->
+
+            <!-- accordion-item 4 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Payment-collapseFour" aria-expanded="false" aria-controls="Payment-collapseFour">
+                  <span> What are your opening hours? </span>
+                </button>
+              </h2>
+              <div id="Payment-collapseFour" class="accordion-collapse collapse" aria-labelledby="Payment-headingFour">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 4 Start -->
+
+            <!-- accordion-item 5 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Payment-collapseFive" aria-expanded="false" aria-controls="Payment-collapseFive">
+                  <span> General Terms & Conditions (GTC) </span>
+                </button>
+              </h2>
+              <div id="Payment-collapseFive" class="accordion-collapse collapse" aria-labelledby="Payment-headingFive">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 5 Start -->
+
+            <!-- accordion-item 6 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Payment-collapseSix" aria-expanded="false" aria-controls="Payment-collapseSix">
+                  <span> Do I have the right to return an item? </span>
+                </button>
+              </h2>
+              <div id="Payment-collapseSix" class="accordion-collapse collapse" aria-labelledby="Payment-headingSix">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 6 Start -->
+          </div>
+          <!-- accordion End -->
+        </div>
+        <!-- Payment Data End -->
+
+        <!-- Coupons Data Start -->
+        <div class="tab-pane fade" id="Coupons" role="tabpanel" aria-labelledby="Coupons-tab">
+          <!-- accordion Start -->
+          <div class="accordion accordian-style1" id="Coupons-data">
+            <!-- accordion-item 1 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons-data-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Coupons-data-collapseOne" aria-expanded="true" aria-controls="Coupons-data-collapseOne">
+                  <span> Do you also have a physical store? </span>
+                </button>
+              </h2>
+              <div id="Coupons-data-collapseOne" class="accordion-collapse collapse show" aria-labelledby="Coupons-data-headingOne">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 1 End -->
+
+            <!-- accordion-item 2 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons-data-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons-data-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="Coupons-data-collapseTwo"
+                >
+                  <span> where can i subscribe to newsletter? </span>
+                </button>
+              </h2>
+              <div id="Coupons-data-collapseTwo" class="accordion-collapse collapse" aria-labelledby="Coupons-data-headingTwo">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 2 End -->
+
+            <!-- accordion-item 3 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons-data-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons-data-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="Coupons-data-collapseThree"
+                >
+                  <span> Can I reserve a magazine? </span>
+                </button>
+              </h2>
+              <div id="Coupons-data-collapseThree" class="accordion-collapse collapse" aria-labelledby="Coupons-data-headingThree">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 3 End -->
+
+            <!-- accordion-item 4 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons-data-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons-data-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="Coupons-data-collapseFour"
+                >
+                  <span> What are your opening hours? </span>
+                </button>
+              </h2>
+              <div id="Coupons-data-collapseFour" class="accordion-collapse collapse" aria-labelledby="Coupons-data-headingFour">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 4 Start -->
+
+            <!-- accordion-item 5 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons-data-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons-data-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="Coupons-data-collapseFive"
+                >
+                  <span> General Terms & Conditions (GTC) </span>
+                </button>
+              </h2>
+              <div id="Coupons-data-collapseFive" class="accordion-collapse collapse" aria-labelledby="Coupons-data-headingFive">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 5 Start -->
+
+            <!-- accordion-item 6 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons-data-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons-data-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="Coupons-data-collapseSix"
+                >
+                  <span> Do I have the right to return an item? </span>
+                </button>
+              </h2>
+              <div id="Coupons-data-collapseSix" class="accordion-collapse collapse" aria-labelledby="Coupons-data-headingSix">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 6 Start -->
+          </div>
+          <!-- accordion End -->
+        </div>
+        <!-- Coupons Data End -->
+
+        <!-- Reservation Data Start -->
+        <div class="tab-pane fade" id="reservation" role="tabpanel" aria-labelledby="reservation-tab">
+          <!-- accordion Start -->
+          <div class="accordion accordian-style1" id="reservation-data">
+            <!-- accordion-item 1 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reservation-data-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reservation-data-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="reservation-data-collapseOne"
+                >
+                  <span> Do you also have a physical store? </span>
+                </button>
+              </h2>
+              <div id="reservation-data-collapseOne" class="accordion-collapse collapse show" aria-labelledby="reservation-data-headingOne">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 1 End -->
+
+            <!-- accordion-item 2 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reservation-data-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reservation-data-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="reservation-data-collapseTwo"
+                >
+                  <span> where can i subscribe to newsletter? </span>
+                </button>
+              </h2>
+              <div id="reservation-data-collapseTwo" class="accordion-collapse collapse" aria-labelledby="reservation-data-headingTwo">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 2 End -->
+
+            <!-- accordion-item 3 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reservation-data-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reservation-data-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="reservation-data-collapseThree"
+                >
+                  <span> Can I reserve a magazine? </span>
+                </button>
+              </h2>
+              <div id="reservation-data-collapseThree" class="accordion-collapse collapse" aria-labelledby="reservation-data-headingThree">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 3 End -->
+
+            <!-- accordion-item 4 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reservation-data-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reservation-data-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="reservation-data-collapseFour"
+                >
+                  <span> What are your opening hours? </span>
+                </button>
+              </h2>
+              <div id="reservation-data-collapseFour" class="accordion-collapse collapse" aria-labelledby="reservation-data-headingFour">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 4 Start -->
+
+            <!-- accordion-item 5 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reservation-data-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reservation-data-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="reservation-data-collapseFive"
+                >
+                  <span> General Terms & Conditions (GTC) </span>
+                </button>
+              </h2>
+              <div id="reservation-data-collapseFive" class="accordion-collapse collapse" aria-labelledby="reservation-data-headingFive">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 5 Start -->
+
+            <!-- accordion-item 6 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reservation-data-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reservation-data-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="reservation-data-collapseSix"
+                >
+                  <span> Do I have the right to return an item? </span>
+                </button>
+              </h2>
+              <div id="reservation-data-collapseSix" class="accordion-collapse collapse" aria-labelledby="reservation-data-headingSix">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 6 Start -->
+          </div>
+          <!-- accordion End -->
+        </div>
+        <!-- Reservation Data End -->
+
+        <!-- Payment2 Data Start -->
+        <div class="tab-pane fade show" id="Payment2" role="tabpanel" aria-labelledby="Payment-tab2">
+          <!-- accordion Start -->
+          <div class="accordion accordian-style1" id="Payment2-data">
+            <!-- accordion-item 1 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment2-data-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payment2-data-collapseOne" aria-expanded="true" aria-controls="Payment2-data-collapseOne">
+                  <span> Do you also have a physical store? </span>
+                </button>
+              </h2>
+              <div id="Payment2-data-collapseOne" class="accordion-collapse collapse show" aria-labelledby="Payment2-data-headingOne">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 1 End -->
+
+            <!-- accordion-item 2 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment2-data-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Payment2-data-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="Payment2-data-collapseTwo"
+                >
+                  <span> where can i subscribe to newsletter? </span>
+                </button>
+              </h2>
+              <div id="Payment2-data-collapseTwo" class="accordion-collapse collapse" aria-labelledby="Payment2-data-headingTwo">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 2 End -->
+
+            <!-- accordion-item 3 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment2-data-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Payment2-data-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="Payment2-data-collapseThree"
+                >
+                  <span> Can I reserve a magazine? </span>
+                </button>
+              </h2>
+              <div id="Payment2-data-collapseThree" class="accordion-collapse collapse" aria-labelledby="Payment2-data-headingThree">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 3 End -->
+
+            <!-- accordion-item 4 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment2-data-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Payment2-data-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="Payment2-data-collapseFour"
+                >
+                  <span> What are your opening hours? </span>
+                </button>
+              </h2>
+              <div id="Payment2-data-collapseFour" class="accordion-collapse collapse" aria-labelledby="Payment2-data-headingFour">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 4 Start -->
+
+            <!-- accordion-item 5 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment2-data-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Payment2-data-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="Payment2-data-collapseFive"
+                >
+                  <span> General Terms & Conditions (GTC) </span>
+                </button>
+              </h2>
+              <div id="Payment2-data-collapseFive" class="accordion-collapse collapse" aria-labelledby="Payment2-data-headingFive">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 5 Start -->
+
+            <!-- accordion-item 6 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Payment2-data-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Payment2-data-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="Payment2-data-collapseSix"
+                >
+                  <span> Do I have the right to return an item? </span>
+                </button>
+              </h2>
+              <div id="Payment2-data-collapseSix" class="accordion-collapse collapse" aria-labelledby="Payment2-data-headingSix">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 6 Start -->
+          </div>
+          <!-- accordion End -->
+        </div>
+        <!-- Payment2 Data Start -->
+
+        <!-- Coupons2 Data Start -->
+        <div class="tab-pane fade" id="Coupons2" role="tabpanel" aria-labelledby="Coupons-tab2">
+          <!-- accordion Start -->
+          <div class="accordion accordian-style1" id="Coupons2-data">
+            <!-- accordion-item 1 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons2-data-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Coupons2-data-collapseOne" aria-expanded="true" aria-controls="Coupons2-data-collapseOne">
+                  <span> Do you also have a physical store? </span>
+                </button>
+              </h2>
+              <div id="Coupons2-data-collapseOne" class="accordion-collapse collapse show" aria-labelledby="Coupons2-data-headingOne">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 1 End -->
+
+            <!-- accordion-item 2 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons2-data-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons2-data-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="Coupons2-data-collapseTwo"
+                >
+                  <span> where can i subscribe to newsletter? </span>
+                </button>
+              </h2>
+              <div id="Coupons2-data-collapseTwo" class="accordion-collapse collapse" aria-labelledby="Coupons2-data-headingTwo">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 2 End -->
+
+            <!-- accordion-item 3 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons2-data-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons2-data-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="Coupons2-data-collapseThree"
+                >
+                  <span> Can I reserve a magazine? </span>
+                </button>
+              </h2>
+              <div id="Coupons2-data-collapseThree" class="accordion-collapse collapse" aria-labelledby="Coupons2-data-headingThree">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 3 End -->
+
+            <!-- accordion-item 4 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons2-data-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons2-data-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="Coupons2-data-collapseFour"
+                >
+                  <span> What are your opening hours? </span>
+                </button>
+              </h2>
+              <div id="Coupons2-data-collapseFour" class="accordion-collapse collapse" aria-labelledby="Coupons2-data-headingFour">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 4 Start -->
+
+            <!-- accordion-item 5 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons2-data-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons2-data-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="Coupons2-data-collapseFive"
+                >
+                  <span> General Terms & Conditions (GTC) </span>
+                </button>
+              </h2>
+              <div id="Coupons2-data-collapseFive" class="accordion-collapse collapse" aria-labelledby="Coupons2-data-headingFive">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 5 Start -->
+
+            <!-- accordion-item 6 Start -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Coupons2-data-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Coupons2-data-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="Coupons2-data-collapseSix"
+                >
+                  <span> Do I have the right to return an item? </span>
+                </button>
+              </h2>
+              <div id="Coupons2-data-collapseSix" class="accordion-collapse collapse" aria-labelledby="Coupons2-data-headingSix">
+                <div class="accordion-body">
+                  No, we don’t have a physical store location at the moment. We accept only orders through our online shop and we’re shipping all orders. Please visit our shipping section for more
+                  details.
+                </div>
+              </div>
+            </div>
+            <!-- accordion-item 6 Start -->
+          </div>
+          <!-- accordion End -->
+        </div>
+        <!-- Coupons2 Data End -->
+      </div>
+      <!-- Tabs Data End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+          </li>
+          <li>
+            <a href="element.html" class="footer-link"><i data-feather="layers"></i> </a>
+          </li>
+          <li>
+            <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+          </li>
+          <li>
+            <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+          </li>
+          <li>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

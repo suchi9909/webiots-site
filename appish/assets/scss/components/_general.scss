@@ -1,0 +1,129 @@
+/*=====================
+  2.3 page-catagories pages  CSS
+==========================*/
+
+/// Bumble Shape ///
+.shape2 {
+    position: absolute;
+    width: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    bottom: -68px;
+    z-index: 1;
+    .circle {
+        position: relative;
+        z-index: 1;
+        width: 12px;
+        display: inline-block;
+        height: 12px;
+        background-color: $title-color;
+        border-radius: 100%;
+    }
+    .line {
+        margin: -7px 0;
+        position: relative;
+        width: 5px;
+        z-index: 2;
+        height: calc(48px + (48 - 48) * ((100vw - 320px) / (1920 - 320)));
+        background-color: $white;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+}
+.shape2-left {
+    left: 15.5%;
+}
+.shape2-right {
+    right: 15.5%;
+}
+
+/// progress border ///
+.track-border {
+    .m-dashed {
+        display: inline-block;
+        width: 4px;
+        height: 8px;
+        border-radius: 100px;
+        background-color: $border-color;
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            border-radius: 100px;
+            height: 100%;
+            background-color: rgba($border-color, 0.1);
+        }
+        &::before {
+            bottom: 12px;
+        }
+        &::after {
+            top: 12px;
+        }
+    }
+}
+
+/// Catagories Menu ///
+.catagories-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-image: $dark-gradient;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 86px;
+    left: 25px;
+    font-size: 12px;
+    display: none;
+    color: $white;
+    svg {
+        width: 20px;
+        height: 20px;
+        stroke: $white;
+    }
+    [dir="rtl"] & {
+        left: unset;
+        right: 25px;
+    }
+    @media only screen and (max-width: 415px) {
+        display: flex;
+    }
+}
+
+/// Calender Arrow ///
+.datepicker--nav-action {
+    svg {
+        [dir="rtl"] & {
+            transform-origin: center;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/// Apex chart ///
+.apexcharts-legend-series {
+    margin-top: 8px !important;
+    .apexcharts-legend-marker {
+        border: $card-border;
+        margin-right: 8px !important;
+        [dir="rtl"] & {
+            margin-left: 8px;
+            margin-right: unset;
+        }
+    }
+}
+.apexcharts-canvas {
+    margin: 0 auto !important;
+}
+.apexcharts-menu-icon {
+    display: none;
+}
+.apexcharts-toolbar {
+    display: none !important;
+}

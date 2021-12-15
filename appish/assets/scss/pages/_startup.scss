@@ -1,0 +1,75 @@
+/*=====================
+  4.2 Startup pages  CSS
+==========================*/
+
+/// Startup page 1 Start ///
+.startup-pages1 {
+    .header-section {
+        position: relative;
+        text-align: center;
+        .banner-box {
+            overflow: hidden;
+        }
+        .dote {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            animation: moveright 2s linear infinite both;
+            img {
+                height: auto;
+            }
+        }
+        .banner-img {
+            margin-top: -55%;
+            text-align: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .main-section {
+        position: relative;
+        padding: 35px 0;
+        text-align: center;
+        margin-top: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
+        .content-box {
+            padding: 0 calc(35px + (110 - 35) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+    .btn-box {
+        padding: 0 calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+        margin-top: calc(45px + (60 - 45) * ((100vw - 320px) / (1920 - 320)));
+
+        .btn {
+            display: block;
+        }
+        & > a {
+            &:last-child {
+                font-weight: 700;
+                display: block;
+            }
+        }
+    }
+}
+.round-top {
+    position: absolute;
+    top: 6.8%;
+    right: 13.5%;
+    animation: bouncing-top 2s linear infinite both;
+    img {
+        height: auto;
+    }
+}
+.round-bottom {
+    position: absolute;
+    bottom: 17%;
+    left: 13.5%;
+    animation: 2s bouncing-bottom linear infinite both;
+}
+.dote-bottom {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    animation: moveleft 2s linear infinite both;
+}
+/// Startup page 1 Start ///

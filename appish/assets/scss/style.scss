@@ -1,0 +1,76 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name:Appish APP
+    Template URI: themes.pixelstrap.com/Appish-app
+    Description: This is PWA Html Template
+    Author: Pixelstrap
+    Author URL: https://themeforest.net/user/pixelstrap
+
+----------------------------------------------------------------------------------- */
+
+////* Base Files  *////
+/* 1.1 Reset CSS  */
+/* 1.2 Typography CSS */
+
+////* Components Files  *////
+/* 2.1 Accordian CSS */
+/* 2.1 Animation CSS */
+/* 2.2 Ratio */
+/* 2.3 Buttons */
+/* 2.4 General component */
+/* 2.5 Switch  */
+
+////* Layout Files  *////
+/* 3.1 Header css */
+/* 3.2 Footer css */
+
+////* Pages Files  *////
+/* 4.1 page-catagories Page CSS  */
+/* 4.1 page-list  CSS  */
+/* 4.1 Index Page CSS  */
+
+////* Themes Files  *////
+
+/// Utils Scss Files ///
+@import "utils/variables";
+@import "utils/classes";
+@import "utils/mixin";
+
+/// Base Scss Files ///
+@import "base/reset";
+@import "base/typography";
+
+/// Components Scss Files ///
+@import "components/accordian";
+@import "components/animation";
+@import "components/buttons";
+@import "components/breadcumb";
+@import "components/countdown";
+@import "components/form";
+@import "components/general";
+@import "components/modal";
+@import "components/nav-tabs";
+@import "components/pagination";
+@import "components/product-card";
+@import "components/progress";
+@import "components/ratio";
+@import "components/switch";
+@import "components/table";
+
+/// Layout Scss Files ///
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sidebar";
+
+/// Pages ///
+@import "pages/authentic";
+@import "pages/blog-page";
+@import "pages/ecommerce";
+@import "pages/element-pages";
+@import "pages/general-pages";
+@import "pages/grocery-page";
+@import "pages/page-catagories";
+@import "pages/page-list";
+@import "pages/startup";
+
+/// Themes Scss Files ///

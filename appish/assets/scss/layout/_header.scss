@@ -1,0 +1,281 @@
+/*=====================
+  3.2 Header  CSS
+==========================*/
+/// Default Header Start ///
+.header {
+    padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+    display: flex;
+    align-items: center;
+    & > div {
+        display: flex;
+        align-items: center;
+        .nav-bar {
+            width: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: $dark-gradient;
+            border-radius: 100%;
+            svg {
+                width: calc(16px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(16px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
+                stroke-width: 3px;
+                stroke: $white-light;
+                [dir="rtl"] & {
+                    transform-origin: center;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        h1 {
+            font-weight: 600;
+            margin-top: 3px;
+            margin-left: 20px;
+            [dir="rtl"] & {
+                margin-left: unset;
+                margin-right: 20px;
+            }
+        }
+    }
+    img {
+        margin-left: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+    &.header-cht {
+        padding: 20px 15px 15px 15px;
+        & > div {
+            & > div {
+                margin-left: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+                h1 {
+                    margin-left: 0;
+                    margin-bottom: 3px;
+                    line-height: calc(13px + (16 - 13) * ((100vw - 320px) / (1920 - 320)));
+                }
+                span {
+                    text-transform: capitalize;
+                    font-weight: 400;
+                }
+                [dir="rtl"] & {
+                    margin-right: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+                    margin-left: unset;
+                    h1 {
+                        margin-right: unset;
+                    }
+                }
+            }
+        }
+        & > span {
+            margin-left: auto;
+            width: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: $card-border;
+            background-color: $theme-yellow;
+            border-radius: 100%;
+            &:last-child {
+                margin-left: 15px;
+            }
+            svg {
+                width: 18px;
+                height: 18px;
+                stroke-width: 2px;
+            }
+            [dir="rtl"] & {
+                margin-right: auto;
+                margin-left: unset;
+                &:last-child {
+                    margin-right: 15px;
+                    margin-left: unset;
+                }
+            }
+        }
+    }
+}
+/// Default Header End ///
+
+/// Header Style 1 Start ///
+.header1 {
+    @extend .header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                &:not(:last-of-type) {
+                    margin-right: 15px;
+                    [dir="rtl"] & {
+                        margin-left: 15px;
+                        margin-right: unset;
+                    }
+                }
+                a {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        &.fill {
+                            fill: $white;
+                        }
+                    }
+                }
+                .begets {
+                    background-color: $theme-blue;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    color: $title-color;
+                    font-size: 15px;
+                    svg {
+                        margin-right: 8px;
+                        [dir="rtl"] & {
+                            margin-left: 8px;
+                            margin-right: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/// Header Style 1 End ///
+
+/// Header Style 2 Start ///
+.header2 {
+    @extend .header;
+    justify-content: space-between;
+    .nav-bar {
+        width: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+        min-width: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+        min-height: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: $dark-gradient;
+        border-radius: 100%;
+        color: $white;
+        font-size: calc(22px + (26 - 22) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 600;
+    }
+    .search-box {
+        position: relative;
+        margin: 0 8px;
+        input {
+            background-color: $gray-light;
+            border: none;
+            outline: none;
+            padding: 8px 10px 8px 40px;
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            [dir="rtl"] & {
+                padding: 8px 40px 8px 10px;
+            }
+        }
+        .search {
+            top: 48%;
+            left: 8px;
+            transform: translateY(-50%);
+            position: absolute;
+            width: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+            stroke: $content-color;
+            [dir="rtl"] & {
+                left: unset;
+                right: 8px;
+            }
+        }
+    }
+    .img-link {
+        position: relative;
+        display: inline-block;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            width: 8px;
+            height: 8px;
+            background-color: $theme-success;
+            border-radius: 100%;
+            [dir="rtl"] & {
+                right: unset;
+                left: 4px;
+            }
+        }
+    }
+}
+/// Header Style 2 End ///
+
+/// Header Style 3 Start ///
+.header3 {
+    @extend .header1;
+    > div {
+        .nav-bar {
+            &:first-of-type {
+                background-image: unset;
+                padding: 0;
+                svg {
+                    stroke: $title-color;
+                }
+            }
+        }
+        h1 {
+            margin-top: 0;
+            margin-left: 15px;
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    svg {
+                        stroke: $content-color;
+                    }
+                }
+                &:not(:first-of-type) {
+                    a {
+                        svg {
+                            fill: $content-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/// Header Style 3 End ///
+
+/// Header Style 4 Start ///
+.header4 {
+    @extend .header1;
+    .img-link {
+        position: relative;
+        display: inline-block;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            width: 8px;
+            height: 8px;
+            background-color: $theme-success;
+            border-radius: 100%;
+            [dir="rtl"] & {
+                right: unset;
+                left: 4px;
+            }
+        }
+    }
+}
+/// Header Style 4 End ///

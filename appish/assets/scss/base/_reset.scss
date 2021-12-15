@@ -1,0 +1,38 @@
+/*=====================
+  1.1 Reset Css Start
+==========================*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    font-size: 14px;
+    margin: 0;
+    color: $title-color;
+    background-color: $white;
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+}
+ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+@media only screen and (min-width: 767px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

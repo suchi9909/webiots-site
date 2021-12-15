@@ -1,0 +1,14 @@
+/*=====================
+    about us CSS start
+==========================*/
+
+.about-detail {
+    p {
+        font-size: 16px;
+        color: $content-color;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

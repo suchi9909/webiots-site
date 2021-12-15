@@ -1,0 +1,113 @@
+/*=====================
+  4.2 page-catagories pages  CSS
+==========================*/
+.page-catagories {
+    .catagories {
+        .catagories-item {
+            text-align: center;
+            position: relative;
+            border: $card-border;
+            box-shadow: $box-shadow;
+            border-radius: 15px;
+            .bg-wrap {
+                opacity: 0.7;
+            }
+            .content {
+                width: 100%;
+                padding: 7px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                a {
+                    img {
+                        width: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+                        height: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+                    }
+                    h2 {
+                        line-height: 22px;
+                        font-weight: 600;
+                        margin-bottom: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)));
+                    }
+                    h3 {
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .row {
+        [class^="col"] {
+            &:nth-last-of-type(-n + 2) {
+                .shape2 {
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 456px) {
+                .shape2 {
+                    bottom: -60px;
+
+                    .line {
+                        height: 40px;
+                    }
+                }
+            }
+            &:nth-child(5n + 1) {
+                .catagories-item {
+                    background-color: $theme-blue;
+                }
+            }
+            &:nth-child(5n + 2) {
+                .catagories-item {
+                    background-color: $theme-yellow;
+                }
+            }
+            &:nth-child(5n + 3) {
+                .catagories-item {
+                    background-color: $theme-green;
+                }
+            }
+            &:nth-child(5n + 4) {
+                .catagories-item {
+                    background-color: $theme-purple;
+                }
+            }
+            &:nth-child(5n + 5) {
+                .catagories-item {
+                    background-color: $theme-orange;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .ratio-83 {
+            .bg-size {
+                &:before {
+                    padding-top: 80%;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 384px) {
+        .row {
+            [class^="col"] {
+                width: 100%;
+                .shape2 {
+                    display: flex !important;
+                }
+                &:last-of-type {
+                    .shape2 {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        .ratio-83 {
+            .bg-size {
+                &:before {
+                    padding-top: 70%;
+                }
+            }
+        }
+    }
+}

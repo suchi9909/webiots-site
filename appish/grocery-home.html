@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <span class="nav-bar">
+          <i data-feather="menu"></i>
+        </span>
+        <h1 class="title-color font-lg">Home</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <aside>
+      <a href="javascript:void(0)" class="overlay-sidebar"></a>
+      <div class="header-sidebar">
+        <a href="javascript:void(0)" class="user-panel">
+          <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="" />
+          <span>Hello, Paige Turner</span>
+          <i data-feather="chevron-right" class="icli"></i>
+        </a>
+        <div class="sidebar-content">
+          <ul class="link-section">
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <i data-feather="moon" class="me-4"></i
+                      ></span>
+                      Dark Mode
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="darkButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/language.svg" class="me-4" alt="rtl"
+                      /></span>
+                      RTL
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="rtlButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/setting.svg" class="me-4" alt="rtl" /></span
+                      >Notification
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="notificationButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="profile-setting.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/bell.svg" class="me-4" alt="rtl" /></span
+                      >Profile Setting
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="change-cassword.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/eye2.svg" class="me-4" alt="rtl" /></span
+                      >Change Password
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="Language.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/glob2.svg" class="me-4" alt="rtl" /></span
+                      >Language
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="privacy-policy.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/lock.svg" class="me-4" alt="rtl" /></span
+                      >Privacy Policy
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="Logout.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/logout.svg" class="me-4" alt="rtl" /></span
+                      >Logout
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large grocery-home">
+      <!-- Top Content Section Start -->
+      <section class="top-section p-t-sm">
+        <span class="font-md"><i data-feather="map-pin"></i> Mira Loma, CA</span>
+        <h2 class="title-2">Discover something new</h2>
+        <!-- Search Box Start -->
+        <div class="search-box">
+          <i class="search" data-feather="search"></i>
+          <input class="form-control" type="search" placeholder="Search here..." />
+          <i class="mic" data-feather="mic"></i>
+        </div>
+        <!-- Search Box End -->
+      </section>
+      <!-- Top Content Section End -->
+
+      <!-- Banner Section Start -->
+      <section class="p-tb-sm ratio_45 grocery-slide">
+        <!-- Banner Start -->
+        <div>
+          <div class="banner-box">
+            <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+            <h2>Welcome to Appish!</h2>
+            <p class="font-sm content-color">Contactless safe & free delivery</p>
+            <div>
+              <img src="assets/images/grocery/banner/welcome.svg" class="img-fluid" alt="welcome" />
+            </div>
+          </div>
+        </div>
+        <!-- Banner End -->
+
+        <!-- Banner Start -->
+        <div>
+          <div class="banner-box">
+            <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+            <h2>Welcome to Appish!</h2>
+            <p class="font-sm content-color">Contactless safe & free delivery</p>
+            <div>
+              <img src="assets/images/grocery/banner/welcome.svg" class="img-fluid" alt="welcome" />
+            </div>
+          </div>
+        </div>
+        <!-- Banner End -->
+
+        <!-- Banner Start -->
+        <div>
+          <div class="banner-box">
+            <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+            <h2>Welcome to Appish!</h2>
+            <p class="font-sm content-color">Contactless safe & free delivery</p>
+            <div>
+              <img src="assets/images/grocery/banner/welcome.svg" class="img-fluid" alt="welcome" />
+            </div>
+          </div>
+        </div>
+        <!-- Banner End -->
+
+        <!-- Banner Start -->
+        <div>
+          <div class="banner-box">
+            <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+            <h2>Welcome to Appish!</h2>
+            <p class="font-sm content-color">Contactless safe & free delivery</p>
+            <div>
+              <img src="assets/images/grocery/banner/welcome.svg" class="img-fluid" alt="welcome" />
+            </div>
+          </div>
+        </div>
+        <!-- Banner End -->
+      </section>
+      <!-- Banner Section End -->
+
+      <!-- Top Categories Section Start -->
+      <section class="categories p-tb-sm">
+        <h2 class="title-2 m-b-title1">Top Categories</h2>
+        <ul>
+          <li>
+            <a href="javascrip:void">
+              <img src="assets/images/grocery/icon/vegetable.svg" alt="fruit" />
+              Vegetables</a
+            >
+          </li>
+          <li>
+            <a href="javascrip:void">
+              <img src="assets/images/grocery/icon/fruits.svg" alt="fruit" />
+              Fresh Fruits
+            </a>
+          </li>
+          <li>
+            <a href="javascrip:void">
+              <img src="assets/images/grocery/icon/fish.svg" alt="fish" />
+              Fish
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- Top Categories Section End -->
+
+      <!-- Your Daily Staples Section Start -->
+      <section class="staples-section p-tb-sm">
+        <div class="categories m-b-title1">
+          <h2 class="title-2">Your Daily Staples</h2>
+          <a href="grocery-shop.html">See All</a>
+        </div>
+        <div class="row g-3 g-sm-4">
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/vegitables.png" alt="vegetables" />
+                </div>
+                <h3>Vegetables</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/fruits.png" alt="vegetables" />
+                </div>
+                <h3>Fruits</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/cuts.png" alt="vegetables" />
+                </div>
+                <h3>Cuts Fruits</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/sprouts.png" alt="vegetables" />
+                </div>
+                <h3>Sprouts</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/herbs.png" alt="vegetables" />
+                </div>
+                <h3>Herbs</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/seasonings.png" alt="vegetables" />
+                </div>
+                <h3>Seasonings</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/exotic.png" alt="vegetables" />
+                </div>
+                <h3>Exotic Fruits</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+
+          <!-- Staples Box Start -->
+          <div class="col-3">
+            <a href="grocery-shop.html">
+              <div class="staples-box">
+                <div>
+                  <img class="img-fluid" src="assets/images/grocery/product/png/organic.png" alt="vegetables" />
+                </div>
+                <h3>Organic</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Staples Box End -->
+        </div>
+      </section>
+      <!-- Your Daily Staples Section End -->
+
+      <!-- Top Offer Section Start -->
+      <section class="top-offer p-tb-sm ratio_asos">
+        <h2 class="title-2 m-b-title1">Top Offers</h2>
+        <div class="ratio_asos">
+          <!-- Offer Start -->
+          <div class="banner-box">
+            <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+            <div class="media">
+              <div>
+                <a href="grocery-shop.html"> <img src="assets/images/grocery/product/png/offer1.png" alt="offer" /></a>
+              </div>
+              <div class="media-body">
+                <a href="grocery-shop.html"> <h3>Fresh Vegetables Arrives Each day @ 6am</h3></a>
+                <span class="font-sm badges-lg-square bg-success">Same day delivery</span>
+              </div>
+            </div>
+          </div>
+          <!-- Offer End -->
+
+          <!-- Offer Start -->
+          <div class="banner-box">
+            <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background" />
+            <div class="media">
+              <div>
+                <a href="grocery-shop.html"> <img src="assets/images/grocery/product/png/offer2.png" alt="offer" /></a>
+              </div>
+              <div class="media-body">
+                <a href="grocery-shop.html"> <h3>Fresh Fruits Straight From Farms</h3></a>
+                <span class="font-sm badges-lg-square bg-warning">Up to 50% OFF</span>
+              </div>
+            </div>
+          </div>
+          <!-- Offer End -->
+        </div>
+      </section>
+      <!-- Top Offer Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+          </li>
+          <li>
+            <a href="element.html" class="footer-link"><i data-feather="layers"></i> </a>
+          </li>
+          <li>
+            <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+          </li>
+          <li>
+            <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+          </li>
+          <li>
+            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Slider js -->
+    <script src="assets/js/vendors/slick.js"></script>
+    <script src="assets/js/vendors/slick.min.js"></script>
+    <script src="assets/js/vendors/slick-custom.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

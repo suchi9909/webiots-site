@@ -1,0 +1,168 @@
+/*=====================
+  4.2 Element Page  CSS
+==========================*/
+.element-pages {
+    .ratio_asos {
+        .bg-size {
+            &:before {
+                padding-top: 0%;
+            }
+        }
+    }
+    .banner {
+        border-radius: 10px;
+        border: $card-border;
+        box-shadow: $box-shadow;
+        background-color: rgba($theme-success, 0.2);
+        padding: 36px 20px;
+        .banner-content {
+            text-align: center;
+            h2 {
+                font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: 8px;
+            }
+            p {
+                color: $content-color;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .breadcrumb-wrap {
+        margin-bottom: 20px;
+    }
+    .accordian-wrap {
+        @include dashed-border-bottom();
+    }
+    .header-wrap {
+        box-shadow: 0px -1px 4px rgba($border-color, 0.1);
+        border-radius: 3px;
+        margin-bottom: 25px;
+    }
+    .footer-wrap {
+        padding: 0;
+        position: relative;
+        margin-bottom: 25px;
+        &:not(:first-of-type) {
+            box-shadow: 0px -1px 4px rgba($border-color, 0.1);
+            border-radius: 3px;
+            margin-bottom: 25px;
+        }
+    }
+    .button-wrap {
+        margin-bottom: 25px;
+
+        .btn-box {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .btn {
+                margin: 5px;
+            }
+        }
+    }
+    .pagination-wrap {
+        text-align: center;
+    }
+    .grid-wrap {
+        .row {
+            > div {
+                > div {
+                    text-align: center;
+                    padding: 10px;
+                    background-color: $white;
+                    border: $card-border;
+                    box-shadow: $box-shadow;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .text-resizer {
+        text-align: center;
+    }
+    .icon-usage {
+        padding: 10px;
+        border: $card-border;
+        box-shadow: $box-shadow;
+        border-radius: 15px;
+        .icon-group {
+            background-image: $dark-gradient;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 15px;
+            flex-wrap: wrap;
+            svg {
+                width: 25px;
+                height: 25px;
+                margin: 5px 0;
+                &:not(:last-of-type) {
+                    margin-right: 15px;
+                    [dir="rtl"] & {
+                        margin-left: 15px;
+                        margin-right: unset;
+                    }
+                }
+            }
+            img {
+                margin-right: 15px;
+                filter: invert(1);
+                width: 30px;
+                height: 30px;
+                [dir="rtl"] & {
+                    margin-left: 15px;
+                    margin-right: unset;
+                }
+            }
+        }
+    }
+
+    .heading-wrap {
+        > h3 {
+            margin-bottom: 15px;
+        }
+        .heading {
+            padding: 10px;
+            border: $card-border;
+            box-shadow: $box-shadow;
+            border-radius: 10px;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                line-height: 37px;
+                color: $title-color;
+            }
+            p {
+                margin-bottom: 5px;
+            }
+        }
+        .pre {
+            max-height: fit-content;
+            margin-top: 20px;
+            border: $card-border;
+            box-shadow: $box-shadow;
+            border-radius: 10px;
+            overflow: hidden;
+            pre {
+                background-color: $gray-light;
+                code {
+                    margin-top: -20px;
+                }
+            }
+        }
+    }
+    .pera-wrap {
+        padding: 10px;
+        border: $card-border;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
+        p {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+    }
+}
