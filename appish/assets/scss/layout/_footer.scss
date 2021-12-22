@@ -33,15 +33,14 @@
                     }
                     &::before {
                         position: absolute;
-                        content: "\002E";
-                        font-size: 30px;
+                        content: "";
                         display: none;
-                        width: 10px;
-                        line-height: 0;
-                        right: 6px;
-                        height: 10px;
-                        top: -15px;
-                        color: $white-light;
+                        width: 4px;
+                        right: 10px;
+                        height: 4px;
+                        top: -10px;
+                        border-radius: 100%;
+                        background-color: $white-light;
                     }
                     &.active {
                         &::before {
@@ -76,9 +75,17 @@
             ul {
                 position: absolute;
                 right: calc(34px + (47 - 34) * ((100vw - 320px) / (1920 - 320)));
+                [dir="rtl"] & {
+                    right: unset;
+                    left: calc(34px + (47 - 34) * ((100vw - 320px) / (1920 - 320)));
+                }
                 li {
                     &:not(:last-child) {
                         margin-right: 10px;
+                        [dir="rtl"] & {
+                            margin-left: 10px;
+                            margin-right: unset;
+                        }
                     }
                     a {
                         svg {
@@ -113,16 +120,6 @@
                                 align-items: center;
                                 justify-content: center;
                             }
-                        }
-                    }
-                }
-                [dir="rtl"] & {
-                    right: unset;
-                    left: calc(34px + (47 - 34) * ((100vw - 320px) / (1920 - 320)));
-                    li {
-                        &:not(:last-child) {
-                            margin-left: 10px;
-                            margin-right: unset;
                         }
                     }
                 }
@@ -163,17 +160,15 @@
             .emojionearea-button {
                 right: 35px;
                 opacity: 0;
+                [dir="rtl"] & {
+                    right: unset;
+                    left: 35px;
+                }
                 &.active {
                     + .emojionearea-picker-position-top {
                         margin-top: -273px;
                         right: 12px;
-                    }
-                }
-                [dir="rtl"] & {
-                    right: unset;
-                    left: 35px;
-                    &.active {
-                        + .emojionearea-picker-position-top {
+                        [dir="rtl"] & {
                             right: unset;
                             left: 12px;
                         }
@@ -202,6 +197,10 @@
             padding-right: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)));
             padding-top: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)));
             padding-bottom: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)));
+            [dir="rtl"] & {
+                padding-right: calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
+                padding-left: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)));
+            }
             ul {
                 justify-content: space-between;
                 li {
@@ -231,6 +230,10 @@
                             width: 18px;
                             height: 18px;
                             margin-right: 10px;
+                            [dir="rtl"] & {
+                                margin-left: 10px;
+                                margin-right: unset;
+                            }
                         }
                         @media only screen and (max-width: 400px) {
                             span {
@@ -244,21 +247,6 @@
                     > span {
                         font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
                         color: $white-light;
-                    }
-                }
-            }
-            [dir="rtl"] & {
-                padding-right: calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
-                padding-left: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)));
-
-                ul {
-                    li {
-                        a {
-                            svg {
-                                margin-left: 10px;
-                                margin-right: unset;
-                            }
-                        }
                     }
                 }
             }

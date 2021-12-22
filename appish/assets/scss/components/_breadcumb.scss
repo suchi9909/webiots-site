@@ -200,6 +200,9 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: $btn-shadow;
+    @media only screen and (max-width: 424px) {
+        padding: 14px 20px;
+    }
     li {
         position: relative;
         svg {
@@ -222,27 +225,21 @@
                 width: 186px;
                 height: 100%;
                 margin-left: 11px;
-
-                @media only screen and (max-width: 766px) {
-                    width: calc(48px + (807 - 48) * ((100vw - 320px) / (1920 - 320)));
-                }
                 [dir="rtl"] & {
                     margin-left: unset;
                     margin-right: 11px;
+                }
+                @media only screen and (max-width: 767px) {
+                    width: calc(48px + (807 - 48) * ((100vw - 320px) / (1920 - 320)));
+                }
+                @media only screen and (max-width: 424px) {
+                    width: calc(65px + (807 - 65) * ((100vw - 320px) / (1920 - 320))) !important;
                 }
             }
         }
         &.active {
             &::after {
                 opacity: 1;
-            }
-        }
-    }
-    @media only screen and (max-width: 424px) {
-        padding: 14px 20px;
-        li {
-            &::after {
-                width: calc(65px + (807 - 65) * ((100vw - 320px) / (1920 - 320))) !important;
             }
         }
     }
@@ -289,6 +286,9 @@
                 right: calc(38px + (48 - 38) * ((100vw - 320px) / (1920 - 320)));
                 left: unset;
             }
+            @media only screen and (max-width: 767px) {
+                width: calc(90px + (895 - 90) * ((100vw - 320px) / (1920 - 320)));
+            }
         }
         &:last-of-type {
             &::after {
@@ -300,11 +300,6 @@
             color: $white;
             &::after {
                 background-image: $dark-gradient;
-            }
-        }
-        @media only screen and (max-width: 766px) {
-            &::after {
-                width: calc(90px + (895 - 90) * ((100vw - 320px) / (1920 - 320)));
             }
         }
     }

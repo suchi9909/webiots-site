@@ -343,15 +343,15 @@ $utilities: (
         border-radius: 8px;
         padding: 0 calc(13px + (18 - 13) * ((100vw - 320px) / (1920 - 320)));
         background-image: $dark-gradient;
+        [dir="rtl"] & {
+            margin-left: unset;
+            margin-right: 20px;
+        }
         img,
         svg {
             width: 24px;
             height: 24px;
             stroke: $white;
-        }
-        [dir="rtl"] & {
-            margin-left: unset;
-            margin-right: 20px;
         }
     }
 }
@@ -421,20 +421,17 @@ $utilities: (
             font-size: calc(15px + (18 - 18) * ((100vw - 320px) / (1920 - 320)));
             &:not(:last-child) {
                 margin-right: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+                [dir="rtl"] & {
+                    margin-left: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+                    margin-right: unset;
+                }
             }
             img,
             svg {
                 width: calc(30px + (36 - 30) * ((100vw - 320px) / (1920 - 320)));
                 height: calc(30px + (36 - 30) * ((100vw - 320px) / (1920 - 320)));
                 margin-right: 10px;
-            }
-            [dir="rtl"] & {
-                &:not(:last-child) {
-                    margin-left: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
-                    margin-right: unset;
-                }
-                img,
-                svg {
+                [dir="rtl"] & {
                     margin-left: 10px;
                     margin-right: unset;
                 }
@@ -519,6 +516,10 @@ $utilities: (
             padding: 4px;
             border-radius: 100px;
             background-image: $dark-gradient;
+            [dir="rtl"] & {
+                right: unset;
+                left: 10px;
+            }
             svg {
                 width: 16px;
                 height: 16px;
@@ -526,10 +527,6 @@ $utilities: (
                 &.fill {
                     fill: $white;
                 }
-            }
-            [dir="rtl"] & {
-                right: unset;
-                left: 10px;
             }
         }
     }
@@ -562,6 +559,9 @@ $utilities: (
         margin-right: 28px;
         margin-left: 28px;
         transition: all 0.3s;
+        [dir="rtl"] & {
+            float: left;
+        }
         @media only screen and (max-width: 766px) {
             margin-right: 0.55%;
             margin-left: 0.55%;
@@ -573,11 +573,8 @@ $utilities: (
         @media only screen and (max-width: 355px) {
             margin-right: 0%;
             margin-left: 0%;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        [dir="rtl"] & {
-            float: left;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
         }
     }
     .slick-center {

@@ -1,3 +1,23 @@
+
+/// Landing Page Slider ///
+/// Blog Home Banner slider ///
+$('.landing-slider').slick({
+    dots: false,
+    slidesToShow: 2,
+    centerMode: true,
+    centerPadding: '50px',
+    arrows: false,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 370,
+            settings: {
+                slidesToShow: 1
+            }
+        },
+    ]
+});
+
 /// categories search page ///
 $('.categories-slide').slick({
     infinite: true,
@@ -84,19 +104,14 @@ $('.e-banner-slider').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 430,
+            breakpoint: 475,
             settings: {
                 centerPadding: '20px',
             }
         },
+
         {
-            breakpoint: 366,
-            settings: {
-                centerPadding: '10px',
-            }
-        },
-        {
-            breakpoint: 337,
+            breakpoint: 375,
             settings: {
                 centerMode: false,
                 centerPadding: '0',
@@ -117,19 +132,13 @@ $('.recent-view-slide').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 430,
+            breakpoint: 475,
             settings: {
                 centerPadding: '20px',
             }
         },
         {
-            breakpoint: 366,
-            settings: {
-                centerPadding: '10px',
-            }
-        },
-        {
-            breakpoint: 337,
+            breakpoint: 375,
             settings: {
                 centerMode: false,
                 centerPadding: '0',
@@ -152,13 +161,31 @@ $('.product-banner-slider').slick({
 $('.recently-v-slider').slick({
     dots: true,
     slidesToShow: 2,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '40px',
     arrows: false,
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 386,
+            breakpoint: 567,
             settings: {
-                slidesToShow: 1
+                centerPadding: '25px',
+            }
+        },
+        {
+            breakpoint: 475,
+            settings: {
+                centerMode: false,
+                centerPadding: '25px',
+            }
+        },
+        {
+            breakpoint: 390,
+            settings: {
+                centerMode: true,
+                centerPadding: '25px',
+                slidesToShow: 1,
             }
         },
     ]
@@ -166,14 +193,32 @@ $('.recently-v-slider').slick({
 /// Recently Viewed slider ///
 $('.g-v-slider').slick({
     dots: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '40px',
     slidesToShow: 2,
     arrows: false,
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 415,
+            breakpoint: 567,
             settings: {
-                slidesToShow: 1
+                centerPadding: '25px',
+            }
+        },
+        {
+            breakpoint: 475,
+            settings: {
+                centerMode: false,
+                centerPadding: '25px',
+            }
+        },
+        {
+            breakpoint: 390,
+            settings: {
+                centerMode: true,
+                centerPadding: '25px',
+                slidesToShow: 1,
             }
         },
     ]
@@ -246,6 +291,40 @@ $('.blog-detail-slide ').slick({
         },
 
 
+    ],
+
+});
+
+/// Blog Home Banner slider ///
+$('.blog-slider').slick({
+    dots: false,
+    slidesToShow: 2,
+    centerMode: true,
+    centerPadding: '50px',
+    arrows: false,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 370,
+            settings: {
+                slidesToShow: 1
+            }
+        },
+    ]
+});
+
+/// Pricing card slider ///
+$('.pricing-slide ').slick({
+    slidesToShow: 2,
+    arrows: false,
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
     ],
 
 });

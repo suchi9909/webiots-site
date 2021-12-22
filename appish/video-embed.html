@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Prism css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/prism.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End  -->
+
+  <!-- Body Start  -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <a href="elements-list.html">
+          <span class="nav-bar">
+            <i data-feather="chevron-left"></i>
+          </span>
+        </a>
+        <h1 class="title-color font-lg">Back to elements</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large element-pages">
+      <!-- banner Section Start -->
+      <section class="banner-box ratio_asos">
+        <div class="banner">
+          <img src="assets/images/png/bg.png" class="bg-img" alt="background" />
+          <div class="banner-content">
+            <h2>Video Embed</h2>
+            <p class="pera">There are diffrent way to add video in website shown bellow</p>
+          </div>
+        </div>
+      </section>
+      <!-- banner Section End -->
+
+      <!-- Video Embed Section Start -->
+      <section class="p-t-sm">
+        <!--By Using Iframe Start -->
+        <div class="heading-wrap p-tb-sm">
+          <h3 class="font-sm">By Using iframe</h3>
+          <div class="heading videobox">
+            <iframe class="video-iframe" src="https://www.youtube.com/embed/r2LpOUwca94"></iframe>
+          </div>
+          <div class="pre">
+            <pre class="language-html"><code data-lang="html"><div>&lt;div class="videobox"&gt;</div>
+<div>&lt;iframe class="video-iframe" src="<a href="https://www.youtube.com/embed/r2LpOUwca94">https://www.youtube.com/embed/r2LpOUwca94</a>"&gt;&lt;/iframe&gt;</div>
+<div>&lt;/div&gt;</div></code></pre>
+          </div>
+        </div>
+        <!--By Using Iframe End -->
+
+        <!-- By Using local Video Start -->
+        <div class="heading-wrap p-tb-sm">
+          <h3 class="font-sm">By Using Local Video</h3>
+          <div class="heading videobox">
+            <video class="video-local" controls>
+              <source src="assets/video/demo.mp4" type="video/mp4" />
+              <source src="assets/video/demo.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="pre">
+            <pre class="language-html"><code data-lang="html"><div>&lt;div class="videobox"&gt;</div>
+    <div>&lt;video class="video-local" controls&gt;</div>
+        <div>&lt;source src="assets/video/demo.mp4" type="video/mp4" /&gt;</div>
+        <div>&lt;source src="assets/video/demo.ogg" type="video/ogg" /&gt;</div>
+        <div>Your browser does not support the video tag.</div>
+    <div>&lt;/video&gt;</div>
+<div>&lt;/div&gt;</div></code></pre>
+          </div>
+        </div>
+        <!-- By Using local Video End -->
+
+        <!-- By Using local Video Start -->
+        <div class="heading-wrap p-tb-sm">
+          <h3 class="font-sm">Video as a Background</h3>
+          <div class="heading bg-videobox">
+            <video class="bg-video" autoplay muted loop id="myVideo">
+              <source src="assets/video/demo.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="content">
+              <h4>Backround video is common think in website</h4>
+              <p>Lorem ipsufuga ex mollitia deserunt sapiente quo! Recusandae est officia quisquam atque harum accusamus qui dolorum quas sunt quibusdam, possimus accusantium!</p>
+            </div>
+          </div>
+          <div class="pre">
+            <pre class="language-html"><code data-lang="html"><div>&lt;div class="bg-videobox"&gt;</div>
+    <div>&lt;video class="bg-video" autoplay muted loop id="myVideo"&gt;</div>
+        <div>&lt;source src="assets/video/demo.mp4" type="video/mp4" /&gt;</div>
+        <div>Your browser does not support HTML5 video.</div>
+    <div>&lt;/video&gt;</div>
+    <div>&lt;div class="content"&gt;</div>
+        <div>&lt;h4&gt;Backround video is common think in website&lt;/h4&gt;</div>
+        <div>&lt;p&gt;Lorem ipsufuga ex mollitia deserunt sapiente quo! Recusandae est officia quisquam atque harum accusamus qui dolorum quas sunt quibusdam, possimus accusantium!&lt;/p&gt;</div>
+    <div>&lt;/div&gt;</div>
+<div>&lt;/div&gt;</div></code></pre>
+          </div>
+        </div>
+        <!-- By Using local Video End -->
+      </section>
+      <!-- Video Embed Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+          </li>
+          <li>
+            <a href="elements-list.html" class="footer-link active"><i data-feather="layers"></i> </a>
+          </li>
+          <li>
+            <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+          </li>
+          <li>
+            <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+          </li>
+          <li>
+            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Prism js -->
+    <script src="assets/js/prism.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End  -->
+</html>
+<!-- Html End -->

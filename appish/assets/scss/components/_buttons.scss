@@ -4,6 +4,9 @@
 .btn {
     font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     text-transform: capitalize;
+    [dir="rtl"] & {
+        text-align: center !important;
+    }
     &.btn-round {
         border-radius: 100px;
         background-image: $dark-gradient;
@@ -55,9 +58,7 @@
             outline: none;
         }
     }
-    [dir="rtl"] & {
-        text-align: center !important;
-    }
+
     &.btn-lg {
         padding: 11px 40px;
     }

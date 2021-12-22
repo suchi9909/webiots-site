@@ -27,12 +27,17 @@
                     h2 {
                         line-height: 22px;
                         font-weight: 600;
-                        margin-bottom: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)));
+                        font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+                        margin-top: calc(5px + (10 - 5) * ((100vw - 320px) / (1920 - 320)));
+                        margin-bottom: calc(0px + (6 - 0) * ((100vw - 320px) / (1920 - 320)));
                     }
                     h3 {
                         line-height: 16px;
                     }
                 }
+            }
+            .shape2-right {
+                right: 9.5%;
             }
         }
     }
@@ -43,7 +48,7 @@
                     display: none;
                 }
             }
-            @media only screen and (max-width: 456px) {
+            @media only screen and (max-width: 475px) {
                 .shape2 {
                     bottom: -60px;
 
@@ -83,29 +88,58 @@
         .ratio-83 {
             .bg-size {
                 &:before {
-                    padding-top: 80%;
+                    padding-top: 90%;
                 }
             }
         }
     }
-    @media only screen and (max-width: 384px) {
+    @media only screen and (max-width: 375px) {
         .row {
+            &.g-3,
+            &.gy-3 {
+                --bs-gutter-y: 13px !important;
+            }
+            &.g-3,
+            &.gx-3 {
+                --bs-gutter-x: 13px;
+            }
             [class^="col"] {
                 width: 100%;
-                .shape2 {
-                    display: flex !important;
-                }
-                &:last-of-type {
+                &:not(:last-of-type) {
                     .shape2 {
-                        display: none !important;
+                        display: flex;
+                    }
+                }
+                .shape2 {
+                    bottom: -45px;
+                    .line {
+                        height: 33px;
+                        width: 4px;
+                    }
+                    .circle {
+                        z-index: 1;
+                        width: 10px;
+                        height: 10px;
                     }
                 }
             }
-        }
-        .ratio-83 {
-            .bg-size {
-                &:before {
-                    padding-top: 70%;
+            .ratio-83 {
+                .bg-size {
+                    &:before {
+                        padding-top: 70%;
+                    }
+                }
+            }
+            .shape2 {
+                bottom: -45px;
+                .line {
+                    height: 33px;
+                    width: 4px;
+                }
+                .circle {
+                    z-index: 1;
+                    width: 10px;
+                    height: 10px;
                 }
             }
         }

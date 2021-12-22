@@ -504,8 +504,54 @@ Component Dark CSS
 }
 
 /// Table ///
+.table > :not(caption) > * > * {
+    border-bottom: 1px solid $border-color;
+}
+th {
+    border-bottom: 1px solid $border-color !important;
+}
 .table-bordered {
     border: $card-border !important;
+}
+.theme-color {
+    tbody,
+    tfoot,
+    tr,
+    td {
+        color: #222222;
+    }
+}
+.table-dark {
+    tbody,
+    thead,
+    tfoot,
+    tr,
+    th,
+    td {
+        color: #f0f0f0;
+    }
+}
+.round-box {
+    tbody {
+        tr {
+            &:first-child {
+                td {
+                    color: #222222 !important;
+                }
+            }
+        }
+    }
+}
+/// prism css //
+.token {
+    &.entity {
+        background-color: transparent;
+    }
+}
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
+    color: #f0f0f0;
 }
 /*=====================
  General Pages Dark CSS
@@ -1036,7 +1082,7 @@ Component Dark CSS
     background-color: rgba(#222222, 0.5);
 }
 .catagories-section {
-    @media only screen and (max-width: 415px) {
+    @media only screen and (max-width: 475px) {
         > .row {
             > div {
                 &:first-of-type {

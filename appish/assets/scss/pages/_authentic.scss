@@ -29,6 +29,7 @@
     .login-section {
         .custom-form {
             text-align: center;
+
             h1 {
                 text-align: left;
                 font-size: 28px;
@@ -39,17 +40,28 @@
             }
             p {
                 text-align: left;
+                [dir="rtl"] & {
+                    text-align: right;
+                }
             }
+
             > span {
                 text-align: left;
                 display: flex;
                 align-items: center;
                 justify-content: left;
                 margin-bottom: calc(24px + (40 - 34) * ((100vw - 320px) / (1920 - 320)));
+                [dir="rtl"] & {
+                    justify-content: right;
+                }
                 a {
                     text-decoration: underline;
                     color: $content-color;
                     margin-left: 10px;
+                    [dir="rtl"] & {
+                        margin-right: 10px;
+                        margin-left: unset;
+                    }
                     svg {
                         width: 21px;
                         height: 21px;
@@ -78,18 +90,6 @@
                         height: calc(33px + (56 - 33) * ((100vw - 320px) / (1920 - 320)));
                         padding: calc(0px + (13 - 0) * ((100vw - 320px) / (1920 - 320))) 13px;
                         margin-right: 0;
-                    }
-                }
-            }
-            [dir="rtl"] & {
-                p {
-                    text-align: right;
-                }
-                span {
-                    justify-content: right;
-                    a {
-                        margin-right: 10px;
-                        margin-left: unset;
                     }
                 }
             }
