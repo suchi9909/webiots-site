@@ -1,0 +1,44 @@
+/*=====================
+   Buttons Css 
+==========================*/
+.btn-solid {
+  padding: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320))) calc(28px + (34 - 28) * ((100vw - 320px) / (1920 - 320)));
+  background-color: $theme-color;
+  color: $white;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: 5px;
+  font-weight: 500;
+  border: $border2;
+  line-height: 22px;
+  display: inline-block;
+  &:hover {
+    color: $white;
+  }
+}
+.btn-outline {
+  padding: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320))) calc(28px + (34 - 28) * ((100vw - 320px) / (1920 - 320)));
+  background-color: $white;
+  color: $theme-color;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid $theme-color;
+  display: inline-block;
+  &:hover {
+    color: $theme-color;
+  }
+}
+.btn-outline-grey {
+  padding: 12px calc(28px + (34 - 28) * ((100vw - 320px) / (1920 - 320)));
+  background-color: $white;
+  color: $content-color;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid $content-light;
+  width: 100%;
+  display: inline-block;
+  &:hover {
+    color: $content-color;
+  }
+}

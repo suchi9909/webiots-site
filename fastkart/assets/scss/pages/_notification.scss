@@ -1,0 +1,64 @@
+/*=====================
+  Notification Css 
+==========================*/
+.notification-page {
+  .nav-wrap {
+    background-color: $grey-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+    .nav-tab2 {
+      background-color: transparent;
+      margin-bottom: 0;
+    }
+    button {
+      img {
+        width: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
+      }
+    }
+  }
+  .offer-wrap {
+    .offer-box {
+      margin-top: 20px;
+      .media {
+        position: relative;
+        .icon-wrap {
+          width: calc(45px + (60 - 45) * ((100vw - 320px) / (1920 - 320)));
+          height: calc(45px + (60 - 45) * ((100vw - 320px) / (1920 - 320)));
+          flex: 0 0 60px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: calc(25px + (32 - 25) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(25px + (32 - 25) * ((100vw - 320px) / (1920 - 320)));
+          }
+        }
+        .media-body {
+          h3 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: calc(150px + (375 - 150) * ((100vw - 320px) / (1920 - 320)));
+            overflow: hidden;
+            @media only screen and (max-width: 767px) {
+              width: calc(150px + (995 - 150) * ((100vw - 320px) / (1920 - 320)));
+            }
+          }
+        }
+        .badges {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          right: 0;
+          [dir="rtl"] & {
+            right: unset;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

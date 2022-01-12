@@ -1,0 +1,100 @@
+/*=====================
+ Account Pages Css 
+==========================*/
+.account-page {
+  .account-wrap {
+    .user-panel {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 17px;
+      background-color: $grey-light;
+      border-radius: 7px;
+
+      .media {
+        > a {
+          img {
+            width: calc(55px + (70 - 55) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(55px + (70 - 55) * ((100vw - 320px) / (1920 - 320)));
+            display: block;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+        }
+        .media-body {
+          text-align: left;
+          [dir="rtl"] & {
+            text-align: right;
+          }
+          > a {
+            display: flex;
+            flex-direction: column;
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    .navigation {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white;
+        padding: 0 10px;
+        &:not(:first-of-type) {
+          margin-top: 14px;
+        }
+        .nav-link {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          gap: 10px;
+          &:hover,
+          &:focus {
+            color: $title-color;
+          }
+          img {
+            width: calc(24px + (28 - 24) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(24px+ (28 - 24) * ((100vw - 320px) / (1920 - 320)));
+          }
+          span {
+            font-weight: normal;
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+          }
+        }
+        > span {
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          border: $border1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $theme-light-color;
+          [dir="rtl"] & {
+            transform-origin: center;
+            transform: rotate(180deg);
+          }
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+    .log-out {
+      padding: 8px 30px;
+      background-color: $grey-light;
+      border-radius: 9px;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: calc(24px + (28 - 24) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(24px+ (28 - 24) * ((100vw - 320px) / (1920 - 320)));
+      }
+    }
+  }
+}

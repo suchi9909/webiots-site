@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fastkart" />
+    <meta name="keywords" content="Fastkart" />
+    <meta name="author" content="Fastkart" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Fastkart PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Fastkart" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End -->
+
+  <!-- Body Start -->
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="logo-wrap">
+        <a href="index.html"><img class="icon" src="assets/icons/svg/left-sq-arrow.svg" alt="Back" /></a>
+        <a href="index.html"> <img class="logo" src="assets/images/logo/Fastkart.png" alt="logo" /></a>
+      </div>
+      <div class="avatar-wrap">
+        <a href="offer.html">
+          <lord-icon src="assets/icons/gift.json" trigger="loop" stroke="70" colors="primary:#0baf9a,secondary:#0baf9a"></lord-icon>
+        </a>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap catagories-wide mb-xxl">
+      <!-- Search Box Start -->
+      <div class="search-box">
+        <img src="assets/icons/svg/search.svg" class="search" alt="search" />
+        <input class="form-control" type="search" placeholder="Search here..." />
+        <img src="assets/icons/svg/voice.svg" class="mic" alt="mic" />
+      </div>
+      <!-- Search Box End -->
+
+      <!-- Catagories Section Start -->
+      <section class="pb-0">
+        <div class="catagories-wrap">
+          <!-- Catagories Filter Start -->
+          <div class="nav" id="catagories-tab" role="tablist" aria-orientation="vertical">
+            <div class="nav-link" id="catagories1-tab" data-bs-toggle="pill" data-bs-target="#catagories1" role="tab" aria-controls="catagories1" aria-selected="true">
+              <div class="content">
+                <img src="assets/images/catagoeris/1.png" alt="catagoeris" />
+                <span class="font-xs title-color">Oils,Refined & Ghee</span>
+              </div>
+            </div>
+
+            <div class="nav-link active" id="catagories2-tab" data-bs-toggle="pill" data-bs-target="#catagories2" role="tab" aria-controls="catagories2" aria-selected="false">
+              <div class="content">
+                <img src="assets/images/catagoeris/2.png" alt="catagoeris" />
+                <span class="font-xs title-color">Rice, Flour & Grains</span>
+              </div>
+            </div>
+
+            <div class="nav-link" id="catagories3-tab" data-bs-toggle="pill" data-bs-target="#catagories3" role="tab" aria-controls="catagories3" aria-selected="false">
+              <div class="content">
+                <img src="assets/images/catagoeris/3.png" alt="catagoeris" />
+                <span class="font-xs title-color">Food Cupboard</span>
+              </div>
+            </div>
+
+            <div class="nav-link" id="catagories4-tab" data-bs-toggle="pill" data-bs-target="#catagories4" role="tab" aria-controls="catagories4" aria-selected="false">
+              <div class="content">
+                <img src="assets/images/catagoeris/4.png" alt="catagoeris" />
+                <span class="font-xs title-color">Fresh Fruits& Vegetables</span>
+              </div>
+            </div>
+
+            <div class="nav-link" id="catagories5-tab" data-bs-toggle="pill" data-bs-target="#catagories5" role="tab" aria-controls="catagories5" aria-selected="false">
+              <div class="content">
+                <img src="assets/images/catagoeris/5.png" alt="catagoeris" />
+                <span class="font-xs title-color">Drinks& Beverages</span>
+              </div>
+            </div>
+
+            <div class="nav-link" id="catagories6-tab" data-bs-toggle="pill" data-bs-target="#catagories6" role="tab" aria-controls="catagories6" aria-selected="false">
+              <div class="content">
+                <img src="assets/images/catagoeris/6.png" alt="catagoeris" />
+                <span class="font-xs title-color">Instant Mixes</span>
+              </div>
+            </div>
+          </div>
+          <!-- Catagories Filter End -->
+
+          <!-- Catagories Content Start -->
+          <div class="tab-content ratio2_1" id="catagories-tabContent">
+            <div class="tab-pane fade show active" id="catagories1" role="tabpanel" aria-labelledby="catagories1">
+              <div class="banner-box">
+                <img src="assets/images/banner/catagories-banner.jpg" alt="banner" class="bg-img" />
+                <div class="content-box">
+                  <h1 class="title-color heading">Season’s exotic Fruits</h1>
+                  <p class="content-color font-sm">Upto 20% OFF</p>
+                  <a href="shop.html" class="btn-solid">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/vegitables.png" alt="vegi" />
+                      </div>
+                      <h4>Vegetables</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt=" herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/seasonings.png" alt="seasonings" />
+                      </div>
+                      <h4>Seasonings</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/sprouts.png" alt="sprouts" />
+                      </div>
+                      <h4>Sprouts</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/flowers.png" alt="flowers" />
+                      </div>
+                      <h4>Flowers</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/exotic.png" alt="exotic" />
+                      </div>
+                      <h4>Exotic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/organic.png" alt="organic" />
+                      </div>
+                      <h4>Organic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/cuts.png" alt="cut" />
+                      </div>
+                      <h4>Cuts Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/bouquets.png" alt="bouquets" />
+                      </div>
+                      <h4>Bouquets</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt="herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="catagories2" role="tabpanel" aria-labelledby="catagories2">
+              <div class="banner-box">
+                <img src="assets/images/banner/catagories-banner.jpg" alt="banner" class="bg-img" />
+                <div class="content-box">
+                  <h1 class="title-color heading">Season’s exotic Fruits</h1>
+                  <p class="content-color font-sm">Upto 20% OFF</p>
+                  <a href="shop.html" class="btn-solid">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/vegitables.png" alt="vegi" />
+                      </div>
+                      <h4>Vegetables</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt=" herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/seasonings.png" alt="seasonings" />
+                      </div>
+                      <h4>Seasonings</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/sprouts.png" alt="sprouts" />
+                      </div>
+                      <h4>Sprouts</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/flowers.png" alt="flowers" />
+                      </div>
+                      <h4>Flowers</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/exotic.png" alt="exotic" />
+                      </div>
+                      <h4>Exotic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/organic.png" alt="organic" />
+                      </div>
+                      <h4>Organic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/cuts.png" alt="cut" />
+                      </div>
+                      <h4>Cuts Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/bouquets.png" alt="bouquets" />
+                      </div>
+                      <h4>Bouquets</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt="herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="catagories3" role="tabpanel" aria-labelledby="catagories3">
+              <div class="banner-box">
+                <img src="assets/images/banner/catagories-banner.jpg" alt="banner" class="bg-img" />
+                <div class="content-box">
+                  <h1 class="title-color heading">Season’s exotic Fruits</h1>
+                  <p class="content-color font-sm">Upto 20% OFF</p>
+                  <a href="shop.html" class="btn-solid">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/vegitables.png" alt="vegi" />
+                      </div>
+                      <h4>Vegetables</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt=" herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/seasonings.png" alt="seasonings" />
+                      </div>
+                      <h4>Seasonings</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/sprouts.png" alt="sprouts" />
+                      </div>
+                      <h4>Sprouts</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/flowers.png" alt="flowers" />
+                      </div>
+                      <h4>Flowers</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/exotic.png" alt="exotic" />
+                      </div>
+                      <h4>Exotic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/organic.png" alt="organic" />
+                      </div>
+                      <h4>Organic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/cuts.png" alt="cut" />
+                      </div>
+                      <h4>Cuts Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/bouquets.png" alt="bouquets" />
+                      </div>
+                      <h4>Bouquets</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt="herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="catagories4" role="tabpanel" aria-labelledby="catagories4">
+              <div class="banner-box">
+                <img src="assets/images/banner/catagories-banner.jpg" alt="banner" class="bg-img" />
+                <div class="content-box">
+                  <h1 class="title-color heading">Season’s exotic Fruits</h1>
+                  <p class="content-color font-sm">Upto 20% OFF</p>
+                  <a href="shop.html" class="btn-solid">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/vegitables.png" alt="vegi" />
+                      </div>
+                      <h4>Vegetables</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt=" herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/seasonings.png" alt="seasonings" />
+                      </div>
+                      <h4>Seasonings</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/sprouts.png" alt="sprouts" />
+                      </div>
+                      <h4>Sprouts</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/flowers.png" alt="flowers" />
+                      </div>
+                      <h4>Flowers</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/exotic.png" alt="exotic" />
+                      </div>
+                      <h4>Exotic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/organic.png" alt="organic" />
+                      </div>
+                      <h4>Organic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/cuts.png" alt="cut" />
+                      </div>
+                      <h4>Cuts Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/bouquets.png" alt="bouquets" />
+                      </div>
+                      <h4>Bouquets</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt="herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="catagories5" role="tabpanel" aria-labelledby="catagories5">
+              <div class="banner-box">
+                <img src="assets/images/banner/catagories-banner.jpg" alt="banner" class="bg-img" />
+                <div class="content-box">
+                  <h1 class="title-color heading">Season’s exotic Fruits</h1>
+                  <p class="content-color font-sm">Upto 20% OFF</p>
+                  <a href="shop.html" class="btn-solid">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/vegitables.png" alt="vegi" />
+                      </div>
+                      <h4>Vegetables</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt=" herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/seasonings.png" alt="seasonings" />
+                      </div>
+                      <h4>Seasonings</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/sprouts.png" alt="sprouts" />
+                      </div>
+                      <h4>Sprouts</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/flowers.png" alt="flowers" />
+                      </div>
+                      <h4>Flowers</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/exotic.png" alt="exotic" />
+                      </div>
+                      <h4>Exotic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/organic.png" alt="organic" />
+                      </div>
+                      <h4>Organic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/cuts.png" alt="cut" />
+                      </div>
+                      <h4>Cuts Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/bouquets.png" alt="bouquets" />
+                      </div>
+                      <h4>Bouquets</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt="herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="catagories6" role="tabpanel" aria-labelledby="catagories6">
+              <div class="banner-box">
+                <img src="assets/images/banner/catagories-banner.jpg" alt="banner" class="bg-img" />
+                <div class="content-box">
+                  <h1 class="title-color heading">Season’s exotic Fruits</h1>
+                  <p class="content-color font-sm">Upto 20% OFF</p>
+                  <a href="shop.html" class="btn-solid">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/vegitables.png" alt="vegi" />
+                      </div>
+                      <h4>Vegetables</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt=" herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/seasonings.png" alt="seasonings" />
+                      </div>
+                      <h4>Seasonings</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/sprouts.png" alt="sprouts" />
+                      </div>
+                      <h4>Sprouts</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/flowers.png" alt="flowers" />
+                      </div>
+                      <h4>Flowers</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/exotic.png" alt="exotic" />
+                      </div>
+                      <h4>Exotic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/organic.png" alt="organic" />
+                      </div>
+                      <h4>Organic</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/cuts.png" alt="cut" />
+                      </div>
+                      <h4>Cuts Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/bouquets.png" alt="bouquets" />
+                      </div>
+                      <h4>Bouquets</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/fruits.png" alt="fruits" />
+                      </div>
+                      <h4>Fruits</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+
+                <!-- Staples Box Start -->
+                <div class="col-4">
+                  <a href="product.html">
+                    <div class="staples-box">
+                      <div>
+                        <img class="img-fluid" src="assets/images/product/herbs.png" alt="herbs" />
+                      </div>
+                      <h4>Herbs</h4>
+                    </div>
+                  </a>
+                </div>
+                <!-- Staples Box End -->
+              </div>
+            </div>
+          </div>
+          <!-- Catagories Content End -->
+        </div>
+      </section>
+      <!-- Catagories Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <ul class="footer">
+        <li class="footer-item">
+          <a href="index.html" class="footer-link">
+            <img src="assets/icons/svg/w-home.svg" alt="home" />
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="footer-item active">
+          <a href="category-wide.html" class="footer-link">
+            <img src="assets/icons/svg/w-category.svg" alt="home" />
+            <span>Category</span>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="search.html" class="footer-link">
+            <img src="assets/icons/svg/w-search.svg" alt="home" />
+            <span>Search</span>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="offer.html" class="footer-link">
+            <lord-icon class="icon" src="assets/icons/gift.json" trigger="loop" stroke="70" colors="primary:#ffffff,secondary:#ffffff"></lord-icon>
+            <span>Offers</span>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="cart.html" class="footer-link">
+            <img src="assets/icons/svg/w-bag.svg" alt="home" />
+            <span>Cart</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lord Icon -->
+    <script src="assets/js/lord-icon-2.1.0.js"></script>
+
+    <!-- Feather Icon -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End -->
+</html>
+<!-- Html End -->

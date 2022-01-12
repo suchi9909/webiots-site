@@ -1,0 +1,183 @@
+/*=====================
+   Mixin Css 
+==========================*/
+/// Search Box ///
+@mixin search-box {
+  position: relative;
+  input[type="search" i]::-webkit-search-cancel-button {
+    display: none !important;
+  }
+  svg,
+  img {
+    position: absolute;
+    width: calc(23px + (26 - 23) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(23px + (26 - 23) * ((100vw - 320px) / (1920 - 320)));
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  .search {
+    left: 16px;
+  }
+  .mic {
+    right: 16px;
+  }
+
+  input {
+    font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding: 10px 47px;
+    border-radius: 4px;
+    color: $title-color;
+    border: $border2;
+    background-color: $grey-light;
+    &::placeholder {
+      color: $content-light;
+    }
+  }
+}
+
+@mixin search-box-side {
+  @include search-box();
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  > div {
+    position: relative;
+    flex: 1 1 auto;
+  }
+  .filter {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $theme-color;
+    font-weight: 600;
+  }
+}
+
+/// Top Content ///
+@mixin top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+  h4 {
+    font-weight: 600;
+    margin-top: -6px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    &:hover {
+      color: $theme-color;
+    }
+  }
+}
+
+/// Shop Card ///
+@mixin shop-card {
+  .media {
+    position: relative;
+    padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+    background-color: $white;
+    border-radius: 9px;
+    &:not(:first-of-type) {
+      margin-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+    }
+    > a {
+      width: calc(70px + (90 - 70) * ((100vw - 320px) / (1920 - 320)));
+      height: auto;
+      padding-right: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+      border-right: 2px solid $border-color1;
+      [dir="rtl"] & {
+        padding-left: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        padding-right: unset;
+        border-left: 2px solid $border-color1;
+        border-right: unset;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .plus-minus {
+      position: absolute;
+      bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+      right: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+      [dir="rtl"] & {
+        left: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+        right: unset;
+      }
+    }
+    .media-body {
+      > a {
+        display: block;
+        margin-top: -5px;
+        font-weight: normal;
+      }
+      > span {
+        &:first-of-type {
+          display: block;
+        }
+        &:last-of-type {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .badges-round {
+            color: $white;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Product Slider ///
+@mixin product-slider {
+  [dir="rtl"] & {
+    direction: ltr;
+  }
+  .slick-list {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 0 !important;
+    margin-left: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-right: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+    .slick-slide {
+      padding: 0 10px;
+    }
+  }
+}
+
+/// Dashed border Buttom ///
+@mixin dashed-border-bottom {
+  background-image: linear-gradient(to right, #e8e8e8 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 14px 1px;
+  background-repeat: repeat-x;
+}
+
+/// Order Summery ///
+@mixin order-summery {
+  ul {
+    li {
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+        border: none;
+        color: $content-color;
+      }
+      &:last-child {
+        padding: 10px 0;
+        margin-top: 13px;
+        border-top: 1px solid $border-color1;
+        span {
+          color: $title-color;
+        }
+      }
+    }
+  }
+}
