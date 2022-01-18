@@ -17,30 +17,31 @@
 .header-sidebar {
   position: fixed;
   left: -320px;
-  top: calc(25px + (38 - 25) * ((100vw - 320px) / (1920 - 320)));
-  bottom: calc(25px + (38 - 25) * ((100vw - 320px) / (1920 - 320)));
+  top: 0;
+  bottom: 0;
   background-color: $white;
   width: 320px;
-  height: calc(100vh - calc(50px + (76 - 50) * ((100vw - 320px) / (1920 - 320))));
-
-  border-radius: 18px;
+  height: 100vh;
+  overflow-y: auto;
+  border-radius: 0 18px 18px 0;
   transition: all 0.5s ease;
   z-index: 5;
   padding: 17px;
   overflow: auto;
   [dir="rtl"] & {
     left: unset;
+    border-radius: 18px 0 0 18px;
     right: -320px;
   }
   @media (max-width: 375px) {
     width: 290px;
   }
   &.show {
-    left: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+    left: 0;
     transition: all 0.5s ease;
     [dir="rtl"] & {
       left: unset;
-      right: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+      right: 0;
     }
   }
   .user-panel {
@@ -78,8 +79,6 @@
     }
   }
   .navigation {
-    height: calc(100vh - 355px);
-    overflow-y: auto;
     ul {
       li {
         display: flex;
@@ -144,23 +143,24 @@
   }
   .wrap {
     position: relative;
-    height: 100%;
-    .contact-us {
-      background-color: $theme-light-color;
-      border-radius: 7px;
-      position: absolute;
-      z-index: 3;
-      padding: 13px;
-      width: 100%;
-      bottom: 0px;
-      > span {
-        font-weight: 600;
-        display: block;
-        margin-bottom: 4px;
-        margin-top: -4px;
-        p {
-          margin-bottom: 12px;
-        }
+    height: calc(100vh - 34px);
+  }
+  .contact-us {
+    background-color: $theme-light-color;
+    margin-top: 120px;
+    border-radius: 7px;
+    position: relative;
+    z-index: 3;
+    padding: 13px;
+    width: 100%;
+    bottom: 0px;
+    > span {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 4px;
+      margin-top: -4px;
+      p {
+        margin-bottom: 12px;
       }
     }
   }

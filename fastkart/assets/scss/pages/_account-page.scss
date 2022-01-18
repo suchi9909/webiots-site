@@ -26,10 +26,14 @@
             text-align: right;
           }
           > a {
+            font-weight: 600;
             display: flex;
             flex-direction: column;
+            font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
             span {
+              font-weight: normal;
               display: inline-block;
+              margin-top: -1px;
             }
           }
         }
@@ -43,7 +47,7 @@
         background-color: $white;
         padding: 0 10px;
         &:not(:first-of-type) {
-          margin-top: 14px;
+          margin-top: 17px;
         }
         .nav-link {
           display: flex;

@@ -178,7 +178,6 @@
       button {
         flex: 1 1 auto;
         font-weight: 600;
-        padding: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320))) calc(28px + (34 - 28) * ((100vw - 320px) / (1920 - 320)));
       }
     }
   }
@@ -340,3 +339,63 @@
   }
 }
 /// Offer Canvas End ///
+
+/// Add Address Offcanvas Start ///
+.add-address {
+  height: auto;
+  .offcanvas-header {
+    h5 {
+      margin-top: -4px;
+      margin-bottom: -4px;
+    }
+  }
+  .offcanvas-body {
+    .custom-form {
+      .input-box {
+        input {
+          &:not(:first-of-type) {
+            margin-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+          }
+        }
+      }
+    }
+  }
+  .offcanvas-footer {
+    .btn-box {
+      display: flex;
+      align-items: center;
+      gap: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+      button {
+        flex: 1 1 auto;
+        width: 100%;
+        padding: 10px;
+        &:first-of-type {
+          margin-right: 15px;
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+/// Add Address Offcanvas End ///
+
+/// Add Card Offcanvas Start ///
+.add-card {
+  @extend .add-address;
+  .offcanvas-body {
+    .custom-form {
+      .expriydate {
+        padding-right: calc(40px + (44 - 40) * ((100vw - 320px) / (1920 - 320)));
+        padding-left: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+        [dir="rtl"] & {
+          padding-left: calc(40px + (44 - 40) * ((100vw - 320px) / (1920 - 320)));
+          padding-right: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+        }
+      }
+    }
+  }
+}
+/// Add Card Offcanvas End ///

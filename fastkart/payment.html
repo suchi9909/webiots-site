@@ -28,6 +28,9 @@
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
 
+    <!-- Date Picker css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/date-picker.css" />
+
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
@@ -46,7 +49,7 @@
 
     <!-- Main Start -->
     <main class="main-wrap payment-page mb-xxl">
-      <button class="d-block btn-outline-grey">+ Add New Address</button>
+      <button class="d-block btn-outline-grey" data-bs-toggle="offcanvas" data-bs-target="#add-card" aria-controls="add-card">+ Add New Card</button>
 
       <!-- Payment Section Start -->
       <section class="payment-section">
@@ -264,11 +267,53 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- Add New Card OffCanvas Start -->
+    <div class="offcanvas add-card offcanvas-bottom" tabindex="-1" id="add-card" aria-labelledby="add-card">
+      <div class="offcanvas-header">
+        <h5 class="title-color font-md fw-600">Add Card</h5>
+      </div>
+      <div class="offcanvas-body small">
+        <form class="custom-form">
+          <div class="input-box">
+            <input type="text" placeholder="Card Holder Name" class="form-control" />
+            <input type="number" placeholder="Card Number " class="form-control" />
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="input-box mb-0">
+                <img src="assets/icons/svg/calendar2.svg" alt="calender" />
+                <input class="datepicker-here form-control digits expriydate" type="text" data-language="en" data-multiple-dates-separator=", " placeholder="Expiry Date" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="input-box mb-0">
+                <input type="number" placeholder="CV" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="offcanvas-footer">
+        <div class="btn-box">
+          <button class="btn-outline font-md" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+          <button class="btn-solid font-md" data-bs-dismiss="offcanvas" aria-label="Close">Add</button>
+        </div>
+      </div>
+    </div>
+    <!-- Add New Card OffCanvas Start -->
+
     <!-- jquery 3.6.0 -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Date Picker  js -->
+    <script src="assets/js/date-picker/datepicker.js"></script>
+    <script src="assets/js/date-picker/datepicker.en.js"></script>
+    <script src="assets/js/date-picker/datepicker.custom.js"></script>
 
     <!-- Feather Icon -->
     <script src="assets/js/feather.min.js"></script>

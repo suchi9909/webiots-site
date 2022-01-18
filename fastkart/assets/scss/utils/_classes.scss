@@ -5,7 +5,7 @@
   gap: calc(11px + (15 - 11) * ((100vw - 320px) / (1920 - 320)));
 }
 .main-wrap {
-  padding: 0px calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+  padding: 0px 15px;
 }
 //// Section Padding Classes ////
 section,
@@ -22,7 +22,7 @@ section,
 
 /// Main marging ///
 .mb-xxl {
-  margin-bottom: calc(100px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
 }
 .title-mb {
   line-height: 22px;
@@ -48,7 +48,7 @@ $theme-bg-color: (
     background-color: $value;
   }
   .border-#{$name} {
-    border: 1px solid darken($value, 10);
+    border: 1px solid darken($value, 2);
   }
 }
 
@@ -80,7 +80,7 @@ $theme-bg-color: (
     border: none;
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
     outline: none;
-    width: calc(17px + (25 - 17) * ((100vw - 320px) / (1920 - 320)));
+    width: 35px;
     text-align: center;
   }
   .sub,
@@ -116,10 +116,10 @@ $theme-bg-color: (
       transform: translateX(-50%);
     }
     &::before {
-      top: -48px;
+      top: calc(-40px + (-48 + 40) * ((100vw - 320px) / (1920 - 320)));
     }
     &::after {
-      bottom: -53px;
+      bottom: calc(-46px + (-53 + 46) * ((100vw - 320px) / (1920 - 320)));
     }
   }
   &.left {
@@ -229,4 +229,9 @@ $theme-bg-color: (
     width: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
     height: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
   }
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
 }

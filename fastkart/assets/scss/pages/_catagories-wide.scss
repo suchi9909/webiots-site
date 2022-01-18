@@ -10,18 +10,20 @@
     align-items: flex-start;
     gap: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
     .nav {
+      position: sticky;
+      top: 15px;
       flex: 0 0 32%;
       border-radius: 0 5px 5px 0;
       overflow: hidden;
       background-color: $theme-light-color;
-      margin-left: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+      margin-left: -15px;
       [dir="rtl"] & {
-        margin-right: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+        margin-right: -15px;
         margin-left: unset;
       }
       .nav-link {
         width: 100%;
-        padding: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))) 15px;
         &:not(:last-of-type) {
           border-bottom: 1px solid rgba($border-color2, 0.5);
         }

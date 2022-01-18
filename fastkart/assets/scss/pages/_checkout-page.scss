@@ -208,7 +208,7 @@
     .media {
       > span {
         background-color: $theme-color;
-        padding: calc(5px + (10 - 5) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
         border-radius: 4px;
         img {
           width: calc(19px + (25 - 19) * ((100vw - 320px) / (1920 - 320)));
@@ -235,6 +235,11 @@
       li {
         &:last-of-type {
           padding-bottom: 0;
+          span {
+            &:last-of-type {
+              font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+            }
+          }
         }
       }
     }

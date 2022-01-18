@@ -1,6 +1,7 @@
 /*=====================
   404 Page Css 
 ==========================*/
+/// 404 Page Start ///
 .error-404 {
   .banner-box {
     width: 85%;
@@ -42,3 +43,19 @@
     }
   }
 }
+/// 404 Page End ///
+
+/// Empty Cart Start ///
+.empty-cart {
+  @extend .error-404;
+  .banner-box {
+    margin-top: 25px;
+  }
+}
+/// Empty Cart End ///
+
+/// No Order Start ///
+.no-order {
+  @extend .empty-cart;
+}
+/// No Order End ///

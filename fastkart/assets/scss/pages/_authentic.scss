@@ -101,8 +101,8 @@
       .btn-solid {
         width: 100%;
         margin-bottom: 22px;
-        padding-top: calc(8px + (13 - 8) * ((100vw - 320px) / (1920 - 320)));
-        padding-bottom: calc(8px + (13 - 8) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: bold;
+        font-size: calc(17px + (19 - 17) * ((100vw - 320px) / (1920 - 320)));
       }
     }
     .socila-section {

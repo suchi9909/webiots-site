@@ -6,6 +6,7 @@
     @include search-box;
   }
   .recent-search {
+    overflow-x: hidden;
     ul {
       display: flex;
       align-items: center;
@@ -14,9 +15,7 @@
       &:hover {
         overflow-x: auto;
       }
-      @media only screen and (max-width: 767px) {
-        overflow-x: auto;
-      }
+
       li {
         padding: 6px 20px;
         background-color: $theme-light-color;

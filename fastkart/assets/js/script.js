@@ -137,10 +137,9 @@
         $(this).addClass('active');
     });
 
-
     /*==============================
-     10. Swipe To Show Delete cart page js
-  =====================================*/
+       10. Swipe To Show Delete cart page js
+    =====================================*/
     $(".swipe-to-show").on("swipeleft", function () {
         $(this).addClass('active').siblings().removeClass("active")
     })

@@ -4,8 +4,8 @@
 .onboarding-page {
   text-align: center;
   .banner {
-    margin-left: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
-    margin-right: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: -15px;
+    margin-right: -15px;
     img {
       width: 100%;
     }
@@ -26,7 +26,7 @@
       margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 600;
       font-family: $font-2;
-      margin-top: -3px;
+      margin-top: -4px;
       line-height: 25px;
     }
     p {

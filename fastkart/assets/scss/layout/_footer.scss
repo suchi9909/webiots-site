@@ -48,9 +48,9 @@
     }
   }
   &.shop {
-    padding-left: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-    padding-right: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-    max-width: calc(100vw - calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: calc(100vw - 30px);
     border-radius: 4px;
     bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
     @media only screen and (min-width: 767px) {

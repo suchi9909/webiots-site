@@ -17,7 +17,7 @@
     background-color: $grey-light;
     color: $title-color;
     &::placeholder {
-      color: $title-color;
+      color: $content-color;
     }
     &:focus {
       border-color: $theme-color;
@@ -169,18 +169,18 @@
   }
   input[type="radio"] {
     position: relative;
-    margin: 2px 1rem 0 1px;
+    margin: 2px 1rem 0 3px;
     [dir="rtl"] & {
       margin: 2px 1px 0 1rem;
     }
     cursor: pointer;
     &:before {
       transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
-      transform: scale(0, 0);
+      transform: scale(0, 0) translate(-50%, -50%);
       content: "";
       position: absolute;
-      top: 4px;
-      left: 3px;
+      top: 50%;
+      left: 50%;
       z-index: 1;
       width: 0.55rem;
       height: 0.55rem;
@@ -194,8 +194,9 @@
     &:after {
       content: "";
       position: absolute;
-      top: 0;
-      left: -1px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 1.05rem;
       height: 1.05rem;
       background: $white;
@@ -208,7 +209,7 @@
     }
     &:checked {
       &:before {
-        transform: scale(1, 1);
+        transform: scale(1, 1) translate(-50%, -50%);
       }
       &:after {
         border: 1px solid $theme-color;

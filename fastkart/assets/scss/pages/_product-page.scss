@@ -5,8 +5,8 @@
   .banner-box {
     background-color: $grey-light;
     margin-bottom: 0;
-    margin-left: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
-    margin-right: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: -15px;
+    margin-right: -15px;
     padding-bottom: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
     [dir="rtl"] & {
       direction: ltr;
@@ -25,9 +25,9 @@
     position: relative;
     z-index: 1;
     margin-top: calc(-25px + (-30 + 25) * ((100vw - 320px) / (1920 - 320)));
-    margin-left: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
-    margin-right: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
-    padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 0 calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px 0 15px;
     h1 {
       font-weight: 600;
       color: $title-color;
@@ -167,10 +167,10 @@
   }
   .recently-viewed {
     background-color: $theme-light-color;
-    padding-left: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-    padding-right: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-    margin-left: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
-    margin-right: calc(-10px + (-15 + 10) * ((100vw - 320px) / (1920 - 320)));
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
     .top-content {
       @include top-content;
       margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));

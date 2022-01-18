@@ -7,7 +7,6 @@
   border-radius: 6px;
   position: relative;
   background-color: $white;
-  box-shadow: $box-shadow2;
   .icon {
     position: absolute;
     right: 10px;
@@ -21,6 +20,13 @@
   }
   .img-wrap {
     margin-bottom: 10px;
+    a {
+      display: block;
+      img {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
   }
   .content-wrap {
     [dir="rtl"] & {
@@ -41,6 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-weight: 600;
         [dir="rtl"] & {
           flex-direction: row-reverse;
         }

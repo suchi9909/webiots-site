@@ -2,7 +2,7 @@
    Header Css 
 ==========================*/
 .header {
-  padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+  padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
