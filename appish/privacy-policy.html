@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+  <!-- Head Start -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Appish" />
+    <meta name="keywords" content="Appish" />
+    <meta name="author" content="Appish" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Appish PWA App</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Appish" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  </head>
+  <!-- Head End -->
+
+  <!-- Body Start -->
+  <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <span class="nav-bar">
+          <i data-feather="menu"></i>
+        </span>
+        <h1 class="title-color font-lg">Privacy Policy</h1>
+      </div>
+      <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <aside>
+      <a href="javascript:void(0)" class="overlay-sidebar"></a>
+      <div class="header-sidebar">
+        <a href="javascript:void(0)" class="user-panel">
+          <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="" />
+          <span>Hello, Paige Turner</span>
+          <i data-feather="chevron-right" class="icli"></i>
+        </a>
+        <div class="sidebar-content">
+          <ul class="link-section">
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <i data-feather="moon" class="me-4"></i
+                      ></span>
+                      Dark Mode
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="darkButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/language.svg" class="me-4" alt="rtl"
+                      /></span>
+                      RTL
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="rtlButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="content toggle-sec w-100">
+                  <div>
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/setting.svg" class="me-4" alt="rtl" /></span
+                      >Notification
+                    </h4>
+                  </div>
+                  <div class="button toggle-btn ms-auto">
+                    <input id="notificationButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                      <span></span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="profile-setting.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/bell.svg" class="me-4" alt="rtl" /></span
+                      >Profile Setting
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="reset-password.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+
+                        <img src="assets/images/icon/eye2.svg" class="me-4" alt="eye2" /></span
+                      >Change Password
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#language" aria-controls="language">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/glob2.svg" class="me-4" alt="rtl" /></span
+                      >Language
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="privacy-policy.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/lock.svg" class="me-4" alt="rtl" /></span
+                      >Privacy Policy
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <div class="content toggle-sec w-100">
+                  <div class="w-100">
+                    <h4 class="mb-0 font-sm">
+                      <span>
+                        <svg class="bg-shape">
+                          <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                        </svg>
+                        <img src="assets/images/icon/logout.svg" class="me-4" alt="rtl" /></span
+                      >Logout
+                      <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large terms-condition">
+      <!-- content start -->
+      <section class="p-0">
+        <h2 class="font-md title-color fw-600 top-heading">Terms and Conditions for Appish</h2>
+        <h4 class="font-sm title-color fw-600 title-mb">Introduction</h4>
+        <p class="content-color font-xs">These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Appish accessible at www.Appish.com.</p>
+        <p class="content-color font-xs mb-0">
+          These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website
+          if you disagree with any of these Website Standard Terms and Conditions. These Terms and Conditions have been generated with the help of the Terms And Conditiions Sample Generator.
+        </p>
+      </section>
+
+      <section class="p-t-sm">
+        <h2 class="font-sm title-color fw-600 title-mb">Intellectual Property Rights</h2>
+        <p class="content-color font-xs">
+          Other than the content you own, under these Terms, Appish and/or its licensors own all the intellectual property rights and materials contained in this Website.
+        </p>
+        <p class="content-color font-xs mb-0">You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+      </section>
+
+      <section class="p-t-sm">
+        <h3 class="font-sm title-color fw-600 title-mb">Restrictions</h3>
+        <p class="content-color font-xs">You are specifically restricted from all of the following:</p>
+        <ul class="list-section mb-2">
+          <li class="content-color font-xs">publishing any Website material in any other media;</li>
+          <li class="content-color font-xs">selling, sublicensing and/or otherwise any Website material;</li>
+          <li class="content-color font-xs">publicly performing and/or showing any Website material;</li>
+          <li class="content-color font-xs">using this Website in any way that is or may be damaging to this Website;</li>
+          <li class="content-color font-xs">using this Website in any way that impacts user access to this Website;</li>
+          <li class="content-color font-xs">using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;</li>
+          <li class="content-color font-xs">engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;</li>
+          <li class="content-color font-xs">using this Website to engage in any advertising or marketing.</li>
+        </ul>
+        <p class="content-color font-xs mb-0">
+          Certain areas of this Website are restricted from being access by you and Appish may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any
+          user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.
+        </p>
+      </section>
+
+      <section class="p-t-sm">
+        <h5 class="title-color font-sm fw-600 title-mb">Your Content</h5>
+        <p class="content-color font-xs">
+          In these Website Standard Terms and Conditions, "Your Content" shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content,
+          you grant Appish a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.
+        </p>
+        <p class="content-color font-xs mb-0">
+          Your Content must be your own and must not be invading any third-party’s rights. Appish reserves the right to remove any of Your Content from this Website at any time without notice.
+        </p>
+      </section>
+      <!-- content end -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+          </li>
+          <li>
+            <a href="elements-list.html" class="footer-link"><i data-feather="layers"></i> </a>
+          </li>
+          <li>
+            <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+          </li>
+          <li>
+            <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+          </li>
+          <li>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Action Language Start -->
+    <div class="action action-language offcanvas offcanvas-bottom" tabindex="-1" id="language" aria-labelledby="language">
+      <div class="offcanvas-body small">
+        <h2 class="m-b-title1 font-md">Select Language</h2>
+        <ul class="row filter-row g-3 g-sm-4">
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/us.svg" alt="us" /> English </a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/in.svg" alt="us" />Indian </a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/it.svg" alt="us" />Italian</a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/tf.svg" alt="us" /> French</a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/cn.svg" alt="us" /> Chines</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <div class="btn-box">
+          <a href="javascript:void(0)" class="btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</a>
+          <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas" aria-label="Close">Apply</a>
+        </div>
+      </div>
+    </div>
+    <!-- Action Language End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+  <!-- Body End -->
+</html>
+<!-- Html End -->

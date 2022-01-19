@@ -1,6 +1,7 @@
 /*=====================
- 2.1 Animation CSS start
+ 2.3 Animation CSS
 ==========================*/
+
 /// Bouncing ///
 @keyframes bouncing-top {
     0% {
@@ -24,6 +25,7 @@
         transform: translateY(10px);
     }
 }
+
 /// left > right ///
 @keyframes moveright {
     0% {
@@ -36,6 +38,7 @@
         left: 2%;
     }
 }
+
 /// left < right ///
 @keyframes moveleft {
     0% {
@@ -48,3 +51,43 @@
         right: 2%;
     }
 }
+
+/// Preloader Start ///
+@keyframes x-axis {
+    0% {
+        transform: translate(-60px * 1.6);
+    }
+    100% {
+        transform: translate(60px * 1.6);
+    }
+}
+
+@keyframes y-axis {
+    0% {
+        transform: translateY(60px * 0.7);
+    }
+    100% {
+        transform: translateY(-60px * 1.1) scale(0.8);
+        background: $theme-blue;
+    }
+}
+
+@keyframes x-axis-lateral {
+    0% {
+        transform: translate(-60px * 0.6);
+    }
+    100% {
+        transform: translate(60px * 0.6);
+    }
+}
+
+@keyframes y-axis-lateral {
+    0% {
+        transform: translateY(60px/5);
+    }
+    100% {
+        transform: translateY(-60px);
+        background: $theme-blue;
+    }
+}
+/// Pre Loader End ///

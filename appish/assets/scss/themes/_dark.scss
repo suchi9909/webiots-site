@@ -1,1288 +1,1526 @@
 /*=====================
-   Dark Css
+  5.1 Dark CSS
 ==========================*/
-/// Header Dark ///
+
+/// Header Dark CSS ///
 .header {
-    & > div {
-        span {
-            &:first-child {
-                border: $card-border;
-            }
-        }
+  & > div {
+    span {
+      &:first-child {
+        border: $card-border;
+      }
     }
-    &.header-cht {
-        > span {
-            svg {
-                stroke: #22282c;
-            }
-        }
+  }
+  &.header-cht {
+    > span {
+      svg {
+        stroke: #22282c;
+      }
     }
+  }
 }
 .header1,
 .header3,
 .header4 {
-    .nav {
-        ul {
-            li {
-                .begets {
-                    color: #222222;
-                }
-            }
+  .nav {
+    ul {
+      li {
+        .begets {
+          color: #222222;
         }
+      }
     }
+  }
 }
 .header2 {
-    .nav-bar {
-        border: $card-border;
-        color: #f0f0f0;
-    }
+  .nav-bar {
+    border: $card-border;
+    color: #f0f0f0;
+  }
 }
-/// Sidebar Dark ///
+/// Sidebar Dark CSS ///
 .overlay-sidebar {
-    background-color: rgba(#22282c, 0.5);
+  background-color: rgba(#22282c, 0.5);
 }
 aside {
-    .header-sidebar {
-        background: #2e343b;
-        .user-panel {
-            background-color: #2e343b;
-        }
-        .sidebar-content {
-            .link-section {
-                li {
-                    border-bottom-color: $border-color;
-                    a,
-                    > div {
-                        .content {
-                            h4 {
-                                span {
-                                    svg {
-                                        stroke: #222222;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .toggle-sec {
-                .toggle-btn {
-                    .knobs,
-                    .layer {
-                        background-color: #22282c;
-                        span {
-                            background-color: #f0f0f0;
-                        }
-                    }
-                }
-            }
-        }
+  .header-sidebar {
+    background: #2e343b;
+    .user-panel {
+      background-color: #2e343b;
     }
+    .sidebar-content {
+      .link-section {
+        li {
+          border-bottom-color: $border-color;
+          a,
+          > div {
+            .content {
+              h4 {
+                span {
+                  svg {
+                    stroke: #222222;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .toggle-sec {
+        .toggle-btn {
+          .knobs,
+          .layer {
+            background-color: #22282c;
+            span {
+              background-color: #f0f0f0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-/// Footer Dark ///
+/// Footer Dark CSS ///
 .footer-wrap {
-    &.type-message {
-        .footer {
-            border: $card-border;
-            ul {
-                li {
-                    a {
-                        svg {
-                            stroke: #f0f0f0;
-                        }
-                    }
-                }
+  &.type-message {
+    .footer {
+      border: $card-border;
+      ul {
+        li {
+          a {
+            svg {
+              stroke: #f0f0f0;
             }
+          }
         }
-        .emojionearea {
-            .emojionearea-editor {
-                color: #f0f0f0;
-            }
-        }
+      }
     }
-    &.addcart {
-        .footer {
-            ul {
-                li {
-                    input {
-                        color: #f0f0f0;
-                    }
-                    &:first-of-type {
-                        svg {
-                            stroke: #f0f0f0;
-                        }
-                    }
-                    a {
-                        box-shadow: none;
-                        svg {
-                            stroke: #222222;
-                        }
-                        color: #222222;
-                    }
-                }
-            }
-        }
+    .emojionearea {
+      .emojionearea-editor {
+        color: #f0f0f0;
+      }
     }
+  }
+  &.addcart {
+    .footer {
+      ul {
+        li {
+          input {
+            color: #f0f0f0;
+          }
+          &:first-of-type {
+            svg {
+              stroke: #f0f0f0;
+            }
+          }
+          a {
+            box-shadow: none;
+            svg {
+              stroke: #222222;
+            }
+            color: #222222;
+          }
+        }
+      }
+    }
+  }
 }
 
 .footer-style2 {
-    .footer {
-        ul {
-            li {
-                .footer-link {
-                    &.active {
-                        border: $card-border;
-                        svg {
-                            stroke: #f0f0f0;
-                        }
-                        .tag {
-                            color: #f0f0f0;
-                        }
-                    }
-                }
+  .footer {
+    ul {
+      li {
+        .footer-link {
+          &.active {
+            border: $card-border;
+            svg {
+              stroke: #f0f0f0;
             }
+            .tag {
+              color: #f0f0f0;
+            }
+          }
         }
+      }
     }
+  }
 }
 
-/// Form ///
+/// Form Dark CSS ///
 .custom-form {
-    input,
-    textarea {
-        background-color: #22282c;
+  input,
+  textarea {
+    background-color: #22282c;
+  }
+  .form-control,
+  input,
+  textarea {
+    &:focus {
+      color: #f0f0f0;
+      background-color: #22282c;
+      border-color: $border-color;
     }
-    .form-control,
-    input,
-    textarea {
-        &:focus {
-            color: #f0f0f0;
-            background-color: #22282c;
-            border-color: $border-color;
-        }
+  }
+  .input-box {
+    img {
+      filter: invert(1);
     }
-    .input-box {
-        img {
-            filter: invert(1);
-        }
-        span {
-            color: #222222;
-            svg {
-                stroke: #222222;
-            }
-        }
+    span {
+      color: #222222;
+      svg {
+        stroke: #222222;
+      }
     }
+  }
+}
+.otp {
+  &:focus {
+    color: #222222 !important;
+  }
 }
 .form-control {
+  background-color: #22282c;
+  border-color: $border-color;
+  &:focus {
     background-color: #22282c;
-    border-color: $border-color;
-    &:focus {
-        background-color: #22282c;
-        color: #f0f0f0;
-    }
+    color: #f0f0f0;
+  }
 }
 
-/// Catagories Page Dark ///
+/// Catagories Page Dark CSS ///
 .page-catagories {
-    .catagories {
-        .catagories-item {
-            .content {
-                a {
-                    h2 {
-                        color: #222222;
-                    }
-                }
-            }
+  .catagories {
+    .catagories-item {
+      .content {
+        a {
+          h2 {
+            color: #222222;
+          }
         }
+      }
     }
-    .shape2 {
-        .line {
-            background-color: #f0f0f0;
-        }
-        .circle {
-            background-color: #222222;
-        }
-    }
-}
-
-/// Page List Dark ///
-.banner-top {
-    .media {
-        .media-body {
-            h2 {
-                color: #222222;
-            }
-            h3 {
-                color: #777777;
-            }
-        }
-    }
-}
-
-/// Accordian ///
-.accordion-item {
-    background-color: #22282c;
-    .accordion-body {
-        background-color: #22282c;
-    }
-}
-.accordian-style2 {
-    .accordion-item {
-        .accordion-button {
-            color: #f0f0f0;
-            &,
-            &:focus,
-            &:not(.collapsed) {
-                color: #f0f0f0;
-            }
-            &::after {
-                background-color: #f0f0f0;
-            }
-        }
-    }
-}
-.accordian-style3 {
-    .accordion-item {
-        .accordion-button {
-            &::after {
-                filter: invert(1);
-            }
-        }
-    }
-}
-/// Slick Dotes ///
-.slick-dots {
-    li {
-        border-color: #f0f0f0 !important;
-    }
-}
-
-/// Shape 2 ///
-.shape2 {
+  }
+  .shape2 {
     .line {
-        background-color: #f0f0f0;
+      background-color: #f0f0f0;
     }
     .circle {
-        background-color: #222222;
+      background-color: #222222;
     }
+  }
 }
 
+/// Page List Dark CSS ///
+.banner-top {
+  .media {
+    .media-body {
+      h2 {
+        color: #222222;
+      }
+      h3 {
+        color: #777777;
+      }
+    }
+  }
+}
+
+/// Slick Dotes Dark CSS ///
+.slick-dots {
+  li {
+    border-color: #f0f0f0 !important;
+  }
+}
+
+/// Shape 2 Dark CSS ///
+.shape2 {
+  .line {
+    background-color: #f0f0f0;
+  }
+  .circle {
+    background-color: #222222;
+  }
+}
+
+.toggle-sec .toggle-btn .knobs,
+.toggle-sec .toggle-btn .layer {
+  background-color: #2e343b;
+  border: 1px solid $border-color;
+}
+.toggle-sec .toggle-btn .checkbox:checked + .knobs:after {
+  right: -1px;
+  [dir="rtl"] & {
+    left: -1px;
+  }
+}
+.toggle-sec .toggle-btn .checkbox:checked + .knobs span,
+.toggle-sec .toggle-btn .knobs span {
+  background-color: #f0f0f0;
+}
 /*=====================
-Modal Dark CSS
+  Modal Dark CSS
 ==========================*/
 .modal {
-    background-color: #2e343b;
-    .modal-content {
-        background-color: #22282c;
+  background-color: #2e343b;
+  .modal-content {
+    background-color: #22282c;
+  }
+  .modal-header {
+    border-bottom: 1px solid $border-color;
+    > span {
+      border: $card-border;
+      svg {
+        stroke: #f0f0f0;
+      }
     }
-    .modal-header {
-        border-bottom: 1px solid $border-color;
-        > span {
-            border: $card-border;
-            svg {
-                stroke: #f0f0f0;
-            }
+  }
+  .filter-row {
+    li {
+      &.active {
+        .filter-col {
+          background-color: #2e343b;
         }
+      }
     }
-    .filter-row {
-        li {
-            &.active {
-                .filter-col {
-                    background-color: #2e343b;
-                }
-            }
-        }
+  }
+  .modal-footer {
+    border-top: 1px solid $border-color;
+    .btn {
+      color: #f0f0f0;
     }
-    .modal-footer {
-        border-top: 1px solid $border-color;
-        .btn {
-            color: #f0f0f0;
-        }
-    }
+  }
 }
 
-/// Off Canvas Dark ///
+.modal-1,
+.modal-2 {
+  a {
+    &.active,
+    &:active {
+      color: #f0f0f0;
+    }
+  }
+}
+.modal-3 {
+  li {
+    a {
+      &.active {
+        color: #f0f0f0;
+      }
+    }
+  }
+}
+.modal-4,
+.modal-5 {
+  li {
+    a {
+      &.active {
+        color: #222222;
+      }
+    }
+  }
+}
+.modal-6 {
+  li {
+    a {
+      color: #222222;
+    }
+    &.active {
+      a {
+        color: #222222;
+      }
+    }
+  }
+}
+.modal-7 {
+  li {
+    .item {
+      border: $card-border;
+    }
+  }
+}
+.modal-2 {
+  li {
+    &:last-child {
+      a {
+        border-radius: 100px 0 0 100px;
+      }
+    }
+    &:first-child {
+      a {
+        border-radius: 0 100px 100px 0;
+      }
+    }
+  }
+}
+.modal-8,
+.modal-9 {
+  li {
+    a {
+      &.active {
+        color: #f0f0f0;
+      }
+    }
+  }
+}
+
+/// Off Canvas Dark CSS ///
 .offcanvas {
-    .offcanvas-header {
-        border-bottom: 1px solid $border-color;
-        > span {
-            border: $card-border;
-            svg {
-                stroke: #f0f0f0;
-            }
+  .offcanvas-header {
+    border-bottom: 1px solid $border-color;
+    > span {
+      border: $card-border;
+      svg {
+        stroke: #f0f0f0;
+      }
+    }
+  }
+  .offcanvas-body {
+    ul {
+      li {
+        .filter-col {
+          border: $card-border;
+          &::after {
+            filter: invert(1);
+          }
         }
+      }
     }
-    .offcanvas-body {
-        ul {
-            li {
-                .filter-col {
-                    border: $card-border;
-                    &::after {
-                        filter: invert(1);
-                    }
-                }
-            }
-        }
-    }
-    .offcanvas-footer {
-        border-top: 1px solid $border-color;
-    }
+  }
+  .offcanvas-footer {
+    border-top: 1px solid $border-color;
+  }
 }
 
 /*=====================
-Component Dark CSS
+  Action Sheet Dark CSS
 ==========================*/
-/// Product Card Dark ///
-.product-card {
-    .img-box {
-        svg {
-            stroke: #222222;
-            &.fill {
-                fill: #222222;
+.action-share {
+  .offcanvas-body {
+    ul {
+      li {
+        .filter-col {
+          .icon {
+            svg {
+              fill: #f0f0f0;
             }
+          }
         }
+      }
     }
-    .product-detail {
-        > span {
-            a {
-                border: $card-border;
-                svg {
-                    stroke: #f0f0f0;
-                }
-            }
-        }
-    }
+  }
+}
+.action-video,
+.action-map {
+  .content-box {
+    background-color: #22282c;
+  }
+}
+.action-login,
+.action-otp {
+  background-color: #22282c;
 }
 
-/// Calender Dark ///
-.datepicker {
+/*=====================
+  Toast Dark CSS
+==========================*/
+.toast {
+  span {
+    color: #222222;
+    svg {
+      stroke: #222222;
+    }
+  }
+}
+
+/*=====================
+  Component Dark CSS
+==========================*/
+
+/// Product Card Dark CSS ///
+.product-card {
+  .img-box {
+    svg {
+      stroke: #222222;
+      &.fill {
+        fill: #222222;
+      }
+    }
+  }
+  .product-detail {
+    > span {
+      a {
+        border: $card-border;
+        svg {
+          stroke: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+.pr-card {
+  .pr-header {
+    .heading {
+      color: #222222;
+    }
+    span {
+      color: #777777;
+    }
+  }
+  .pr-body {
+    span {
+      color: #222222;
+      span {
+        color: #777777;
+      }
+    }
+    p {
+      color: #777777;
+    }
+  }
+  &.pr-card-2 {
+    .heading {
+      color: #f0f0f0;
+      &::before {
+        background-image: unset;
+        background-color: #f0f0f0;
+      }
+    }
+    .pr-body {
+      span {
+        span {
+          color: #777777;
+        }
+      }
+      p {
+        color: #777777;
+      }
+    }
+  }
+
+  &.pr-card-3 {
+    .pr-body {
+      > span {
+        color: #f0f0f0;
+      }
+    }
+  }
+}
+
+/// Accordian Dark CSS ///
+.accordion-item {
+  background-color: #22282c;
+  .accordion-body {
     background-color: #22282c;
-    border: $card-border;
-    .datepicker--nav {
-        border-bottom: 1px solid $border-color;
-        .datepicker--nav-title {
-            color: #f0f0f0;
-        }
+  }
+}
+.accordian-style2 {
+  .accordion-item {
+    .accordion-button {
+      color: #f0f0f0;
+      &,
+      &:focus,
+      &:not(.collapsed) {
+        color: #f0f0f0;
+      }
+      &::after {
+        background-color: #f0f0f0;
+      }
     }
-    .datepicker--cell {
-        color: #a9a9a9;
-        &.-selected-,
-        &.-focus-,
-        &.-current- {
-            background-color: #2e343b;
-            border: $card-border;
-            color: #f0f0f0;
-        }
+  }
+}
+.accordian-style3 {
+  .accordion-item {
+    .accordion-button {
+      &::after {
+        filter: invert(1);
+      }
     }
-    .datepicker--cell-day {
-        &.-other-month- {
-            color: rgba(#a9a9a9, 0.5) !important;
-        }
+  }
+}
+/// Calender Dark CSS ///
+.datepicker {
+  background-color: #22282c;
+  border: $card-border;
+  .datepicker--nav {
+    border-bottom: 1px solid $border-color;
+    .datepicker--nav-title {
+      color: #f0f0f0;
     }
-    .datepicker--pointer {
-        background-color: #22282c;
-        border-top: 1px solid $border-color;
-        border-right: 1px solid $border-color;
+  }
+  .datepicker--cell {
+    color: #a9a9a9;
+    &.-selected-,
+    &.-focus-,
+    &.-current- {
+      background-color: #2e343b;
+      border: $card-border;
+      color: #f0f0f0;
     }
+  }
+  .datepicker--cell-day {
+    &.-other-month- {
+      color: rgba(#a9a9a9, 0.5) !important;
+    }
+  }
+  .datepicker--pointer {
+    background-color: #22282c;
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
 }
 
 /// Breadcumb Dark CSS ///
 .breadcum-style1 {
-    li {
-        &.active {
-            a {
-                color: #222222;
-            }
-        }
+  li {
+    &.active {
+      a {
+        color: #222222;
+      }
     }
+  }
 }
 .breadcum-style2 {
-    li {
-        &.active {
-            a {
-                color: #222222;
-            }
-        }
+  li {
+    &.active {
+      a {
+        color: #222222;
+      }
     }
+  }
 }
 .breadcum-style5 {
-    li {
-        svg {
-            stroke: #f0f0f0;
-        }
-        &:not(:last-of-type) {
-            &::after {
-                background-image: linear-gradient(to right, #f0f0f0 70%, rgba(#22282c, 0) 0%);
-            }
-        }
+  li {
+    svg {
+      stroke: #f0f0f0;
     }
+    &:not(:last-of-type) {
+      &::after {
+        background-image: linear-gradient(to right, #f0f0f0 70%, rgba(#22282c, 0) 0%);
+      }
+    }
+  }
 }
 .breadcum-style6 {
-    li {
-        &.active {
-            color: #f0f0f0;
-        }
+  li {
+    &.active {
+      color: #f0f0f0;
     }
-}
-/// Pagination ///
-.modal-1,
-.modal-2 {
-    a {
-        &.active,
-        &:active {
-            color: #f0f0f0;
-        }
-    }
-}
-.modal-3 {
-    li {
-        a {
-            &.active {
-                color: #f0f0f0;
-            }
-        }
-    }
-}
-.modal-4,
-.modal-5 {
-    li {
-        a {
-            &.active {
-                color: #222222;
-            }
-        }
-    }
-}
-.modal-6 {
-    li {
-        a {
-            color: #222222;
-        }
-        &.active {
-            a {
-                color: #222222;
-            }
-        }
-    }
-}
-.modal-7 {
-    li {
-        .item {
-            border: $card-border;
-        }
-    }
-}
-.modal-2 {
-    li {
-        &:last-child {
-            a {
-                border-radius: 100px 0 0 100px;
-            }
-        }
-        &:first-child {
-            a {
-                border-radius: 0 100px 100px 0;
-            }
-        }
-    }
-}
-.modal-8,
-.modal-9 {
-    li {
-        a {
-            &.active {
-                color: #f0f0f0;
-            }
-        }
-    }
-}
-.apexcharts-legend-text {
-    color: #f0f0f0 !important;
-}
-.apexcharts-xaxis-label {
-    color: #f0f0f0 !important;
+  }
 }
 
-/// Table ///
+/// Apex Chart Dark CSS ///
+.apexcharts-legend-text {
+  color: #f0f0f0 !important;
+}
+.apexcharts-xaxis-label {
+  color: #f0f0f0 !important;
+}
+.apexcharts-text {
+  fill: #f0f0f0;
+  tspan {
+    fill: #f0f0f0;
+  }
+}
+#simple-pie-chart,
+#simple-donut-chart {
+  .apexcharts-text {
+    fill: #222222;
+  }
+}
+#radar-chart {
+  .apexcharts-text {
+    fill: #222222;
+  }
+}
+
+/// Table Dark CSS ///
 .table > :not(caption) > * > * {
-    border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 th {
-    border-bottom: 1px solid $border-color !important;
+  border-bottom: 1px solid $border-color !important;
 }
 .table-bordered {
-    border: $card-border !important;
+  border: $card-border !important;
 }
 .theme-color {
-    tbody,
-    tfoot,
-    tr,
-    td {
-        color: #222222;
-    }
+  tbody,
+  tfoot,
+  tr,
+  td {
+    color: #222222;
+  }
 }
 .table-dark {
-    tbody,
-    thead,
-    tfoot,
-    tr,
-    th,
-    td {
-        color: #f0f0f0;
-    }
+  tbody,
+  thead,
+  tfoot,
+  tr,
+  th,
+  td {
+    color: #f0f0f0;
+  }
 }
 .round-box {
-    tbody {
-        tr {
-            &:first-child {
-                td {
-                    color: #222222 !important;
-                }
-            }
+  tbody {
+    tr {
+      &:first-child {
+        td {
+          color: #222222 !important;
         }
+      }
     }
+  }
 }
-/// prism css //
+
+/// Prism Dark CSS  //
 .token {
-    &.entity {
-        background-color: transparent;
-    }
+  &.entity {
+    background-color: transparent;
+  }
 }
 code[class*="language-"],
 pre[class*="language-"] {
-    text-shadow: none;
-    color: #f0f0f0;
+  text-shadow: none;
+  color: #f0f0f0;
 }
+.rev_slider {
+  .people-box {
+    p {
+      color: #777777;
+    }
+    .media {
+      .media-body {
+        h3 {
+          color: #222222;
+        }
+        span {
+          color: #777777;
+        }
+      }
+    }
+  }
+}
+.product-banner-slider {
+  .slick-dots {
+    li {
+      background-color: #f0f0f0;
+      border-color: #222222 !important;
+    }
+    .slick-active {
+      background-image: unset;
+      background-color: #222222 !important;
+    }
+  }
+}
+.notification {
+  .notification-header {
+    border-bottom-color: #4e4e4e;
+  }
+  &.notifi-a1 {
+    .main {
+      .media {
+        img {
+          border-color: #4e4e4e;
+        }
+      }
+    }
+  }
+  &.notifi-call {
+    .main {
+      .media {
+        img {
+          border-color: #4e4e4e;
+        }
+      }
+    }
+  }
+  &.notifi-a2 {
+    .main {
+      .option {
+        border-top-color: #4e4e4e;
+      }
+    }
+  }
+  &.notifi-call {
+    .main {
+      .option {
+        border-top-color: #4e4e4e;
+      }
+    }
+  }
+}
+
 /*=====================
- General Pages Dark CSS
+  General Pages Dark CSS
 ==========================*/
 
-/// About Us Page Dark ///
+/// About Us Page Dark CSS ///
 .about-us {
-    .card-box {
-        ul {
-            li {
-                span {
-                    color: #222222;
-                }
-            }
+  .card-box {
+    ul {
+      li {
+        span {
+          color: #222222;
         }
+      }
     }
-    .people-say {
-        .people-box {
-            p {
-                color: #777777;
-            }
-            .media {
-                .media-body {
-                    h3 {
-                        color: #222222;
-                    }
-                    span {
-                        color: #777777;
-                    }
-                }
-            }
+  }
+  .people-say {
+    .people-box {
+      p {
+        color: #777777;
+      }
+      .media {
+        .media-body {
+          h3 {
+            color: #222222;
+          }
+          span {
+            color: #777777;
+          }
         }
+      }
     }
+  }
 }
-
-/// Chat Page dark ///
+/// 404 Page ///
+.error-404 {
+  .banner-box {
+    img {
+      filter: invert(1);
+    }
+    .bg-shape {
+      display: none;
+    }
+  }
+}
+/// Chat Page Dark CSS ///
 .Chat-page {
-    .conservation {
-        .media {
-            .media-body {
-                p {
-                    color: #222222;
-                }
-                .controls {
-                    a {
-                        svg {
-                            stroke: #222222;
-                        }
-                    }
-                }
-            }
+  .conservation {
+    .media {
+      .media-body {
+        p {
+          color: #222222;
         }
+        .controls {
+          a {
+            svg {
+              stroke: #222222;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
-/// Coming-soon & Maintenance Dark  ///
+/// Coming-soon & Maintenance Dark CSS ///
 .coming-soon,
 .maintenance {
-    .round-top,
-    .round-bottom,
-    .dote {
-        img {
-            filter: brightness(0) invert(1);
-        }
+  .round-top,
+  .round-bottom,
+  .dote {
+    img {
+      filter: brightness(0) invert(1);
     }
-    .countdown {
-        ul {
-            li {
-                color: #222222;
-            }
-        }
-    }
-}
-
-/// Contact Us page ///
-.contact-us {
-    .location {
-        > div {
-            .media {
-                > span {
-                    svg {
-                        stroke: #222222;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/// FAQS Page ///
-.faqs {
-    .filter {
-        > div,
-        li {
-            .nav-link {
-                color: #222222;
-                &:hover {
-                    color: #222222;
-                }
-            }
-        }
-    }
-}
-
-/// Help Page ///
-.help-page {
-    .banner-box {
-        .top-header {
-            h2 {
-                color: #222222;
-            }
-            .search-box {
-                .form-control {
-                    color: #222222;
-                }
-                svg {
-                    stroke: #222222;
-                }
-            }
-        }
-    }
-    .categories {
-        .arrow-box {
-            button {
-                border: $card-border;
-                svg {
-                    stroke: #f0f0f0;
-                }
-            }
-        }
-    }
-}
-
-/// Onboarding page ///
-.onboarding-footer {
-    .round-bottom {
-        img {
-            filter: brightness(0) invert(1);
-        }
-    }
-}
-
-/// Messenger page ///
-.message-page {
-    .status-box {
-        .Status-Slider {
-            .user {
-                > div {
-                    span {
-                        svg {
-                            stroke: #222222;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .recent-chat {
-        .friend-box {
-            .media {
-                .media-body {
-                    h3 {
-                        span {
-                            background-color: #2e343b;
-                        }
-                    }
-                }
-                > span {
-                    color: #222222;
-                }
-                .dashed-border {
-                    background-image: radial-gradient(#22282c 65%, transparent 68% 50%, #22282c 70%), repeating-conic-gradient(#f0f0f0 0% 3%, transparent 3% 4%);
-                }
-            }
-        }
-    }
-}
-
-/// Profile Setting Page ///
-.profile-settings {
-    .banner-box {
-        .media {
-            .media-body {
-                h2 {
-                    color: #222222;
-                }
-                span {
-                    color: #777777;
-                }
-            }
-        }
-    }
-}
-
-/// Search Page ///
-.Search {
-    .categories {
-        .arrow-box {
-            button {
-                border: $card-border;
-                svg {
-                    stroke: #f0f0f0;
-                }
-            }
-        }
-    }
-    .recent-search {
-        ul {
-            li {
-                a {
-                    color: #222222;
-                    svg {
-                        stroke: #222222;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/// Setting Page ///
-.setting {
+  }
+  .countdown {
     ul {
-        li {
-            a {
-                > svg {
-                    &:first-child {
-                        stroke: #222222;
-                    }
-                }
-            }
-        }
+      li {
+        color: #222222;
+      }
     }
+  }
+}
+
+/// Contact Us Page Dark CSS ///
+.contact-us {
+  .location {
+    > div {
+      .media {
+        > span {
+          svg {
+            stroke: #222222;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// FAQS Page Dark CSS ///
+.faqs {
+  .filter {
+    > div,
+    li {
+      .nav-link {
+        color: #222222;
+        &:hover {
+          color: #222222;
+        }
+      }
+    }
+  }
+}
+
+/// Help Page Dark CSS ///
+.help-page {
+  .banner-box {
+    .top-header {
+      h2 {
+        color: #222222;
+      }
+      .search-box {
+        .form-control {
+          color: #222222;
+        }
+        svg {
+          stroke: #222222;
+        }
+      }
+    }
+  }
+  .categories {
+    .arrow-box {
+      button {
+        border: $card-border;
+        svg {
+          stroke: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+/// Onboarding Page Dark CSS ///
+.onboarding-footer {
+  .round-bottom {
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+/// Messenger page Dark CSS ///
+.message-page {
+  .status-box {
+    .Status-Slider {
+      .user {
+        > div {
+          span {
+            svg {
+              stroke: #222222;
+            }
+          }
+        }
+      }
+    }
+  }
+  .recent-chat {
+    .friend-box {
+      .media {
+        .media-body {
+          h3 {
+            span {
+              background-color: #2e343b;
+            }
+          }
+        }
+        > span {
+          color: #222222;
+        }
+        .dashed-border {
+          background-image: radial-gradient(#22282c 65%, transparent 68% 50%, #22282c 70%), repeating-conic-gradient(#f0f0f0 0% 3%, transparent 3% 4%);
+        }
+      }
+    }
+  }
+}
+
+/// Profile Setting Page Dark CSS ///
+.profile-settings {
+  .banner-box {
+    .media {
+      .media-body {
+        h2 {
+          color: #222222;
+        }
+        span {
+          color: #777777;
+        }
+      }
+    }
+  }
+}
+
+/// Search Page Dark CSS ///
+.Search {
+  .categories {
+    .arrow-box {
+      button {
+        border: $card-border;
+        svg {
+          stroke: #f0f0f0;
+        }
+      }
+    }
+  }
+  .recent-search {
+    ul {
+      li {
+        a {
+          color: #222222;
+          svg {
+            stroke: #222222;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Setting Page Dark CSS ///
+.setting {
+  ul {
+    li {
+      a {
+        > svg {
+          &:first-child {
+            stroke: #222222;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Page Catagories Dark CSS ///
+.modal-1,
+.modal-2,
+.modal-4,
+.modal-9 {
+  a:hover {
+    color: #222222;
+  }
+}
+.page-catagories {
+  .catagories {
+    .catagories-item {
+      .content {
+        a {
+          h3 {
+            color: #777777;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*=====================
  Authentic Pages Dark CSS
 ==========================*/
-/// Log In Page Dark ///
+
+/// Log In Page Dark CSS ///
 .login-page {
-    .socila-section {
-        ul {
-            li {
-                a {
-                    svg {
-                        fill: #f0f0f0;
-                    }
-                }
-            }
+  .socila-section {
+    ul {
+      li {
+        a {
+          svg {
+            fill: #f0f0f0;
+          }
         }
+      }
     }
-    .round-bottom {
-        filter: brightness(0) invert(1);
-    }
-    .dote-bottom {
-        filter: brightness(0) invert(1);
-    }
+  }
+  .round-bottom {
+    filter: brightness(0) invert(1);
+  }
+  .dote-bottom {
+    filter: brightness(0) invert(1);
+  }
 }
 
 /*=====================
  E-Commerce Pages Dark CSS
 ==========================*/
-/// E-Home Page Dark ///
+
+/// E-Home Page Dark CSS ///
 .e-home {
-    .recently-section {
-        .wrapper {
-            .recently-box {
-                .media {
-                    > a {
-                        border: $card-border;
-                        svg {
-                            stroke: #f0f0f0;
-                        }
-                    }
-                }
+  .recently-section {
+    .wrapper {
+      .recently-box {
+        .media {
+          > a {
+            border: $card-border;
+            svg {
+              stroke: #f0f0f0;
             }
+          }
         }
+      }
     }
+  }
 }
-/// Product Main Page Dark ///
+/// Product Main Page Dark CSS ///
 .product-main {
-    .product-spec {
-        .select-group {
-            .size-Select {
-                .size-box {
-                    span {
-                        &:first-of-type {
-                            color: #f0f0f0;
-                            border: $card-border;
-                        }
-                    }
-                }
+  .product-spec {
+    .select-group {
+      .size-Select {
+        .size-box {
+          span {
+            &:first-of-type {
+              color: #f0f0f0;
+              border: $card-border;
             }
+          }
         }
+      }
     }
-    .table {
-        tr {
-            border-bottom: 1px solid $border-color;
-            &:last-of-type {
-                border: none;
-                td {
-                    border-bottom-width: 0;
-                }
-            }
+  }
+  .table {
+    tr {
+      border-bottom: 1px solid $border-color;
+      &:last-of-type {
+        border: none;
+        td {
+          border-bottom-width: 0;
         }
+      }
     }
-    .detail-tabs {
-        .tab-content {
-            .review-box {
-                .like-box {
-                    > span {
-                        &:first-of-type {
-                            color: #222222;
-                            span {
-                                color: #777777;
-                            }
-                        }
-                    }
-                }
-                &:not(:last-of-type) {
-                    border-bottom: 1px solid $border-color;
-                }
-            }
-            .videobox {
-                .play {
-                    svg {
-                        stroke: #f0f0f0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/// Cart Page Dark ///
-.cart-page {
-    .cart-product {
-        .cart-item {
-            > span {
-                border: $card-border;
-                svg {
-                    stroke: #f0f0f0;
-                    &.fill {
-                        fill: #f0f0f0;
-                    }
-                }
-            }
-            .media {
-                .cart-img {
-                    span {
-                        svg {
-                            stroke: #f0f0f0;
-                        }
-                        .fill {
-                            fill: #f0f0f0;
-                        }
-                    }
-                }
-                .media-body {
-                    .quantity {
-                        .btn {
-                            input {
-                                color: #f0f0f0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .order-detail {
-        ul {
-            li {
-                &:last-child {
-                    border-top: 1px solid $border-color;
-                }
-            }
-        }
-    }
-}
-
-/// Checkout Page Dark ///
-.checkout-page {
-    .address-section,
-    .payment-card-section {
-        .address-box {
-            .media {
-                > span {
-                    span {
-                        background-image: linear-gradient(269.96deg, #f0f0f0 0.03%, #f0f0f0 99.96%);
-                    }
-                }
-                .media-body {
-                    > span {
-                        color: #222222;
-                    }
-                }
-            }
-        }
-    }
-    .order-detail {
-        ul {
-            li {
-                &:last-child {
-                    border-top: 1px solid $border-color;
-                }
-            }
-        }
-    }
+  }
+  .detail-tabs {
     .tab-content {
-        .card-box {
-            .media {
-                .media-body {
-                    > span {
-                        &:last-of-type {
-                            span {
-                                background-image: linear-gradient(269.96deg, #f0f0f0 0.03%, #f0f0f0 99.96%);
-                            }
-                        }
-                    }
-                }
+      .review-box {
+        .like-box {
+          > span {
+            &:first-of-type {
+              color: #222222;
+              span {
+                color: #777777;
+              }
             }
+          }
         }
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $border-color;
+        }
+      }
+      .videobox {
+        .play {
+          svg {
+            stroke: #f0f0f0;
+          }
+        }
+      }
     }
+  }
 }
 
-/// Coupon Page Dark ///
+/// Cart Page Dark CSS ///
+.cart-page {
+  .cart-product {
+    .cart-item {
+      > span {
+        border: $card-border;
+        svg {
+          stroke: #f0f0f0;
+          &.fill {
+            fill: #f0f0f0;
+          }
+        }
+      }
+      .media {
+        .cart-img {
+          span {
+            svg {
+              stroke: #f0f0f0;
+            }
+            .fill {
+              fill: #f0f0f0;
+            }
+          }
+        }
+        .media-body {
+          .quantity {
+            .btn {
+              input {
+                color: #f0f0f0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-detail {
+    ul {
+      li {
+        &:last-child {
+          border-top: 1px solid $border-color;
+        }
+      }
+    }
+  }
+}
+
+/// Checkout Page Dark CSS ///
+.checkout-page {
+  .address-section,
+  .payment-card-section {
+    .address-box {
+      .media {
+        > span {
+          span {
+            background-image: linear-gradient(269.96deg, #f0f0f0 0.03%, #f0f0f0 99.96%);
+          }
+        }
+        .media-body {
+          > span {
+            color: #222222;
+          }
+        }
+      }
+    }
+  }
+  .order-detail {
+    ul {
+      li {
+        &:last-child {
+          border-top: 1px solid $border-color;
+        }
+      }
+    }
+  }
+  .tab-content {
+    .card-box {
+      .media {
+        .media-body {
+          > span {
+            &:last-of-type {
+              span {
+                background-image: linear-gradient(269.96deg, #f0f0f0 0.03%, #f0f0f0 99.96%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Coupon Page Dark CSS ///
 .coupons-page {
-    .coupon-section {
-        .coupon-box {
-            & > div {
-                span {
-                    &:first-of-type {
-                        color: #777777;
-                    }
-                }
-            }
+  .coupon-section {
+    .coupon-box {
+      & > div {
+        span {
+          &:first-of-type {
+            color: #777777;
+          }
         }
+      }
     }
+  }
 }
 
-/// Order Tracking Page Dark ///
+/// Order Tracking Page Dark CSS ///
 .order-tracking-page {
-    .track {
-        ul {
-            li {
-                .media {
-                    > span {
-                        svg {
-                            stroke: #f0f0f0;
-                        }
-                    }
-                }
-                .track-border {
-                    .m-dashed {
-                        &::before,
-                        &::after {
-                            background-color: rgba($border-color, 0.35);
-                        }
-                    }
-                }
+  .track {
+    ul {
+      li {
+        .media {
+          > span {
+            svg {
+              stroke: #f0f0f0;
             }
+          }
         }
-    }
-    .order-detail {
-        ul {
-            li {
-                &:last-child {
-                    border-top: 1px solid $border-color;
-                }
+        .track-border {
+          .m-dashed {
+            &::before,
+            &::after {
+              background-color: rgba($border-color, 0.35);
             }
+          }
         }
+      }
     }
+  }
+  .order-detail {
+    ul {
+      li {
+        &:last-child {
+          border-top: 1px solid $border-color;
+        }
+      }
+    }
+  }
 }
 
 /*=====================
  Grocery Pages Dark CSS
 ==========================*/
-/// Grocery Home Page Dark ///
+
+/// Grocery Home Page Dark CSS ///
 .grocery-home {
-    .grocery-slide {
-        .banner-box {
-            background-color: #d1efde;
-            h2 {
-                color: #222222;
-            }
-            p {
-                color: #777777;
-            }
-        }
+  .grocery-slide {
+    .banner-box {
+      background-color: #d1efde;
+      h2 {
+        color: #222222;
+      }
+      p {
+        color: #777777;
+      }
     }
-    .categories {
-        ul {
-            li {
-                img,
-                svg {
-                    filter: invert(1);
-                    stroke: #f0f0f0;
-                }
-            }
+  }
+  .categories {
+    ul {
+      li {
+        img,
+        svg {
+          filter: invert(1);
+          stroke: #f0f0f0;
         }
+      }
     }
-    .top-offer {
-        .banner-box {
-            .media {
-                .media-body {
-                    h3 {
-                        color: #222222;
-                    }
-                    span {
-                        color: #f0f0f0;
-                    }
-                }
-            }
+  }
+  .top-offer {
+    .banner-box {
+      .media {
+        .media-body {
+          h3 {
+            color: #222222;
+          }
+          span {
+            color: #f0f0f0;
+          }
         }
+      }
     }
+  }
 }
 
-/// Grocery Catagories Page Dark ///
+/// Grocery Catagories Page Dark CSS ///
 .catagories-menu {
-    color: #f0f0f0;
-    border: $card-border;
-    svg {
-        stroke: #f0f0f0;
-    }
+  color: #f0f0f0;
+  border: $card-border;
+  svg {
+    stroke: #f0f0f0;
+  }
 }
 .overlay {
-    background-color: rgba(#222222, 0.5);
+  background-color: rgba(#222222, 0.5);
 }
 .catagories-section {
-    @media only screen and (max-width: 475px) {
-        > .row {
-            > div {
-                &:first-of-type {
-                    border: $card-border;
-                }
-            }
+  @media only screen and (max-width: 475px) {
+    > .row {
+      > div {
+        &:first-of-type {
+          border: $card-border;
         }
+      }
     }
+  }
 }
 
-/// Grocery Shop Page Dark ///
+/// Grocery Shop Page Dark CSS ///
 .g-shop-page {
-    .product-section {
-        .product-box {
-            .product {
-                .media {
-                    .media-body {
-                        .select-box {
-                            select {
-                                color: #f0f0f0;
-                            }
-                        }
-                        .btn {
-                            input {
-                                color: #f0f0f0;
-                            }
-                        }
-                    }
-                }
+  .product-section {
+    .product-box {
+      .product {
+        .media {
+          .media-body {
+            .select-box {
+              select {
+                color: #f0f0f0;
+              }
             }
+            .btn {
+              input {
+                color: #f0f0f0;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
 
-/// Grocery Main Product Dark ///
+/// Grocery Main Product Dark CSS ///
 .product-main {
-    &.g-product-main {
-        .banner-box {
-            > span {
-                color: #f0f0f0;
-            }
-        }
-        .product-spec {
-            .select-group {
-                .size-Select {
-                    .size-box {
-                        span {
-                            &:first-of-type {
-                                border: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+  &.g-product-main {
+    .banner-box {
+      > span {
+        color: #f0f0f0;
+      }
     }
+    .product-spec {
+      .select-group {
+        .size-Select {
+          .size-box {
+            span {
+              &:first-of-type {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /*=====================
- Blog Dark CSS
+  Blog Dark CSS
 ==========================*/
 
-/// Blog Home Dark ///
+/// Blog Home Dark CSS ///
 .blog-home {
-    .categories {
-        ul {
-            li {
-                a {
-                    color: #222222;
-                }
-            }
+  .categories {
+    ul {
+      li {
+        a {
+          color: #222222;
         }
-        .videobox {
-            .play {
-                svg {
-                    stroke: #f0f0f0;
-                }
-            }
-        }
+      }
     }
+    .videobox {
+      .play {
+        svg {
+          stroke: #f0f0f0;
+        }
+      }
+    }
+  }
 }
 
-/// Blog Style 1 Dark ///
+/// Blog Style 1 Dark CSS ///
 .blog-style1 {
-    .tab-content {
-        .topic-box {
-            .topic {
-                .media {
-                    .media-body {
-                        > span {
-                            border: $card-border;
-                            svg {
-                                stroke: #f0f0f0;
-                                &.fill {
-                                    fill: #f0f0f0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/// Blog Style 2 Dark ///
-.blog-style2 {
-    .blog-grid {
-        .product-card {
-            .img-box {
-                & > span {
-                    border: $card-border;
-                    svg {
-                        stroke: #f0f0f0;
-                        &.fill {
-                            fill: #f0f0f0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/// Blog Style 3 Dark ///
-.blog-style3 {
-    .blog-list {
-        .topic-box {
-            .topic {
-                .media {
-                    .media-body {
-                        > span {
-                            border: $card-border;
-                            svg {
-                                stroke: #f0f0f0;
-                                &.fill {
-                                    fill: #f0f0f0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/// Blog Style 5 Dark ///
-.blog-style5 {
-    .banner-box {
-        .banner {
+  .tab-content {
+    .topic-box {
+      .topic {
+        .media {
+          .media-body {
             > span {
-                color: #f0f0f0;
+              border: $card-border;
+              svg {
+                stroke: #f0f0f0;
+                &.fill {
+                  fill: #f0f0f0;
+                }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
 
-/// Blog Style 5,6 dark ///
+/// Blog Style 2 Dark CSS ///
+.blog-style2 {
+  .blog-grid {
+    .product-card {
+      .img-box {
+        & > span {
+          border: $card-border;
+          svg {
+            stroke: #f0f0f0;
+            &.fill {
+              fill: #f0f0f0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Blog Style 3 Dark CSS ///
+.blog-style3 {
+  .blog-list {
+    .topic-box {
+      .topic {
+        .media {
+          .media-body {
+            > span {
+              border: $card-border;
+              svg {
+                stroke: #f0f0f0;
+                &.fill {
+                  fill: #f0f0f0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Blog Style 5 Dark CSS ///
+.blog-style5 {
+  .banner-box {
+    .banner {
+      > span {
+        color: #f0f0f0;
+      }
+    }
+  }
+}
+
+/// Blog Style 5,6 Dark CSS ///
 .blog-style5,
 .blog-style6 {
-    .comment-section {
-        .comment-box {
-            .replay {
-                > a {
-                    color: #222222;
-                }
-            }
+  .comment-section {
+    .comment-box {
+      .replay {
+        > a {
+          color: #222222;
         }
+      }
     }
-    .related-articles {
-        .topic-box {
-            .topic {
-                .media {
-                    .media-body {
-                        > span {
-                            border: $card-border;
-                            svg {
-                                stroke: #f0f0f0;
-                                &.fill {
-                                    fill: #f0f0f0;
-                                }
-                            }
-                        }
-                    }
+  }
+  .related-articles {
+    .topic-box {
+      .topic {
+        .media {
+          .media-body {
+            > span {
+              border: $card-border;
+              svg {
+                stroke: #f0f0f0;
+                &.fill {
+                  fill: #f0f0f0;
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
 
-/// Blog Style 6 Dark ///
+/// Blog Style 6 Dark CSS ///
 .blog-style6 {
-    .video-section {
-        .videobox {
-            .play {
-                svg {
-                    stroke: #f0f0f0;
-                }
-            }
+  .video-section {
+    .videobox {
+      .play {
+        svg {
+          stroke: #f0f0f0;
         }
+      }
     }
+  }
+}
+
+.circle-loader {
+  filter: invert(1);
 }

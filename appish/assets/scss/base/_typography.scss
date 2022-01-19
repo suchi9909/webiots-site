@@ -1,5 +1,5 @@
 /*=====================
-   1.2 Typography CSS start
+   1.2 Typography CSS 
 ==========================*/
 @font-face {
   font-family: "Nunito Sans", sans-serif;
@@ -209,7 +209,6 @@ h3 {
   font-size: 20px;
   line-height: 16px;
   margin: 0;
-  font-weight: 600;
   color: $title-color;
 }
 
@@ -217,7 +216,6 @@ h4 {
   font-size: 18px;
   line-height: 25px;
   margin: 0;
-  font-weight: 600;
   color: $title-color;
 }
 
@@ -238,25 +236,20 @@ h6 {
 }
 
 /// Font Size ///
-.font-xs {
-  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))) !important;
+$theme-font-size: (
+  xs: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))),
+  sm: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))),
+  md: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))),
+  lg: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320))),
+  xl: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320))),
+  xxl: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320))),
+);
+@each $size, $value in $theme-font-size {
+  .font-#{$size} {
+    font-size: $value;
+  }
 }
 
-.font-sm {
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-}
-.font-md {
-  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
-}
-.font-lg {
-  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
-}
-.font-xl {
-  font-size: calc(28px + (28 - 28) * ((100vw - 320px) / (1920 - 320)));
-}
-.font-xxl {
-  font-size: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320)));
-}
 .title-2 {
   line-height: 22px;
   font-weight: 600;
@@ -264,14 +257,11 @@ h6 {
 }
 .pera {
   font-weight: normal;
-  list-style: 19px;
+  line-height: 24px;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 .title-color {
   color: $title-color;
-}
-.text-theme-success {
-  color: $theme-success;
 }
 .content-color {
   color: $content-color;

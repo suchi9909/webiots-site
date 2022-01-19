@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,6 +34,27 @@
 
   <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header header-cht">
       <div>
@@ -43,7 +64,7 @@
           </span>
         </a>
         <div>
-          <h1 class="font-sm">Teri Dactyl</h1>
+          <h1 class="font-sm mb-0">Teri Dactyl</h1>
           <span class="font-xs content-color">online</span>
         </div>
       </div>
@@ -171,7 +192,7 @@
     </main>
     <!-- Main End -->
 
-    <!-- Type Message Box End -->
+    <!-- Type Message Box Start -->
     <footer class="footer-wrap type-message">
       <div class="footer">
         <textarea id="emoji" placeholder="Type a message..." rows="1" class="form-control" data-emojiable="true" data-emoji-input="unicode"></textarea>
@@ -211,7 +232,7 @@
         </ul>
       </div>
     </footer>
-    <!-- Type Message Box Start -->
+    <!-- Type Message Box End -->
 
     <!-- Voice call Modal Start -->
     <div class="modal chat-modal" id="voice" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
@@ -239,7 +260,7 @@
     <!-- Voice call Modal End -->
 
     <!-- Video call Modal Start -->
-    <div class="modal chat-modal" id="video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal chat-modal show" id="video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-body video-call">
@@ -252,7 +273,7 @@
             <div class="content-box">
               <div class="call-option">
                 <div class="video-screen">
-                  <img src="assets/video/video-send.png" class="img-fluid" alt="user" />
+                  <img src="assets/images/png/video-send.png" class="img-fluid" alt="user" />
                 </div>
                 <button type="button" id="stop" class="call-btn bg-green"><i data-feather="pause"></i></button>
                 <button type="button" id="reset" class="call-btn bg-orange" data-bs-dismiss="modal"><i data-feather="phone-off"></i></button>
@@ -269,21 +290,21 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap js -->
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Feather icon js -->
     <script src="assets/js/feather.min.js"></script>
 
     <!-- Timer js -->
-    <script src="assets/js/vendors/timer.js"></script>
+    <script src="assets/js/timer.js"></script>
 
     <!-- Emoji js -->
-    <script src="assets/js/vendors/emoji.js"></script>
+    <script src="assets/js/emoji.js"></script>
 
     <!-- Music Player js -->
-    <script src="assets/js/vendors/wavesurfer.js"></script>
-    <script src="assets/js/vendors/wavesurfer.regions.min.js"></script>
-    <script src="assets/js/vendors/wavesurfer.custom.js"></script>
+    <script src="assets/js/wavesurfer.js"></script>
+    <script src="assets/js/wavesurfer.regions.min.js"></script>
+    <script src="assets/js/wavesurfer.custom.js"></script>
 
     <!-- Theme Setting js -->
     <script src="assets/js/theme-setting.js"></script>
@@ -291,6 +312,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

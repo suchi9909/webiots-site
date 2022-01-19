@@ -1,13 +1,14 @@
 /*=====================
-  4.2 Form CSS
+  2.7 Form CSS
 ==========================*/
+
 /// input style ///
 .custom-form {
     input,
     textarea,
     select {
-        font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1920 - 320)));
-        padding: 10px 47px;
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320))) calc(44px + (47 - 44) * ((100vw - 320px) / (1920 - 320)));
         border-radius: 8px;
         border: $card-border !important;
         box-shadow: $box-shadow !important;
@@ -22,7 +23,7 @@
         input,
         textarea {
             line-height: 28px;
-            padding: 10px 47px;
+            padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320))) calc(44px + (47 - 44) * ((100vw - 320px) / (1920 - 320)));
         }
         input[type="date" i]::-webkit-calendar-picker-indicator {
             position: absolute;
@@ -33,11 +34,11 @@
         }
         > svg,
         img {
-            width: 24px;
-            height: 24px;
+            width: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
             position: absolute;
             left: 12px;
-            top: 48%;
+            top: 50%;
             transform: translateY(-50%);
             [dir="rtl"] & {
                 left: unset;
@@ -47,12 +48,12 @@
         &.text-box {
             > svg,
             img {
-                top: 18%;
+                top: calc(23px + (26 - 23) * ((100vw - 320px) / (1920 - 320)));
             }
         }
         span {
             position: absolute;
-            right: 23px;
+            right: 14px;
             top: 50%;
             transform: translateY(-50%);
             border-radius: 4px;
@@ -65,7 +66,7 @@
             }
             [dir="rtl"] & {
                 right: unset;
-                left: 23px;
+                left: 14px;
             }
         }
         select:focus ~ span {
@@ -153,7 +154,7 @@
             }
             input,
             select {
-                padding: 11px 15px;
+                padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) 15px;
             }
             .label {
                 position: absolute;
@@ -177,7 +178,7 @@
             input,
             select {
                 border-radius: 100px;
-                padding: 11px 50px;
+                padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) calc(44px + (55 - 44) * ((100vw - 320px) / (1920 - 320)));
             }
             > svg,
             img {
@@ -186,6 +187,9 @@
                     left: unset;
                     right: 20px;
                 }
+            }
+            textarea {
+                padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) calc(44px + (55 - 44) * ((100vw - 320px) / (1920 - 320)));
             }
         }
     }

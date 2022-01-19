@@ -8,28 +8,48 @@
 
 ----------------------------------------------------------------------------------- */
 
-////* Base Files  *////
-/* 1.1 Reset CSS  */
+////* Base Files *////
+/* 1.1 Reset CSS */
 /* 1.2 Typography CSS */
 
-////* Components Files  *////
+////* Components Files *////
 /* 2.1 Accordian CSS */
-/* 2.1 Animation CSS */
-/* 2.2 Ratio */
-/* 2.3 Buttons */
-/* 2.4 General component */
-/* 2.5 Switch  */
+/* 2.2 Action Sheet CSS */
+/* 2.3 Animation CSS */
+/* 2.4 Buttons CSS */
+/* 2.5 Breadcumb CSS */
+/* 2.6 Countdown CSS */
+/* 2.7 Form CSS */
+/* 2.8 General CSS */
+/* 2.9 loader CSS */
+/* 2.10 Modal CSS */
+/* 2.11 Nav Tabs CSS */
+/* 2.12 Notification CSS */
+/* 2.13 Pagination CSS */
+/* 2.14 Product Card CSS */
+/* 2.15 Pricing Card CSS */
+/* 2.16 Progress CSS */
+/* 2.17 Ratio CSS */
+/* 2.18 Slider CSS */
+/* 2.19 Switch CSS */
+/* 2.20 Table CSS */
+/* 2.21 Toast CSS */
 
-////* Layout Files  *////
-/* 3.1 Header css */
-/* 3.2 Footer css */
+////* Layout Files *////
+/* 3.1 Header CSS */
+/* 3.2 Sidebar CSS */
+/* 3.3 Footer CSS */
 
-////* Pages Files  *////
-/* 4.1 page-catagories Page CSS  */
-/* 4.1 page-list  CSS  */
-/* 4.1 Index Page CSS  */
-
-////* Themes Files  *////
+////* Pages Files *////
+/* 4.1 Authentic Page CSS  */
+/* 4.2 Blog Page CSS */
+/* 4.3 Ecommerce Page CSS */
+/* 4.4 Element Page CSS */
+/* 4.5 General Page CSS */
+/* 4.6 Grocery Page CSS */
+/* 4.7 Page Catagories Page CSS */
+/* 4.8 Page List Page CSS */
+/* 4.9 Startup Page CSS */
 
 /// Utils Scss Files ///
 @import "utils/variables";
@@ -42,28 +62,33 @@
 
 /// Components Scss Files ///
 @import "components/accordian";
+@import "components/actionsheet";
 @import "components/animation";
 @import "components/buttons";
 @import "components/breadcumb";
 @import "components/countdown";
 @import "components/form";
 @import "components/general";
+@import "components/loader";
 @import "components/modal";
 @import "components/nav-tabs";
+@import "components/notification";
 @import "components/pagination";
 @import "components/product-card";
+@import "components/pricing-card";
 @import "components/progress";
 @import "components/ratio";
 @import "components/slider";
 @import "components/switch";
 @import "components/table";
+@import "components/toast";
 
 /// Layout Scss Files ///
-@import "layout/footer";
 @import "layout/header";
 @import "layout/sidebar";
+@import "layout/footer";
 
-/// Pages ///
+/// Pages Scss Files ///
 @import "pages/authentic";
 @import "pages/blog-page";
 @import "pages/ecommerce";
@@ -73,5 +98,3 @@
 @import "pages/page-catagories";
 @import "pages/page-list";
 @import "pages/startup";
-
-/// Themes Scss Files ///

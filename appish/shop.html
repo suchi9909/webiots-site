@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,10 +30,31 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -308,7 +329,7 @@
             <a href="pages.html" class="footer-link active"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
@@ -472,9 +493,9 @@
           <!-- Modal Footer Start -->
           <div class="modal-footer">
             <a href="javascript:void(0)" class="reset-link btn btn-outline" data-bs-dismiss="modal">Reset</a>
-            <a href="javascript:void(0)" class="btn btn-solid" data-bs-dismiss="modal">apply filters</a>
+            <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="modal">apply filters</a>
           </div>
-          <!-- Modal Footer Start -->
+          <!-- Modal Footer End -->
         </div>
       </div>
     </div>
@@ -484,7 +505,7 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap js -->
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- feather icon js -->
     <script src="assets/js/feather.min.js"></script>
@@ -502,6 +523,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

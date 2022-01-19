@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,10 +30,31 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -50,23 +71,23 @@
 
     <!-- Main Start -->
     <main class="main-wrap mb-xl-large element-pages">
-      <!-- banner Section Start -->
+      <!-- Banner Section Start -->
       <section class="banner-box ratio_asos">
         <div class="banner">
           <img src="assets/images/png/bg.png" class="bg-img" alt="background" />
           <div class="banner-content">
             <h2>Icons</h2>
-            <p class="pera">Icons Is The Best Way To Represent Lot Of Meaning Its Work</p>
+            <p class="pera">Icons is the best way to represent lot Of meaning its work</p>
           </div>
         </div>
       </section>
-      <!-- banner Section End -->
+      <!-- Banner Section End -->
 
       <!-- Icons Section Start -->
       <section class="p-tb-sm">
-        <h3 class="font-md">Feather Icon Use</h3>
         <!-- Stroke Start -->
         <div class="heading-wrap p-t-sm">
+          <h3 class="font-md">Feather Icon Use</h3>
           <p class="font-sm">Stroke</p>
           <div class="heading">
             <div class="icon-group">
@@ -135,11 +156,11 @@
             </div>
           </div>
           <div class="pre">
-            <pre class="language-html"><code data-lang="html"><div>&lt;i class="fill-white-light stroke-danger" data-feather="heart"&gt;&lt;/i&gt;</div>
-<div>&lt;i class="fill-gray-light" data-feather="heart"&gt;&lt;/i&gt;</div>
-<div>&lt;i class="fill-purple stroke-dark-orange" data-feather="heart"&gt;&lt;/i&gt;</div>
-<div>&lt;i class="fill-orange stroke-yellow" data-feather="heart"&gt;&lt;/i&gt;</div>
-<div>&lt;i class="fill-danger stroke-white-light" data-feather="heart"&gt;&lt;/i&gt;</div></code></pre>
+            <pre class="language-html"><code data-lang="html">&lt;i class="fill-white-light stroke-danger" data-feather="heart"&gt;&lt;/i&gt;
+&lt;i class="fill-gray-light" data-feather="heart"&gt;&lt;/i&gt;
+&lt;i class="fill-purple stroke-dark-orange" data-feather="heart"&gt;&lt;/i&gt;
+&lt;i class="fill-orange stroke-yellow" data-feather="heart"&gt;&lt;/i&gt;
+&lt;i class="fill-danger stroke-white-light" data-feather="heart"&gt;&lt;/i&gt;</code></pre>
           </div>
         </div>
         <!-- Fill & Stroke End -->
@@ -185,7 +206,7 @@
             <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
@@ -207,6 +228,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

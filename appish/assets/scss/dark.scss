@@ -1,4 +1,57 @@
-/// Dark Mode ///
+/*-----------------------------------------------------------------------------------
+
+    Template Name:Appish APP
+    Template URI: themes.pixelstrap.com/Appish-app
+    Description: This is PWA Html Template
+    Author: Pixelstrap
+    Author URL: https://themeforest.net/user/pixelstrap
+
+----------------------------------------------------------------------------------- */
+
+////* Base Files *////
+/* 1.1 Reset CSS */
+/* 1.2 Typography CSS */
+
+////* Components Files *////
+/* 2.1 Accordian CSS */
+/* 2.2 Action Sheet CSS */
+/* 2.3 Animation CSS */
+/* 2.4 Buttons CSS */
+/* 2.5 Breadcumb CSS */
+/* 2.6 Countdown CSS */
+/* 2.7 Form CSS */
+/* 2.8 General CSS */
+/* 2.9 Modal CSS */
+/* 2.10 Nav Tabs CSS */
+/* 2.11 Notification CSS */
+/* 2.12 Pagination CSS */
+/* 2.13 Product Card CSS */
+/* 2.14 Pricing Card CSS */
+/* 2.15 Progress CSS */
+/* 2.16 Ratio CSS */
+/* 2.17 Slider CSS */
+/* 2.18 Switch CSS */
+/* 2.19 Table CSS */
+/* 2.20 Toast CSS */
+
+////* Layout Files *////
+/* 3.1 Footer CSS */
+/* 3.2 Header CSS */
+/* 3.3 Sidebar CSS */
+
+////* Pages Files *////
+/* 4.1 Authentic Page CSS  */
+/* 4.2 Blog Page CSS */
+/* 4.3 Ecommerce Page CSS */
+/* 4.4 Element Page CSS */
+/* 4.5 General Page CSS */
+/* 4.6 Grocery Page CSS */
+/* 4.7 Page Catagories Page CSS */
+/* 4.8 Page List Page CSS */
+/* 4.9 Startup Page CSS */
+
+////* Themes Files *////
+/* 5.1 Dark CSS */
 
 /// Utils Scss Files ///
 @import "utils/variables";
@@ -14,23 +67,23 @@ $white: #22282c;
 $white-light: #f0f0f0;
 $gray-light: #2e343b;
 
-/// Gradient color ///
+/// Gradient Color ///
 $dark-from: #2e343b;
 $dark-to: #2e343b;
 
-/// Gradient color ///
+/// Gradient Color ///
 $dark-gradient: linear-gradient(269.96deg, $dark-from 0.03%, $dark-to 99.96%);
 
-/// Border color ///
+/// Border Color ///
 $border-color: #4e4e4e;
 
-/// border ///
+/// Border ///
 $card-border: 1px solid $border-color;
 
-/// Btn shadow ///
+/// Btn Shadow ///
 $btn-shadow: 0px 4px 4px rgba($black, 0.25);
 
-/// main box shadow ///
+/// Main Box Shadow ///
 $box-shadow: 1px 1px 0 $border-color;
 
 @import "utils/classes";
@@ -42,6 +95,7 @@ $box-shadow: 1px 1px 0 $border-color;
 
 /// Components Scss Files ///
 @import "components/accordian";
+@import "components/actionsheet";
 @import "components/animation";
 @import "components/buttons";
 @import "components/breadcumb";
@@ -50,20 +104,23 @@ $box-shadow: 1px 1px 0 $border-color;
 @import "components/general";
 @import "components/modal";
 @import "components/nav-tabs";
+@import "components/notification";
 @import "components/pagination";
 @import "components/product-card";
+@import "components/pricing-card";
 @import "components/progress";
 @import "components/ratio";
 @import "components/slider";
 @import "components/switch";
 @import "components/table";
+@import "components/toast";
 
 /// Layout Scss Files ///
-@import "layout/footer";
 @import "layout/header";
 @import "layout/sidebar";
+@import "layout/footer";
 
-/// Pages ///
+/// Pages Scss Files ///
 @import "pages/authentic";
 @import "pages/blog-page";
 @import "pages/ecommerce";

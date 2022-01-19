@@ -1,5 +1,5 @@
 /*=====================
-  4.2 Authentic pages  CSS
+  4.1 Authentic Pages CSS
 ==========================*/
 
 /// Login Page Css Start ///
@@ -29,11 +29,9 @@
     .login-section {
         .custom-form {
             text-align: center;
-
             h1 {
+                margin-bottom: calc(10px + (24 - 10) * ((100vw - 320px) / (1920 - 320)));
                 text-align: left;
-                font-size: 28px;
-                font-size: 28px;
                 [dir="rtl"] & {
                     text-align: right;
                 }

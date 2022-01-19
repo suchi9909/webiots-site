@@ -1,7 +1,56 @@
-/*=====================
-   Ratio js  start
-==========================*/
+/*-----------------------------------------------------------------------------------
+
+    Template Name:Appish APP
+    Template URI: themes.pixelstrap.com/appish-app
+    Description: This is PWA Html Template
+    Author: Pixelstrap
+    Author URL: https://themeforest.net/user/pixelstrap
+
+----------------------------------------------------------------------------------- */
+// 01.Manifest js
+// 02.Pre Loader js 
+// 03.Ratio js
+// 04.Header Sidebar js
+// 05.Filter Select js
+// 06.Video Thumbnail 
+// 07.Heart & Bookmark Fill Js
+// 08.Address Select Js
+// 09.Payment Card Select Js
+// 10.Plus Minuse Item  Js
+// 11.Grocery Responsive Menu
+// 12.Toast Init js
+// 13.Notification Init js
+// 14.Swiper js
+
+
 (function ($) {
+
+    /*========================
+      01. Manifest js
+      ==========================*/
+
+    $(window).on('load', function () {
+        'use strict';
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('sw.js');
+        }
+    });
+
+    /*=====================
+     02. Pre Loader js 
+     ==========================*/
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('.pre-loader').fadeOut('slow');
+        }, 500);
+        $('.pre-loader').remove('slow');
+    });
+
+
+    /*=====================
+      03. Ratio js
+     ==========================*/
     "use strict";
     // image to background
     $(".bg-top").parent().addClass('b-top'); // background postion top
@@ -31,33 +80,30 @@
     });
 
     /*=====================
-        03.  Header sidebar 
+        04.  Header sidebar js
       ==========================*/
     $(".nav-bar").on('click', function () {
-        $(".header-sidebar").addClass("show");
-        $(".overlay-sidebar").addClass("show");
+        $(".header-sidebar,.overlay-sidebar").addClass("show");
         $('body').css({
             'overflow': 'hidden'
         });
     });
     $(".user-panel, .overlay-sidebar ").on('click', function () {
-        $(".header-sidebar").removeClass("show");
-        $(".overlay-sidebar").removeClass("show");
+        $(".header-sidebar,.overlay-sidebar").removeClass("show");
         $('body').css({
             'overflow': 'unset'
         });
     });
 
-
     /*=====================
-        Filter select js
+      05. Filter select js
     ==========================*/
     $('.filter-row li, .filter-color li, .size-select li').on('click', function (e) {
         $(this).addClass('active').siblings('.active').removeClass('active');
     });
 
     /*=====================
-      Video Thumbnail 
+     06. Video Thumbnail js
     ==========================*/
     $('.play').on('click', function () {
         $(".video-iframe").css("display", "block");
@@ -66,32 +112,30 @@
     });
 
 
-    /*=====================
-     Heart &  Bookmark  Fill Js 
-    ==========================*/
+    /*==========================
+     07. Heart &  Bookmark  Fill Js 
+    ================================*/
     $(".feather-heart, .feather-bookmark").on('click', function () {
         $(this).toggleClass("fill")
     });
 
 
     /*=====================
-     Address Select Js 
+     08. Address Select Js 
     ==========================*/
     $(".address-box").on('click', function () {
-        $(".address-box").removeClass("active");
-        $(this).addClass("active");
+        $(this).addClass('active').siblings().removeClass('active');
     });
 
-    /*=====================
-     Payment Card Select Js 
-    ==========================*/
+    /*=======================
+     09. Payment Card Select Js 
+    ============================*/
     $(".card-box").on('click', function () {
-        $(".card-box").removeClass("active");
-        $(this).addClass("active");
+        $(this).addClass('active').siblings().removeClass('active');
     });
 
     /*=====================
-      Plus Minuse Item  Js 
+     10. Plus Minus Item  Js 
     ==========================*/
     $('.add').on('click', function () {
         if ($(this).prev().val() < 10) {
@@ -104,21 +148,19 @@
         }
     });
 
-    /*=====================
-     Grocery Responsive menu
-     ==========================*/
+    /*========================
+    11. Grocery Responsive Menu js
+    =============================*/
     $(".catagories-menu").on('click', function () {
-        $('#myScrollspy').addClass("show");
-        $('.overlay').addClass("show");
+        $('#myScrollspy,.overlay').addClass("show");
         $(".toggle .overlay, .list-group-item").on('click', function () {
-            $('#myScrollspy').removeClass("show");
-            $('.overlay').removeClass("show");
+            $('#myScrollspy,.overlay').removeClass("show");
         });
     });
 
-    /*=====================
-     Toast Init
-     ==========================*/
+    /*===============
+     12. Toast Init js
+     ==================*/
     /// Self Closing ///
     function showHideSelf(click, show) {
         click.on("click", function () {
@@ -157,7 +199,7 @@
     showhide($(".toast-danger-cl-btn"), $(".toast-cl-danger"));
 
     /*=====================
-     Notification Init
+     13. Notification Init js
      ==========================*/
     function notification(click, show) {
         click.on("click", function () {
@@ -177,8 +219,9 @@
     notification($(".notifi-a2-btn"), $(".notifi-a2"));
     notification($(".notifi-news-btn"), $(".notifi-news"));
     notification($(".notifi-call-btn"), $(".notifi-call"));
+
     /*=====================
-       Swiper js
+      14. Swiper js
     ==========================*/
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);

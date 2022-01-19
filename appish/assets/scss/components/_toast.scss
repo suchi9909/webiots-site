@@ -1,0 +1,160 @@
+/*=====================
+   2.21 Toast CSS
+==========================*/
+
+/// Toast ///
+.toast {
+    position: fixed;
+    padding: 8px 15px;
+    border: $card-border;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 250px;
+    transform: translate(-50%, -50%);
+    &.top-center {
+        left: 50%;
+        top: 70px;
+    }
+    &.top-left {
+        left: 130px;
+        top: 70px;
+        [dir="rtl"] & {
+            left: unset;
+            right: 130px;
+        }
+    }
+    &.top-right {
+        right: 130px;
+        top: 70px;
+        [dir="rtl"] & {
+            left: 130px;
+            right: unset;
+        }
+    }
+    &.bottom-center {
+        left: 50%;
+        bottom: 80px;
+    }
+    &.bottom-left {
+        bottom: 80px;
+        left: 130px;
+        [dir="rtl"] & {
+            left: unset;
+            right: 130px;
+        }
+    }
+    &.bottom-right {
+        bottom: 80px;
+        right: 130px;
+        [dir="rtl"] & {
+            left: 130px;
+            right: unset;
+        }
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        .toast-close {
+            width: 20px;
+            height: 20px;
+            margin-left: auto;
+            margin-right: 0;
+            [dir="rtl"] & {
+                margin-right: auto;
+                margin-left: 0;
+            }
+        }
+    }
+}
+/// Success Start ///
+.toast-success,
+.toast-cl-success {
+    background-color: $theme-green;
+    span {
+        svg {
+            margin-right: 8px;
+            stroke: $title-color;
+            [dir="rtl"] & {
+                margin-right: unset;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+/// Success End ///
+
+/// Progress Start ///
+.toast-progress,
+.toast-cl-progress {
+    background-color: $theme-blue;
+    span {
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+            [dir="rtl"] & {
+                margin-right: unset;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+/// Progress End ///
+
+/// Info Start ///
+.toast-info,
+.toast-cl-info {
+    background-color: $theme-purple;
+    span {
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+            [dir="rtl"] & {
+                margin-right: unset;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+/// Info End ///
+
+/// Warning Start ///
+.toast-warning,
+.toast-cl-warning {
+    background-color: $theme-yellow;
+    span {
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+            [dir="rtl"] & {
+                margin-right: unset;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+/// Warning End ///
+
+/// Warning Start ///
+.toast-danger,
+.toast-cl-danger {
+    background-color: $theme-orange;
+    span {
+        display: flex;
+        align-items: center;
+        svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            [dir="rtl"] & {
+                margin-right: unset;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+/// Warning End ///

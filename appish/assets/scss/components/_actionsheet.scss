@@ -1,0 +1,506 @@
+/*=====================
+ 2.2 Action Sheet CSS
+==========================*/
+
+/// Action ///
+.action {
+  overflow: hidden;
+  height: auto !important;
+  &.offcanvas {
+    border-radius: 0;
+  }
+  .offcanvas-body {
+    .btn {
+      font-size: 15px;
+    }
+  }
+}
+
+/// Share start ///
+.action-share {
+  .offcanvas-body {
+    ul {
+      max-height: 380px;
+      overflow-y: auto;
+      li {
+        .filter-col {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          border: none !important;
+          a {
+            line-height: 9px;
+            display: flex;
+            align-items: center;
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+          }
+          .icon {
+            width: 30px;
+            height: 30px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &.facebook {
+              background-color: $facebook;
+            }
+            &.whatsapp {
+              background-color: $whatsapp;
+            }
+            &.twitter {
+              background-color: $twitter;
+            }
+            &.linkdin {
+              background-color: $linkdin;
+            }
+            &.instagram {
+              background: $instagram;
+            }
+            &.google {
+              background: $google;
+            }
+            svg {
+              width: 20px;
+              height: 20px;
+              fill: $white;
+            }
+          }
+        }
+      }
+      &.grid {
+        max-height: 280px;
+        overflow-y: auto;
+        li {
+          .filter-col {
+            justify-content: center;
+            a {
+              flex-direction: column;
+              align-items: center;
+              font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+              .icon {
+                width: 50px;
+                padding: 8px;
+                height: 50px;
+                margin-right: 0;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                svg {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/// Share End ///
+
+/// Success Start ///
+.action-success {
+  .success-box {
+    text-align: center;
+    h2 {
+      font-size: 22px;
+    }
+    .success-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      font-size: 40px;
+      color: $white;
+      svg {
+        stroke: $white;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: -4px;
+      color: $content-color;
+    }
+  }
+}
+/// Success End ///
+
+/// Cookies Start ///
+.action-cookies {
+  .offcanvas-body {
+    text-align: center;
+    .cookies-box {
+      h2 {
+        font-size: 22px;
+        color: $title-color;
+      }
+      .cookies {
+        margin-top: -5px;
+        width: 120px;
+        margin-bottom: 15px;
+      }
+      h2 {
+        margin-bottom: 15px;
+      }
+      .btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn {
+          width: 100%;
+          padding: 10px;
+          margin-top: 15px;
+          &:first-of-type {
+            margin-right: 15px;
+            [dir="rtl"] & {
+              margin-right: unset;
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/// Cookies End ///
+
+/// Confirmation Start ///
+.action-confirmation {
+  text-align: center;
+  .offcanvas-body {
+    padding: calc(25px + (32 - 25) * ((100vw - 320px) / (1920 - 320)));
+    .confirmation-box {
+      h2 {
+        margin-bottom: 15px;
+      }
+      .btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn {
+          width: 100%;
+          padding: 10px;
+          margin-top: 15px;
+          &:first-of-type {
+            margin-right: 15px;
+            [dir="rtl"] & {
+              margin-right: unset;
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/// Confirmation End ///
+
+// Language Start ///
+.action-language {
+  @extend.action-share;
+
+  .offcanvas-body {
+    padding: 30px;
+    > h2 {
+      margin-top: -4px;
+    }
+    .filter-row {
+      margin-bottom: -3px;
+      max-height: 380px !important;
+      overflow-y: auto;
+      li {
+        padding: 0;
+        .filter-col {
+          a {
+            display: flex;
+            align-items: center;
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            img {
+              width: 30px;
+              height: 30px;
+              margin-right: 10px;
+              [dir="rtl"] & {
+                margin-right: unset;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .offcanvas-footer {
+    border-top: none;
+    .btn-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .btn {
+        &:first-of-type {
+          margin-right: 15px;
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// Language End ///
+
+/// Call Start ///
+.action-call {
+  text-align: center;
+  .offcanvas-body {
+    .call-box {
+      text-align: center;
+      h2 {
+        font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+      }
+      .call-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-size: 40px;
+        color: $white;
+        svg {
+          stroke: $white;
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .btn-box {
+        .btn {
+          width: 100%;
+          padding: 10px;
+          background-image: unset;
+          border: none;
+          color: $white-light;
+        }
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        color: $content-color;
+      }
+    }
+  }
+}
+/// Call End ///
+
+/// Video Embeds Start ///
+.action-video {
+  .offcanvas-body {
+    padding: 0 !important;
+    .video-iframe {
+      width: 100%;
+      height: calc(190px + (300 - 190) * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+  .content-box {
+    margin-top: -5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    padding: 25px 10px;
+    p {
+      color: $content-color;
+    }
+  }
+  .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn {
+      width: 100%;
+      padding: 10px !important;
+      margin-top: 0;
+      &:first-of-type {
+        margin-right: 15px;
+        [dir="rtl"] & {
+          margin-right: unset;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+/// Video Embeds End ///
+
+/// Map Embeds Start ///
+.action-map {
+  .offcanvas-body {
+    padding: 0 !important;
+    .iframe-map {
+      width: 100%;
+      height: calc(190px + (300 - 190) * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+  .content-box {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    padding: 20px;
+    p {
+      color: $content-color;
+      margin-bottom: 0;
+    }
+    .btn-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn {
+        width: 100%;
+        padding: 10px !important;
+        margin-top: 0;
+        &:first-of-type {
+          margin-right: 15px;
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+/// Map Embeds End ///
+
+/// Login Start ///
+.action-login {
+  padding: 32px 15px;
+  .custom-form {
+    .input-box {
+      input {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .btn {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  }
+}
+/// Login End ///
+
+/// OTP Start ///
+.action-otp {
+  padding: 32px 15px;
+  .custom-form {
+    h2 {
+      margin-bottom: 25px;
+    }
+    .otp-input {
+      margin-bottom: calc(35px + (60 - 35) * ((100vw - 320px) / (1920 - 320)));
+      li {
+        text-align: center;
+        width: 35px;
+        &:not(:last-of-type) {
+          margin-right: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+          }
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .bg-shape {
+        top: -16px;
+        left: calc(-16px - (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+        width: calc(70px + (80 - 70) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(70px + (80 - 70) * ((100vw - 320px) / (1920 - 320)));
+      }
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
+/// OTP End ///
+
+/// Add Address Offcanvas Start ///
+.add-address {
+  height: auto;
+  .offcanvas-header {
+    h5 {
+      margin-top: -4px;
+      margin-bottom: -4px;
+    }
+  }
+  .offcanvas-body {
+    .custom-form {
+      .input-box {
+        input {
+          &:not(:first-of-type) {
+            margin-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+          }
+        }
+      }
+    }
+  }
+  .offcanvas-footer {
+    .btn-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+      button {
+        flex: 1 1 auto;
+        width: 100%;
+        padding: 12px !important;
+        &:first-of-type {
+          margin-right: 15px;
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+/// Add Address Offcanvas End ///
+
+/// Add Card Offcanvas Start ///
+.add-card {
+  @extend .add-address;
+}
+/// Add Card Offcanvas End ///

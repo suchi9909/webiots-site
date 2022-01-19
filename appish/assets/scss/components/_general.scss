@@ -1,8 +1,31 @@
 /*=====================
-  2.3 page-catagories pages  CSS
+  2.8 General CSS
 ==========================*/
 
-/// Bumble Shape ///
+/// Shape ///
+.round-top {
+    position: absolute;
+    top: 6.8%;
+    right: 13.5%;
+    animation: bouncing-top 2s linear infinite both;
+    img {
+        height: auto;
+    }
+}
+.round-bottom {
+    position: absolute;
+    bottom: 17%;
+    left: 13.5%;
+    animation: 2s bouncing-bottom linear infinite both;
+}
+.dote-bottom {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    animation: moveleft 2s linear infinite both;
+}
+
+/// Dumbels Shape ///
 .shape2 {
     position: absolute;
     width: 11px;
@@ -118,6 +141,12 @@
         }
     }
 }
+/// Rtl Direction Ltr ///
+.dir-ltr {
+    [dir="rtl"] & {
+        direction: ltr;
+    }
+}
 .apexcharts-canvas {
     margin: 0 auto !important;
 }
@@ -143,6 +172,7 @@
 
 /// Leaf Map Start ///
 .leaf-map {
+    z-index: 1;
     border: $card-border;
     box-shadow: $box-shadow;
     border-radius: 15px;

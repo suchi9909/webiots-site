@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,13 +23,35 @@
 
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
+
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -46,7 +68,7 @@
 
     <!-- Main Start -->
     <main class="main-wrap mb-xl-large element-pages">
-      <!-- banner Section Start -->
+      <!-- Banner Section Start -->
       <section class="banner-box ratio_asos">
         <div class="banner">
           <img src="assets/images/png/bg.png" class="bg-img" alt="background" />
@@ -56,13 +78,14 @@
           </div>
         </div>
       </section>
-      <!-- banner Section End -->
+      <!-- Banner Section End -->
 
       <!-- Button Section Start -->
       <section class="p-tb-sm">
-        <h3 class="font-sm m-b-title1">Default Solid Buttons</h3>
         <!-- Default Button Start -->
         <div class="button-wrap p-b-sm">
+          <h3 class="font-sm">Default Solid Buttons</h3>
+
           <!-- Solid Button Start -->
           <div class="btn-box">
             <button class="btn btn-round">Buttons</button>
@@ -72,9 +95,9 @@
           </div>
           <!-- Solid Button End -->
         </div>
-
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Default Outline Buttons</h3>
+          <h3 class="font-sm">Default Outline Buttons</h3>
+
           <!-- Outline Button Start -->
           <div class="btn-box">
             <button class="btn btn-round btn-outline">Buttons</button>
@@ -85,9 +108,10 @@
           <!-- Outline Button End -->
         </div>
         <!-- Default Button End -->
+
+        <!-- Theme Color Buttons Start -->
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Theme Color Buttons</h3>
-          <!-- Theme Color Buttons Start -->
+          <h3 class="font-sm">Theme Color Buttons</h3>
           <div class="btn-box">
             <button type="button" class="btn btn-theme bg-blue">Button</button>
             <button type="button" class="btn btn-theme bg-green">Button</button>
@@ -95,12 +119,12 @@
             <button type="button" class="btn btn-theme bg-orange">Button</button>
             <button type="button" class="btn btn-theme bg-purple">Button</button>
           </div>
-          <!-- Theme Color Buttons End -->
         </div>
+        <!-- Theme Color Buttons End -->
 
         <!-- Bootstrap Button Start -->
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Bootstrap Solid Buttons</h3>
+          <h3 class="font-sm">Bootstrap Solid Buttons</h3>
           <!-- Bootstrap Solid Buttons Start -->
           <div class="btn-box">
             <button type="button" class="btn btn-primary">Primary</button>
@@ -115,9 +139,8 @@
           </div>
           <!-- Bootstrap Solid Buttons End -->
         </div>
-
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Bootstrap Outline Buttons</h3>
+          <h3 class="font-sm">Bootstrap Outline Buttons</h3>
           <!-- Bootstrap Outline Buttons Start -->
           <div class="btn-box">
             <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -132,7 +155,7 @@
           <!-- Bootstrap Outline Buttons End -->
         </div>
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Large Buttons</h3>
+          <h3 class="font-sm">Large Buttons</h3>
           <!-- Large Buttons Start -->
           <div class="btn-box">
             <button type="button" class="btn btn-primary btn-lg">Primary</button>
@@ -141,7 +164,7 @@
           <!-- Large Buttons End -->
         </div>
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Small Buttons</h3>
+          <h3 class="font-sm">Small Buttons</h3>
           <!-- Small Buttons Start -->
           <div class="btn-box">
             <button type="button" class="btn btn-primary btn-sm">Primary</button>
@@ -150,7 +173,8 @@
           <!-- Small Buttons End -->
         </div>
         <div class="button-wrap p-b-sm">
-          <h3 class="font-sm m-b-title1">Block Buttons</h3>
+          <h3 class="font-sm">Block Buttons</h3>
+          <!-- Block Buttons Start -->
           <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-primary" type="button">Button</button>
             <button class="btn btn-primary" type="button">Button</button>
@@ -159,6 +183,7 @@
             <button class="btn btn-primary" type="button">Button</button>
             <button class="btn btn-primary" type="button">Button</button>
           </div>
+          <!-- Block Buttons Start -->
         </div>
         <!-- Bootstrap Button End -->
       </section>
@@ -183,7 +208,7 @@
             <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
@@ -194,7 +219,7 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap  js -->
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- feather icon js -->
     <script src="assets/js/feather.min.js"></script>
@@ -205,6 +230,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

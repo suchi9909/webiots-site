@@ -1,344 +1,349 @@
 /*=====================
-  4.2 Slider Css
+  2.18 Slider CSS
 ==========================*/
 
 /// Central Slider Start ///
 .blog-detail-slide {
-    @include partial-slider;
-    .slick-slide {
-        margin-right: 0.55% !important;
-        margin-left: 0.55% !important;
-        transition: all 0.3s;
-        @media only screen and (max-width: 355px) {
-            margin-right: 0% !important;
-            margin-left: 0% !important;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
+  @include partial-slider;
+  .slick-slide {
+    margin-right: 0.55% !important;
+    margin-left: 0.55% !important;
+    transition: all 0.3s;
+    @media only screen and (max-width: 355px) {
+      margin-right: 0% !important;
+      margin-left: 0% !important;
+      padding-left: 8px;
+      padding-right: 8px;
     }
+  }
 }
 /// Central Slider End ///
 
 /// Book Slider Start ///
 .rev_slider {
-    .rev_slide {
-        .people-box {
-            border: $card-border;
-            box-shadow: $box-shadow;
-            background-color: $theme-yellow;
-            border-radius: 15px;
-            padding: 20px 15px;
-            text-align: center;
-            .media {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    border-radius: 100%;
-                    width: 45px;
-                    height: 45px;
-                    border: $card-border;
-                }
-                .media-body {
-                    text-align: left;
-                    h3 {
-                        margin-top: 8px;
-                    }
-                }
-            }
-        }
-    }
-
-    .slick-container {
-        width: 900px;
-        margin: 0 auto;
-        max-width: 80%;
-    }
-    .slick-arrow {
-        display: none;
-    }
-
-    .slick-dots {
-        text-align: center;
-        position: relative;
-        bottom: 0px;
-        left: 0;
-        right: 0;
-        margin-top: -12px;
+  .rev_slide {
+    .people-box {
+      border: $card-border;
+      box-shadow: $box-shadow;
+      background-color: $theme-yellow;
+      border-radius: 15px;
+      padding: 20px 15px;
+      text-align: center;
+      .media {
         display: flex;
         align-items: center;
         justify-content: center;
-        @media only screen and (max-width: 475px) {
-            margin-top: 15px;
 
-            li {
-                position: relative;
-                display: inline-block;
-                height: 10px;
-                width: 10px;
-                margin: 0 5px;
-                border-radius: 100%;
-                background-color: $white;
-                border: $card-border;
-                padding: 0;
-                cursor: pointer;
-            }
-            .slick-active {
-                background-color: $title-color !important;
-                height: 10px;
-                width: 30px;
-                border-radius: 20px;
-            }
+        img {
+          border-radius: 100%;
+          width: 45px;
+          height: 45px;
+          border: $card-border;
         }
-    }
-    .slick-slider {
-        margin-left: -12%;
-        margin-right: -12%;
-    }
-    .slick-list {
-        padding-top: 10% !important;
-        padding-bottom: 11% !important;
-        padding-left: 15% !important;
-        padding-right: 15% !important;
-        @media only screen and (max-width: 400px) {
-            padding-top: 15% !important;
-            padding-bottom: 11% !important;
-            padding-left: 15% !important;
-            padding-right: 15% !important;
+        .media-body {
+          text-align: left;
+          [dir="rtl"] & {
+            text-align: right;
+          }
+          h3 {
+            font-weight: 600;
+            margin-top: 8px;
+          }
         }
+      }
     }
-    .slick-track {
-        max-width: 100% !important;
-        transform: translate3d(0, 0, 0) !important;
-        perspective: 100px;
-    }
-    .slick-dotted {
-        &.slick-slider {
-            margin-bottom: 0;
-        }
-    }
-    .slick-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        opacity: 0;
-        width: 100% !important;
-        transform: translate3d(0, 0, 0);
-        transition: transform 1s, opacity 1s;
-    }
+  }
 
-    .slick-snext,
-    .slick-sprev {
-        display: block;
-    }
+  .slick-container {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .slick-arrow {
+    display: none;
+  }
 
-    .slick-current {
-        opacity: 1;
+  .slick-dots {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin-top: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 475px) {
+      margin-top: 15px;
+
+      li {
         position: relative;
-        display: block;
-        transform: translate3d(0, 0, 20px);
-        z-index: 2;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        border-radius: 100%;
+        background-color: $white;
+        border: $card-border;
+        padding: 0;
+        cursor: pointer;
+      }
+      .slick-active {
+        background-color: $title-color !important;
+        height: 10px;
+        width: 30px;
+        border-radius: 20px;
+      }
     }
+  }
+  .slick-slider {
+    margin-left: -12%;
+    margin-right: -12%;
+  }
+  .slick-list {
+    padding-top: 10% !important;
+    padding-bottom: 11% !important;
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+    @media only screen and (max-width: 400px) {
+      padding-top: 15% !important;
+      padding-bottom: 11% !important;
+      padding-left: 15% !important;
+      padding-right: 15% !important;
+    }
+  }
+  .slick-track {
+    max-width: 100% !important;
+    transform: translate3d(0, 0, 0) !important;
+    perspective: 100px;
+  }
+  .slick-dotted {
+    &.slick-slider {
+      margin-bottom: 0;
+    }
+  }
+  .slick-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    width: 100% !important;
+    transform: translate3d(0, 0, 0);
+    transition: transform 1s, opacity 1s;
+  }
 
-    .slick-snext {
-        opacity: 1;
-        transform: translate3d(00, 0, 0px);
-        z-index: 1;
-    }
+  .slick-snext,
+  .slick-sprev {
+    display: block;
+  }
 
-    .slick-sprev {
-        opacity: 1;
-        transform: translate3d(-16%, 0, 0px);
-    }
+  .slick-current {
+    opacity: 1;
+    position: relative;
+    display: block;
+    transform: translate3d(0, 0, 20px);
+    z-index: 2;
+  }
+
+  .slick-snext {
+    opacity: 1;
+    transform: translate3d(00, 0, 0px);
+    z-index: 1;
+  }
+
+  .slick-sprev {
+    opacity: 1;
+    transform: translate3d(-16%, 0, 0px);
+  }
 }
 /// Book Slider End ///
 
 /// Banner Thumbnail Slider Start ///
 .banner-Thumbnail-slider {
+  [dir="rtl"] & {
+    direction: ltr;
+  }
+  .slick-track {
+    padding: 1px 0;
+    margin-left: -62px;
+    @media only screen and (max-width: 475px) {
+      margin-left: -32px;
+    }
+
+    @media only screen and (max-width: 375px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  .slick-slide {
+    padding: 0 12px !important;
+    @media only screen and (max-width: 375px) {
+      padding: 0 7px !important;
+    }
+  }
+
+  .banner-slide {
+    width: 100%;
+    padding: 12px;
+    border: $card-border;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
     [dir="rtl"] & {
-        direction: ltr;
+      direction: rtl;
     }
-    .slick-track {
-        padding: 1px 0;
-        margin-left: -62px;
-        @media only screen and (max-width: 475px) {
-            margin-left: -32px;
-        }
-
-        @media only screen and (max-width: 375px) {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
+    .banner-img {
+      position: relative;
+      background-color: $theme-yellow;
+      border: $card-border;
+      border-radius: 10px;
+      box-shadow: $box-shadow;
     }
-    .slick-slide {
-        padding: 0 12px !important;
-        @media only screen and (max-width: 375px) {
-            padding: 0 7px !important;
+    .content-box {
+      cursor: pointer;
+      padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 0;
+      p {
+        margin-bottom: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $content-color;
+        span {
+          &:last-child {
+            color: $white;
+            font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+            background-color: $theme-dark-orange;
+            border-radius: 3px;
+            line-height: calc(21px + (23 - 22) * ((100vw - 320px) / (1920 - 320)));
+            padding: 0 6px;
+          }
         }
+      }
+      & > span {
+        display: block;
+      }
+      h3 {
+        font-weight: 600;
+        margin-bottom: calc(3px + (6 - 3) * ((100vw - 320px) / (1920 - 320)));
+      }
+      .btn {
+        margin-top: 15px;
+        padding: calc(6px + (7 - 6) * ((100vw - 320px) / (1920 - 320))) calc(22px + (22 - 22) * ((100vw - 320px) / (1920 - 320)));
+      }
     }
-
-    .banner-slide {
-        width: 100%;
-        padding: 12px;
-        border: $card-border;
-        border-radius: 10px;
-        box-shadow: $box-shadow;
-        [dir="rtl"] & {
-            direction: rtl;
-        }
-        .banner-img {
-            position: relative;
-            background-color: $theme-yellow;
-            border: $card-border;
-            border-radius: 10px;
-            box-shadow: $box-shadow;
-            > img {
-                &:last-child {
-                    position: absolute;
-                    width: 35%;
-                    top: 50%;
-                    left: 20%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        }
-        .content-box {
-            cursor: pointer;
-            padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 0;
-            p {
-                margin-bottom: 11px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                color: $content-color;
-                span {
-                    &:last-child {
-                        color: $white;
-                        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
-                        background-color: $theme-dark-orange;
-                        border-radius: 3px;
-                        line-height: calc(21px + (23 - 22) * ((100vw - 320px) / (1920 - 320)));
-                        padding: 0 6px;
-                    }
-                }
-            }
-            & > span {
-                display: block;
-            }
-            h3 {
-                margin-bottom: calc(3px + (6 - 3) * ((100vw - 320px) / (1920 - 320)));
-            }
-            .btn {
-                margin-top: 15px;
-                padding: calc(6px + (7 - 6) * ((100vw - 320px) / (1920 - 320))) calc(22px + (22 - 22) * ((100vw - 320px) / (1920 - 320)));
-            }
-        }
-    }
+  }
 }
 /// Banner Thumbnail Slider End ///
 
 /// Banner  Slider Start ///
 .banner-slider {
-    [dir="rtl"] & {
-        direction: ltr;
+  [dir="rtl"] & {
+    direction: ltr;
+  }
+
+  .banner-box {
+    border: $card-border;
+    box-shadow: $box-shadow;
+    border-radius: 9px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    @media only screen and (max-width: 355px) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .bg-size {
+      &:before {
+        padding-top: 45%;
+      }
+    }
+    > div {
+      border-radius: 9px;
+      background-color: $theme-yellow;
+    }
+    > img {
+      position: absolute;
+      width: 40%;
+      top: 50%;
+      left: 23%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .slick-list {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .slick-dots {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin-top: calc(-22px + (-30 + 22) * ((100vw - 320px) / (1920 - 320)));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      position: relative;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      border-radius: 100%;
+      background-color: $white;
+      border: $card-border;
+      padding: 0;
+      cursor: pointer;
+      button {
+        opacity: 0;
+      }
     }
 
-    .banner-box {
-        border: $card-border;
-        box-shadow: $box-shadow;
-        border-radius: 9px;
-        padding: 5px;
-        position: relative;
-        margin-right: 10px;
-        margin-left: 10px;
-        .bg-size {
-            &:before {
-                padding-top: 45%;
-            }
-        }
-        > div {
-            border-radius: 9px;
-            background-color: $theme-yellow;
-        }
-        > img {
-            position: absolute;
-            width: 40%;
-            top: 50%;
-            left: 23%;
-            transform: translate(-50%, -50%);
-        }
+    .slick-active {
+      background-color: $title-color !important;
+      height: 10px;
+      width: 30px;
+      border-radius: 20px;
     }
-    .slick-list {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    .slick-dots {
-        text-align: center;
-        position: relative;
-        bottom: 0px;
-        left: 0;
-        right: 0;
-        margin-top: calc(-22px + (-30 + 22) * ((100vw - 320px) / (1920 - 320)));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        li {
-            position: relative;
-            display: inline-block;
-            height: 10px;
-            width: 10px;
-            margin: 0 5px;
-            border-radius: 100%;
-            background-color: $white;
-            border: $card-border;
-            padding: 0;
-            cursor: pointer;
-            button {
-                opacity: 0;
-            }
-        }
-
-        .slick-active {
-            background-color: $title-color !important;
-            height: 10px;
-            width: 30px;
-            border-radius: 20px;
-        }
-    }
+  }
 }
 /// Banner  Slider End ///
 
 /// Thumbnail Slider Start ///
 .thumbnail-slider {
-    .banner-box {
-        text-align: center;
-        .img-box {
-            padding: 8px;
-            border: $card-border;
-            box-shadow: $box-shadow;
-            display: block;
-            border-radius: 15px;
-            img {
-                border-radius: 15px;
-            }
-        }
-        h2 {
-            margin-top: 10px;
-        }
+  [dir="rtl"] & {
+    direction: ltr;
+  }
+  .banner-box {
+    text-align: center;
+    .img-box {
+      padding: 8px;
+      border: $card-border;
+      box-shadow: $box-shadow;
+      display: block;
+      border-radius: 15px;
+      img {
+        border-radius: 15px;
+      }
     }
+    h2 {
+      margin-top: 10px;
+    }
+  }
 
-    .slick-list {
-        padding: 4px 0;
-        padding-left: 0 !important;
-        margin-left: -15px;
-        margin-right: -15px;
-        .slick-slide {
-            padding: 0 10px;
-        }
+  .slick-list {
+    padding: 4px 0;
+    padding-left: 0 !important;
+    margin-left: -15px;
+    margin-right: -15px;
+    .slick-slide {
+      padding: 0 10px;
     }
+  }
 }
 /// Thumbnail Slider End ///

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,10 +31,31 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -43,7 +64,7 @@
             <i data-feather="chevron-left"></i>
           </span>
         </a>
-        <h1 class="title-color font-lg">Blog List</h1>
+        <h1 class="title-color font-lg">Blog Details</h1>
       </div>
       <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
     </header>
@@ -52,7 +73,7 @@
     <!-- Main Start -->
     <main class="main-wrap mb-xl-large blog-style6">
       <!-- Blog List Section Start -->
-      <section class="blog-list p-t-sm">
+      <section class="blog-list p-b-sm">
         <!-- Blog Banner Start -->
         <div class="banner-slider">
           <h2 class="title-2">Progressive Web Apps are the Future of Web Development</h2>
@@ -115,7 +136,7 @@
               web apps featuring progressive enhancement designed to implement nifty features, such as background sync, caching, splash screen.
             </p>
           </div>
-          <!-- Banner Content Start -->
+          <!-- Banner Content End -->
         </div>
         <!-- Blog Banner End -->
       </section>
@@ -216,14 +237,14 @@
       <section class="related-articles p-tb-sm">
         <h4>Related Articles</h4>
         <div class="topic-box">
-          <!-- Topic Start  -->
+          <!-- Topic Start -->
           <div class="topic">
             <div class="media">
               <div>
-                <img src="assets/images/blog/card/image4.jpg" alt="image" />
+                <a href="blog-detail2.html"> <img src="assets/images/blog/card/image4.jpg" alt="image" /> </a>
               </div>
               <div class="media-body">
-                <h4 class="font-sm font-danger">UX/UI Design</h4>
+                <a href="blog-detail2.html"> <h4 class="font-sm font-danger">UX/UI Design</h4> </a>
                 <p class="font-md">10 tips to grow your blog's audience</p>
                 <div>
                   <span><i data-feather="user"></i> by Mark jeckno </span>
@@ -233,16 +254,16 @@
               </div>
             </div>
           </div>
-          <!-- Topic End  -->
+          <!-- Topic End -->
 
-          <!-- Topic Start  -->
+          <!-- Topic Start -->
           <div class="topic">
             <div class="media">
               <div>
-                <img src="assets/images/blog/card/image8.jpg" alt="image" />
+                <a href="blog-detail2.html"> <img src="assets/images/blog/card/image8.jpg" alt="image" /> </a>
               </div>
               <div class="media-body">
-                <h4 class="font-sm font-danger">UX/UI Design</h4>
+                <a href="blog-detail2.html"> <h4 class="font-sm font-danger">UX/UI Design</h4> </a>
                 <p class="font-md">10 tips to grow your blog's audience</p>
                 <div>
                   <span><i data-feather="user"></i> by Mark jeckno </span>
@@ -252,7 +273,7 @@
               </div>
             </div>
           </div>
-          <!-- Topic End  -->
+          <!-- Topic End -->
         </div>
       </section>
       <!-- Related Articles Section End -->
@@ -276,7 +297,7 @@
             <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
@@ -287,12 +308,12 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap js -->
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Slick Slider js -->
-    <script src="assets/js/vendors/slick.js"></script>
-    <script src="assets/js/vendors/slick.min.js"></script>
-    <script src="assets/js/vendors/slick-custom.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-custom.js"></script>
 
     <!-- feather icon js -->
     <script src="assets/js/feather.min.js"></script>
@@ -303,6 +324,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

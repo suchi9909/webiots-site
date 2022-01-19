@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,10 +30,31 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -50,23 +71,23 @@
 
     <!-- Main Start -->
     <main class="main-wrap mb-xl-large element-pages">
-      <!-- banner Section Start -->
+      <!-- Banner Section Start -->
       <section class="banner-box ratio_asos">
         <div class="banner">
           <img src="assets/images/png/bg.png" class="bg-img" alt="background" />
           <div class="banner-content">
             <h2>Form</h2>
-            <p class="pera">Form Is Best Way To Collect And Store Data From Users.</p>
+            <p class="pera">Form is best way to collect and store data from users.</p>
           </div>
         </div>
       </section>
-      <!-- banner Section End -->
+      <!-- Banner Section End -->
 
-      <!-- Button Section Start -->
+      <!-- Forms Section Start -->
       <section class="p-tb-sm">
-        <h3 class="font-sm m-b-title1">Default Form</h3>
         <!-- Default Form Start -->
         <div class="button-wrap p-b-sm">
+          <h3 class="font-sm m-b-title1">Default Form</h3>
           <form class="custom-form">
             <div class="input-box">
               <i data-feather="user"></i>
@@ -111,11 +132,11 @@
           <h3 class="font-sm m-b-title1">Form With Label</h3>
           <form class="custom-form top-label">
             <div class="input-box">
-              <label for="#full-name" class="label">Full Name</label>
+              <label for="full-name" class="label">Full Name</label>
               <input type="text" id="full-name" name="full-name" class="form-control" required />
             </div>
             <div class="input-box">
-              <label for="#email" class="label">Email Address</label>
+              <label for="email" class="label">Email Address</label>
               <input type="email" id="email" class="form-control" required />
             </div>
             <div class="input-box">
@@ -123,17 +144,17 @@
               <input type="number" id="number" class="form-control" required />
             </div>
             <div class="input-box">
-              <label for="#password" class="label">Enter Password</label>
+              <label for="password" class="label">Enter Password</label>
               <input type="password" id="password" class="form-control" required />
             </div>
             <div class="input-box">
-              <label for="#date" class="label">Date of Birth</label>
+              <label for="date" class="label">Date of Birth</label>
               <input class="datepicker-here form-control digits" id="date" type="text" data-language="en" data-multiple-dates-separator=", " />
             </div>
             <div class="input-box">
-              <label for="#gender" class="label">Select Gender</label>
+              <label for="gender" class="label">Select Gender</label>
               <select id="gender" class="form-control">
-                <option selected disabled></option>
+                <option selected disabled>&nbsp;</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
@@ -141,7 +162,7 @@
               <span><i data-feather="chevron-right"></i></span>
             </div>
             <div class="input-box">
-              <label for="#message" class="label">Type your messages...</label>
+              <label for="message" class="label">Type your messages...</label>
               <textarea id="message" class="form-control" rows="4"></textarea>
             </div>
           </form>
@@ -190,7 +211,7 @@
         </div>
         <!-- Pill Form End -->
       </section>
-      <!-- Button Section End -->
+      <!-- Forms Section End -->
     </main>
     <!-- Main End -->
 
@@ -211,7 +232,7 @@
             <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
@@ -222,7 +243,7 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap  js -->
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Date Picker  js -->
     <script src="assets/js/date-picker/datepicker.js"></script>
@@ -238,6 +259,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

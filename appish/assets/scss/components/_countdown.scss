@@ -1,6 +1,7 @@
 /*=====================
-  4.2 CountDown CSS
+  2.6 CountDown CSS
 ==========================*/
+
 .countdown,
 .otp-input {
     ul {
@@ -39,11 +40,11 @@
             .bg-shape {
                 fill: $theme-yellow;
                 z-index: -1;
-                width: 130%;
+                width: 112%;
                 height: 150%;
                 position: absolute;
                 top: -22%;
-                left: -14%;
+                left: -7%;
                 transform: translate(-50%, -50%);
             }
             &:nth-child(2n + 1) {

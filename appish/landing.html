@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,10 +31,31 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -150,7 +171,7 @@
               </a>
             </li>
             <li>
-              <a href="change-cassword.html">
+              <a href="reset-password.html">
                 <div class="content toggle-sec w-100">
                   <div class="w-100">
                     <h4 class="mb-0 font-sm">
@@ -159,7 +180,7 @@
                           <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
                         </svg>
 
-                        <img src="assets/images/icon/eye2.svg" class="me-4" alt="rtl" /></span
+                        <img src="assets/images/icon/eye2.svg" class="me-4" alt="eye2" /></span
                       >Change Password
                       <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
                     </h4>
@@ -168,7 +189,7 @@
               </a>
             </li>
             <li>
-              <a href="Language.html">
+              <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#language" aria-controls="language">
                 <div class="content toggle-sec w-100">
                   <div class="w-100">
                     <h4 class="mb-0 font-sm">
@@ -202,7 +223,7 @@
               </a>
             </li>
             <li>
-              <a href="Logout.html">
+              <a href="index.html">
                 <div class="content toggle-sec w-100">
                   <div class="w-100">
                     <h4 class="mb-0 font-sm">
@@ -227,36 +248,14 @@
     <!-- Main Start -->
     <main class="main-wrap mb-xl-large landing-page">
       <!-- Banner Section Start -->
-      <section class="banner-section thumbnail-slider landing-slider">
-        <!-- Banner Start -->
-        <div>
-          <a href="javascript:void(0)" class="banner-box">
-            <div class="img-box">
-              <img src="assets/images/banner/banner2.jpg" class="img-fluid" alt="banner" />
-            </div>
-            <h2 class="font-md">Music Blogs</h2>
-          </a>
-        </div>
-        <!-- Banner End -->
-
+      <section class="banner-section landing-page-slider">
         <!-- Banner Start -->
         <div>
           <a href="javascript:void(0)" class="banner-box">
             <div class="img-box">
               <img src="assets/images/banner/banner3.jpg" class="img-fluid" alt="banner" />
             </div>
-            <h2 class="font-md">Beach Blogs</h2>
-          </a>
-        </div>
-        <!-- Banner End -->
-
-        <!-- Banner Start -->
-        <div>
-          <a href="javascript:void(0)" class="banner-box">
-            <div class="img-box">
-              <img src="assets/images/banner/banner3.jpg" class="img-fluid" alt="banner" />
-            </div>
-            <h2 class="font-md">Movie Blogs</h2>
+            <h2 class="font-md">Bootstrap 5</h2>
           </a>
         </div>
         <!-- Banner End -->
@@ -267,7 +266,7 @@
             <div class="img-box">
               <img src="assets/images/banner/banner2.jpg" class="img-fluid" alt="banner" />
             </div>
-            <h2 class="font-md">News Blogs</h2>
+            <h2 class="font-md">Rtl Ready</h2>
           </a>
         </div>
         <!-- Banner End -->
@@ -278,7 +277,7 @@
             <div class="img-box">
               <img src="assets/images/banner/banner1.jpg" class="img-fluid" alt="banner" />
             </div>
-            <h2 class="font-md">Games Blogs</h2>
+            <h2 class="font-md">Dark/Light</h2>
           </a>
         </div>
         <!-- Banner End -->
@@ -287,54 +286,121 @@
 
       <!-- Article Section Start -->
       <section class="article-section p-tb-sm">
-        <h3 class="title-2 m-b-title1">Why</h3>
-        <a href="" class="reading-box">
-          <div class="media">
-            <div>
-              <img src="assets/images/blog/card/image5.jpg" alt="img" />
-            </div>
-            <div class="media-body">
-              <h4 class="font-md">10 tips to grow your..</h4>
-              <div>
-                <span><i data-feather="user"></i> by Mark jeckno </span>
-                <span><i data-feather="clock"></i>25/05/21 </span>
-              </div>
-            </div>
-          </div>
+        <a href="javascript:void(0)" class="reading-box bg-light-purple">
+          <h3 class="title-color font-md">PWA Ready</h3>
+          <p class="content-color font-sm">Click the "Add to Home Screen" button & enjoy it like an app.</p>
         </a>
       </section>
       <!-- Article Section End -->
 
-      <!-- Top Categories Section Start-->
-      <section class="categories p-tb-sm">
-        <h3 class="title-2 m-b-title1">Top Categories</h3>
-        <ul>
-          <li>
-            <a href="blog-list1.html">
-              <img src="assets/images/blog/icon/design.svg" alt="design" />
-              Design</a
-            >
-          </li>
-          <li>
-            <a href="blog-list1.html">
-              <img src="assets/images/blog/icon/news.svg" alt="news" />
-              Latest News</a
-            >
-          </li>
-          <li>
-            <a href="blog-list1.html">
-              <img src="assets/images/blog/icon/tech.svg" alt="tech" />
-              Technology</a
-            >
-          </li>
-        </ul>
-        <div class="videobox">
-          <iframe class="video-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-          <img class="video-thumb" src="assets/images/blog/video/image1.jpg" alt="thumbnail" />
-          <span class="play"><i data-feather="play"></i></span>
+      <!-- Language Section Start -->
+      <section class="language-section p-b-sm">
+        <h4 class="title-2 font-md">Features of Appish</h4>
+
+        <div class="categories-slide">
+          <!-- Slide Start -->
+          <div>
+            <div class="slide">
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+              </svg>
+              <img src="assets/images/icon/html5.svg" class="img-fluid" alt="html5" />
+              <h3>Html5</h3>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide Start -->
+          <div>
+            <div class="slide">
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+              </svg>
+              <img src="assets/images/icon/css3.svg" class="img-fluid" alt="Css3" />
+              <h3>Css3</h3>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide Start -->
+          <div>
+            <div class="slide">
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+              </svg>
+              <img src="assets/images/icon/sass.svg" class="img-fluid" alt="sass" />
+              <h3>Sass</h3>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide Start -->
+          <div>
+            <div class="slide">
+              <svg class="bg-shape">
+                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+              </svg>
+              <img src="assets/images/icon/w3.svg" class="img-fluid" alt="note" />
+              <h3>W3 Validate</h3>
+            </div>
+          </div>
+          <!-- Slide End -->
         </div>
       </section>
-      <!-- Top Categories Section End-->
+      <!-- Language Section End -->
+
+      <!-- Pagelist Section Start -->
+      <section class="page-list-section pt-0">
+        <h4 class="title-2 font-md">Pages List</h4>
+        <a href="ecommerce-list.html" class="media">
+          <img src="assets/images/banner/1.jpg" alt="banner" />
+          <div class="media-body">
+            <h5 class="font-sm title-color">Ecommerce/Shop Pages</h5>
+            <span class="content-color font-sm"><i data-feather="eye"></i> View Now</span>
+          </div>
+        </a>
+
+        <a href="general-list.html" class="media">
+          <img src="assets/images/banner/3.jpg" alt="banner" />
+          <div class="media-body">
+            <h5 class="font-sm title-color">General/Multi Purpose Pages</h5>
+            <span class="content-color font-sm"><i data-feather="eye"></i> View Now</span>
+          </div>
+        </a>
+
+        <a href="authentic-list.html" class="media">
+          <img src="assets/images/banner/2.jpg" alt="banner" />
+          <div class="media-body">
+            <h5 class="font-sm title-color">Authentic/Login, Register Pages</h5>
+            <span class="content-color font-sm"><i data-feather="eye"></i> View Now</span>
+          </div>
+        </a>
+
+        <a href="grocery-list.html" class="media">
+          <img src="assets/images/banner/4.jpg" alt="banner" />
+          <div class="media-body">
+            <h5 class="font-sm title-color">Grocery/Vegetables Shop Pages</h5>
+            <span class="content-color font-sm"><i data-feather="eye"></i> View Now</span>
+          </div>
+        </a>
+
+        <a href="blog-list.html" class="media">
+          <img src="assets/images/banner/5.jpg" alt="banner" />
+          <div class="media-body">
+            <h5 class="font-sm title-color">Blog/News, Articles & Content Pages</h5>
+            <span class="content-color font-sm"><i data-feather="eye"></i> View Now</span>
+          </div>
+        </a>
+
+        <a href="elements-list.html" class="media">
+          <img src="assets/images/banner/2.jpg" alt="banner" />
+          <div class="media-body">
+            <h5 class="font-sm title-color">Elements/All Components Pages</h5>
+            <span class="content-color font-sm"><i data-feather="eye"></i> View Now</span>
+          </div>
+        </a>
+      </section>
+      <!-- Pagelist Section End -->
     </main>
     <!-- Main End -->
 
@@ -343,7 +409,7 @@
       <div class="footer">
         <ul>
           <li>
-            <a href="landing.html" class="footer-link"><i data-feather="home"></i> </a>
+            <a href="landing.html" class="footer-link active"><i data-feather="home"></i> </a>
           </li>
           <li>
             <a href="elements-list.html" class="footer-link"><i data-feather="layers"></i> </a>
@@ -355,26 +421,85 @@
             <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
     </footer>
     <!-- Footer End -->
 
+    <!-- Action Language Start -->
+    <div class="action action-language offcanvas offcanvas-bottom" tabindex="-1" id="language" aria-labelledby="language">
+      <div class="offcanvas-body small">
+        <h2 class="m-b-title1 font-md">Select Language</h2>
+        <ul class="row filter-row g-3 g-sm-4">
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/us.svg" alt="us" /> English </a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/in.svg" alt="us" />Indian </a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/it.svg" alt="us" />Italian</a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/tf.svg" alt="us" /> French</a>
+            </div>
+          </li>
+          <li class="col-12">
+            <div class="filter-col">
+              <a href="javascript:void(0)"> <img src="assets/images/icon/flag/cn.svg" alt="us" /> Chines</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <div class="btn-box">
+          <a href="javascript:void(0)" class="btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</a>
+          <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas" aria-label="Close">Apply</a>
+        </div>
+      </div>
+    </div>
+    <!-- Action Language End -->
+
+    <!-- Pwa Install App Popup Start -->
+    <div class="offcanvas offcanvas-bottom addtohome-popup" tabindex="-1" id="offcanvas">
+      <div class="offcanvas-body small">
+        <div class="app-info">
+          <img src="assets/images/logo/logo48.png" class="img-fluid" alt="" />
+          <div class="content">
+            <h3>Appish App <i data-feather="x" data-bs-dismiss="offcanvas"></i></h3>
+            <a href="#">www.appish-app.com</a>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="btn btn-square install-app" id="installApp">add to home screen</a>
+      </div>
+    </div>
+    <!-- Pwa Install App Popup End -->
+
     <!-- jquery 3.6.0 -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap js -->
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Pwa Install popup Js -->
+    <script src="assets/js/homescreen-popup.js"></script>
 
     <!-- Progress bar js -->
     <script src="assets/js/progress-bar.js"></script>
 
     <!-- Slick Slider js -->
-    <script src="assets/js/vendors/slick.js"></script>
-    <script src="assets/js/vendors/slick.min.js"></script>
-    <script src="assets/js/vendors/slick-custom.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-custom.js"></script>
 
     <!-- feather icon js -->
     <script src="assets/js/feather.min.js"></script>
@@ -385,6 +510,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

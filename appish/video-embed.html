@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,10 +30,31 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div>
@@ -50,17 +71,17 @@
 
     <!-- Main Start -->
     <main class="main-wrap mb-xl-large element-pages">
-      <!-- banner Section Start -->
+      <!-- Banner Section Start -->
       <section class="banner-box ratio_asos">
         <div class="banner">
           <img src="assets/images/png/bg.png" class="bg-img" alt="background" />
           <div class="banner-content">
             <h2>Video Embed</h2>
-            <p class="pera">There are diffrent way to add video in website shown bellow</p>
+            <p class="pera">There are diffrent ways to add video in website shown bellow</p>
           </div>
         </div>
       </section>
-      <!-- banner Section End -->
+      <!-- Banner Section End -->
 
       <!-- Video Embed Section Start -->
       <section class="p-t-sm">
@@ -71,9 +92,9 @@
             <iframe class="video-iframe" src="https://www.youtube.com/embed/r2LpOUwca94"></iframe>
           </div>
           <div class="pre">
-            <pre class="language-html"><code data-lang="html"><div>&lt;div class="videobox"&gt;</div>
-<div>&lt;iframe class="video-iframe" src="<a href="https://www.youtube.com/embed/r2LpOUwca94">https://www.youtube.com/embed/r2LpOUwca94</a>"&gt;&lt;/iframe&gt;</div>
-<div>&lt;/div&gt;</div></code></pre>
+            <pre class="language-html"><code data-lang="html">&lt;div class="videobox"&gt;
+&lt;iframe class="video-iframe" src="<a href="https://www.youtube.com/embed/r2LpOUwca94">https://www.youtube.com/embed/r2LpOUwca94</a>"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
         <!--By Using Iframe End -->
@@ -89,18 +110,18 @@
             </video>
           </div>
           <div class="pre">
-            <pre class="language-html"><code data-lang="html"><div>&lt;div class="videobox"&gt;</div>
-    <div>&lt;video class="video-local" controls&gt;</div>
-        <div>&lt;source src="assets/video/demo.mp4" type="video/mp4" /&gt;</div>
-        <div>&lt;source src="assets/video/demo.ogg" type="video/ogg" /&gt;</div>
-        <div>Your browser does not support the video tag.</div>
-    <div>&lt;/video&gt;</div>
-<div>&lt;/div&gt;</div></code></pre>
+            <pre class="language-html"><code data-lang="html">&lt;div class="videobox"&gt;
+    &lt;video class="video-local" controls&gt;
+        &lt;source src="assets/video/demo.mp4" type="video/mp4" /&gt;
+        &lt;source src="assets/video/demo.ogg" type="video/ogg" /&gt;
+        Your browser does not support the video tag.
+    &lt;/video&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
         <!-- By Using local Video End -->
 
-        <!-- By Using local Video Start -->
+        <!-- Video as a Background Start -->
         <div class="heading-wrap p-tb-sm">
           <h3 class="font-sm">Video as a Background</h3>
           <div class="heading bg-videobox">
@@ -114,19 +135,19 @@
             </div>
           </div>
           <div class="pre">
-            <pre class="language-html"><code data-lang="html"><div>&lt;div class="bg-videobox"&gt;</div>
-    <div>&lt;video class="bg-video" autoplay muted loop id="myVideo"&gt;</div>
-        <div>&lt;source src="assets/video/demo.mp4" type="video/mp4" /&gt;</div>
-        <div>Your browser does not support HTML5 video.</div>
-    <div>&lt;/video&gt;</div>
-    <div>&lt;div class="content"&gt;</div>
-        <div>&lt;h4&gt;Backround video is common think in website&lt;/h4&gt;</div>
-        <div>&lt;p&gt;Lorem ipsufuga ex mollitia deserunt sapiente quo! Recusandae est officia quisquam atque harum accusamus qui dolorum quas sunt quibusdam, possimus accusantium!&lt;/p&gt;</div>
-    <div>&lt;/div&gt;</div>
-<div>&lt;/div&gt;</div></code></pre>
+            <pre class="language-html"><code data-lang="html">&lt;div class="bg-videobox"&gt;
+    &lt;video class="bg-video" autoplay muted loop id="myVideo"&gt;
+        &lt;source src="assets/video/demo.mp4" type="video/mp4" /&gt;
+        Your browser does not support HTML5 video.
+    &lt;/video&gt;
+    &lt;div class="content"&gt;
+        &lt;h4&gt;Backround video is common think in website&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsufuga ex mollitia deserunt sapiente quo! Recusandae est officia quisquam atque harum accusamus qui dolorum quas sunt quibusdam, possimus accusantium!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
-        <!-- By Using local Video End -->
+        <!-- Video as a Background End -->
       </section>
       <!-- Video Embed Section End -->
     </main>
@@ -149,7 +170,7 @@
             <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
           </li>
           <li>
-            <a href="setting.html" class="footer-link"><i data-feather="settings"></i> </a>
+            <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
           </li>
         </ul>
       </div>
@@ -171,6 +192,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->

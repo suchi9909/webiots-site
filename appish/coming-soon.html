@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Html Start -->
 <html lang="en">
-  <!-- Head Start  -->
+  <!-- Head Start -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,11 +27,32 @@
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
-  <!-- Head End  -->
+  <!-- Head End -->
 
-  <!-- Body Start  -->
+  <!-- Body Start -->
   <body>
-    <!-- Banner Start  -->
+    <!-- Loader Start -->
+    <div class="pre-loader">
+      <div class="loader-wrap">
+        <div class="container">
+          <span>LOADING</span>
+          <span class="drop"></span>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
+              <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Banner Start -->
     <div class="coming-soon">
       <div>
         <div class="dote top">
@@ -48,18 +69,18 @@
         </svg>
       </div>
     </div>
-    <!-- Banner End  -->
+    <!-- Banner End -->
 
-    <!-- Main Start  -->
+    <!-- Main Start -->
     <main class="coming-soon p-b-lg m-t-md main-wrap">
-      <!-- Content Section Start  -->
+      <!-- Content Section Start -->
       <section class="content-box mb-large">
         <h1 class="font-xxl">Coming Soon</h1>
         <p class="content-color font-md">We will be celebrating the launch of our new site very soon!</p>
         <div class="round-bottom">
           <img src="assets/svg/round.svg" class="img-fluid" alt="round" />
         </div>
-        <!-- Count Down Start  -->
+        <!-- Count Down Start -->
         <div class="countdown">
           <ul>
             <li>
@@ -88,7 +109,7 @@
             </li>
           </ul>
         </div>
-        <!-- Count Down Start  -->
+        <!-- Count Down End -->
 
         <!-- Notify Form Start -->
         <form action="javascript:void(0)" class="custom-form">
@@ -100,11 +121,13 @@
         </form>
         <!-- Notify Form End -->
       </section>
-      <!-- Content Section Start  -->
+      <!-- Content Section End -->
+
       <div class="dote bottom">
         <img src="assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
       </div>
     </main>
+    <!-- Main End -->
 
     <!-- jquery 3.6.0 -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -125,6 +148,6 @@
     <!-- Script js -->
     <script src="assets/js/script.js"></script>
   </body>
-  <!-- Body End  -->
+  <!-- Body End -->
 </html>
 <!-- Html End -->
