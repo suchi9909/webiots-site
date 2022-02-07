@@ -40,6 +40,7 @@ var filesToCache = [
   './assets/js/feather/feather.min.js',
   './assets/js/slick/custom_slick.js',
   './assets/js/slick/slick-animation.min.js',
+  './assets/js/slick/slick.js',
   './assets/js/touchspin/input-ground.min.js',
   './assets/js/touchspin/touchspin.js',
   './assets/js/touchspin/vendors.min.js',
@@ -79,7 +80,7 @@ var filesToCache = [
   './assets/js/timer3.js',
   './assets/js/typeahead.bundle.min.js',
   './assets/js/typeahead.jquery.min.js',
-  './assets/js/azoom-filterdd.js',
+  './assets/js/zoom-filter.js',
 ];
 
 /* Start the service worker and cache all of the app's content */
