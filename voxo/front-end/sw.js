@@ -1,4 +1,4 @@
-var cacheName = 'voxo';
+var cacheName = 'Voxo';
 var filesToCache = [
   './',
   'index.html',
