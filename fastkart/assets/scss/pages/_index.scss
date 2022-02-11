@@ -1,5 +1,5 @@
 /*=====================
-   Index Page Css 
+ 4.11 Index Page Css 
 ==========================*/
 /// Index Page Start ///
 .index-page {
@@ -34,19 +34,43 @@
           text-align: right;
         }
         .heading {
+          font-family: $font-2;
           font-weight: bold;
           margin-top: -4px;
           line-height: 25px;
           margin-bottom: -3px;
+          [class="dark"] & {
+            color: $title-dark-color;
+            &.font-white {
+              color: $white-text-dark;
+            }
+          }
         }
         p {
           margin-bottom: 10px;
           display: block;
+          [class="dark"] & {
+            color: $content-dark-color;
+            &.font-white {
+              color: $white-text-dark;
+            }
+          }
         }
         .btn-solid,
         .btn-outline {
           font-weight: bold;
           padding: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320))) calc(28px + (34 - 28) * ((100vw - 320px) / (1920 - 320)));
+          [class="dark"] & {
+            color: $white-text-dark;
+            border-color: #0baf9a;
+          }
+        }
+        .btn-outline {
+          [class="dark"] & {
+            color: #0baf9a;
+            background-color: $white-text-dark;
+            border-color: #0baf9a;
+          }
         }
       }
     }
@@ -100,7 +124,7 @@
         }
       }
       h3 {
-        font-weight: 600;
+        font-weight: 700;
         line-height: 22px;
         margin-top: -2px;
       }
@@ -130,8 +154,8 @@
     }
   }
   .category {
-    .gy-5 {
-      --bs-gutter-y: 35px;
+    .gap-y {
+      --bs-gutter-y: 44px;
     }
     @media only screen and (max-width: 475px) {
       .row {
@@ -141,7 +165,7 @@
         }
       }
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 360px) {
       .row {
         > div {
           flex: 0 0 auto;
@@ -151,7 +175,7 @@
     }
     h3 {
       text-align: center;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 22px;
       display: block;
       margin-top: -2px;
@@ -185,6 +209,7 @@
         width: 100%;
         height: calc(65px + (80 - 65) * ((100vw - 320px) / (1920 - 320)));
         @media only screen and (max-width: 475px) {
+          top: -23px;
           height: calc(70px + (160 - 70) * ((100vw - 320px) / (1920 - 320)));
         }
         @media only screen and (max-width: 375px) {
@@ -195,11 +220,11 @@
         position: relative;
         z-index: 2;
         .category {
-          width: calc(65px + (80 - 65) * ((100vw - 320px) / (1920 - 320)));
-          height: calc(65px + (80 - 65) * ((100vw - 320px) / (1920 - 320)));
+          width: calc(65px + (100 - 65) * ((100vw - 320px) / (1920 - 320)));
+          height: auto;
           @media only screen and (max-width: 475px) {
             width: calc(70px + (140 - 70) * ((100vw - 320px) / (1920 - 320)));
-            height: calc(70px + (140 - 70) * ((100vw - 320px) / (1920 - 320)));
+            height: auto;
           }
         }
       }
@@ -286,19 +311,26 @@
             @include dashed-border-bottom;
             background-size: 17px 2px;
             img {
-              width: calc(46px + (80 - 46) * ((100vw - 320px) / (1920 - 320)));
+              width: calc(80px + (100 - 80) * ((100vw - 320px) / (1920 - 320)));
+              height: auto;
             }
           }
           .content-wrap {
             padding: 10px;
             h5 {
-              font-weight: 600;
+              font-weight: 700;
               margin-top: -6px;
+              [class="dark"] & {
+                color: $title-dark-color;
+              }
             }
             span {
               display: block;
               min-width: max-content;
               margin-bottom: -4px;
+              [class="dark"] & {
+                color: $content-dark-color;
+              }
             }
           }
         }

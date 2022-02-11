@@ -1,5 +1,5 @@
 /*=====================
-   Product Page CSS 
+  4.18 Product Page CSS 
 ==========================*/
 .product-page {
   .banner-box {
@@ -74,10 +74,7 @@
       justify-content: center;
       gap: 15px;
       margin-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
-      @media only screen and (max-width: 375px) {
-        flex-direction: column;
-        gap: 10px;
-      }
+
       .size-Select {
         flex: 1 1 auto;
         border: $border1;

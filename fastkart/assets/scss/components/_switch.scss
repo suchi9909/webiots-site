@@ -1,7 +1,6 @@
 /*=====================
- Switch Css 
+  2.8 Switch Css 
 ==========================*/
-
 .dark-switch {
   position: relative;
   width: 60px;
@@ -21,7 +20,6 @@
     opacity: 0;
     z-index: 2;
   }
-
   span {
     position: absolute;
     top: 0px;
@@ -39,7 +37,6 @@
         background-color: transparent !important;
       }
     }
-
     &:before,
     &:after {
       content: "";

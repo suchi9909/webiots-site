@@ -1,8 +1,6 @@
 /*=====================
-   Catagories Page CSS 
+ 4.7  Catagories  Morden Page CSS 
 ==========================*/
-/// Catagories Morden Style ///
-
 .catagories-morden {
   .search-box {
     @include search-box;
@@ -49,7 +47,7 @@
         }
         h4 {
           margin-top: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
-          font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+          font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
           color: $title-color;
           font-weight: 400;
         }
@@ -74,6 +72,7 @@
             visibility: hidden;
             z-index: 6;
             padding: 8px 22px;
+
             [dir="rtl"] & {
               left: unset;
               right: 17px;
@@ -125,6 +124,9 @@
     font-size: 12px;
     display: none;
     color: $white;
+    [class="dark"] & {
+      color: $white-text-dark;
+    }
     [dir="rtl"] & {
       left: unset;
       right: 25px;
@@ -136,6 +138,9 @@
       width: 20px;
       height: 20px;
       stroke: $white;
+      [class="dark"] & {
+        stroke: $white-text-dark;
+      }
     }
   }
   .overlay {
@@ -149,6 +154,9 @@
     visibility: hidden;
     z-index: 5;
     transition: all 0.5s ease;
+    [class="dark"] & {
+      background: rgba($title-dark-color, 0.7);
+    }
     &.show {
       visibility: visible;
       opacity: 1;

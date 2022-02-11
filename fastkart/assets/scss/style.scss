@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name:Appish APP
-    Template URI: themes.pixelstrap.com/Appish-app
+    Template Name:Fastkart APP
+    Template URI: themes.pixelstrap.com/Fastkart-app
     Description: This is PWA Html Template
     Author: Pixelstrap
     Author URL: https://themeforest.net/user/pixelstrap
@@ -14,26 +14,13 @@
 
 ////* Components Files *////
 /* 2.1 Accordian CSS */
-/* 2.2 Action Sheet CSS */
-/* 2.3 Animation CSS */
-/* 2.4 Buttons CSS */
-/* 2.5 Breadcumb CSS */
-/* 2.6 Countdown CSS */
-/* 2.7 Form CSS */
-/* 2.8 General CSS */
-/* 2.9 loader CSS */
-/* 2.10 Modal CSS */
-/* 2.11 Nav Tabs CSS */
-/* 2.12 Notification CSS */
-/* 2.13 Pagination CSS */
-/* 2.14 Product Card CSS */
-/* 2.15 Pricing Card CSS */
-/* 2.16 Progress CSS */
-/* 2.17 Ratio CSS */
-/* 2.18 Slider CSS */
-/* 2.19 Switch CSS */
-/* 2.20 Table CSS */
-/* 2.21 Toast CSS */
+/* 2.2 Buttons CSS */
+/* 2.3 Form CSS */
+/* 2.4 Modal CSS */
+/* 2.5 Nav Tab CSS */
+/* 2.6 Product Cart CSS */
+/* 2.7 Ratio Css*/
+/* 2.8 Switch CSS */
 
 ////* Layout Files *////
 /* 3.1 Header CSS */
@@ -41,15 +28,31 @@
 /* 3.3 Footer CSS */
 
 ////* Pages Files *////
-/* 4.1 Authentic Page CSS  */
-/* 4.2 Blog Page CSS */
-/* 4.3 Ecommerce Page CSS */
-/* 4.4 Element Page CSS */
-/* 4.5 General Page CSS */
-/* 4.6 Grocery Page CSS */
-/* 4.7 Page Catagories Page CSS */
-/* 4.8 Page List Page CSS */
-/* 4.9 Startup Page CSS */
+/* 4.1 About Us Page CSS  */
+/* 4.2 Account Page CSS  */
+/* 4.3 Authentic Page CSS */
+/* 4.4 Cart & Wishlist Page CSS */
+/* 4.5 Catagories Wide Page CSS */
+/* 4.6 Catagories Classic Page CSS */
+/* 4.7 Catagories Morden Page CSS */
+/* 4.8 Checkout Page CSS */
+/* 4.9 Error 404 Page CSS */
+/* 4.10 Help Page CSS */
+/* 4.11 Index Page CSS */
+/* 4.12 Notification Page CSS */
+/* 4.13 Offer Page CSS */
+/* 4.14 Onboarding Page CSS */
+/* 4.15 Order Detail Page CSS */
+/* 4.16 Order History Page CSS */
+/* 4.17 Order Tracking Page CSS */
+/* 4.18 Product Page CSS */
+/* 4.19 Search Page CSS */
+/* 4.20 Setting Page CSS */
+/* 4.21 Shop Page CSS */
+/* 4.22 Tearms Page CSS */
+
+////* Theme Files *////
+/* 5.1 Loader CSS */
 
 /// Utils Scss Files ///
 @import "utils/variables";
@@ -76,6 +79,7 @@
 @import "layout/footer";
 
 /// Pages Scss Files ///
+@import "pages/about-us";
 @import "pages/account-page";
 @import "pages/authentic";
 @import "pages/cart-wishlist-page";
@@ -84,14 +88,19 @@
 @import "pages/category-morden";
 @import "pages/checkout-page";
 @import "pages/error-404";
+@import "pages/help";
 @import "pages/index";
 @import "pages/notification";
 @import "pages/offer-page";
 @import "pages/onboarding";
 @import "pages/order-detail";
 @import "pages/order-history";
+@import "pages/order-tracking";
 @import "pages/product-page";
 @import "pages/search";
 @import "pages/setting-page";
 @import "pages/shop-page";
 @import "pages/terms";
+
+/// Theme Scss ///
+@import "themes/loader";

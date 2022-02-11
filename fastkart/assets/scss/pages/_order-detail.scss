@@ -1,5 +1,5 @@
 /*=====================
- Order Detail Pages Css 
+ 4.15 Order Detail Pages Css 
 ==========================*/
 
 .order-detail {
@@ -17,11 +17,17 @@
           color: $white;
           display: block;
           margin-top: calc(-1px + (-3 + 1) * ((100vw - 320px) / (1920 - 320)));
+          [class="dark"] & {
+            color: $white-text-dark;
+          }
         }
         h2 {
           font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
           color: $white;
           font-weight: 600;
+          [class="dark"] & {
+            color: $white-text-dark;
+          }
         }
       }
     }
@@ -53,6 +59,9 @@
             color: $white;
             justify-content: center;
             border-radius: 5px;
+            [class="dark"] & {
+              color: $white-text-dark;
+            }
           }
           svg {
             width: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));

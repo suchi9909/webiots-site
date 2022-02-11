@@ -1,5 +1,5 @@
 /*=====================
-  404 Page Css 
+ 4.9 404 Page Css 
 ==========================*/
 /// 404 Page Start ///
 .error-404 {
@@ -18,7 +18,7 @@
     text-align: center;
 
     h2 {
-      font-weight: 500;
+      font-weight: 600;
       position: relative;
       margin-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
       font-family: $font-2;

@@ -1,5 +1,5 @@
 /*=====================
- Product Card Css 
+  2.6 Product Card Css 
 ==========================*/
 .product-card {
   padding: 10px;
@@ -7,15 +7,21 @@
   border-radius: 6px;
   position: relative;
   background-color: $white;
-  .icon {
+  overflow: hidden;
+  i {
     position: absolute;
     right: 10px;
     top: 10px;
-    width: calc(18px + (21 - 18) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(18px + (21 - 18) * ((100vw - 320px) / (1920 - 320)));
+    font-size: 25px;
     [dir="rtl"] & {
       left: 10px;
       right: unset;
+    }
+  }
+  .iconly-Heart {
+    transition: all 0.4s;
+    &.icbo {
+      color: $theme-color;
     }
   }
   .img-wrap {
@@ -47,7 +53,84 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
         font-weight: 600;
+
+        .plus-theme {
+          transition: all 0.4s;
+          right: 0;
+          bottom: 0;
+        }
+        .plus-minus {
+          position: absolute;
+          left: 0;
+          right: -100px;
+          opacity: 0;
+          visibility: hidden;
+          bottom: 0;
+          top: 0;
+          padding: 0 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          transition: all 0.4s;
+          width: 100%;
+          [dir="rtl"] & {
+            flex-direction: row-reverse;
+            left: -100px;
+            right: 0;
+          }
+          input {
+            padding: 5px 0;
+            flex: 1 1 auto;
+            height: 100%;
+            background-color: $theme-color;
+            color: $white;
+            [class="dark"] & {
+              color: $white-text-dark;
+            }
+          }
+          svg {
+            stroke: $white;
+            width: calc(18px + (21 - 18) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(18px + (21 - 18) * ((100vw - 320px) / (1920 - 320)));
+            &:first-of-type {
+              margin: 0 5px 0 0;
+            }
+            &:last-of-type {
+              margin: 0 0 0 5px;
+            }
+          }
+        }
+        &.active {
+          height: calc(28px + (31 - 28) * ((100vw - 320px) / (1920 - 320)));
+          line-height: 22px;
+          display: block;
+
+          .plus-theme {
+            bottom: 0;
+            right: -100px;
+            height: 30px;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            [dir="rtl"] & {
+              left: -100px;
+              right: unset;
+            }
+          }
+
+          .plus-minus {
+            right: 0;
+            opacity: 1;
+            visibility: visible;
+            [dir="rtl"] & {
+              left: 0;
+              right: unset;
+            }
+          }
+        }
+
         [dir="rtl"] & {
           flex-direction: row-reverse;
         }
@@ -59,6 +142,9 @@
             stroke: $white;
             width: calc(18px + (21 - 18) * ((100vw - 320px) / (1920 - 320)));
             height: calc(18px + (21 - 18) * ((100vw - 320px) / (1920 - 320)));
+            [class="dark"] & {
+              stroke: $white-text-dark;
+            }
           }
         }
       }

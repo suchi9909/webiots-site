@@ -1,5 +1,5 @@
 /*=====================
-   Index Page Css 
+  4.21 Shop Page Css 
 ==========================*/
 .shop-page {
   .search-box {
@@ -34,6 +34,9 @@
           transform: translateY(-50%);
           font-family: $font-2;
           font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+          [class="dark"] & {
+            color: $title-dark-color;
+          }
         }
       }
     }

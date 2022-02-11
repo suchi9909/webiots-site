@@ -1,5 +1,5 @@
 /*=====================
- Account Pages Css 
+ 4.2 Account Pages Css 
 ==========================*/
 .account-page {
   .account-wrap {
@@ -58,9 +58,12 @@
           &:focus {
             color: $title-color;
           }
+          i {
+            font-size: 24px;
+          }
           img {
-            width: calc(24px + (28 - 24) * ((100vw - 320px) / (1920 - 320)));
-            height: calc(24px+ (28 - 24) * ((100vw - 320px) / (1920 - 320)));
+            width: 22px;
+            height: 18px;
           }
           span {
             font-weight: normal;
@@ -89,15 +92,21 @@
     }
     .log-out {
       padding: 8px 30px;
+      font-weight: 600;
       background-color: $grey-light;
       border-radius: 9px;
       margin-top: 25px;
       display: flex;
       align-items: center;
       gap: 8px;
-      img {
-        width: calc(24px + (28 - 24) * ((100vw - 320px) / (1920 - 320)));
-        height: calc(24px+ (28 - 24) * ((100vw - 320px) / (1920 - 320)));
+      [class="dark"] & {
+        color: $white-text-dark;
+      }
+      i {
+        font-size: 24px;
+        [dir="rtl"] & {
+          transform: rotate(180deg);
+        }
       }
     }
   }

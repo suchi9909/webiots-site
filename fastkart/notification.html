@@ -13,7 +13,7 @@
     <title>Fastkart PWA App</title>
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="assets/images/favicon.png" />
-    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="theme-color" content="#0baf9a" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="Fastkart" />
@@ -28,6 +28,9 @@
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
 
+    <!-- Iconly Icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/iconly.css" />
+
     <!-- Style css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
   </head>
@@ -35,15 +38,195 @@
 
   <!-- Body Start -->
   <body>
+    <!-- Skeleton loader Start -->
+    <div class="skeleton-loader">
+      <!-- Header Start -->
+      <header class="header">
+        <div class="logo-wrap">
+          <a href="index.html"><i class="iconly-Arrow-Left-Square icli"></i></a>
+          <h1 class="title-color font-md">Notification</h1>
+        </div>
+        <div class="avatar-wrap">
+          <a href="index.html">
+            <i class="iconly-Home icli"></i>
+          </a>
+        </div>
+      </header>
+      <!-- Header End -->
+
+      <!-- Main Start -->
+      <div class="main-wrap notification-page mb-xxl">
+        <div class="nav-wrap">
+          <!-- Notification Tabs  Start -->
+          <ul class="nav nav-tab2 nav-pills">
+            <li class="nav-item">
+              <button class="nav-link">Alert</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link active">Offer</button>
+            </li>
+          </ul>
+          <!-- Notification Tabs  End -->
+          <button class="font-md font-theme"><img src="assets/icons/svg/d-check.svg" alt="check" /> Mark all as read</button>
+        </div>
+
+        <!-- Tab Content Start -->
+        <div class="tab-content ratio2_1 section-p-tb" id="pills-tabContent-sk">
+          <!-- Offer Content Start -->
+          <div class="tab-pane fade show active" id="offer1-sk" role="tabpanel" aria-labelledby="offer1-sk">
+            <!-- Yesterday Start -->
+            <div class="offer-wrap">
+              <h2 class="font-sm content-color">Yesterday</h2>
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-blue">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
+                    <span class="font-xs content-color">3.00pm, 10 July, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-yellow-light">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">FLAT 30% OFF, Sales Ends</h3>
+                    <span class="font-xs content-color">5.00pm, 10 July, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+            </div>
+            <!-- Yesterday End -->
+
+            <!-- Last 7 Days Start -->
+            <div class="offer-wrap section-p-t">
+              <h2 class="font-sm content-color">Last 7 Days</h2>
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-orange-light">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">Password Successfully Changed</h3>
+                    <span class="font-xs content-color">8.00am, 15 Jan, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-purple">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">$200 top up successfully</h3>
+                    <span class="font-xs content-color">9.00am, 10 Jan, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-blue">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
+                    <span class="font-xs content-color">3.00pm, 10 July, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-yellow-light">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">FLAT 30% OFF, Sales Ends</h3>
+                    <span class="font-xs content-color">5.00pm, 05 July, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-orange-light">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">Password Successfully Changed</h3>
+                    <span class="font-xs content-color">3.00pm, 10 July, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-purple">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">$200 top up successfully</h3>
+                    <span class="font-xs content-color">9.00am, 10 Jan, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+
+              <!-- Offer Box Start -->
+              <div class="offer-box">
+                <div class="media">
+                  <div class="icon-wrap bg-theme-blue">
+                    <div class="img"></div>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
+                    <span class="font-xs content-color">3.00pm, 10 July, 2021</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Offer Box End -->
+            </div>
+            <!-- Last 7 Days End -->
+          </div>
+          <!-- Offer Content End -->
+        </div>
+        <!-- Tab Content End -->
+      </div>
+    </div>
+    <!-- Skeleton loader End -->
+
     <!-- Header Start -->
     <header class="header">
       <div class="logo-wrap">
-        <a href="index.html"><img class="icon" src="assets/icons/svg/left-sq-arrow.svg" alt="Back" /></a>
+        <a href="index.html"><i class="iconly-Arrow-Left-Square icli"></i></a>
         <h1 class="title-color font-md">Notification</h1>
       </div>
       <div class="avatar-wrap">
         <a href="index.html">
-          <img class="icon-h" src="assets/icons/svg/t-home.svg" alt="Home" />
+          <i class="iconly-Home icli"></i>
         </a>
       </div>
     </header>
@@ -65,6 +248,7 @@
         <!-- Notification Tabs  End -->
         <button class="font-md font-theme"><img src="assets/icons/svg/d-check.svg" alt="check" /> Mark all as read</button>
       </div>
+
       <!-- Tab Content Start -->
       <section class="tab-content ratio2_1" id="pills-tabContent">
         <!-- Alert Content Start -->
@@ -76,7 +260,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-blue">
-                  <img src="assets/icons/svg/discount.svg" alt="Discount" />
+                  <i class="iconly-Discount icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
@@ -91,7 +275,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-yellow-light">
-                  <img src="assets/icons/svg/ticket.svg" alt="ticket" />
+                  <i class="iconly-Ticket icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">FLAT 30% OFF, Sales Ends</h3>
@@ -111,7 +295,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-orange-light">
-                  <img src="assets/icons/svg/password.svg" alt="key" />
+                  <i class="iconly-Password icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">Password Successfully Changed</h3>
@@ -126,7 +310,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-purple">
-                  <img src="assets/icons/svg/ticket-star.svg" alt="Discount" />
+                  <i class="iconly-Ticket-Star icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">$200 top up successfully</h3>
@@ -141,7 +325,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-blue">
-                  <img src="assets/icons/svg/discount.svg" alt="Discount" />
+                  <i class="iconly-Discount icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
@@ -156,7 +340,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-yellow-light">
-                  <img src="assets/icons/svg/ticket.svg" alt="ticket" />
+                  <i class="iconly-Ticket icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">FLAT 30% OFF, Sales Ends</h3>
@@ -171,7 +355,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-orange-light">
-                  <img src="assets/icons/svg/password.svg" alt="key" />
+                  <i class="iconly-Password icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">Password Successfully Changed</h3>
@@ -186,7 +370,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-purple">
-                  <img src="assets/icons/svg/ticket-star.svg" alt="ticket" />
+                  <i class="iconly-Ticket-Star icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">$200 top up successfully</h3>
@@ -201,7 +385,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-blue">
-                  <img src="assets/icons/svg/discount.svg" alt="Discount" />
+                  <i class="iconly-Discount icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
@@ -212,7 +396,7 @@
             </div>
             <!-- Offer Box End -->
           </div>
-          <!-- Last 7 Days Start -->
+          <!-- Last 7 Days End -->
         </div>
         <!-- Alert Content End -->
 
@@ -225,7 +409,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-blue">
-                  <img src="assets/icons/svg/discount.svg" alt="Discount" />
+                  <i class="iconly-Discount icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
@@ -240,7 +424,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-yellow-light">
-                  <img src="assets/icons/svg/ticket.svg" alt="ticket" />
+                  <i class="iconly-Ticket icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">FLAT 30% OFF, Sales Ends</h3>
@@ -260,7 +444,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-orange-light">
-                  <img src="assets/icons/svg/password.svg" alt="key" />
+                  <i class="iconly-Password icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">Password Successfully Changed</h3>
@@ -275,7 +459,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-purple">
-                  <img src="assets/icons/svg/ticket-star.svg" alt="Discount" />
+                  <i class="iconly-Ticket-Star icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">$200 top up successfully</h3>
@@ -290,7 +474,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-blue">
-                  <img src="assets/icons/svg/discount.svg" alt="Discount" />
+                  <i class="iconly-Discount icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
@@ -305,7 +489,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-yellow-light">
-                  <img src="assets/icons/svg/ticket.svg" alt="ticket" />
+                  <i class="iconly-Ticket icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">FLAT 30% OFF, Sales Ends</h3>
@@ -320,7 +504,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-orange-light">
-                  <img src="assets/icons/svg/password.svg" alt="key" />
+                  <i class="iconly-Password icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">Password Successfully Changed</h3>
@@ -335,7 +519,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-purple">
-                  <img src="assets/icons/svg/ticket-star.svg" alt="ticket" />
+                  <i class="iconly-Ticket-Star icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">$200 top up successfully</h3>
@@ -350,7 +534,7 @@
             <div class="offer-box">
               <div class="media">
                 <div class="icon-wrap bg-theme-blue">
-                  <img src="assets/icons/svg/discount.svg" alt="Discount" />
+                  <i class="iconly-Discount icli"></i>
                 </div>
                 <div class="media-body">
                   <h3 class="font-sm title-color">UPTO 40% OFF, Sales Ends</h3>
@@ -361,7 +545,7 @@
             </div>
             <!-- Offer Box End -->
           </div>
-          <!-- Last 7 Days Start -->
+          <!-- Last 7 Days End -->
         </div>
         <!-- Offer Content End -->
       </section>

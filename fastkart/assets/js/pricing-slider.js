@@ -1466,9 +1466,7 @@
                     max = Math.max(single_left, to_left);
 
                 if (this.labels.p_from_left + this.labels.p_from_fake >= this.labels.p_to_left) {
-                    // this.$cache.from[0].style.visibility = "hidden";
-                    // this.$cache.to[0].style.visibility = "hidden";
-                    // this.$cache.single[0].style.visibility = "visible";
+
 
                     if (this.result.from === this.result.to) {
                         if (this.target === "from") {
@@ -1478,12 +1476,10 @@
                         } else if (!this.target) {
                             this.$cache.from[0].style.visibility = "visible";
                         }
-                        // this.$cache.single[0].style.visibility = "hidden";
+
                         max = to_left;
                     } else {
-                        // this.$cache.from[0].style.visibility = "hidden";
-                        // this.$cache.to[0].style.visibility = "hidden";
-                        // this.$cache.single[0].style.visibility = "visible";
+
                         max = Math.max(single_left, to_left);
                     }
                 } else {
@@ -2368,6 +2364,14 @@
 }));
 
 
+$('.invest-type__profit--val').on('change', function (e) {
+
+    var slider = $($(this).data('slider')).data("ionRangeSlider");
+
+    slider.update({
+        from: $(this).val().replace('{{ $basic->symbol }}', "")
+    });
+})
 
 // Trigger
 
@@ -2441,3 +2445,4 @@ $(function () {
     });
 
 });
+

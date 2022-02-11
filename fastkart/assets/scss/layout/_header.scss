@@ -1,6 +1,7 @@
 /*=====================
-   Header Css 
+  3.1 Header Css 
 ==========================*/
+
 .header {
   padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
   display: flex;
@@ -10,11 +11,16 @@
     display: flex;
     align-items: center;
     gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+    i {
+      font-size: calc(28px + (32 - 28) * ((100vw - 320px) / (1920 - 320)));
+      color: $title-color;
+    }
     a {
       display: contents;
-      .icon {
-        width: calc(27px + (32 - 27) * ((100vw - 320px) / (1920 - 320)));
-        height: calc(27px + (32 - 27) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 600;
+      i {
+        font-weight: 200;
+        font-size: 28px;
         cursor: pointer;
         [dir="rtl"] & {
           transform-origin: center;
@@ -23,7 +29,7 @@
       }
     }
     .logo {
-      width: calc(80px + (110 - 80) * ((100vw - 320px) / (1920 - 320)));
+      width: calc(100px + (130 - 100) * ((100vw - 320px) / (1920 - 320)));
       height: auto;
     }
     .fk-logo {
@@ -36,19 +42,15 @@
     display: flex;
     align-items: center;
     gap: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+
     > span {
       display: flex;
       align-items: center;
       gap: calc(4px + (8 - 4) * ((100vw - 320px) / (1920 - 320)));
     }
-    .icon {
-      margin-top: -2px;
-      width: calc(24px + (29 - 24) * ((100vw - 320px) / (1920 - 320)));
-      height: calc(24px + (29 - 24) * ((100vw - 320px) / (1920 - 320)));
-    }
-    .icon-h {
-      width: calc(22px + (26 - 22) * ((100vw - 320px) / (1920 - 320)));
-      height: calc(22px + (26 - 22) * ((100vw - 320px) / (1920 - 320)));
+
+    i {
+      font-size: 28px;
     }
     .lord-icon {
       margin-bottom: -3px;

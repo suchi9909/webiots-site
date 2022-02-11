@@ -8,78 +8,67 @@
 *	
 **/
 
-
-@import url('iconly-bulk.css');
-
 @font-face {
-	font-family: "iconly";
-	font-style: normal;
-	font-weight: 200;
-	src: url('../fonts/iconly/Iconly-light.eot');
-	src: url('../fonts/iconly/Iconly-light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/iconly/Iconly-light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../fonts/iconly/Iconly-light.ttf') format('truetype'),
-         url('../fonts/iconly/Iconly-light.svg#Iconly-light') format('svg');;
-}
-
-
-@font-face {
-	font-family: "iconly";
-	font-style: normal;
-	font-weight: normal;
-	src: url('../fonts/iconly/Iconly-Broken.eot');
-	src: url('../fonts/iconly/Iconly-Broken.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/iconly/Iconly-Broken.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../fonts/iconly/Iconly-Broken.ttf') format('truetype'),
-         url('../fonts/iconly/Iconly-Broken.svg#Iconly-Broken') format('svg');;
+  font-family: "iconly";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/iconly/Iconly-light.eot");
+  src: url("../fonts/iconly/Iconly-light.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/iconly/Iconly-light.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/iconly/Iconly-light.ttf") format("truetype"), url("../fonts/iconly/Iconly-light.svg#Iconly-light") format("svg");
 }
 
 @font-face {
-	font-family: "iconly";
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/iconly/Iconly-Bold.eot');
-	src: url('../fonts/iconly/Iconly-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/iconly/Iconly-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../fonts/iconly/Iconly-Bold.ttf') format('truetype'),
-         url('../fonts/iconly/Iconly-Bold.svg#Iconly-Bold') format('svg');;
+  font-family: "iconly";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/iconly/Iconly-Broken.eot");
+  src: url("../fonts/iconly/Iconly-Broken.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/iconly/Iconly-Broken.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/iconly/Iconly-Broken.ttf") format("truetype"), url("../fonts/iconly/Iconly-Broken.svg#Iconly-Broken") format("svg");
 }
 
 @font-face {
-	font-family: "iconly";
-	font-style: normal;
-	font-weight: 900;
-	src: url('../fonts/iconly/Iconly-bulk.eot');
-	src: url('../fonts/iconly/Iconly-bulk.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/iconly/Iconly-bulk.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../fonts/iconly/Iconly-bulk.ttf') format('truetype'),
-         url('../fonts/iconly/Iconly-bulk.svg#Iconly-bulk') format('svg');;
+  font-family: "iconly";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/iconly/Iconly-Bold.eot");
+  src: url("../fonts/iconly/Iconly-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/iconly/Iconly-Bold.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/iconly/Iconly-Bold.ttf") format("truetype"), url("../fonts/iconly/Iconly-Bold.svg#Iconly-Bold") format("svg");
 }
 
-[class^="iconly-"], [class*="iconly-"] {
+@font-face {
+  font-family: "iconly";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/iconly/Iconly-bulk.eot");
+  src: url("../fonts/iconly/Iconly-bulk.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/iconly/Iconly-bulk.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/iconly/Iconly-bulk.ttf") format("truetype"), url("../fonts/iconly/Iconly-bulk.svg#Iconly-bulk") format("svg");
+}
+
+[class^="iconly-"],
+[class*="iconly-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'iconly' !important;
+  font-family: "iconly" !important;
   speak: never;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
   font-weight: normal;
   line-height: 1;
-/*   Better Font Rendering =========== */
+  /*   Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icli{
+.icli {
   font-weight: 200;
 }
-.icbr{
+.icbr {
   font-weight: normal;
 }
-.icbo{
+.icbo {
   font-weight: 700;
 }
-.icbu{
+.icbu {
   font-weight: 900;
 }
 
@@ -383,4 +372,3 @@
 .iconly-Work:before {
   content: "\e963";
 }
-

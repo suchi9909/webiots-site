@@ -1,5 +1,5 @@
 /*=====================
-  Forms CSS 
+  2.3 Forms CSS 
 ==========================*/
 
 /// input style ///
@@ -47,10 +47,10 @@
       opacity: 0;
     }
     > svg,
-    img {
-      stroke-width: 1px;
+    i {
       width: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
       height: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+      font-size: 28px;
       position: absolute;
       right: 12px;
       top: 50%;
@@ -58,6 +58,14 @@
       [dir="rtl"] & {
         right: unset;
         left: 12px;
+      }
+    }
+    i {
+      right: 15px;
+      line-height: 22px;
+      [dir="rtl"] & {
+        right: unset;
+        left: 15px;
       }
     }
     &.text-box {
@@ -133,7 +141,8 @@
     color: $title-color;
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     &:focus {
-      border: $border2;
+      border: $border2 !important;
+      background-color: $grey-light !important;
     }
   }
   .select-box {
@@ -188,7 +197,7 @@
       border-radius: 50%;
       [dir="rtl"] & {
         left: unset;
-        right: 1px;
+        right: -2px;
       }
     }
     &:after {
@@ -204,7 +213,7 @@
       border-radius: 50%;
       [dir="rtl"] & {
         left: unset;
-        right: -3px;
+        right: -10px;
       }
     }
     &:checked {

@@ -1,50 +1,47 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name:Appish APP
-    Template URI: themes.pixelstrap.com/appish-app
+    Template Name:Fastkart APP
+    Template URI: themes.pixelstrap.com/Fastkart-app
     Description: This is PWA Html Template
     Author: Pixelstrap
     Author URL: https://themeforest.net/user/pixelstrap
 
 ----------------------------------------------------------------------------------- */
-// 01.Manifest js
+// 01.Service Worker Register js
 // 02.Pre Loader js 
 // 03.Ratio js
 // 04.Header Sidebar js
 // 05.Filter Select js
-// 06.Video Thumbnail 
-// 07.Heart & Bookmark Fill Js
-// 08.Address Select Js
-// 09.Payment Card Select Js
-// 10.Plus Minuse Item  Js
-// 11.Grocery Responsive Menu
-// 12.Toast Init js
-// 13.Notification Init js
-// 14.Swiper js
+// 06.Address Active js
+// 07.Plus Minus Item  Js 
+// 08.Catagories Mordent Menu js
+// 09.Filter Active js
+// 10.Swipe To Show Delete cart page js
+// 11.Product card Heart Fill js
+// 12.Product card Plus js
 
 
 (function ($) {
 
     /*========================
-      01. Manifest js
+      01. Service Worker Register js
       ==========================*/
-
-    // $(window).on('load', function () {
-    //     'use strict';
-    //     if ('serviceWorker' in navigator) {
-    //         navigator.serviceWorker
-    //             .register('sw.js');
-    //     }
-    // });
+    $(window).on('load', function () {
+        'use strict';
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('sw.js');
+        }
+    });
 
     /*=====================
      02. Pre Loader js 
      ==========================*/
     $(window).on('load', function () {
         setTimeout(function () {
-            $('.pre-loader').fadeOut('slow');
+            $('.skeleton-loader').fadeOut('slow');
         }, 500);
-        $('.pre-loader').remove('slow');
+        $('.skeleton-loader').remove('slow');
     });
 
 
@@ -114,8 +111,8 @@
         }
     });
     $('.sub').on('click', function () {
-        if ($(this).next().val() > 0) {
-            if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
+        if ($(this).next().val() > 1) {
+            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
         }
     });
 
@@ -137,6 +134,8 @@
         $(this).addClass('active');
     });
 
+
+
     /*==============================
        10. Swipe To Show Delete cart page js
     =====================================*/
@@ -145,7 +144,29 @@
     })
     $(".swipe-to-show").on("swiperight", function () {
         $(this).removeClass("active")
-    })
+    });
+
+    /*==============================
+      11. Product card Heart Fill js
+     =====================================*/
+    $(".product-card .iconly-Heart").on('click', function () {
+        $(this).toggleClass("icli")
+        $(this).toggleClass("icbo")
+    });
+
+
+    /*==============================
+      12. Product card Plus js
+     =====================================*/
+    $(".plus-theme").on('click', function () {
+        $(this).parent().addClass("active")
+    });
+
+    $(".sub").on('click', function () {
+        if ($(this).siblings(".val").val() <= 1) {
+            $(this).parentsUntil("active").removeClass("active")
+        }
+    });
 
 })(jQuery);
 

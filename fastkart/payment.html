@@ -13,7 +13,7 @@
     <title>Fastkart PWA App</title>
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="assets/images/favicon.png" />
-    <meta name="theme-color" content="#ff4c3b" />
+    <meta name="theme-color" content="#0baf9a" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="Fastkart" />
@@ -28,6 +28,9 @@
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
 
+    <!-- Iconly Icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/iconly.css" />
+
     <!-- Date Picker css -->
     <link rel="stylesheet" type="text/css" href="assets/css/date-picker.css" />
 
@@ -41,7 +44,7 @@
     <!-- Header Start -->
     <header class="header">
       <div class="logo-wrap">
-        <a href="index.html"><img class="icon" src="assets/icons/svg/left-sq-arrow.svg" alt="Back" /></a>
+        <a href="index.html"><i class="iconly-Arrow-Left-Square icli"></i></a>
         <h1 class="title-color font-md">Add Payment Method</h1>
       </div>
     </header>
@@ -55,7 +58,7 @@
       <section class="payment-section">
         <!-- Payment Method Accordian Start -->
         <div class="accordion" id="accordionExample">
-          <!-- Accordion Satart -->
+          <!-- Accordion Start -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button font-md title-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -82,7 +85,7 @@
           </div>
           <!-- Accordion End -->
 
-          <!-- Accordion Satart -->
+          <!-- Accordion Start -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button font-md title-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -139,7 +142,7 @@
           </div>
           <!-- Accordion End -->
 
-          <!-- Accordion Satart -->
+          <!-- Accordion Start -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button
@@ -203,7 +206,7 @@
           </div>
           <!-- Accordion End -->
 
-          <!-- Accordion Satart -->
+          <!-- Accordion Start -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingfour">
               <button class="accordion-button font-md title-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
@@ -228,7 +231,7 @@
 
       <!-- Order Detail Start -->
       <section class="order-detail">
-        <h3 class="title-2">Order Summary:</h3>
+        <h3 class="title-2">Order Details</h3>
         <!-- Product Detail  Start -->
         <ul>
           <li>
@@ -250,6 +253,7 @@
             <span>Delivery</span>
             <span>$50.00</span>
           </li>
+
           <li>
             <span>Total Amount</span>
             <span>$270.00</span>
@@ -272,6 +276,7 @@
       <div class="offcanvas-header">
         <h5 class="title-color font-md fw-600">Add Card</h5>
       </div>
+
       <div class="offcanvas-body small">
         <form class="custom-form">
           <div class="input-box">
@@ -282,7 +287,7 @@
           <div class="row">
             <div class="col-6">
               <div class="input-box mb-0">
-                <img src="assets/icons/svg/calendar2.svg" alt="calender" />
+                <i class="iconly-Calendar icli"></i>
                 <input class="datepicker-here form-control digits expriydate" type="text" data-language="en" data-multiple-dates-separator=", " placeholder="Expiry Date" />
               </div>
             </div>

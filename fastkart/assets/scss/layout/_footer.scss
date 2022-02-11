@@ -1,5 +1,5 @@
 /*=====================
-  Footer Css 
+  3.3 Footer Css 
 ==========================*/
 .footer-wrap {
   margin: 0 auto;
@@ -25,17 +25,19 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: calc(3px + (6 - 3) * ((100vw - 320px) / (1920 - 320)));
-        img {
-          width: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
-          height: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+        gap: 2px;
+        i {
+          font-size: 25px;
+          color: $white;
         }
         .icon {
-          width: calc(26px + (32 - 26) * ((100vw - 320px) / (1920 - 320)));
-          height: calc(26px + (32 - 26) * ((100vw - 320px) / (1920 - 320)));
-          margin-bottom: -6px;
+          width: calc(30px + (32 - 30) * ((100vw - 320px) / (1920 - 320)));
+          height: calc(30px + (32 - 30) * ((100vw - 320px) / (1920 - 320)));
+          margin-bottom: -7px;
         }
-
+        .offer {
+          margin-top: 2px;
+        }
         span {
           color: $white;
           margin-bottom: -3px;

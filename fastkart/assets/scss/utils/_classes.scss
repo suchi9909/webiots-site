@@ -42,6 +42,7 @@ $theme-bg-color: (
   pink: $theme-pink,
   purple: $theme-purple,
   grey-light: $grey-light,
+  sk-grey: $sk-bg,
 );
 @each $name, $value in $theme-bg-color {
   .bg-theme-#{$name} {
@@ -194,12 +195,16 @@ $theme-bg-color: (
     display: inline-block;
     height: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
     width: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+    transition: all 0.3s;
     margin: 0 3px;
     border-radius: 100%;
     background-color: $theme-color;
     border: $border2;
     padding: 0;
     cursor: pointer;
+    [class="dark"] & {
+      border-color: $theme-color;
+    }
     button {
       display: none;
     }
@@ -234,4 +239,37 @@ $theme-bg-color: (
 .slick-prev,
 .slick-next {
   display: none !important;
+}
+
+.dark {
+  .datepicker {
+    background-color: $title-dark-color;
+    border: $content-dark-color;
+    .datepicker--nav {
+      border-bottom: 1px solid $content-dark-color;
+      .datepicker--nav-title {
+        color: $white-text-dark;
+      }
+    }
+    .datepicker--cell {
+      color: $content-dark-color;
+      &.-selected-,
+      &.-focus-,
+      &.-current- {
+        background-color: $title-dark-color;
+        border: 1px solid $content-dark-color;
+        color: $white-text-dark;
+      }
+    }
+    .datepicker--cell-day {
+      &.-other-month- {
+        color: rgba($content-dark-color, 0.5) !important;
+      }
+    }
+    .datepicker--pointer {
+      background-color: $title-dark-color;
+      border-top: 1px solid $content-dark-color;
+      border-right: 1px solid $content-dark-color;
+    }
+  }
 }

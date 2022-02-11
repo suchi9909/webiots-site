@@ -28,8 +28,7 @@ function timer(remaining) {
     $(".time").css("display", "none");
     $(".resend-otp").css("color", "#4e63ff");
 
-    $(".resend-otp").click(function () {
-        $.notify("OTP Has Been Send", "success");
+    $(".resend-otp").on("click", function () {
         $(".time").css("display", "inline-block");
         $(".resend-otp").css("color", "#777777");
         timer(30);
