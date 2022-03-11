@@ -11,11 +11,11 @@
   0% {
     transform: translateZ(0);
     background-position: -468px 0;
-  }
-  to {
+}
+to {
     transform: translateZ(0);
     background-position: 468px 0;
-  }
+}
 }
 .sk-hed {
   width: 25%;
@@ -72,13 +72,13 @@
   @include after();
   &::after {
     background-image: unset;
-    background-color: $white;
+    background-color: $sk-bg-dark;
   }
 }
 @mixin after-ani-white {
   @include after();
   &::after {
-    background-image: $sk-an-bg-white;
+    background-image: $sk-an-bg-grey;
     animation: $sk-animate;
   }
 }
@@ -94,6 +94,7 @@
   height: 100%;
   z-index: 999;
   display: block;
+  overflow: auto;
   @media only screen and (min-width: 767px) {
     max-width: 600px;
     margin: 0 auto;
@@ -109,91 +110,81 @@
   }
 
   /// Index Page Start ///
-  .index-page {
-    .h-banner-slider {
-      .banner-box {
-        @include after();
-      }
+  .h-banner-slider {
+    .banner-box {
+      @include after();
     }
-    .recently-wrap {
-      @include bg-skeleton;
-      h3 {
-        display: inline-block;
-        @include after-ani-white();
-      }
-      .recently-list {
-        overflow: hidden !important;
-        .item {
-          .img {
-            width: calc(50px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
-            height: calc(50px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
-            background-color: $white;
-          }
+  }
+  .recently-wrap {
+    @include bg-skeleton;
+    h3 {
+      display: inline-block;
+      @include after-ani-white();
+    }
+    .recently-list {
+      overflow: hidden !important;
+      .item {
+        .img {
+          width: calc(50px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
+          height: calc(50px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
+          background-color: $white;
         }
       }
     }
-    .category {
-      > h3 {
-        span {
-          &:first-of-type {
-            width: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
-            height: 15px;
-            @include after-ani-grey();
-            padding: 4px 14px;
-            &:after {
-              left: 8px;
-              [dir="rtl"] & {
-                right: 8px;
-                left: unset;
-              }
+  }
+  .category {
+    > h3 {
+      span {
+        &:first-of-type {
+          width: 192px;
+          height: 26px;
+          display: block;
+          margin: 0 auto;
+          @include after-ani-grey();
+          padding: 4px 14px;
+          &:after {
+            left: 8px;
+            [dir="rtl"] & {
+              right: 8px;
+              left: unset;
             }
           }
         }
       }
-      .category-wrap {
-        .bg-shape {
-          @include after();
-          height: calc(112px + (127 - 112) * ((100vw - 320px) / (1920 - 320)));
-        }
-        span {
-          @include after-ani-grey();
-          height: 20px;
-          margin-top: -6px;
-          margin-bottom: 24px;
-          &::before {
-            position: absolute;
-            content: "";
-            width: 70%;
-            top: 24px;
-            height: 20px;
-            left: 14%;
-            transform: translateX(-50%);
-            background-image: $sk-an-bg-grey;
-            animation: $sk-animate;
-          }
-        }
+    }
+    .category-wrap {
+      .bg-shape {
+        @include after();
+        top: 0;
+      }
+      span {
+        height: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        background-image: $sk-an-bg-grey;
+        animation: $sk-animate;
       }
     }
-    .offer-section {
-      .offer {
-        @include bg-skeleton();
-        .top-content {
-          h4 {
-            @include after-ani-white();
-            display: inline-block;
-          }
-          p {
-            @include after-ani-white();
-            margin-top: 8px;
-          }
-          a {
-            @include after-ani-white();
-          }
+  }
+  .offer-section {
+    .offer {
+      @include bg-skeleton();
+      .top-content {
+        h4 {
+          @include after-ani-white();
+          display: inline-block;
         }
-        .offer-wrap {
-          .media {
-            @include after-white();
-          }
+        p {
+          @include after-ani-white();
+          margin-top: 8px;
+        }
+        a {
+          @include after-ani-white();
+        }
+      }
+      .offer-wrap {
+        .media {
+          @include after-white();
         }
       }
     }
@@ -389,7 +380,7 @@
             .img {
               width: 100%;
               height: 100%;
-              background-color: $white;
+              background-color: $sk-bg-dark;
             }
           }
           .media-body {
@@ -476,6 +467,9 @@
           .size-box {
             span {
               @include after-ani-white();
+              width: calc(70px + (140 - 70) * ((100vw - 320px) / (1920 - 320)));
+              height: 15px;
+              display: block;
             }
           }
           > span {
@@ -685,6 +679,8 @@
   /// Address1 Page Start ///
   .address1-page {
     .map-section {
+      height: 50vh;
+      width: 100%;
       @include after();
       &:after {
         width: 100%;
@@ -741,7 +737,7 @@
           margin: 0 auto;
           width: calc(100px + (200 - 100) * ((100vw - 320px) / (1920 - 320)));
           height: 15px;
-          background: $sk-an-bg-white;
+          background: $sk-an-bg-grey;
           animation: $sk-animate;
         }
       }
@@ -1104,6 +1100,7 @@
         h2 {
           width: max-content;
           @include after-ani-grey();
+
         }
         .offer-box {
           .media {
@@ -1119,6 +1116,7 @@
             .media-body {
               h3 {
                 @include after-ani-grey();
+                margin-bottom: 6px
               }
               span {
                 @include after-ani-grey();
@@ -1189,7 +1187,6 @@
           margin: 0 auto;
           width: 107px;
           height: 21px;
-          @include after-ani-white();
         }
       }
     }
@@ -1379,7 +1376,7 @@
         .steps-box {
           background-color: $sk-bg;
           span {
-            background-color: $white;
+            background-color: $sk-bg-dark;
             color: transparent;
           }
           .content {

@@ -207,7 +207,7 @@
           border: $border1;
           background-color: $grey-light;
           padding: 11px 11px;
-          font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+          font-size: 14px;
           border-radius: 5px;
           position: relative;
           .check {
@@ -221,6 +221,7 @@
             [dir="rtl"] & {
               left: -3px;
               right: unset;
+              border-radius: 5px 0px 5px 0px;
             }
             img {
               width: 15px;
@@ -270,6 +271,7 @@
           width: 100%;
           padding: 10px;
           margin-top: 15px;
+
           &:first-of-type {
             margin-right: 15px;
             [dir="rtl"] & {
@@ -277,6 +279,9 @@
               margin-left: 15px;
             }
           }
+        }
+        .btn-solid {
+          color: $white-text-dark;
         }
       }
     }
@@ -298,21 +303,15 @@
     gap: 10px;
     .offcanvas-title {
       font-weight: 700;
-      color: $white;
       margin-top: -6px;
       margin-bottom: -7px;
-      [class="dark"] & {
-        color: $white-text-dark;
-      }
+      color: $white-text-dark;
     }
     span {
-      color: $white;
       font-weight: normal;
       margin-top: -3px;
       margin-bottom: -3px;
-      [class="dark"] & {
-        color: $white-text-dark;
-      }
+      color: $white-text-dark;
     }
     .code {
       padding: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320))) 20px;
@@ -326,7 +325,8 @@
         border-radius: 100px;
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         padding: 8px calc(14px + (34 - 14) * ((100vw - 320px) / (1920 - 320)));
-        line-height: 18px;
+        line-height: 21px;
+        background-color: $white-text-dark;
       }
     }
   }
@@ -356,6 +356,7 @@
 .add-address {
   height: auto;
   .offcanvas-header {
+    padding-bottom: 0;
     h5 {
       margin-top: -4px;
       margin-bottom: -4px;
@@ -373,6 +374,7 @@
     }
   }
   .offcanvas-footer {
+    padding-top: 8px;
     .btn-box {
       display: flex;
       align-items: center;
@@ -441,6 +443,7 @@
         padding-right: 15px;
       }
       h3 {
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 600;
         color: $title-color;
         display: flex;
@@ -456,6 +459,7 @@
         }
       }
       a {
+        font-size: 14px;
         color: $content-color;
       }
     }

@@ -72,11 +72,13 @@
           h4 {
             margin-top: -5px;
             width: 191px;
+            font-weight: 600;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             @media only screen and (max-width: 375px) {
               width: 136px;
+              font-weight: 600;
             }
           }
           span {
@@ -125,7 +127,7 @@
     }
     .address {
       h4 {
-        font-weight: normal;
+        font-weight: 500;
         margin-top: -1px;
       }
       p {

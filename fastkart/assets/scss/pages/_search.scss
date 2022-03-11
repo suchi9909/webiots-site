@@ -6,12 +6,16 @@
     @include search-box;
   }
   .recent-search {
-    overflow-x: hidden;
     ul {
       display: flex;
       align-items: center;
       gap: 15px;
       overflow-x: hidden;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+
       &:hover {
         overflow-x: auto;
       }
@@ -44,14 +48,13 @@
       > div {
         @media only screen and (max-width: 375px) {
           flex: 0 0 auto;
-          width: 50%;
+          width: 33.33%;
         }
       }
     }
   }
   .trending-products {
     .product-wrap {
-      @include shop-card;
       .media {
         background-color: $grey-light;
       }

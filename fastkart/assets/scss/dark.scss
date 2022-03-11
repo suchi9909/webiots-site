@@ -66,6 +66,7 @@ $theme-light-color: #2e343b;
 /// Main Color ///
 $black: #f0f0f0;
 $white: #22282c;
+$white-light: #2e343b;
 $white-bg-dark: #f0f0f0;
 $grey-light: #2e343b;
 
@@ -86,9 +87,9 @@ $box-shadow1: 0px -2px 8px $box-shadow-color1;
 $box-shadow2: 0px 4px 11px 2px $box-shadow-color2;
 
 /// Skeleton loader ///
-$sk-bg: #535353;
-$sk-an-bg-white: linear-gradient(90deg, $white 8%, $sk-bg 18%, $white 33%);
-$sk-an-bg-grey: linear-gradient(90deg, $sk-bg 8%, $white 18%, $sk-bg 33%);
+$sk-bg: #2e343b;
+$sk-bg-dark: #292d31;
+$sk-an-bg-grey:linear-gradient(90deg, $sk-bg-dark 8%, #2e343b 18%, $sk-bg-dark 33%);
 $sk-animate: skeletonAnimation 4s linear infinite forwards;
 
 @import "utils/mixin";

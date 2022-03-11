@@ -21,8 +21,7 @@
             {
                 breakpoint: 375,
                 settings: {
-                    centerMode: false,
-                    centerPadding: "0",
+                    centerPadding: "15px",
                 },
             },
         ],
@@ -38,47 +37,24 @@
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 400,
+                breakpoint: 567,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3, centerPadding: "25px",
                 },
             },
-        ],
-    });
-
-    /// Product Slider ///
-    $(".everyday-slider").slick({
-        dots: false,
-        slidesToShow: 3,
-        centerMode: true,
-        centerPadding: "50px",
-        arrows: false,
-        slidesToScroll: 1,
-        responsive: [
             {
-                breakpoint: 400,
+                breakpoint: 475,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 2, centerPadding: "25px",
                 },
             },
-        ],
-    });
-
-    /// Product Slider ///
-    $(".low-price-slider").slick({
-        dots: false,
-        slidesToShow: 3,
-        centerMode: true,
-        centerPadding: "50px",
-        arrows: false,
-        slidesToScroll: 1,
-        responsive: [
             {
-                breakpoint: 400,
+                breakpoint: 375,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
+                    centerPadding: "120px"
                 },
-            },
+            }
         ],
     });
 
@@ -101,9 +77,15 @@
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 400,
+                breakpoint: 567,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3, centerPadding: "25px",
+                },
+            },
+            {
+                breakpoint: 475,
+                settings: {
+                    slidesToShow: 2, centerPadding: "25px",
                 },
             },
         ],

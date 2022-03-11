@@ -228,14 +228,19 @@ h6 {
   color: $title-color;
 }
 
+.font-base {
+  font-size: 14px !important;
+}
+
 /// Font Size ///
 $theme-font-size: (
-  xs: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))),
+  xs: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320))),
   sm: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))),
   md: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))),
   lg: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320))),
   xl: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320))),
   xxl: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320))),
+  default: 16px,
 );
 @each $size, $value in $theme-font-size {
   .font-#{$size} {

@@ -8,12 +8,11 @@
   }
   .tab-content {
     .tab-pane {
-      @include shop-card;
       .media {
         background-color: $grey-light;
         .media-body {
           > a {
-            font-weight: normal;
+            font-weight: 600;
           }
         }
       }

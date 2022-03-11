@@ -3,6 +3,7 @@
 ==========================*/
 
 /// input style ///
+
 .custom-form {
   input,
   textarea,
@@ -46,18 +47,21 @@
       margin-left: 0;
       opacity: 0;
     }
-    > svg,
-    i {
+    > svg {
       width: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
       height: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
-      font-size: 28px;
+      stroke-width: 1.5;
+    }
+    > svg,
+    i {
+      font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)));
       position: absolute;
-      right: 12px;
+      right: 16px;
       top: 50%;
       transform: translateY(-50%);
       [dir="rtl"] & {
         right: unset;
-        left: 12px;
+        left: 16px;
       }
     }
     i {
@@ -225,6 +229,15 @@
       }
     }
   }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: $theme-light-color !important;
+  color: $title-color !important;
+  -webkit-box-shadow: 0 0 0 1000px $theme-light-color inset !important;
+  -webkit-text-fill-color: $title-color !important;
 }
 
 /// Date Picker ///

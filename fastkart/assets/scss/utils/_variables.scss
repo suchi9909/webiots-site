@@ -6,6 +6,7 @@ $content-light: #cacaca;
 /// Main Color ///
 $black: #000000;
 $white: #ffffff;
+$white-light: #fafafa;
 $theme-color: #0baf9a;
 $theme-light-color: #edf8f8;
 $grey-light: #fafafa;
@@ -50,8 +51,8 @@ $box-shadow2: 0px 4px 11px 2px $box-shadow-color2;
 
 /// Skeleton loader ///
 $sk-bg: #f3f3f3;
-$sk-an-bg-white: linear-gradient(90deg, $white 8%, $sk-bg 18%, $white 33%);
-$sk-an-bg-grey: linear-gradient(90deg, $sk-bg 8%, $white 18%, $sk-bg 33%);
+$sk-bg-dark: #e8e8e8;
+$sk-an-bg-grey:linear-gradient(90deg, $sk-bg-dark 8%, #e4e4e4 18%, $sk-bg-dark 33%);
 $sk-animate: skeletonAnimation 4s linear infinite forwards;
 
 /// Dark ///

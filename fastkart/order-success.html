@@ -20,10 +20,6 @@
     <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
@@ -43,8 +39,9 @@
       <!-- Header Start -->
       <header class="header">
         <div class="logo-wrap">
-          <a href="index.html"><i class="iconly-Arrow-Left-Square icli"></i></a>
-          <a href="index.html"> <img class="logo" src="assets/images/logo/Fastkart.png" alt="logo" /></a>
+          <i class="iconly-Category icli"></i>
+          <a href="index.html"> <img class="logo logo-w" src="assets/images/logo/logo-w.png" alt="logo" /></a
+          ><a href="index.html"> <img class="logo" src="assets/images/logo/logo.png" alt="logo" /></a>
         </div>
         <div class="avatar-wrap">
           <a href="index.html">
@@ -75,14 +72,14 @@
             <span><i class="iconly-Calendar icli"></i></span>
             <div class="media-body">
               <h2 class="font-sm color-title">Order Date</h2>
-              <span class="font-xs content-color">Sun, 14 Apr, 19:12</span>
+              <span class="content-color">Sun, 14 Apr, 19:12</span>
             </div>
           </div>
           <div class="media">
             <span><i class="iconly-Document icli"></i></span>
             <div class="media-body">
               <h2 class="font-sm color-title">Order ID</h2>
-              <span class="font-xs content-color">#548475151</span>
+              <span class="content-color">#548475151</span>
             </div>
           </div>
         </div>
@@ -122,20 +119,14 @@
         <!-- Order Detail End -->
       </div>
       <!-- Main End -->
-
-      <!-- Footer Start -->
-      <footer class="footer-wrap footer-button">
-        <a href="order-tracking.html" class="font-md">Track Package on Map</a>
-      </footer>
-      <!-- Footer End -->
     </div>
     <!-- Skeleton loader End -->
 
     <!-- Header Start -->
     <header class="header">
       <div class="logo-wrap">
-        <a href="index.html"><i class="iconly-Arrow-Left-Square icli"></i></a>
-        <a href="index.html"> <img class="logo" src="assets/images/logo/Fastkart.png" alt="logo" /></a>
+        <i class="iconly-Category icli nav-bar"></i>
+        <a href="index.html"> <img class="logo logo-w" src="assets/images/logo/logo-w.png" alt="logo" /></a><a href="index.html"> <img class="logo" src="assets/images/logo/logo.png" alt="logo" /></a>
       </div>
       <div class="avatar-wrap">
         <a href="index.html">
@@ -144,6 +135,125 @@
       </div>
     </header>
     <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <a href="javascript:void(0)" class="overlay-sidebar"></a>
+    <aside class="header-sidebar">
+      <div class="wrap">
+        <div class="user-panel">
+          <div class="media">
+            <a href="account.html"> <img src="assets/images/avatar/avatar.jpg" alt="avatar" /></a>
+            <div class="media-body">
+              <a href="account.html" class="title-color font-sm"
+                >Andrea Joanne
+                <span class="content-color font-xs">andreajoanne@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Start -->
+        <nav class="navigation">
+          <ul>
+            <li class="active">
+              <a href="index.html" class="nav-link title-color font-sm">
+                <i class="iconly-Home icli"></i>
+                <span>Home</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="category-wide.html" class="nav-link title-color font-sm">
+                <i class="iconly-Category icli"></i>
+                <span>Shop by Category</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="order-history.html" class="nav-link title-color font-sm">
+                <i class="iconly-Document icli"></i>
+                <span>Orders</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="wishlist.html" class="nav-link title-color font-sm">
+                <i class="iconly-Heart icli"></i>
+                <span>Your Wishlist</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#language" aria-controls="language" class="nav-link title-color font-sm">
+                <img src="assets/icons/png/flags.png" alt="flag" />
+                <span>Langauge</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="account.html" class="nav-link title-color font-sm">
+                <i class="iconly-Add-User icli"></i>
+                <span>Your Account</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="notification.html" class="nav-link title-color font-sm">
+                <i class="iconly-Notification icli"></i>
+                <span>Notification</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="setting.html" class="nav-link title-color font-sm">
+                <i class="iconly-Setting icli"></i>
+                <span>Settings</span>
+              </a>
+              <span><i data-feather="chevron-right"></i></span>
+            </li>
+
+            <li>
+              <a href="javascript:void(0)" class="nav-link title-color font-sm">
+                <i class="iconly-Graph icli"></i>
+                <span>Dark</span>
+              </a>
+
+              <div class="dark-switch">
+                <input id="darkButton" type="checkbox" />
+                <span></span>
+              </div>
+            </li>
+
+            <li>
+              <a href="javascript:void(0)" class="nav-link title-color font-sm">
+                <i class="iconly-Filter icli"></i>
+                <span>RTL</span>
+              </a>
+
+              <div class="dark-switch">
+                <input id="rtlButton" type="checkbox" />
+                <span class="before-none"></span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Navigation End -->
+      </div>
+
+      <div class="contact-us">
+        <span class="title-color">Contact Support</span>
+        <p class="content-color font-xs">If you have any problem,queries or questions feel free to reach out</p>
+        <a href="javascript:void(0)" class="btn-solid"> Contact Us </a>
+      </div>
+    </aside>
+    <!-- Sidebar End -->
 
     <!-- Main Start -->
     <main class="main-wrap order-success-page mb-xxl">
@@ -166,7 +276,7 @@
           <span><i class="iconly-Calendar icli"></i></span>
           <div class="media-body">
             <h2 class="font-sm color-title">Order Date</h2>
-            <span class="font-xs content-color">Sun, 14 Apr, 19:12</span>
+            <span class="content-color">Sun, 14 Apr, 19:12</span>
           </div>
         </div>
 
@@ -174,7 +284,7 @@
           <span><i class="iconly-Document icli"></i></span>
           <div class="media-body">
             <h2 class="font-sm color-title">Order ID</h2>
-            <span class="font-xs content-color">#548475151</span>
+            <span class="content-color">#548475151</span>
           </div>
         </div>
       </section>
@@ -221,6 +331,36 @@
       <a href="order-tracking.html" class="font-md">Track Package on Map</a>
     </footer>
     <!-- Footer End -->
+
+    <!-- Action Language Start -->
+    <div class="action action-language offcanvas offcanvas-bottom" tabindex="-1" id="language" aria-labelledby="language">
+      <div class="offcanvas-body small">
+        <h2 class="m-b-title1 font-md">Select Language</h2>
+
+        <ul class="list">
+          <li>
+            <a href="javascript:void(0)" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/icons/flag/us.svg" alt="us" /> English </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/icons/flag/in.svg" alt="us" />Indian </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/icons/flag/it.svg" alt="us" />Italian</a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/icons/flag/tf.svg" alt="us" /> French</a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/icons/flag/cn.svg" alt="us" /> Chines</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Action Language End -->
 
     <!-- jquery 3.6.0 -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>

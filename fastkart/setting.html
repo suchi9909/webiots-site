@@ -20,10 +20,6 @@
     <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css" />
@@ -61,7 +57,7 @@
         <div class="media">
           <div class="avatar-wrap">
             <a href="javascript:void(0)"> <img src="assets/images/avatar/avatar.jpg" alt="avatar" /></a>
-            <span class="edit"><img src="assets/icons/svg/Edit.svg" alt="edit" /></span>
+            <span class="edit"> <i data-feather="edit-3"></i></span>
           </div>
           <div class="media-body">
             <h2 class="title-color">Andrea Joanne</h2>
@@ -89,14 +85,14 @@
 
         <div class="input-box">
           <i class="iconly-Calendar icli"></i>
-          <input class="datepicker-here form-control digits" type="text" data-language="en" data-multiple-dates-separator=", " placeholder="28/12/1990" />
+          <input class="datepicker-here form-control digits" type="text" autocomplete="off" data-language="en" data-multiple-dates-separator=", " placeholder="28/12/1990" />
         </div>
 
         <div class="type-password">
           <label class="font-sm" for="password">Change Password</label>
-          <div class="input-box">
+          <div class="input-box mb-0">
             <i class="iconly-Lock icli"></i>
-            <input id="password" type="password" placeholder="Password" class="form-control" />
+            <input id="password" type="password" placeholder="Password" autocomplete="off" class="form-control" />
           </div>
         </div>
         <button type="submit" class="btn-solid">Update Settings</button>
