@@ -1,43 +1,42 @@
-'use strict';
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const autoprefixer = require("gulp-autoprefixer");
+const sourcemaps = require("gulp-sourcemaps");
+const browserSync = require("browser-sync").create();
+const feather = require('feather-icons');
 
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    bs = require('browser-sync').create();
-
-sass.compiler = require('node-sass');
-
-// Scss to css
-gulp.task('sass', function () {
-    return gulp.src('assets/scss/**.scss')
-        .pipe(sass({
-            // outputStyle: 'compressed'
-        }).on('error', sass.logError))
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(gulp.dest('assets/css'))
-        .pipe(bs.reload({
-            stream: true
-        }));
-});
+//scss to css
+function style() {
+  return gulp.src('assets/scss/**/*.scss', {
+      sourcemaps: true
+    })
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }).on('error', sass.logError))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(gulp.dest('assets/css', {
+      sourcemaps: '.'
+    }))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+}
+gulp
 
 
-gulp.task('serve', [], function() {
-    // .init starts the server
-    bs.init({
-      server: "./app",
-      port: 4000
-    });
+
+// Watch function
+function watch() {
+  browserSync.init({
+    proxy: "localhost/webiots-site-master/index.html",
   });
+  gulp.watch("assets/scss/**/*.scss", style);
+  gulp.watch("**/*.html").on("change", browserSync.reload);
+  gulp.watch("assets/css/*.css").on("change", browserSync.reload);
+}
 
-gulp.task('watch', function () {
-    gulp.watch('assets/scss/**/*.scss', ['sass']);
-    gulp.watch("*.html").on('change', bs.reload);
-});
+exports.style = style;
+exports.watch = watch;
 
-gulp.task('browser-sync', ['watch'], function () {
-    bs.init({
-        proxy: "localhost/webiots-site/index.html"
-    });
-});
-
-gulp.task('default', ['sass', 'watch', 'browser-sync']);
+const build = gulp.series(watch);
+gulp.task("default", build, "browser-sync");

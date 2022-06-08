@@ -1,29 +1,29 @@
 {
-  "name": "theme",
+  "name": "gulp_setup",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
     "gulp-sass": "^4.0.2",
-    "gulp-watch": "^5.0.1"
+    "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.4.1",
-    "check": "^1.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-livereload": "^4.0.1",
-    "gulp-livereload-2": "^3.8.1",
-    "livereload": "^0.7.0",
-    "node-sass": "^4.11.0",
-    "npm": "^6.5.0"
+    "feather-icons": "^4.28.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^5.1.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-w3c-html-validator": "^1.4.4",
+    "pug": "^2.0.4",
+    "through2": "^3.0.1"
   }
 }
